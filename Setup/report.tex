@@ -1,0 +1,175 @@
+\documentclass[a4paper,10pt]{report}
+% \usepackage[utf8]{inputenc}
+% \usepackage{jheppub} 
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage[dvips,table]{xcolor} 
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{dcolumn}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage
+[subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
+{subcaption}
+
+
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}    
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.9}
+
+\newcommand{\eq}[1]{\begin{equation} #1 \end{equation}}
+\newcommand{\eqa}[1]{\begin{eqnarray} #1 \end{eqnarray}}
+
+\setlength{\clubpenalty}{10000}
+\setlength{\widowpenalty}{10000}
+\setlength{\displaywidowpenalty}{10000}
+% \allowdisplaybreaks[1]
+
+\input{macros.tex}
+
+% Title Page
+\title{Monte Carlo comparisons \\
+VBSCAN Cost Action}
+\author{Mathieu Pellen, Marco Zaro, \\
+Alexander Karlberg, Michael Rauch, J\"urgen Reuter}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\part{Introduction}
+
+\part{$\Pp\Pp\to\mu^+\nu_\mu\Pe^+\nu_{\Pe}\Pj\Pj$}
+
+\section{Input parameters}
+
+- Centre-of-mass energy of $13\TeV$ at the LHC. \\
+%
+- Parton distribution function (PDF): NNPDF-3.0 at NLO with $\alpha_{\rm s} \left( \MZ \right) = 0.118$ (we use it at both LO and NLO). The
+LHAPDF ID for this set is 260000.\\
+%
+- Flavour scheme: fixed $N_\text{F}=5$ flavour scheme ( no bottom quark appear in the final or initial state). 
+This means that the bottom quark is considered massless. \\
+%
+- Renormalisation scheme: complex-mass scheme if possible. If other schemes are used, we have to estimate the possible differences.
+%
+- Factorisation scheme: ${\overline{\rm MS}}$ as for NNPDF. \\
+%
+- Scales: factorisation and renormalisation scale, $\mu_R = \mu_F = \MW$. \\
+%
+- $\alpha$: $G_\mu$ scheme with:
+%
+\begin{equation}
+  \alpha = \frac{\sqrt{2}}{\pi} G_\mu \MW^2 \left( 1 - \frac{\MW^2}{\MZ^2} \right)  \qquad \text{with}  \qquad   \GF    = 1.16637\times 10^{-5}\GeV.            
+\end{equation}
+%
+The numerical value is: $\alpha = 7.555310522369 \times 10^{-3}$. \\
+%
+- Mass and width of the massive particles:
+% 
+\begin{alignat}{2}
+                  \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
+                \MZOS &=  91.1876\GeV,      & \quad \quad \quad \GZOS &= 2.4952\GeV,  \nonumber \\
+                \MWOS &=  80.385\GeV,       & \GWOS &= 2.085\GeV,  \nonumber \\
+                M_{\rm H} &=  125.0\GeV,       &  \GH   &=  4.07 \times 10^{-3}\GeV.
+\end{alignat}
+%
+The pole masses and widths entering the calculation are expressed in terms of the measured on-shell (OS) values for the W and Z bosons according to
+%
+\begin{equation}
+        M_V = \MVOS/\sqrt{1+(\GVOS/\MVOS)^2}\,,\qquad  \Gamma_V = \GVOS/\sqrt{1+(\GVOS/\MVOS)^2}.
+\end{equation}
+%
+Hence the numerical values are
+\begin{alignat}{2}
+                \MZ &=  91.1534806191827\GeV,      & \quad \quad \quad \GZ &= 2.494266378772824\GeV,  \nonumber \\
+                \MW &=  80.3579736098775\GeV,       & \GW &= 2.084298998278219\GeV.
+\end{alignat}
+%
+- Experimental signature:
+two equally charged leptons, missing transverse energy and at least two jets. \\
+- Clustering: QCD partons are clustered into jets using the anti-$k_\text{T}$ algorithm  with jet-resolution parameter $R=0.4$.
+Photons from real radiation are recombined with the final-state quarks into jets or with the charged leptons into dressed leptons, in both cases via the anti-$k_\text{T}$ algorithm and a resolution parameter $R=0.1$ 
+(this applies only when computing the EW corrections). \\
+%
+- Rapidity definition: $y=\frac{1}{2}\ln \frac{E+p_z}{E-p_z}$ where $E$ is the energy of the parton and $p_z$ the component of its momentum along the beam axis. \\
+%
+- Distance definition:
+\begin{equation}
+        \Delta R_{ij} = \sqrt{(\Delta \phi_{ij})^2+(\Delta y_{ij})^2},
+\end{equation}
+with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $\Delta y_{ij} = y_i-y_j$ being the rapidity difference. \\
+%
+- Definition of the missing transverse energy: transverse momentum of the sum of the two neutrinos momenta. \\
+%
+- Cuts on the leptons:
+\begin{align}
+ \ptsub{\Pl} >  20\GeV,\qquad |y_{\Pl}| < 2.5, \qquad \Delta R_{\Pl\Pl}> 0.3.
+\end{align}
+%
+- Missing energy cut:
+\begin{align}
+  \etsub{\text{miss}}=p_{\rm T, miss} >  40\GeV
+\end{align}
+%
+- Jet definition:
+%
+\begin{align}
+ \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5,\qquad\Delta R_{\Pj\Pl} > 0.3 .
+\end{align}
+%
+- Out of these 2/3 jets, the two hardest in pT (tagged jets)are required to have:
+\begin{align}
+ m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5.
+\end{align}
+
+\section{Codes}
+
+\subsection{ {\sc POWHEG}: Alexander Karlberg}
+VBF approximation? \\
+\subsection{ {\sc VBFNLO}: Michael Rauch}
+VBF approximation \\
+\subsection{ {\sc WHIZARD}: J\"urgen Reuter}
+Full matrix element \\
+\subsection{ \recola: Mathieu Pellen}
+Full matrix element \\
+\subsection{ \madgraph: Marco Zaro}
+To be checked what is possible \\
+
+\section{Observables}
+- Cross section within cuts. \\
+- Distribution in the number of jets. \\
+- Invariant mass of the two hardest jets (two tagged jets). \\
+$[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
+- $\ptsub{\Pj_1,\Pj_2}$ and $y_{\Pj_1,\Pj_2}$ of the two tagged jets (not their sum) \\
+$\ptsub{\Pj_1,\Pj_2}$: $[0; 1\TeV]$ with bins of size $25\GeV$ (40 bins). \\
+$y_{\Pj_1,\Pj_2}$: $[-5;5]$ with bins of size $0.5$ (20 bins). \\
+- Invariant mass of the two charged leptons. \\
+$[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
+- Zeppenfeld variable for $\mu^+$ and $\Pe^+$: \\
+$z^*_\ell = |y_\ell - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
+$[0;1.5]$ with bins of size $0.05$ (30 bins).
+
+\section{Numerical results}
+
+\subsection{LO $\mathcal{O}\left(\alpha^6\right)$}
+
+
+\subsection{NLO $\mathcal{O}\left(\alpha^6\alpha_{\rm s}\right)$}
+
+\part{Conclusion}
+
+\part{Acknowledgments}
+
+Karlsruhe for hosting the documents used for the comparison.
+
+\end{document}          
