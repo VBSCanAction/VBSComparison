@@ -8,6 +8,7 @@
 \usepackage{xspace}
 \usepackage{dcolumn}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \usepackage{caption}
 \usepackage
 [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
@@ -140,6 +141,20 @@ with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $
 \end{align}
 
 \section{Codes}
+\begin{table}
+    \footnotesize
+    \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
+        Contact person  &  Code  &  $\mathcal O(g_W^6)$ $s/t/u$  &  $\mathcal O(g_W^6)$ interf.  &  Off-shell  &  NF QCD  &  EW corr. to $\mathcal O(g_W^4g_s^2)$  \\
+        \hline
+        \hline
+        A. Karlberg  &  {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  No  &  No  \\
+        M. Pellen    &  {\sc Recola}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
+        M. Rauch     &  {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  No  &  No  \\
+        C. Schwan    &   Private      &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
+        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No  \
+    \end{tabularx}
+    \caption{\label{tab:codes} Summary of the different properties of the codes employed in the comparison.}
+\end{table}
 
 \subsection{ {\sc POWHEG}: Alexander Karlberg}
 VBF approximation? \\
