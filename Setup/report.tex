@@ -9,6 +9,7 @@
 \usepackage{dcolumn}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{graphicx}
 \usepackage{caption}
 \usepackage
 [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
@@ -151,7 +152,7 @@ with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $
         M. Pellen    &  {\sc Recola}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
         M. Rauch     &  {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  No  &  No  \\
         C. Schwan    &   Private      &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
-        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No  \
+        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No  
     \end{tabularx}
     \caption{\label{tab:codes} Summary of the different properties of the codes employed in the comparison.}
 \end{table}
@@ -184,6 +185,52 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
 \section{Numerical results}
 
 \subsection{LO $\mathcal{O}\left(\alpha^6\right)$}
+\begin{table}[h!]
+    \begin{tabular}{c|c}
+        Code  &  $\sigma[\rm{fb}]$  \\
+        \hline
+        \hline
+        {\sc POWHEG}  &  $1.5573 \pm 0.0003$ \\
+        {\sc Recola}  &  $1.5503 \pm 0.0003$ \\
+        {\sc VBFNLO}  &  $1.5538 \pm 0.0002$ \\
+        Private       &  \\
+        {\sc MG5\_aMC}&  $1.542 \pm 0.002$   
+    \end{tabular}
+    \caption{\label{tab:LOrates} LO rates within VBS cuts from the different codes.}
+\end{table}
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/mjj_LO.pdf}
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/mll_LO.pdf}
+\caption{\label{fig:mjj-llLO}Invariant-mass of the two tagging jets (left) and of the two leptons (right).
+}
+\end{figure}
+%
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/ptj1_LO.pdf}
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/ptj2_LO.pdf}
+\caption{\label{fig:ptj1-2LO}Transverse momentum of the first (left) and second (right) tagging jet.
+}
+\end{figure}
+%
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/yj1_LO.pdf}
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/yj2_LO.pdf}
+\caption{\label{fig:yj1-2LO}Rapidity of the first (left) and second (right) tagging jet.
+}
+\end{figure}
+%
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/ze_LO.pdf}
+   \includegraphics[width=0.49\textwidth,angle=0,clip=true,trim={0.4cm 4.cm 0.6cm 1.5cm}]{figures/zmu_LO.pdf}
+\caption{\label{fig:zel-muLO}Zeppenfeld variable of the positron (left) and of the muon (right).
+}
+\end{figure}
+
 
 
 \subsection{NLO $\mathcal{O}\left(\alpha^6\alpha_{\rm s}\right)$}

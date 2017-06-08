@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+import sys
+
+[f1, f2] = sys.argv[1:]
+
+# remove the first two lines of f1, then do as paste
+
+for l1, l2 in zip(open(f1).read().split('\n')[2:], open(f2).read().split('\n')):
+    print l1, l2
