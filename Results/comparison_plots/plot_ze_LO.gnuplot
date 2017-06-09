@@ -92,8 +92,8 @@ set ylabel 'Ratio /VBFNLO'
 
 plot \
 "<paste ../VBFNLO/LO/hist.ze.dat ../VBFNLO/LO/hist.ze.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<./mypaste ../VBFNLO/LO/hist.ze.dat ../MG5_aMC/LO/z_el_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<./mypaste ../VBFNLO/LO/hist.ze.dat ../POWHEG/LO/zstar_-electron-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
+"<paste ../VBFNLO/LO/hist.ze.dat ../MG5_aMC/LO/z_el_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
+"<paste ../VBFNLO/LO/hist.ze.dat ../POWHEG/LO/zstar_-electron-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 
 
 
