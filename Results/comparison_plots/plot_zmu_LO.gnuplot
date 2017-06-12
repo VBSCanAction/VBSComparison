@@ -46,6 +46,7 @@ set tics front
 
 VBFNLO_fact=1e-3 #numbers are in fb/GeV
 POWHEG_fact=1e-3 #numbers are in fb/GeV
+RECOLA_fact=1e-3 #numbers are in fb/GeV
 
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",14" at graph 0.1, graph 0.94
@@ -73,6 +74,7 @@ plot \
 "../VBFNLO/LO/hist.zmu.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/LO/z_mu_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 
 unset label
 set yrange [0.85:1.15]
@@ -86,7 +88,7 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel 'z(e^+)'
+set xlabel 'z({/Symbol m}^+)'
 
 set ylabel 'Ratio /VBFNLO'
 
@@ -94,6 +96,7 @@ plot \
 "<paste ../VBFNLO/LO/hist.zmu.dat ../VBFNLO/LO/hist.zmu.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
 "<paste ../VBFNLO/LO/hist.zmu.dat ../MG5_aMC/LO/z_mu_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/LO/hist.zmu.dat ../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
+"<paste ../VBFNLO/LO/hist.zmu.dat ../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 
 
 
