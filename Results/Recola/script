@@ -5,8 +5,8 @@ echo "test"
 observables="number_jet invariant_mass_mjj12 transverse_momentum_j1 transverse_momentum_j2 rapidity_j1 rapidity_j2 invariant_mass_epmu zeppenfeld_zep zeppenfeld_zmup"
 #observables="number_jet"
 
-#order="born"
-order="nlo"
+order="born"
+#order="nlo"
 
 for obs in $observables
 do
@@ -18,7 +18,8 @@ echo histogram_${obs}_${order}.dat
 awk '!/#/' histogram_${obs}_${order}.dat > histogram_${obs}_${order}.dat.tmp2
 awk '{print $2,$3,$4,$5}' histogram_${obs}_${order}.dat.tmp2 > histogram_${obs}_${order}_final.dat
 
-mv histogram_${obs}_${order}_final.dat ../NLO_final/histogram_${obs}_${order}.dat 
+mv histogram_${obs}_${order}_final.dat ../LO/histogram_${obs}_${order}.dat 
+#mv histogram_${obs}_${order}_final.dat ../NLO/histogram_${obs}_${order}.dat 
 
 rm histogram_${obs}_${order}.dat.tmp2
 
