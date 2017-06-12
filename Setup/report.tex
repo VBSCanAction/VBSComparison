@@ -111,7 +111,14 @@ Photons from real radiation are recombined with the final-state quarks into jets
 \begin{equation}
         \Delta R_{ij} = \sqrt{(\Delta \phi_{ij})^2+(\Delta y_{ij})^2},
 \end{equation}
-with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $\Delta y_{ij} = y_i-y_j$ being the rapidity difference. \\
+with
+\begin{equation}
+\Delta \phi_{ij} = \begin{cases}
+|\phi_i-\phi_j|         & \text{if} \; |\phi_i-\phi_j| < \pi \\
+2 \pi - |\phi_i-\phi_j| & \text{else}
+\end{cases}
+\end{equation}
+being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ being the positive rapidity difference. \\
 %
 - Definition of the missing transverse energy: transverse momentum of the sum of the two neutrinos momenta. \\
 %
