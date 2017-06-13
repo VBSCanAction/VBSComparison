@@ -47,6 +47,7 @@ set tics front
 VBFNLO_fact=1e-3 #numbers are in fb/GeV
 POWHEG_fact=1e-3 #numbers are in fb/GeV
 RECOLA_fact=1e-3 #numbers are in fb/GeV
+PSI_fact=1e-3 #numbers are in fb/GeV
 
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",14" at graph 0.1, graph 0.94
@@ -75,6 +76,7 @@ plot \
 "../MG5_aMC/LO/Pt_j1_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../PSI/LO/lord9.vbscan_ptj1" u 1:(PSI_fact*$2*25) ls 5 t 'PSI',\
 
 unset label
 set yrange [0.85:1.15]
@@ -97,6 +99,7 @@ plot \
 "<paste ../VBFNLO/LO/hist.ptj1.dat ../MG5_aMC/LO/Pt_j1_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/LO/hist.ptj1.dat ../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/LO/hist.ptj1.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/LO/hist.ptj1.dat ../PSI/LO/lord9.vbscan_ptj1" u (($1+$2)/2):(PSI_fact*$10*25/($7*VBFNLO_fact*($2-$1))) ls 5 t 'PSI',\
 
 
 
