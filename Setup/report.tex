@@ -38,7 +38,7 @@
 \title{Monte Carlo comparisons \\
 VBSCAN Cost Action}
 \author{Mathieu Pellen, Marco Zaro, \\
-Alexander Karlberg, Michael Rauch, J\"urgen Reuter}
+Alexander Karlberg, Michael Rauch, J\"urgen Reuter, Christopher Schwan}
 
 
 \begin{document}
@@ -111,7 +111,14 @@ Photons from real radiation are recombined with the final-state quarks into jets
 \begin{equation}
         \Delta R_{ij} = \sqrt{(\Delta \phi_{ij})^2+(\Delta y_{ij})^2},
 \end{equation}
-with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $\Delta y_{ij} = y_i-y_j$ being the rapidity difference. \\
+with
+\begin{equation}
+\Delta \phi_{ij} = \begin{cases}
+|\phi_i-\phi_j|         & \text{if} \; |\phi_i-\phi_j| < \pi \\
+2 \pi - |\phi_i-\phi_j| & \text{else}
+\end{cases}
+\end{equation}
+being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ being the positive rapidity difference. \\
 %
 - Definition of the missing transverse energy: transverse momentum of the sum of the two neutrinos momenta. \\
 %
@@ -151,8 +158,8 @@ with $\Delta \phi_{ij}=\phi_i-\phi_j$ being the azimuthal-angle difference and $
         A. Karlberg  &  {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  No  &  No  \\
         M. Pellen    &  {\sc Recola}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
         M. Rauch     &  {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  No  &  No  \\
-        C. Schwan    &   Private      &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
-        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No  
+        C. Schwan    &  {\sc PSI}     &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
+        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No
     \end{tabularx}
     \caption{\label{tab:codes} Summary of the different properties of the codes employed in the comparison.}
 \end{table}
@@ -194,7 +201,7 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
         {\sc POWHEG}  &  $1.5573 \pm 0.0003$ \\
         {\sc Recola}  &  $1.5503 \pm 0.0003$ \\
         {\sc VBFNLO}  &  $1.5538 \pm 0.0002$ \\
-        Private       &  \\
+        {\sc PSI}     &  $1.5524 \pm 0.0002$ \\
         {\sc MG5\_aMC}&  $1.542 \pm 0.002$   
     \end{tabular}
     \caption{\label{tab:LOrates} LO rates within VBS cuts from the different codes.}
@@ -244,7 +251,7 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
         {\sc POWHEG}  &  \\
         {\sc Recola}  &  \\
         {\sc VBFNLO}  &  $1.3531 \pm 0.0003$  &  $0.8264 \pm  0.0003$  &  $0.5267 \pm 0.0001$\\
-        Private       &  \\
+        {\sc PSI}     &  \\
         {\sc MG5\_aMC}&  $1.315 \pm 0.003$  &  $0.784 \pm  0.003$  &  $0.5313 \pm 0.0009$\\
     \end{tabular}
     \caption{\label{tab:NLOrates} NLO rates within VBS cuts from the different codes.}
