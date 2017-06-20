@@ -76,7 +76,7 @@ plot \
 "../MG5_aMC/LO/z_mu_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
-"../PSI/LO/lord9.vbscan_zmu" u 1:(PSI_fact*$2*0.05) ls 5 t 'PSI',\
+"../PSI/NLO/nlo0-9.vbscan_zmu" u 1:(PSI_fact*$2*0.05) ls 6 t 'PSI',\
 
 unset label
 set yrange [0.85:1.15]
@@ -99,7 +99,7 @@ plot \
 "<paste ../VBFNLO/LO/hist.zmu.dat ../MG5_aMC/LO/z_mu_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/LO/hist.zmu.dat ../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/LO/hist.zmu.dat ../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../PSI/LO/lord9.vbscan_zmu" u (($1+$2)/2):(PSI_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 5 t 'PSI',\
+"<paste ../VBFNLO/LO/hist.zmu.dat ../PSI/NLO/nlo0-9.vbscan_zmu" u (($1+$2)/2):(PSI_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 6 t 'PSI',\
 
 
 
