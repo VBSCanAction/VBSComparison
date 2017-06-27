@@ -69,13 +69,14 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 1, graph 0.8 noautotitles spacing 2.4
+set key at graph 0.7, graph 0.3 noautotitles spacing 2.4
 
 plot \
 "../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+
+#"../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 
 unset label
 set yrange [0.85:1.15]
@@ -95,9 +96,10 @@ set ylabel 'Ratio /VBFNLO' offset 1
 
 plot \
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/NLO/hist.yj1.dat ../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+
+#"<paste ../VBFNLO/NLO/hist.yj1.dat ../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 
 
 
