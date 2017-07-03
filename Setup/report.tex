@@ -10,6 +10,7 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{color}
 \usepackage{caption}
 \usepackage
 [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
@@ -26,6 +27,7 @@
 
 \newcommand{\eq}[1]{\begin{equation} #1 \end{equation}}
 \newcommand{\eqa}[1]{\begin{eqnarray} #1 \end{eqnarray}}
+\newcommand{\MP}[1]{{ {\color{green}{ [MP: #1]}} }}
 
 \setlength{\clubpenalty}{10000}
 \setlength{\widowpenalty}{10000}
@@ -135,7 +137,7 @@ being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ 
 - Jet definition:
 %
 \begin{align}
- \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5 .
+ \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad\Delta R_{\Pj\Pl} > 0.3.
 \end{align}
 %
 - Out of these 2/3 jets, the two hardest in pT (tagged jets)are required to have:
@@ -143,7 +145,7 @@ being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ 
  m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5.
 \end{align}
 %
-- All jets in the event are required to satisfy 
+- Isolation of the lepton, all jets in the event (also the one of the real radiation) are required to satisfy 
 \begin{align}
  \qquad\Delta R_{\Pj\Pl} > 0.3 .
 \end{align}
@@ -156,7 +158,7 @@ being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ 
         \hline
         \hline
         A. Karlberg  &  {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  No  &  No  \\
-        M. Pellen    &  {\sc Recola}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
+        M. Pellen    &  {\sc Recola}\ +{\sc MoCaNLO}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
         M. Rauch     &  {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  No  &  No  \\
         C. Schwan    &  {\sc BONSAY}  &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
         M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  Yes  &  No  &  No
@@ -170,10 +172,11 @@ VBF approximation? \\
 VBF approximation \\
 \subsection{ {\sc WHIZARD}: Simon Brass, J\"urgen Reuter, Pascal Stienemeier}
 Full matrix element \\
-\subsection{ \recola: Mathieu Pellen}
+\subsection{ \recola\ +{\sc MoCaNLO}: Mathieu Pellen}
 Full matrix element \\
 \subsection{ \madgraph: Marco Zaro}
 To be checked what is possible \\
+\subsection{{\sc Bonsai}: Christopher Schwan}
 
 \section{Observables}
 - Cross section within cuts. \\
@@ -187,7 +190,9 @@ $y_{\Pj_1,\Pj_2}$: $[-5;5]$ with bins of size $0.5$ (20 bins). \\
 $[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
 - Zeppenfeld variable for $\mu^+$ and $\Pe^+$: \\
 $z^*_\ell = |y_\ell - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
-$[0;1.5]$ with bins of size $0.05$ (30 bins).
+$[0;1.5]$ with bins of size $0.05$ (30 bins). \\
+- $|\Delta y_{\Pj \Pj}|$: $[-5;5]$ with bins of size $0.5$ (20 bins).
+
 
 \section{Numerical results}
 
@@ -199,7 +204,7 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
         \hline
         \hline
         {\sc POWHEG}  &  $1.5573 \pm 0.0003$ \\
-        {\sc Recola}  &  $1.5503 \pm 0.0003$ \\
+        {\sc Recola\ +{\sc MoCaNLO}}  &  $1.5503 \pm 0.0003$ \\
         {\sc VBFNLO}  &  $1.5538 \pm 0.0002$ \\
         {\sc BONSAY}  &  $1.5524 \pm 0.0002$ \\
         {\sc WHIZARD} &  $1.5539 \pm 0.0004$ \\
@@ -250,7 +255,7 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
         \hline
         \hline
         {\sc POWHEG}  &  $1.334 \pm 0.0003$  &  $0.808 \pm  0.001$  &  $0.5260 \pm 0.0005$\\
-        {\sc Recola}  &  $1.197 \pm 0.003 $ \\
+        {\sc Recola}\ +{\sc MoCaNLO}  &  $1.197 \pm 0.003 $ \\
         {\sc VBFNLO}  &  $1.3531 \pm 0.0003$  &  $0.8264 \pm  0.0003$  &  $0.5267 \pm 0.0001$\\
         {\sc BONSAY}  &  $1.3366 \pm 0.0009$  &  $0.8199 \pm  0.0008$  &  $0.51663 \pm 0.00007$ \\
         {\sc MG5\_aMC}&  $1.318  \pm 0.003$  &  $0.781 \pm  0.004$  &  $0.5374 \pm 0.0016$\\
@@ -289,6 +294,22 @@ $[0;1.5]$ with bins of size $0.05$ (30 bins).
 \caption{\label{fig:zel-muNLO}Zeppenfeld variable of the positron (left) and of the muon (right), at NLO.
 }
 \end{figure}
+
+\section{Plan}
+
+The plan is: \\
+- Scan in $m_{\Pj \Pj}$ and $|\Delta y_{\Pj \Pj}|$ at LO and compute the EW, QCD and interference (for the one who can) contribution. \\
+The binning in $m_{\Pj \Pj}$ is $\left[ 0, 50, 100, ..., 450, 500, 600, 700, 800 \right] $. \\
+The binning in $|\Delta y_{\Pj \Pj}|$ is $\left[ 0, 0.5, 1.0, 1.5, ..., 4.5, 5.0 \right] $. \\
+- Based on this, define a ``control region'' and a ``signal region'' (should be the one we have identified already).
+- Compute the QCD correction to QCD-induced and EW in these two regions.
+- Add PS to these computations (for those who can).
+- Add EW on top (probably only Mathieu).
+
+\section{Remarks}
+
+- \MP{Do we want to keep the cuts as they are or do we want to update to the recomandation of WG2?} \\
+- \MP{In particular we should write the report/article as we go further in the project in order to save time.}
 
 \part{Conclusion}
 
