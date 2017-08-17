@@ -50,9 +50,6 @@ RECOLA_fact=1e-3 #numbers are in fb/GeV
 BONSAY_fact=1e-3 #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_ptHardestJet.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-set print "-"
-#print "n_entries_WHIZARD="
-#print n_entries_WHIZARD
 WHIZARD_fact=1e-3/n_entries_WHIZARD
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
