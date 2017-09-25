@@ -1,5 +1,5 @@
 #!/bin/bash
-GPL=`ls plot_*NLO.gnuplot`
+GPL=`ls plot_*LO.gnuplot`
 
 
 for GP in $GPL ; do

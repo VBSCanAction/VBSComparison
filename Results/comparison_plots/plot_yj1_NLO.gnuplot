@@ -3,9 +3,9 @@ reset
 set lmargin 10
 set rmargin 0
 
-set terminal postscript portrait enhanced mono dashed lw 1.0 "Helvetica" 14 
+set terminal postscript portrait enhanced mono dashed lw 1.0 "Helvetica" 14
 set terminal pdf font "Helvetica,12" enhanced dashed size 8 cm, 12 cm
-#set size ratio 0.75 
+#set size ratio 0.75
 set key font ",11"
 set key samplen "1.1"
 set output "yj1_NLO.pdf"
@@ -13,7 +13,7 @@ set style line 100 dt 2 lc rgb "black" lw 1
 
 set style line 1 dt 1 lc rgb "black"lw 1.8
 set style line 2 dt 1 lc rgb "red"lw 1.8 pt 7 ps 0.5
-set style line 3 dt 1 lc rgb "#00a000" pt 13 ps 0.7lw 1.8 
+set style line 3 dt 1 lc rgb "#00a000" pt 13 ps 0.7lw 1.8
 set style line 4 dt 1 lc rgb "blue"lw 1.8
 set style line 5 dt 1 lc rgb "dark-orange"lw 1.8
 set style line 6 dt 1 lc rgb "dark-magenta"lw 1.8
@@ -57,7 +57,7 @@ set yrange [1e-6:1e-3]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
-set bmargin 0 
+set bmargin 0
 set tmargin 0
 set xtics 1 nomirror
 set ytics 10
@@ -75,6 +75,7 @@ plot \
 "../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../BONSAY/NLO/nlo0-9.vbscan_yj1" u 1:(BONSAY_fact*($2+$5+$8+$11)*0.5) ls 6 t 'BONSAY',\
 
 #"../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 
@@ -83,7 +84,7 @@ set yrange [0.85:1.15]
 unset logscale y
 set origin 0.00, 0.3
 set size 0.9, 0.2
-set bmargin 0 
+set bmargin 0
 set tmargin 0
 set ytics 0.1
 set mytics 10
@@ -98,6 +99,7 @@ plot \
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/NLO/hist.yj1.dat ../BONSAY/NLO/nlo0-9.vbscan_yj1" u (($1+$2)/2):(BONSAY_fact*($10+$13+$16+$19)*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 
 #"<paste ../VBFNLO/NLO/hist.yj1.dat ../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 
@@ -107,7 +109,3 @@ plot \
 unset multiplot
 
 !open "yj1_NLO.pdf"
-
-
-
-
