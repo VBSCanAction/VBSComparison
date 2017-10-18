@@ -28,6 +28,7 @@
 \newcommand{\eq}[1]{\begin{equation} #1 \end{equation}}
 \newcommand{\eqa}[1]{\begin{eqnarray} #1 \end{eqnarray}}
 \newcommand{\MP}[1]{{ {\color{blue}{ [MP: #1]}} }}
+\newcommand{\MR}[1]{{ {\color{blue}{ [MR: #1]}} }}
 
 \setlength{\clubpenalty}{10000}
 \setlength{\widowpenalty}{10000}
@@ -200,10 +201,10 @@ $\ptsub{\Pj_1,\Pj_2}$: $[0; 1\TeV]$ with bins of size $25\GeV$ (40 bins). \\
 \MP{$y_{\Pj_1,\Pj_2,\Pj_3}$: $[-5;5]$ with bins of size $0.5$ (20 bins).} \\
 - Invariant mass of the two charged leptons. \\
 $[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
-- Zeppenfeld variable for $\mu^+$ and $\Pe^+$: \\
-$z^*_\ell = |y_\ell - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
+- Zeppenfeld variable for $\mu^+$, $\Pe^+$ \MR{and $\Pj_3$}: \\
+$z^*_x = |y_x - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
 $[0;1.5]$ with bins of size $0.05$ (30 bins). \\
-- $|\Delta y_{\Pj \Pj}|$: $[-5;5]$ with bins of size $0.5$ (20 bins).
+- $|\Delta y_{\Pj \Pj}|$: \MR{$[0;10]$} with bins of size $0.5$ (20 bins).
 
 
 \section{Numerical results}
