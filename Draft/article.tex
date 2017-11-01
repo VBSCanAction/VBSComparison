@@ -147,6 +147,13 @@ One loop integrals are evaluated using the {\sc Collier} library
         with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
         and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections, 
         only loops with QCD-interacting particles are generated.
+        
+  \item {{\sc{Phantom}}~\cite{Ballestrero:2007xq} is a dedicated tree--level Monte Carlo for six parton final states at $pp,\, p\bar{p}$
+  and $e^+e^-$ colliders at $\alpha_{ew}^6$ and $\alpha_{ew}^4\alpha_s^2$ including interferences between the two sets of diagrams.
+It employs complete tree--level matrix elements in the complex--mass scheme~\cite{Denner:2006ic} computed via the modular helicity 
+formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}. The integration uses a multichannel approach~\cite{BERENDS1985441} and an adaptive
+strategy~\cite{PETERLEPAGE1978192}. {\sc{Phantom}} generates unweighted events at parton--level for both the SM and a few instances of BSM theories.}.       
+
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for mathcing NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automaticaly construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
