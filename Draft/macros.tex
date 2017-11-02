@@ -1,6 +1,7 @@
 \newcommand{\Pl}{\ell}
 \newcommand{\fb}{{\ensuremath\unskip\,\text{fb}}\xspace}
 % % new commands for cross referencing
+\def\refeq#1{\mbox{(\ref{#1})}}
 \def\reffi#1{\mbox{Figure~\ref{#1}}}
 \def\reffis#1{\mbox{Figures~\ref{#1}}}
 \def\refta#1{\mbox{Table~\ref{#1}}}
@@ -13,6 +14,7 @@
 \newcommand{\ri}{\mathrm i}
 
 \newcommand{\ie}{\emph{i.e.}\ }
+\newcommand{\eg}{\emph{e.g.}\ }
 
 \def\be{\begin{equation}}
 \def\ee{\end{equation}}
@@ -49,9 +51,7 @@
 \newcommand{\GW}{\ensuremath{\Gamma_\PW}\xspace}
 \newcommand{\GWOS}{\ensuremath{\Gamma_\PW^\text{OS}}\xspace}
 
-\newcommand{\MVOS}{\ensuremath{M_V^\text{OS}}\xspace}%
-\newcommand{\GVOS}{\ensuremath{\Gamma_V^\text{OS}}\xspace}%
-
+\newcommand{\MeV}{\ensuremath{\,\text{MeV}}\xspace}
 \newcommand{\GeV}{\ensuremath{\,\text{GeV}}\xspace}
 \newcommand{\TeV}{\ensuremath{\,\text{TeV}}\xspace}
 
@@ -65,63 +65,82 @@
 
 \newcommand{\pt}{\ensuremath{p_\text{T}}\xspace}
 \newcommand{\ptsub}[1]{\ensuremath{p_{\text{T},#1}}\xspace}
-
-\newcommand{\et}{\ensuremath{E_\text{T}}\xspace}
 \newcommand{\etsub}[1]{\ensuremath{E_{\text{T},#1}}\xspace}
 
 \renewcommand{\Re}{\mathop{\mathrm{Re}}\nolimits}
 \renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
 
+\newcommand{\MVOS}{\ensuremath{M_{V}^\text{OS}}\xspace}%
+\newcommand{\GVOS}{\ensuremath{\Gamma_{V}^\text{OS}}\xspace}%
 
-% \newcommand{\ph}{p_\text{H}}
-% \newcommand{\phath}{\hat{p}_\text{H}}
-% \newcommand{\phatt}{\hat{p}_\text{t}}
-% \newcommand{\ptx}{p_{\bar{\text{t}}}}
-% \newcommand{\phattx}{\hat{p}_{\bar{\text{t}}}}
-% \newcommand{\phatwplus}{\hat{p}_{\text{W}^+}}
-% \newcommand{\phatwminus}{\hat{p}_{\text{W}^-}}
-% \newcommand{\pb}{p_\text{b}}
-% \newcommand{\pbprime}{p_\text{b}^\prime}
-% \newcommand{\pbtprime}{p_{\text{b}_{\text{t}}}^\prime}
-% \newcommand{\phatbt}{\hat{p}_{\text{b}_{\text{t}}}}
-% \newcommand{\pbt}{p_{\text{b}_{\text{t}}}}
-% \newcommand{\phatbxtx}{\hat{p}_{\bar{\text{b}}_{\bar{\text{t}}}}}
-% \newcommand{\pbx}{p_{\bar{\text{b}}}}
-% \newcommand{\pbxprime}{p_{\bar{\text{b}}}^\prime}
-% \newcommand{\pbxtxprime}{p_{\bar{\text{b}}_{\bar{\text{t}}}}^\prime}
-% \newcommand{\pwplus}{p_{\text{W}^+}}
-% \newcommand{\pwminus}{p_{\text{W}^-}}
+\newcommand{\sq}{\tilde{q}}
+\newcommand{\su}{\tilde{u}}
+\newcommand{\sd}{\tilde{d}}
+\newcommand{\gl}{\tilde{g}}
+\def\bom#1{{\mbox{\boldmath $#1$}}}
+\newcommand\nn         {\nonumber}
+\newcommand{\sul}{\tilde{u}_L}
+\newcommand{\scl}{\tilde{c}_L}
+\newcommand{\sdl}{\tilde{d}_L}
+\newcommand{\ssl}{\tilde{s}_L}
+\newcommand{\sur}{\tilde{u}_R}
+%\newcommand{\scr}{\tilde{c}_R}
+\newcommand{\sdr}{\tilde{d}_R}
+\newcommand{\ssr}{\tilde{s}_R}
+\newcommand{\stone}{\tilde{t}_1}
+\newcommand{\sbone}{\tilde{b}_1}
+\newcommand{\sttwo}{\tilde{t}_2}
+\newcommand{\sbtwo}{\tilde{b}_2}
+\newcommand{\neutone}{\tilde{\chi}^0_1}
+\newcommand\sss{\mathchoice%
+{\displaystyle}%
+{\scriptstyle}%
+{\scriptscriptstyle}%
+{\scriptscriptstyle}%
+}
+\newcommand{\newc}{\newcommand}
+% \newc{\be}{\begin{equation}}
+% \newc{\ee}{\end{equation}}
+\newc{\bi}{\begin{itemize}}
+\newc{\ei}{\end{itemize}}
+\newc{\benu}{\begin{enumerate}}
+\newc{\eenu}{\end{enumerate}}
+\newc{\bc}{\begin{center}}
+\newc{\ec}{\end{center}}
+\newc{\bfig}{\begin{figure}}
+\newc{\efig}{\end{figure}}
+\newc{\qbar}{\bar{q}}
+\newc{\go}{\tilde{g}}
+\newc{\PB}{\textsc{Powheg-Box}}
+\newcommand\matB{{\cal B}}
+\newcommand\matR{{\cal R}}
+\newcommand\matV{{\cal V}}
+\newcommand\matO{{\cal O}}
+\newcommand\matF{{\cal F}}
 
-% \newcommand{\bbbar}{\ensuremath{\Pb\bar{\Pb}}\xspace}
-% %\newcommand{\ttbar}{\ensuremath{\Pt\bar{\Pt}}\xspace}
-% \newcommand{\ttbarbbbar}{\ensuremath{\Pt\bar{\Pt}\Pb\bar{\Pb}}\xspace}
-% \newcommand{\ttbarh}{\ensuremath{\Pt\bar{\Pt}\PH}\xspace}
-% \newcommand{\ttbarhProcess}{\ensuremath{\Pp\Pp\to\Pt\bar{\Pt}\PH\to\Pl^+\nu_\Pl \Pj\Pj\Pb\bar{\Pb}\Pb\bar{\Pb}}\xspace}
-% \newcommand{\ttbarProcess }{\ensuremath{\Pp\Pp\to\Pt\bar{\Pt}\Pb\bar{\Pb}\to\Pl^+\nu_\Pl \Pj\Pj\Pb\bar{\Pb}\Pb\bar{\Pb}}\xspace}
-
-\newcommand{\fullProcess  }{\ensuremath{\Pp\Pp\to\Pe^+\nu_\Pe \mu^-\bar{\nu}_\mu\Pb\bar{\Pb}}\xspace}
-\newcommand{\ggProcess    }{\ensuremath{\Pg\Pg\to\Pe^+\nu_\Pe \mu^-\bar{\nu}_\mu\Pb\bar{\Pb}}\xspace}
-\newcommand{\qqbProcess    }{\ensuremath{q\bar{q}\to\Pe^+\nu_\Pe \mu^-\bar{\nu}_\mu\Pb\bar{\Pb}}\xspace}
-
-
-% \newcommand{\ttbbb}{\ttbarbbbar}
-
-% \def\M12{\ensuremath M_{\mathrm{b_1 b_2}}}
-% \def\MdR{\ensuremath M_{\mathrm{bb},\Delta R_\mathrm{min}}}
-% \def\MHP{\ensuremath M_{{\mathrm {bb, Higgs}}}}
-% \def\Mttb{\ensuremath M_{\mathrm{bb, non\textnormal{-}top}}}
-
-\newcommand{\recola}{{\sc Recola}\xspace}
+\newcommand{\Recola}{{\sc Recola}\xspace}
+\newcommand{\Sherpa}{{\sc Sherpa}\xspace}
+\newcommand{\Rivet}{{\sc Rivet}\xspace}
+\newcommand{\Amegic}{A\protect\scalebox{0.8}{MEGIC}\xspace}
+\newcommand{\Comix}{C\protect\scalebox{0.8}{OMIX}\xspace}
+\newcommand{\OpenLoops}{O\protect\scalebox{0.8}{PEN}L\protect\scalebox{0.8}{OOPS}\xspace}
+\newcommand{\Njet}{N\protect\scalebox{0.8}{JET}\xspace}
+\newcommand{\BlackHat}{B\protect\scalebox{0.8}{LACK}H\protect\scalebox{0.8}{AT}\xspace}
+\newcommand{\Gosam}{G\protect\scalebox{0.8}{O}S\protect\scalebox{0.8}{AM}\xspace}
 \newcommand{\mocanlo}{{\sc MoCaNLO}\xspace}
 \newcommand{\collier}{{\sc Collier}\xspace}
+\newcommand{\CutTools}{{\sc CutTools}\xspace}
+\newcommand{\OneLOop}{{\sc OneLOop}\xspace}
 \newcommand{\madgraph}{{\sc\small MadGraph5\_aMC@NLO}\xspace}
+\newcommand{\madgraphbis}{{\sc\small MG5\_aMC@NLO}\xspace}
 \newcommand{\rT}{{\mathrm{T}}}
-% \def\abs#1{{\color{red}#1}}
-% \def\absq#1{{\color{green}#1}}
 \newcolumntype{.}{D{.}{.}{-1}}
 \newcolumntype{d}[1]{D{.}{.}{#1}}
 
 \renewcommand{\vec}[1]{\mathbf{#1}}
+\colorlet{tableoverheadcolor}{gray!37.5}
+\colorlet{tableheadcolor}{gray!25}
+\colorlet{tablerowcolor}{gray!12.5}
 
 \newcommand{\lsim}
 {\;\raisebox{-.3em}{$\stackrel{\displaystyle <}{\sim}$}\;}
@@ -139,12 +158,6 @@
     \rule[1.41\height]{0.7\width}{0.35pt}%
     \raisebox{1.26ex}{\scalebox{.3}{\textbf{)}}}%
 }
-
-
-
-
-
-
 
 % modifications for drafts for drafts
 \newcommand{\mpar}[1]{{\marginpar{\hbadness10000%

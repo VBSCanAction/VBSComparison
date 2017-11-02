@@ -3,7 +3,7 @@
 % \usepackage{jheppub} 
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
-\usepackage[dvips,table]{xcolor} 
+% \usepackage[dvips,table]{xcolor} 
 \usepackage{amsmath}
 \usepackage{xspace}
 \usepackage{dcolumn}
@@ -27,7 +27,8 @@
 
 \newcommand{\eq}[1]{\begin{equation} #1 \end{equation}}
 \newcommand{\eqa}[1]{\begin{eqnarray} #1 \end{eqnarray}}
-\newcommand{\MP}[1]{{ {\color{green}{ [MP: #1]}} }}
+\newcommand{\MP}[1]{{ {\color{blue}{ [MP: #1]}} }}
+\newcommand{\MR}[1]{{ {\color{blue}{ [MR: #1]}} }}
 
 \setlength{\clubpenalty}{10000}
 \setlength{\widowpenalty}{10000}
@@ -70,7 +71,15 @@ This means that the bottom quark is considered massless. \\
 %
 - Factorisation scheme: ${\overline{\rm MS}}$ as for NNPDF. \\
 %
-- Scales: factorisation and renormalisation scale, $\mu_R = \mu_F = \MW$. \\
+- Scales: factorisation and renormalisation scale, \MP{$\mu_R = \mu_F = \mu$. \\
+
+\begin{equation}
+\label{eq:defscale}
+ \mu = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}},
+\end{equation}
+%
+where the jets are the tagging jets.}
+
 %
 - $\alpha$: $G_\mu$ scheme with:
 %
@@ -137,18 +146,21 @@ being the positive azimuthal-angle difference and $\Delta y_{ij} = |y_i - y_j|$ 
 - Jet definition:
 %
 \begin{align}
- \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad\Delta R_{\Pj\Pl} > 0.3.
+ \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad \Delta R_{\Pj\Pl} > 0.3.
 \end{align}
 %
-- Out of these 2/3 jets, the two hardest in pT (tagged jets)are required to have:
+- Out of these 2/3 jets, the two hardest in pT (these are the tagging jets) are required to have:
 \begin{align}
  m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5.
 \end{align}
 %
-- Isolation of the lepton, all jets in the event (also the one of the real radiation) are required to satisfy 
-\begin{align}
- \qquad\Delta R_{\Pj\Pl} > 0.3 .
-\end{align}
+
+\MP{Now the $\Delta R_{\Pj\Pl}$ cut is simply in the jet definition, it is not a requirement to be fulfilled by all the jets as before.}
+
+% - Isolation of the lepton, all jets in the event (also the one of the real radiation) are required to satisfy 
+% \begin{align}
+%  \qquad\Delta R_{\Pj\Pl} > 0.3 .
+% \end{align}
 
 \section{Codes}
 \begin{table}
@@ -183,15 +195,16 @@ To be checked what is possible \\
 - Distribution in the number of jets. \\
 - Invariant mass of the two hardest jets (two tagged jets). \\
 $[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
-- $\ptsub{\Pj_1,\Pj_2}$ and $y_{\Pj_1,\Pj_2}$ of the two tagged jets (not their sum) \\
+- \MP{$\ptsub{\Pj_1,\Pj_2,\Pj_3}$ and $y_{\Pj_1,\Pj_2,\Pj_3}$ of the two tagged jets and also the third jet at NLO} (not their sum) \\
 $\ptsub{\Pj_1,\Pj_2}$: $[0; 1\TeV]$ with bins of size $25\GeV$ (40 bins). \\
-$y_{\Pj_1,\Pj_2}$: $[-5;5]$ with bins of size $0.5$ (20 bins). \\
+\MP{$\ptsub{\Pj_3}$: $[0; 1\TeV]$ with bins of size $10\GeV$ (100 bins).} \\
+\MP{$y_{\Pj_1,\Pj_2,\Pj_3}$: $[-5;5]$ with bins of size $0.5$ (20 bins).} \\
 - Invariant mass of the two charged leptons. \\
 $[0; 4\TeV]$ with bins of size $100\GeV$ (40 bins). \\
-- Zeppenfeld variable for $\mu^+$ and $\Pe^+$: \\
-$z^*_\ell = |y_\ell - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
+- Zeppenfeld variable for $\mu^+$, $\Pe^+$ \MR{and $\Pj_3$}: \\
+$z^*_x = |y_x - \left(y_{\Pj_1}+y_{\Pj_2} \right)/2|/|\Delta y_{\Pj\Pj}|$ \\
 $[0;1.5]$ with bins of size $0.05$ (30 bins). \\
-- $|\Delta y_{\Pj \Pj}|$: $[-5;5]$ with bins of size $0.5$ (20 bins).
+- $|\Delta y_{\Pj \Pj}|$: \MR{$[0;10]$} with bins of size $0.5$ (20 bins).
 
 
 \section{Numerical results}
