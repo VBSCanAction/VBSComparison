@@ -79,8 +79,8 @@ plot \
 "../POWHEG/LO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 "../BONSAY/NLO/nlo0-9.vbscan_mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
-"../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
-"../PHANTOM/LO/EW6/mjj.dat" using 1:($2*PHANTOM_fact) ls 10 title 'PHANTOM',\
+"../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat" using 1:($2*WHIZARD_fact) ls 7 title 'WHIZARD',\
+"../PHANTOM/LO/EW6/mjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 
 
 unset label
@@ -105,8 +105,8 @@ plot \
 "<paste ../VBFNLO/LO/hist.mjj.dat ../POWHEG/LO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/LO/hist.mjj.dat ../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/LO/hist.mjj.dat ../BONSAY/NLO/nlo0-9.vbscan_mjj" u (($1+$2)/2):(BONSAY_fact*$10*100/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
-"<paste ../VBFNLO/LO/hist.mjj.dat ../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
-"<paste ../VBFNLO/LO/hist.mjj.dat ../PHANTOM/LO/EW6/mjj.dat" using 9:(($10*PHANTOM_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'PHANTOM',\
+"<paste ../VBFNLO/LO/hist.mjj.dat ../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 7 title 'WHIZARD',\
+"<paste ../VBFNLO/LO/hist.mjj.dat ../PHANTOM/LO/EW6/mjj.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
 
 unset multiplot
 
