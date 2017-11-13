@@ -46,6 +46,7 @@ Alexander Karlberg, Michael Rauch, J\"urgen Reuter, Christopher Schwan}
 
 \begin{document}
 \maketitle
+\tableofcontents
 
 \begin{abstract}
 
@@ -323,6 +324,29 @@ The binning in $|\Delta y_{\Pj \Pj}|$ is $\left[ 0, 0.5, 1.0, 1.5, ..., 4.5, 5.0
 
 - \MP{Do we want to keep the cuts as they are or do we want to update to the recomandation of WG2?} \\
 - \MP{In particular we should write the report/article as we go further in the project in order to save time.}
+
+
+\newpage
+\section{Matching to parton shower}
+Same setup and observables as for the fixed-order runs.\\
+
+Tools:
+\begin{itemize}
+    \item VBFNLO + Herwig7: dipole vs angular-ordered shower, check also MC@NLO  vs Powheg matching
+    \item MG5\_aMC: Pythia8 vs Herwig++
+    \item Powheg + Pythia8
+    \item Whizard + Pythia6 / Pythia8 (MLM merging)
+    \item Phantom + Pythia
+\end{itemize}
+
+Comparisons are done after shower and hadronization. Hadrons are kept stable (no $\pi \to 2\gamma$ decay, no $B$ decay) in order not to have extra photons/leptons in the final state.\\
+No underlying event is simulated.\\
+QED radiation is disabled in the shower.\\
+For Pythia8, the Monash tune (number 14) should be used.\\
+All other parameters, in particular those for which particular settings need to be employed e.g. for consistency with the matching method, are free to be changed. 
+
+
+
 
 \part{Conclusion}
 
