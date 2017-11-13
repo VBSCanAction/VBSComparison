@@ -77,7 +77,7 @@ set key at graph 0.7, graph 0.4 noautotitles spacing 2.4
 plot \
 "../VBFNLO/LO/hist.yj2.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/LO/y_j2_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/LO/Y_jet_2-_VBF_CUTS_index___7.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../POWHEG/LO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/LO/histogram_rapidity_j2_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 "../BONSAY/NLO/nlo0-9.vbscan_yj2" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../WHIZARD/LO/hist_rapiditySecondToHardestJet.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
@@ -101,7 +101,7 @@ set ylabel 'Ratio /VBFNLO' offset 1
 plot \
 "<paste ../VBFNLO/LO/hist.yj2.dat ../VBFNLO/LO/hist.yj2.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
 "<paste ../VBFNLO/LO/hist.yj2.dat ../MG5_aMC/LO/y_j2_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<paste ../VBFNLO/LO/hist.yj2.dat ../POWHEG/LO/Y_jet_2-_VBF_CUTS_index___7.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
+"<paste ../VBFNLO/LO/hist.yj2.dat ../POWHEG/LO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/LO/hist.yj2.dat ../Recola/LO/histogram_rapidity_j2_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/LO/hist.yj2.dat ../BONSAY/NLO/nlo0-9.vbscan_yj2" u (($1+$2)/2):(BONSAY_fact*$10*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 "<paste ../VBFNLO/LO/hist.yj2.dat ../WHIZARD/LO/hist_rapiditySecondToHardestJet.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
