@@ -73,7 +73,7 @@ set key at graph 0.7, graph 0.3 noautotitles spacing 2.4
 
 plot \
 "../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___8.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 "../BONSAY/NLO/nlo0-9.vbscan_yj1" u 1:(BONSAY_fact*($2+$5+$8+$11)*0.5) ls 6 t 'BONSAY',\
 
@@ -97,7 +97,7 @@ set ylabel 'Ratio /VBFNLO' offset 1
 
 plot \
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../VBFNLO/NLO/hist.yj1.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/NLO/hist.yj1.dat ../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
+"<paste ../VBFNLO/NLO/hist.yj1.dat ../POWHEG/NLO/Y_jet_1-_VBF_CUTS_index___8.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/NLO/hist.yj1.dat ../BONSAY/NLO/nlo0-9.vbscan_yj1" u (($1+$2)/2):(BONSAY_fact*($10+$13+$16+$19)*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 
