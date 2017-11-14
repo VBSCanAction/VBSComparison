@@ -107,7 +107,7 @@ plot \
 "<paste ../VBFNLO/LO/hist.ze.dat ../Recola/LO/histogram_zeppenfeld_zep_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/LO/hist.ze.dat ../BONSAY/LO/ew-lo.ze" u (($1+$2)/2):(BONSAY_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 "<paste ../VBFNLO/LO/hist.ze.dat ../WHIZARD/LO/hist_zeppenfeldEPlus.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
-"<paste ../VBFNLO/LO/hist.zepp_el.dat ../PHANTOM/LO/EW6/zepp_el.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
+"<paste ../VBFNLO/LO/hist.ze.dat ../PHANTOM/LO/EW6/zepp_el.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
 
 
 unset multiplot
