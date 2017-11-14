@@ -82,7 +82,7 @@ plot \
 "../Recola/LO/histogram_transverse_momentum_j2_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 "../BONSAY/LO/ew-lo.ptj2" u 1:(BONSAY_fact*$2*25) ls 6 t 'BONSAY',\
 "../WHIZARD/LO/hist_ptSecondToHardestJet.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
-../PHANTOM/LO/EW6/ptj2.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
+"../PHANTOM/LO/EW6/ptj2.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 
 unset label
 set yrange [0.85:1.15]
