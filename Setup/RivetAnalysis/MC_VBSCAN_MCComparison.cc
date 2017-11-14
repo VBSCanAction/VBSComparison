@@ -158,17 +158,17 @@ namespace Rivet {
         // z_e+
         double avgj12 = (filterjets[0].eta()+filterjets[1].eta())/2.;
         double norm12 = abs(filterjets[0].eta()-filterjets[1].eta());
-        double z = ( electrons[0].eta() - avgj12 ) / norm12;
+        double z = abs( electrons[0].eta() - avgj12 ) / norm12;
         _h_fiducial21->fill(z, event.weight());
         // z_mu
-        z = ( muons[0].eta() - avgj12 ) / norm12;
+        z = abs( muons[0].eta() - avgj12 ) / norm12;
         _h_fiducial22->fill(z, event.weight());
         if (filterjets.size() > 2) {
           // pT_j3, y_j3
           _h_fiducial23->fill(filterjets[2].perp(), event.weight());
           _h_fiducial24->fill(filterjets[2].eta(), event.weight());
           // z_j3
-          z = ( filterjets[2].eta() - avgj12 ) / norm12;
+          z = abs( filterjets[2].eta() - avgj12 ) / norm12;
           _h_fiducial25->fill(z, event.weight());
         }
 
