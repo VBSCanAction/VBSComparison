@@ -1,0 +1,17 @@
+Name: MC_VBSCAN_MCComparison
+Summary: same-sign $WW$ distributions
+Status: UNVALIDATED
+Authors:
+ - Michael Rauch <michael.rauch@kit.edu>
+References:
+RunInfo: 
+  pp same-sign WW events at 13 TeV with direct e, mu W boson decays
+NumEvents: 1000000
+Description:
+  'This is the setup for the Monte Carlo Comparison of same-sign WW production.
+   Doubly leptonic decay events are selected with electrons, muons and missing
+   transverse momentum in the final state.'
+ToDo:
+ - Test the analysis, remove this ToDo, and mark as VALIDATED :-)
+NeedCrossSection: yes
+
