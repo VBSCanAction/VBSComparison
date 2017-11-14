@@ -56,7 +56,7 @@ namespace Rivet {
       declare(MissingMomentum(), "MET");
 
       // Histograms
-      _h_fiducial11 = bookHisto1D("crosssection", 1, 0, 1e6);
+      _h_fiducial11 = bookHisto1D("crosssection", 1, 12999.5, 13000.5);
       _h_fiducial12 = bookHisto1D("jetsinclusive", 7, -0.5, 6.5);
       _h_fiducial13 = bookHisto1D("jetsexclusive", 7, -0.5, 6.5);
       _h_fiducial14 = bookHisto1D("m_jj", 40, 0, 4000);

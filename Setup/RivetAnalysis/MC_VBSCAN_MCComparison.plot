@@ -3,19 +3,21 @@ Title=Integrated cross-section of same-sign $WW\to e^+\nu \mu^+\nu$
 XLabel=$\sqrt{s}$~[GeV]
 YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
 LogY=0
-Scale=1e6
+ShowZero=0
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/jetsinclusive
 Title=Inclusive jet cross section for same-sign $WW\to e^+\nu \mu^+\nu$
 XLabel=number of jets
 YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+LogY=0
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/jetsexclusive
 Title=Exclusive jet cross section for same-sign $WW\to e^+\nu \mu^+\nu$
 XLabel=number of jets
 YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+LogY=0
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/m_jj
