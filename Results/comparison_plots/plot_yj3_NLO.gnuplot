@@ -8,7 +8,7 @@ set terminal pdf font "Helvetica,12" enhanced dashed size 8 cm, 12 cm
 #set size ratio 0.75
 set key font ",11"
 set key samplen "1.1"
-set output "mjj_NLO.pdf"
+set output "yj3_NLO.pdf"
 set style line 100 dt 2 lc rgb "black" lw 1
 
 set style line 1 dt 1 lc rgb "black"lw 1.8
@@ -52,31 +52,32 @@ BONSAY_fact=1e-3 #numbers are in fb/GeV
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
 set label "MonteCarlo comparison, NLO fixed order" font ",10" at graph 0.03, graph 0.88
-set xrange [0:4000]
+set xrange [-5:5]
 set yrange [1e-6:1e-3]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
 set bmargin 0
 set tmargin 0
-set xtics 500 nomirror
+set xtics 1 nomirror
 set ytics 10
 #set ytics 100
-set mxtics 10
+set mxtics 2
 set mytics 10
 set ylabel "{/Symbol s} per bin [pb]"
 #set xtics nomirror
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 1, graph 0.8 noautotitles spacing 2.4
+set key at graph 0.7, graph 0.3 noautotitles spacing 2.4
 
 plot \
-"../VBFNLO/NLO/hist.mjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
-"../BONSAY/NLO/ew-nlo.mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
+"../VBFNLO/NLO/hist.yj3.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
+"../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../BONSAY/NLO/ew-nlo.yj3" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
+
+#"../MG5_aMC/NLO/y_j3_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 
 unset label
 set yrange [0.85:1.15]
@@ -90,20 +91,21 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel 'M(j_1j_2) [GeV]'
+set xlabel 'y(j_3)'
 
 set ylabel 'Ratio /VBFNLO' offset 1
 
 plot \
-"<paste ../VBFNLO/NLO/hist.mjj.dat ../VBFNLO/NLO/hist.mjj.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/NLO/hist.mjj.dat ../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<paste ../VBFNLO/NLO/hist.mjj.dat ../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/NLO/hist.mjj.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
-"<paste ../VBFNLO/NLO/hist.mjj.dat ../BONSAY/NLO/ew-nlo.mjj" u (($1+$2)/2):(BONSAY_fact*$10*100/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
+"<paste ../VBFNLO/NLO/hist.yj3.dat ../VBFNLO/NLO/hist.yj3.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
+"<paste ../VBFNLO/NLO/hist.yj3.dat ../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
+"<paste ../VBFNLO/NLO/hist.yj3.dat ../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/NLO/hist.yj3.dat ../BONSAY/NLO/ew-nlo.yj3" u (($1+$2)/2):(BONSAY_fact*$10*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
+
+#"<paste ../VBFNLO/NLO/hist.yj3.dat ../MG5_aMC/NLO/y_j3_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 
 
 
 
 unset multiplot
 
-!open "mjj_NLO.pdf"
+!open "yj3_NLO.pdf"
