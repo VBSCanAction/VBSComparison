@@ -1,0 +1,19 @@
+# BEGIN PLOT
+LegendOnly=/PHANTOM_10M.yoda/MC_VBSCAN_MCComparison/crosssection
+DrawOnly=/PHANTOM_10M.yoda/MC_VBSCAN_MCComparison/crosssection
+Legend=1
+LogY=1
+# END PLOT
+
+# BEGIN HISTO1D /PHANTOM_10M.yoda/MC_VBSCAN_MCComparison/crosssection
+LineColor=red
+LineStyle=solid
+Path=/PHANTOM_10M.yoda/MC_VBSCAN_MCComparison/crosssection
+ScaledBy=1.99999999999999867e+00
+Title=PHANTOM_10M
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+06	8.121640e-04	2.849849e-07	2.849849e-07
+# END HISTO1D
+
