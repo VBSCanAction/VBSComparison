@@ -1,4 +1,14 @@
+# LaTeX generated
 *.aux
 *.log
 *.out
 *.toc
+
+# compiler generated
+*.o
+*.so
+
+# Editor backups and generated
+*~
+/tags
+.*.swp
