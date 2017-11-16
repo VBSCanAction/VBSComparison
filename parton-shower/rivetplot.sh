@@ -21,4 +21,11 @@ rivet-mkhtml \
 :"ErrorBandColor=brown"\
 :"RatioPlotErrorBandColor=brown"\
 :"ErrorBandOpacity=0.3"\
+  Powheg/lhef.yoda\
+:"Title=Powheg-lhef"\
+:"LineColor=blue"\
+:"ErrorBands=1"\
+:"ErrorBandColor=blue"\
+:"RatioPlotErrorBandColor=blue"\
+:"ErrorBandOpacity=0.3"\
 

@@ -1,20 +1,20 @@
 # BEGIN PLOT
-LegendOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
-DrawOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
-RatioPlotReference=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LegendOnly=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+DrawOnly=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotReference=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlot=1
 LogY=1
 RatioPlotYLabel=Ratio
 Legend=1
 # END PLOT
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 ErrorBandColor=red
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=red
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=red
 ScaledBy=1
 Title=NLO
@@ -30,38 +30,38 @@ YLabel=
 5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 ErrorBandColor=green
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=green
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=green
-ScaledBy=4.16334293122255393e-04
-Title=Powheg+Pythia 8 (NLO $\otimes$ pT)
+ScaledBy=1.64719761446097032e-04
+Title=Powheg+Pythia 8
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-1.500000e+00	2.500000e+00	1.022745e+00	1.412920e-03	1.412920e-03
-2.500000e+00	3.500000e+00	2.331360e-01	6.745054e-04	6.745054e-04
-3.500000e+00	4.500000e+00	7.488327e-02	3.822566e-04	3.822566e-04
-4.500000e+00	5.500000e+00	2.337273e-02	2.135943e-04	2.135943e-04
-5.500000e+00	6.500000e+00	7.133970e-03	1.179854e-04	1.179854e-04
+1.500000e+00	2.500000e+00	1.022575e+00	8.886552e-04	8.886552e-04
+2.500000e+00	3.500000e+00	2.339553e-01	4.250173e-04	4.250173e-04
+3.500000e+00	4.500000e+00	7.456402e-02	2.399368e-04	2.399368e-04
+4.500000e+00	5.500000e+00	2.346401e-02	1.345997e-04	1.345997e-04
+5.500000e+00	6.500000e+00	7.068616e-03	7.388035e-05	7.388035e-05
 # END HISTO1D
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 ErrorBandColor=brown
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=brown
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=brown
 ScaledBy=1.05355021816678726e-03
-Title=VBFNLO 3+Herwig 7 (NLO $\oplus$ Dipoles)
+Title=VBFNLO 3+Herwig 7
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -72,5 +72,27 @@ YLabel=
 3.500000e+00	4.500000e+00	5.263509e-02	1.265980e-04	1.265980e-04
 4.500000e+00	5.500000e+00	8.723162e-03	1.520414e-04	1.520414e-04
 5.500000e+00	6.500000e+00	1.449968e-03	1.031592e-04	1.031592e-04
+# END HISTO1D
+
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=blue
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=blue
+LineStyle=solid
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=blue
+ScaledBy=4.76190476190016272e-04
+Title=Powheg-lhef
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.014308e+00	1.504843e-03	1.504843e-03
+2.500000e+00	3.500000e+00	3.812613e-01	9.224614e-04	9.224614e-04
+3.500000e+00	4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.500000e+00	5.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 

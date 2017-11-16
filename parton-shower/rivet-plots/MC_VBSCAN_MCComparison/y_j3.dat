@@ -1,20 +1,20 @@
 # BEGIN PLOT
-LegendOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
-DrawOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
-RatioPlotReference=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
+LegendOnly=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3
+DrawOnly=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3 //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3
+RatioPlotReference=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
 RatioPlot=1
 LogY=1
 RatioPlotYLabel=Ratio
 Legend=1
 # END PLOT
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
 ErrorBandColor=red
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=red
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
 RatioPlotErrorBandColor=red
 ScaledBy=1
 Title=NLO
@@ -43,51 +43,51 @@ YLabel=
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3
 ErrorBandColor=green
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=green
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3
 RatioPlotErrorBandColor=green
-ScaledBy=4.16334293122255393e-04
-Title=Powheg+Pythia 8 (NLO $\otimes$ pT)
+ScaledBy=1.64719761446097032e-04
+Title=Powheg+Pythia 8
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
--4.500000e+00	-4.000000e+00	5.873428e-03	1.513991e-04	1.513991e-04
--4.000000e+00	-3.500000e+00	1.779590e-02	2.635345e-04	2.635345e-04
--3.500000e+00	-3.000000e+00	3.524056e-02	3.708506e-04	3.708506e-04
--3.000000e+00	-2.500000e+00	5.181494e-02	4.497154e-04	4.497154e-04
--2.500000e+00	-2.000000e+00	5.995578e-02	4.837190e-04	4.837190e-04
--2.000000e+00	-1.500000e+00	5.738788e-02	4.732789e-04	4.732789e-04
--1.500000e+00	-1.000000e+00	4.699912e-02	4.283458e-04	4.283458e-04
--1.000000e+00	-5.000000e-01	3.647378e-02	3.772837e-04	3.772837e-04
--5.000000e-01	0.000000e+00	2.986276e-02	3.414281e-04	3.414281e-04
-0.000000e+00	5.000000e-01	2.923054e-02	3.377956e-04	3.377956e-04
-5.000000e-01	1.000000e+00	3.618110e-02	3.757668e-04	3.757668e-04
-1.000000e+00	1.500000e+00	4.569566e-02	4.222941e-04	4.222941e-04
-1.500000e+00	2.000000e+00	5.791082e-02	4.753981e-04	4.753981e-04
-2.000000e+00	2.500000e+00	6.061532e-02	4.863722e-04	4.863722e-04
-2.500000e+00	3.000000e+00	5.169786e-02	4.491732e-04	4.491732e-04
-3.000000e+00	3.500000e+00	3.593522e-02	3.744879e-04	3.744879e-04
-3.500000e+00	4.000000e+00	1.766711e-02	2.626372e-04	2.626372e-04
-4.000000e+00	4.500000e+00	6.103682e-03	1.543382e-04	1.543382e-04
+-4.500000e+00	-4.000000e+00	5.785518e-03	9.454017e-05	9.454017e-05
+-4.000000e+00	-3.500000e+00	1.753721e-02	1.645689e-04	1.645689e-04
+-3.500000e+00	-3.000000e+00	3.526124e-02	2.333341e-04	2.333341e-04
+-3.000000e+00	-2.500000e+00	5.219474e-02	2.839020e-04	2.839020e-04
+-2.500000e+00	-2.000000e+00	6.006626e-02	3.045402e-04	3.045402e-04
+-2.000000e+00	-1.500000e+00	5.719280e-02	2.971987e-04	2.971987e-04
+-1.500000e+00	-1.000000e+00	4.718278e-02	2.699290e-04	2.699290e-04
+-1.000000e+00	-5.000000e-01	3.649802e-02	2.374110e-04	2.374110e-04
+-5.000000e-01	0.000000e+00	2.995284e-02	2.150876e-04	2.150876e-04
+0.000000e+00	5.000000e-01	2.942168e-02	2.131614e-04	2.131614e-04
+5.000000e-01	1.000000e+00	3.631892e-02	2.368378e-04	2.368378e-04
+1.000000e+00	1.500000e+00	4.682148e-02	2.688847e-04	2.688847e-04
+1.500000e+00	2.000000e+00	5.710478e-02	2.969459e-04	2.969459e-04
+2.000000e+00	2.500000e+00	6.039204e-02	3.053728e-04	3.053728e-04
+2.500000e+00	3.000000e+00	5.250046e-02	2.847153e-04	2.847153e-04
+3.000000e+00	3.500000e+00	3.567042e-02	2.346941e-04	2.346941e-04
+3.500000e+00	4.000000e+00	1.763448e-02	1.650246e-04	1.650246e-04
+4.000000e+00	4.500000e+00	5.893602e-03	9.539371e-05	9.539371e-05
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
-# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
 ErrorBandColor=brown
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=brown
 LineStyle=solid
-Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/y_j3
 RatioPlotErrorBandColor=brown
 ScaledBy=1.05355021816678726e-03
-Title=VBFNLO 3+Herwig 7 (NLO $\oplus$ Dipoles)
+Title=VBFNLO 3+Herwig 7
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -110,6 +110,41 @@ YLabel=
 3.000000e+00	3.500000e+00	4.232482e-02	1.310010e-04	1.310010e-04
 3.500000e+00	4.000000e+00	2.255950e-02	9.748633e-05	9.748633e-05
 4.000000e+00	4.500000e+00	7.842632e-03	2.907508e-04	2.907508e-04
+4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D //home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3
+ErrorBandColor=blue
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=blue
+LineStyle=solid
+Path=//home/karlberg/cernbox/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3
+RatioPlotErrorBandColor=blue
+ScaledBy=4.76190476190016272e-04
+Title=Powheg-lhef
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+-4.500000e+00	-4.000000e+00	1.013257e-02	2.126702e-04	2.126702e-04
+-4.000000e+00	-3.500000e+00	2.555014e-02	3.377096e-04	3.377096e-04
+-3.500000e+00	-3.000000e+00	4.646250e-02	4.554054e-04	4.554054e-04
+-3.000000e+00	-2.500000e+00	6.355842e-02	5.326395e-04	5.326395e-04
+-2.500000e+00	-2.000000e+00	6.809798e-02	5.513329e-04	5.513329e-04
+-2.000000e+00	-1.500000e+00	6.169706e-02	5.247821e-04	5.247821e-04
+-1.500000e+00	-1.000000e+00	4.703386e-02	4.582403e-04	4.582403e-04
+-1.000000e+00	-5.000000e-01	3.321428e-02	3.850430e-04	3.850430e-04
+-5.000000e-01	0.000000e+00	2.583134e-02	3.395630e-04	3.395630e-04
+0.000000e+00	5.000000e-01	2.503236e-02	3.343298e-04	3.343298e-04
+5.000000e-01	1.000000e+00	3.318304e-02	3.848618e-04	3.848618e-04
+1.000000e+00	1.500000e+00	4.622592e-02	4.542445e-04	4.542445e-04
+1.500000e+00	2.000000e+00	6.154530e-02	5.241363e-04	5.241363e-04
+2.000000e+00	2.500000e+00	6.886128e-02	5.544142e-04	5.544142e-04
+2.500000e+00	3.000000e+00	6.306742e-02	5.305781e-04	5.305781e-04
+3.000000e+00	3.500000e+00	4.717670e-02	4.588921e-04	4.588921e-04
+3.500000e+00	4.000000e+00	2.589384e-02	3.399735e-04	3.399735e-04
+4.000000e+00	4.500000e+00	9.958482e-03	2.108354e-04	2.108354e-04
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
