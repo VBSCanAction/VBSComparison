@@ -1,0 +1,58 @@
+# BEGIN PLOT
+LegendOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/crosssection //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/crosssection //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/crosssection
+DrawOnly=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/crosssection //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/crosssection //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotReference=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=red
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=red
+LineStyle=solid
+Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=red
+ScaledBy=1
+Title=NLO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.370330e+00	1.144339e-04	1.144339e-10
+# END HISTO1D
+
+# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=green
+LineStyle=solid
+Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=green
+ScaledBy=4.16334293122255393e-04
+Title=Powheg+Pythia 8 (NLO $\otimes$ pT)
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.363966e+00	1.631631e-03	1.631631e-03
+# END HISTO1D
+
+# BEGIN HISTO1D //home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=brown
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=brown
+LineStyle=solid
+Path=//home/michi/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=brown
+ScaledBy=1.05355021816678726e-03
+Title=VBFNLO 3+Herwig 7 (NLO $\oplus$ Dipoles)
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.338925e+00	6.295618e-04	6.295618e-04
+# END HISTO1D
+
