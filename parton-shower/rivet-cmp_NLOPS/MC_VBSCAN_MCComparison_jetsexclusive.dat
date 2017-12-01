@@ -1,0 +1,64 @@
+# BEGIN PLOT
+LegendOnly=/other_Yodas/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive /other_Yodas/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive /run_5MevtsNLO-HWPP/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+DrawOnly=/other_Yodas/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive /other_Yodas/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive /run_5MevtsNLO-HWPP/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotReference=/other_Yodas/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /other_Yodas/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=black
+LineStyle=solid
+Path=/other_Yodas/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=1.64719761446097032e-04
+Title=Powheg
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.022575e+00	8.886552e-04	8.886552e-04
+2.500000e+00	3.500000e+00	2.339553e-01	4.250173e-04	4.250173e-04
+3.500000e+00	4.500000e+00	7.456402e-02	2.399368e-04	2.399368e-04
+4.500000e+00	5.500000e+00	2.346401e-02	1.345997e-04	1.345997e-04
+5.500000e+00	6.500000e+00	7.068616e-03	7.388035e-05	7.388035e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /other_Yodas/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=red
+LineStyle=solid
+Path=/other_Yodas/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=1.05355021816678726e-03
+Title=VBFNLO-HW-Dip
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.001434e+00	5.144236e-04	5.144236e-04
+2.500000e+00	3.500000e+00	2.744722e-01	2.860627e-04	2.860627e-04
+3.500000e+00	4.500000e+00	5.263509e-02	1.265980e-04	1.265980e-04
+4.500000e+00	5.500000e+00	8.723162e-03	1.520414e-04	1.520414e-04
+5.500000e+00	6.500000e+00	1.449968e-03	1.031592e-04	1.031592e-04
+# END HISTO1D
+
+# BEGIN HISTO1D /run_5MevtsNLO-HWPP/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=blue
+LineStyle=solid
+Path=/run_5MevtsNLO-HWPP/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=4.29481468359931388e-06
+Title=MG5aMC-HWpp
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.063199e+00	3.143980e-03	3.143980e-03
+2.500000e+00	3.500000e+00	3.036005e-01	1.672983e-03	1.672983e-03
+3.500000e+00	4.500000e+00	6.394550e-02	7.361944e-04	7.361944e-04
+4.500000e+00	5.500000e+00	1.165183e-02	3.025635e-04	3.025635e-04
+5.500000e+00	6.500000e+00	2.151702e-03	1.249931e-04	1.249931e-04
+# END HISTO1D
+
