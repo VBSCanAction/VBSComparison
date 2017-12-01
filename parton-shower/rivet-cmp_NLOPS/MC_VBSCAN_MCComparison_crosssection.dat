@@ -41,6 +41,6 @@ Title=MG5aMC-HWpp
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
-0.000000e+00	1.000000e+06	1.445008e-06	3.651730e-09	3.651730e-09
+1.299950e+04	1.300050e+04	1.445008e+00	3.651730e-03	3.651730e-03
 # END HISTO1D
 
