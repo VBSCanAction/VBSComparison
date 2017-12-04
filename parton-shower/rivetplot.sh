@@ -28,4 +28,10 @@ rivet-mkhtml \
 :"ErrorBandColor=blue"\
 :"RatioPlotErrorBandColor=blue"\
 :"ErrorBandOpacity=0.3"\
-
+  MG5_aMC/run_HWPP_5M_NLOPS.yoda\
+:"Title=MG5_aMC-HWPP"\
+:"LineColor=magenta"\
+:"ErrorBands=1"\
+:"ErrorBandColor=magenta"\
+:"RatioPlotErrorBandColor=magenta"\
+:"ErrorBandOpacity=0.3"\
