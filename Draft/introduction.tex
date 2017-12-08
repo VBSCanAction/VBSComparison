@@ -1,10 +1,47 @@
-The measurements are \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta}.
+The vector-boson scattering (VBS) process with two positively charged W boson is just starting to be measured at the LHC~\cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta}.
+A whole class of new processes will therefore be measured during Run~II at the Large Hadron Collider (LHC).
+For now the measurements of VBS processes are limited by statistics but the situation will change in a near future.
+On the theoretical side, it is thus of prime importance to provide precise predictions and infer their related systematics.
 
-In the last decade many codes capable of performing VBS simulations have appeared.
-Within a network such as VBSCan it is therefore natural to perform 
-a quantitative comparison of these codes, both to cross-validate the results and to assess the impact of the different approximations which are used.
-In fact, already at LO, when considering the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at order $\mathcal O (\alpha^6)$, the various implementations VBS simulations are different.
-They differ, for example
-by the (non-)inclusion of diagrams with vector bosons in the $s$-channel or by the treatment of interferences between diagrams.
-The reason of these differences is that, 
-when typical signal cuts for VBS are imposed, these effects turn to be small on rates and distributions.
+The $\PW^+\PW^+$ scattering is probably the simplest VBS processes to compute and to measure due to its particular charge structure and low background, respectively.
+Therefore, it is an ideal example for a detailed study of various theoretical predictions.
+In the last few years, several (N)LO computations become available for both the VBS process~\cite{Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background
+process~\cite{Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba,Rauch:2016pai}.
+These computations all relied on approximations while recently the complete NLO corrections became available \cite{Biedermann:2017bss}.
+It is therefore interesting to infer in details the quality of the various approximations.
+Indeed, apart from Ref.~\cite{Biedermann:2017bss} \MP{more references?} no detailed comparison of the VBS approximations have been carried out.
+
+The hadronic process is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ and it posses three contributions at leading order (LO) 
+[$\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alphas^{2}\alpha^{4}\right)}$, and $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$].
+They are refer to as EW, interference, and QCD contributions respectively.
+The EW contribution is sometimes referred to as the VBS contribution even it possesses not-VBS contributions.
+Therefore, we start with a LO study of these contributions as a function of typical VBS cuts.
+This allows to understand the various contributions to the final state $\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$.
+This is followed by a LO comparison between the various predictions at the level of the cross section and differential distributions.
+
+At NLO, the process possesses four contributions of orders 
+$\mathcal{O}{\left(\alpha^{7}\right)}$,
+$\mathcal{O}{\left(\alphas\alpha^{6}\right)}$,
+$\mathcal{O}{\left(\alphas^{2}\alpha^{5}\right)}$, and
+$\mathcal{O}{\left(\alphas^{3}\alpha^{4}\right)}$.
+The largest one is the EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ \cite{Biedermann:2016yds,Biedermann:2017bss}.
+The contribution of order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ is the second largest NLO contribution.
+It is often referred as the QCD corrections to the VBS process.
+In the following, this order is the one where our comparisons are focused on.
+It is therefore usually referred to as simply \emph{NLO}.
+As for the LO study, the various predictions are compared at the level of the cross section and differential distributions.
+
+Finally, several predictions featuring parton shower are compared.
+This allows to infer systematics differences between the various predictions.
+This is the first time in the literature that such an analysis has been carried out \MP{True?}.
+
+Obviously all VBS processes deserve such a study but the present article sets the standard for inferring systematics related to NLO corrections and beyond.
+
+
+The article is organised as follow:
+in the first part (section~\ref{sec:definition}), the process studied is defined.
+Then, various approximation at LO and NLO are described in section~\ref{sec:details}.
+It is followed by a presentation of the various programs used for the simulations.
+Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study, respectively.
+Section~\ref{sec:matching} deals with the matching to parton shower.
+The last section (section \ref{sec:conclusion}) consists in concluding remarks and recommendations.

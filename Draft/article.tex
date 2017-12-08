@@ -67,12 +67,13 @@
 
 \date{}
 \author{
-Simon Brass$^{1\,}$,
-Ansgar Denner$^{2\,}$,
+Benedikt Biedermann$^{1\,}$,
+Simon Brass$^{2\,}$,
+Ansgar Denner$^{1\,}$,
 Stefan Dittmaier$^{3\,}$,
 Michele Grossi$^{4,5\,}$, \\
 Alexander Karlberg$^{6\,}$, 
-Mathieu Pellen$^{2\,}$\footnote{E-mail:
+Mathieu Pellen$^{1\,}$\footnote{E-mail:
   \texttt{mpellen@physik.uni-wuerzburg.de}},
 Giovanni  Pelliccioli$^{7\,}$,
 Michael Rauch$^{8\,}$,
@@ -84,16 +85,16 @@ Marco Zaro$^{10\,}$\footnote{E-mail:
   \texttt{m.zaro@nikhef.nl}}.
 \\[9mm]
 {\small\it
-$^1$Universit\"at Siegen, Department Physik,} \\ %
-{\small\it Walter-Flex-Str.3, \linebreak %
-        57068 Siegen, Germany}\\[3mm]
-        %
-{\small\it
-$^2$Universit\"at W\"urzburg, %
+$^1$Universit\"at W\"urzburg, %
         Institut f\"ur Theoretische Physik und Astrophysik,} \\ %
 {\small\it Emil-Hilb-Weg 22, \linebreak %
         97074 W\"urzburg, %
         Germany}\\[3mm]
+        %
+{\small\it
+$^2$Universit\"at Siegen, Department Physik,} \\ %
+{\small\it Walter-Flex-Str.3, \linebreak %
+        57068 Siegen, Germany}\\[3mm]
         %
 $^3${\small\it
 Albert-Ludwigs-Universit\"at Freiburg, Physikalisches Institut,} \\ %
@@ -152,8 +153,12 @@ $^{10}$University X, %
 \input{introduction}
 
 \section{Definition of the process}
+\label{sec:definition}
+
+\input{definition}
 
 \section{Details of the calculations}
+\label{sec:details}
 
 \subsection{Several descriptions for one process}
 
@@ -167,26 +172,42 @@ $^{10}$University X, %
 
 \input{input}
 
-\section{Fixed order comparisons}
+\section{Leading-order study}
+\label{sec:LO}
 
-\subsection{Cross sections}
+\subsection{Scan}
 
-\input{crosssection}
+\input{scanLO}
 
-\subsection{Differential distributions}
+\subsection{Comparison in the fiducial region}
 
-\input{distributions}
+\input{crosssectionLO}
 
-\section{Influence of the fiducial region}
+\input{distributionsLO}
 
-\input{fiducialregion}
+\section{Next-to-leading order QCD}
+\label{sec:NLO}
+
+\subsection{ScanNLO}
+
+\input{scanNLO}
+
+\subsection{Comparison in the fiducial region}
+
+\input{crosssectionNLO}
+
+\input{distributionsNLO}
+
 
 \section{Matching to parton shower}
+\label{sec:matching}
 
 \input{shower}
 
 \section{Conclusion}
+\label{sec:conclusion}
 
+\input{conclusion}
 
 
 \section*{Acknowledgements}
