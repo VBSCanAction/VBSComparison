@@ -29,6 +29,7 @@ One loop integrals are evaluated using the {\sc Collier} library
         with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
         and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections, 
         only loops with QCD-interacting particles are generated.
+        \MP{Detail of the approximation done, divergent part, assumed to cancel etc.}
         
   \item {{\sc{Phantom}}~\cite{Ballestrero:2007xq} is a dedicated tree--level Monte Carlo for six parton final states at $pp,\, p\bar{p}$
   and $e^+e^-$ colliders at $\alpha_{ew}^6$ and $\alpha_{ew}^4\alpha_s^2$ including interferences between the two sets of diagrams.
@@ -41,7 +42,7 @@ It relies on the user providing the matrix elements and Born phase space, but wi
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
 \MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}
 
-  \item The program {\sc Recola+MoCaNLO} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO}~\cite{MoCaNLO} and the general matrix element generator {\sc Recola} \cite{Actis:2012qn,Actis:2016mpe}.
+  \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO}~\cite{MoCaNLO} and the general matrix element generator {\sc Recola} \cite{Actis:2012qn,Actis:2016mpe}.
 To numerically evaluate the one-loop scalar and tensor integrals, {\sc Recola} relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg},
 These tools have been successfully used for the computation of NLO corrections for VBS~\cite{Biedermann:2016yds,Biedermann:2017bss}.
 
@@ -64,14 +65,14 @@ resonances.
 
 \end{itemize}
 
-The complete comparison of the codes will be published in a separate work. Here, we present some preliminary results obtained at LO ($\mathcal O (\alpha^6)$) and including
+% The complete comparison of the codes will be published in a separate work. Here, we present some preliminary results obtained at LO ($\mathcal O (\alpha^6)$) and including
 NLO QCD corrections at fixed-order $\mathcal O (\alpha^6\alpha_s)$, for the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$.
 In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
 \begin{itemize}
-    \item all $s-$ and $t/u-$channel diagrams that lead to the considered final state are included;
+    \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
     \item interferences between diagrams are included at LO;
     \item diagrams which do not feature two resonant vector bosons are included;
-    \item the so-called non-factorizable (NF) QCD corrections, that is the corrections where (real or virtual) gluons are exchanged between different quark lines,
+    \item the so-called non-factorisable (NF) QCD corrections, that is the corrections where (real or virtual) gluons are exchanged between different quark lines,
         are included;
     \item EW corrections to the $\mathcal O (\alpha^5\alpha_s)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
         the  $\mathcal O (\alpha^6$) term.
@@ -80,15 +81,16 @@ In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In pa
 \begin{table}
     \footnotesize
     \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
-        Contact person  &  Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  &  NF QCD  &  EW corr. to $\mathcal O(\alpha^5\alpha_s)$  \\
+        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alpha^5\alpha_s)$  \\
         \hline
         \hline
-        A. Karlberg  &  {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  No  &  No  \\
-        M. Pellen    &  {\sc Recola+MoCaNLO}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes  \\
-        M. Rauch     &  {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  No  &  No  \\
-        C. Schwan    &  {\sc Bonsay}  &  $t/u$  &  No  &  Yes, virt. No  &  No  &  No  \\
-        M. Zaro      &  {\sc MG5\_aMC}  &  Yes  &  Yes  &  No virt.  &  No  &  No \\
-        V. Rothe     &  {\sc Whizard}  &  Yes  &  Yes  &  Yes  &  Yes  &  Yes \\  
+        {\sc Bonsay}  &  $t/u$  &  No  &  Yes, virt. No  & Yes & No  &  No  \\
+        {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  Yes & No  &  No  \\
+        {\sc MG5\_aMC}  &  Yes  &  Yes  &  No virt.  & Yes & No  &  No \\
+        {\sc MoCaNLO+Recola}  &  Yes  &  Yes  &  Yes  &  Yes & Yes  &  Yes  \\
+        {\sc PHANTOM}  &  Yes  &  Yes  &  Yes  & No & - & - \\  
+        {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  Yes & No  &  No  \\
+        {\sc Whizard}  &  Yes  &  Yes  &  Yes  & No & - & - \\  
     \end{tabularx}
     \caption{\label{tab:wg1_codes} Summary of the different properties of the codes employed in the comparison.}
 \end{table}
