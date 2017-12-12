@@ -1,5 +1,21 @@
-In the comparison, the following codes are used: 
+\begin{table*}[ht!]
+    \footnotesize
+    \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
+        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alpha^5\alpha_s)$  \\
+        \hline
+        \hline
+        {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
+        {\sc POWHEG}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc MG5\_aMC}      &  Yes      &  Yes      &  Yes              &  Yes   & No virt. &  No \\
+        {\sc MoCaNLO+Recola}&  Yes      &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
+        {\sc PHANTOM}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\  
+        {\sc VBFNLO}        &  Yes      &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc Whizard}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\  
+    \end{tabularx}
+    \caption{\label{tab:wg1_codes} Summary of the different properties of the codes employed in the comparison.}
+\end{table*}
 
+In the comparison, the following codes are used: 
 \begin{itemize}
  \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator
 and matrix elements taken from several sources: Born matrix elements are
@@ -78,20 +94,4 @@ In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In pa
         the  $\mathcal O (\alpha^6$) term.
 \end{itemize}
 %
-\begin{table}
-    \footnotesize
-    \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
-        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alpha^5\alpha_s)$  \\
-        \hline
-        \hline
-        {\sc Bonsay}  &  $t/u$  &  No  &  Yes, virt. No  & Yes & No  &  No  \\
-        {\sc POWHEG}  &  $t/u$  &  No  &  Yes  &  Yes & No  &  No  \\
-        {\sc MG5\_aMC}  &  Yes  &  Yes  &  No virt.  & Yes & No  &  No \\
-        {\sc MoCaNLO+Recola}  &  Yes  &  Yes  &  Yes  &  Yes & Yes  &  Yes  \\
-        {\sc PHANTOM}  &  Yes  &  Yes  &  Yes  & No & - & - \\  
-        {\sc VBFNLO}  &  Yes  &  No  &  Yes  &  Yes & No  &  No  \\
-        {\sc Whizard}  &  Yes  &  Yes  &  Yes  & No & - & - \\  
-    \end{tabularx}
-    \caption{\label{tab:wg1_codes} Summary of the different properties of the codes employed in the comparison.}
-\end{table}
 %

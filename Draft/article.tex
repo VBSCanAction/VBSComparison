@@ -1,5 +1,7 @@
 %% Main-Version Draft
-\documentclass[11pt,epsf]{article}
+\documentclass[twocolumn,epjc3]{svjour3} % use the EPJC template, two columns
+%%\documentclass[epjc3]{svjour3} % use the EPJC template, one column
+\smartqed  % flush right qed marks, e.g. at end of proof
 %% -------------------------------
 %% |          Packages           |
 %% -------------------------------
@@ -15,24 +17,24 @@
  \usepackage{caption}
  \usepackage{tabularx}
  \usepackage{lmodern}
- \usepackage
- [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
- {subcaption}
+% \usepackage
+% [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
+% {subcaption}
 
-\setlength{\evensidemargin}{0cm}
-\setlength{\oddsidemargin}{0cm}
-\setlength{\topmargin}{0.00cm}
-\setlength{\textwidth}{16.0cm}
-\setlength{\textheight}{22.55cm}
-\setlength{\headheight}{0cm}
-\setlength{\headsep}{0cm}
-\setlength{\voffset}{0cm}
-\setlength{\paperheight}{27cm}
+%\setlength{\evensidemargin}{0cm}
+%\setlength{\oddsidemargin}{0cm}
+%\setlength{\topmargin}{0.00cm}
+%\setlength{\textwidth}{16.0cm}
+%\setlength{\textheight}{22.55cm}
+%\setlength{\headheight}{0cm}
+%\setlength{\headsep}{0cm}
+%\setlength{\voffset}{0cm}
+%\setlength{\paperheight}{27cm}
 
-\renewcommand{\topfraction}{0.8}
-\renewcommand{\bottomfraction}{0.5}
-\renewcommand{\textfraction}{0.2}
-\renewcommand{\floatpagefraction}{0.7}
+%\renewcommand{\topfraction}{0.8}
+%\renewcommand{\bottomfraction}{0.5}
+%\renewcommand{\textfraction}{0.2}
+%\renewcommand{\floatpagefraction}{0.7}
 
 \newcommand{\MP}[1]{{ {\color{blue}{ [MP: #1]}} }}
 \newcommand{\MR}[1]{{ {\color{red}{ [MR: #1]}} }}
@@ -41,7 +43,7 @@
 %% | ToDo Marker - only for draft! |
 %% ---------------------------------
 % Remove this section for final version!
-\setlength{\marginparwidth}{20mm}
+%\setlength{\marginparwidth}{20mm}
 
 \newcommand{\margtodo}
 {\marginpar{\textbf{\textcolor{red}{ToDo}}}{}}
@@ -50,101 +52,96 @@
 {{\textbf{\textcolor{red}{(\margtodo{}#1)}}}{}}
 
 \input{macros}
-
+%
+\journalname{PREPRINT NUMBERS HERE}
+%
 \begin{document}
 
-\title{\hfill ~\\[-30mm]
-\phantom{h} \hfill\mbox{\small DESY PREPRINT } \\
-\vspace{-10mm}
-\phantom{h} \hfill\mbox{\small KIT PREPRINT } \\
-\vspace{-10mm}
-\phantom{h} \hfill\mbox{\small NIKHEF PREPRINT } \\
-\vspace{-10mm}
-\phantom{h} \hfill\mbox{\small ZURICH PREPRINT }
-\\[1cm]
-% \vspace{13mm}   
-\textbf{Precise predictions for same sign W-bosons scattering at the LHC}}
+\title{Precise predictions for same-sign W-bosons scattering at the LHC}
 
-\date{}
-\author{
-Benedikt Biedermann$^{1\,}$,
-Simon Brass$^{2\,}$,
-Ansgar Denner$^{1\,}$,
-Stefan Dittmaier$^{3\,}$,
-Michele Grossi$^{4,5\,}$, \\
-Alexander Karlberg$^{6\,}$, 
-Mathieu Pellen$^{1\,}$\footnote{E-mail:
-  \texttt{mpellen@physik.uni-wuerzburg.de}},
-Giovanni  Pelliccioli$^{7\,}$,
-Michael Rauch$^{8\,}$,
-J\"urgen Reuter$^{9\,}$, \\
-Vincent Rothe$^{9\,}$, 
-Christopher Schwan$^{3\,}$,
-Pascal Stienemeier$^{9\,}$,
-Marco Zaro$^{10\,}$\footnote{E-mail:
-  \texttt{m.zaro@nikhef.nl}}.
-\\[9mm]
-{\small\it
-$^1$Universit\"at W\"urzburg, %
-        Institut f\"ur Theoretische Physik und Astrophysik,} \\ %
-{\small\it Emil-Hilb-Weg 22, \linebreak %
-        97074 W\"urzburg, %
-        Germany}\\[3mm]
-        %
-{\small\it
-$^2$Universit\"at Siegen, Department Physik,} \\ %
-{\small\it Walter-Flex-Str.3, \linebreak %
-        57068 Siegen, Germany}\\[3mm]
-        %
-$^3${\small\it
-Albert-Ludwigs-Universit\"at Freiburg, Physikalisches Institut,} \\ %
-{\small\it Hermann-Herder-Str.\ 3, \linebreak %
-         79104 Freiburg, Germany}\\[3mm]
-        %
-{\small\it
-$^4$Universit\'a di Pavia, Dipartimento di Fisica and INFN, Sezione di Pavia } \\ %
-{\small\it Via A. Bassi 6, \linebreak %
-        27100 Pavia, %
-        Italy}\\[3mm]
-%        
-{\small\it
-$^{5}$IBM Italia s.p.a.} \\ %
-{\small\it Circonvallazione Idroscalo , \linebreak %
-        20090 Segrate (MI), %
-        Italy}\\[3mm]
-        %
-{\small\it
-$^6$Department of Physics, University of Z\"urich,} \\ %
-{\small\it CH-8057
-Z\"urich, Switzerland}\\[3mm]
-        %
-$^7${\small\it
-Universit\`a di Torino, Dipartimento di Fisica and INFN, Sezione di Torino } \\ %
-{\small\it Via P. Giuria 1, \linebreak %
-        10125 Torino, %
-        Italy}\\[3mm]
-        %
-{\small\it
-$^8$Institute for Theoretical Physics, Karlsruhe Institute of
-Technology (KIT),} \\ %
-{\small\it Karlsruhe, Germany}\\[3mm]
-        %
-{\small\it
-$^9$DESY Theory Group,} \\ %
-{\small\it Notkestr. 85, \linebreak %
-        D-22607 Hamburg, Germany}\\[3mm]
-        %
-{\small\it
-$^{10}$University X, %
-        Institut Y,} \\ %
-{\small\it Street X, \linebreak %
-        XXXX city, %
-        Country}\\[3mm]        
-        }
+\author{Benedikt Biedermann\thanksref{wurz}
+\and
+Simon Brass\thanksref{sieg}
+\and
+Ansgar Denner\thanksref{wurz}
+\and
+Stefan Dittmaier\thanksref{frei}
+\and
+Michele Grossi\thanksref{pavia,ibm}
+\and
+Alexander Karlberg\thanksref{uzh} 
+\and
+Mathieu Pellen\thanksref{wurz,e1}
+\and
+Giovanni  Pelliccioli\thanksref{unito}
+\and
+Michael Rauch\thanksref{kit}
+\and
+J\"urgen Reuter\thanksref{desy}
+\and
+Vincent Rothe\thanksref{desy} 
+\and
+Christopher Schwan\thanksref{frei}
+\and
+Pascal Stienemeier\thanksref{desy}
+\and
+Marco Zaro\thanksref{nikh,e2}
+}
+
+
+\thankstext{e1}{e-mail: mpellen@physik.uni-wuerzburg.de}
+\thankstext{e2}{e-mail: m.zaro@nikhef.nl}
+
+\institute{Universit\"at W\"urzburg, %
+Institut f\"ur Theoretische Physik und Astrophysik,  %
+Emil-Hilb-Weg 22, %
+97074 W\"urzburg, %
+Germany\label{wurz} 
+\and
+Universit\"at Siegen, Department Physik, %
+ Walter-Flex-Str.3, %
+57068 Siegen, Germany\label{sieg}
+\and
+Albert-Ludwigs-Universit\"at Freiburg, Physikalisches Institut, %
+ Hermann-Herder-Str.\ 3, %
+79104 Freiburg, Germany\label{frei}
+\and
+Universit\'a di Pavia, Dipartimento di Fisica and INFN, Sezione di Pavia, %
+Via A. Bassi 6, %
+27100 Pavia, %
+Italy\label{pavia}
+\and
+IBM Italia s.p.a. %
+Circonvallazione Idroscalo , %
+20090 Segrate (MI), %
+Italy\label{ibm}
+\and
+Department of Physics, University of Z\"urich, %
+CH-8057 Z\"urich, 
+Switzerland\label{uzh}
+\and
+Universit\`a di Torino, Dipartimento di Fisica and INFN, Sezione di Torino, %
+Via P. Giuria 1, %
+10125 Torino, %
+Italy\label{unito}
+\and
+Institute for Theoretical Physics, Karlsruhe Institute of
+Technology (KIT), %
+Karlsruhe, 
+Germany\label{kit}
+\and
+DESY Theory Group, %
+Notkestr. 85, %
+D-22607 Hamburg, 
+Germany\label{desy}
+\and
+Nikhef,
+Science Park 105,
+1098XG Amsterdam,
+The Netherlancs\label{nikh}
+}
 
 \maketitle
-
-\newpage
 
 \input{abstract}
 
