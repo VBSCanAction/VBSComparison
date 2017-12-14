@@ -76,7 +76,7 @@ plot \
 "../MG5_aMC/NLO/z_j3_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/NLO/zstar_-j3-_VBF_CUTS_index__14.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../Recola/NLO/histogram_zeppenfeld_zj3_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
-"../BONSAY/NLO/ew-nlo.zj3" u 1:(BONSAY_fact*$2*0.05) ls 6 t 'BONSAY',\
+"../BONSAY/NLO/ew-nlo.zj3s" u 1:(BONSAY_fact*$2*0.05) ls 6 t 'BONSAY',\
 
 unset label
 set yrange [0.85:1.15]
@@ -99,7 +99,7 @@ plot \
 "<paste ../VBFNLO/NLO/hist.zj3.dat ../MG5_aMC/NLO/z_j3_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/NLO/hist.zj3.dat ../POWHEG/NLO/zstar_-j3-_VBF_CUTS_index__14.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
 "<paste ../VBFNLO/NLO/hist.zj3.dat ../Recola/NLO/histogram_zeppenfeld_zj3_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
-"<paste ../VBFNLO/NLO/hist.zj3.dat ../BONSAY/NLO/ew-nlo.zj3" u (($1+$2)/2):(BONSAY_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
+"<paste ../VBFNLO/NLO/hist.zj3.dat ../BONSAY/NLO/ew-nlo.zj3s" u (($1+$2)/2):(BONSAY_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 
 
 
