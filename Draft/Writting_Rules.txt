@@ -1,0 +1,15 @@
+- British English
+- EM coupling is \alpha (and not \alpha_ew)
+- Electroweak (EW)
+- Ref.~\cite{X1} or Ref.~\cite{X1,X2} unless it is at the beginning of a sentence, then it is Reference~\cite{X1} References~\cite{X1,X2}
+- cross section
+- Don't write "infinite" Latex lines, go to the line at least after each sentence.
+- all variables are in italic while constants are in roman.
+This applies to the particle's name.
+For example "W" boson is roman while quarks "q" is roman.
+- The latin abreviaiton are in italic: \emph{i.e.}\ or \emph{e.g.}\ for example.
+- Eq.~\eqref{X}
+- Capital M for the mass of the gauge bosons.
+- Small m for the mass of the other particles.
+- invariant mass is small m.
+- p_{{\rm T,j}} for example.
