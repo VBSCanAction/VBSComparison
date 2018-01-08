@@ -1,7 +1,7 @@
 \begin{table*}[ht!]
     \footnotesize
     \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
-        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alpha^5\alpha_s)$  \\
+        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alphas \alpha^5)$  \\
         \hline
         \hline
         {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
@@ -48,7 +48,7 @@ One loop integrals are evaluated using the {\sc Collier} library
         \MP{Detail of the approximation done, divergent part, assumed to cancel etc.}
         
   \item {{\sc{Phantom}}~\cite{Ballestrero:2007xq} is a dedicated tree--level Monte Carlo for six parton final states at $pp,\, p\bar{p}$
-  and $e^+e^-$ colliders at $\alpha_{ew}^6$ and $\alpha_{ew}^4\alpha_s^2$ including interferences between the two sets of diagrams.
+  and $e^+e^-$ colliders at $\alpha_{ew}^6$ and $\alpha_{ew}^4\alphas^2$ including interferences between the two sets of diagrams.
 It employs complete tree--level matrix elements in the complex--mass scheme~\cite{Denner:2006ic} computed via the modular helicity 
 formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}. The integration uses a multichannel approach~\cite{BERENDS1985441} and an adaptive
 strategy~\cite{PETERLEPAGE1978192}. {\sc{Phantom}} generates unweighted events at parton--level for both the SM and a few instances of BSM theories.}      
@@ -82,7 +82,7 @@ resonances.
 \end{itemize}
 
 % The complete comparison of the codes will be published in a separate work. Here, we present some preliminary results obtained at LO ($\mathcal O (\alpha^6)$) and including
-NLO QCD corrections at fixed-order $\mathcal O (\alpha^6\alpha_s)$, for the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$.
+NLO QCD corrections at fixed-order $\mathcal O (\alpha^6\alphas)$, for the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$.
 In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
 \begin{itemize}
     \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
@@ -90,7 +90,7 @@ In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In pa
     \item diagrams which do not feature two resonant vector bosons are included;
     \item the so-called non-factorisable (NF) QCD corrections, that is the corrections where (real or virtual) gluons are exchanged between different quark lines,
         are included;
-    \item EW corrections to the $\mathcal O (\alpha^5\alpha_s)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
+    \item EW corrections to the $\mathcal O (\alpha^5\alphas)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
         the  $\mathcal O (\alpha^6$) term.
 \end{itemize}
 %
