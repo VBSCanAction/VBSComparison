@@ -1,0 +1,102 @@
+# BEGIN PLOT
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+Title=Exclusive jet cross section
+RatioPlot=1
+LogY=0
+RatioPlotYLabel=Ratio
+RatioPlotSameStyle=1
+RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+XLabel=number of jets
+YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=red
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=red
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=red
+ScaledBy=1
+Title=NLO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.531194e-01	1.208222e-04	1.208222e-04
+2.500000e+00	3.500000e+00	4.172104e-01	4.445038e-05	4.445038e-05
+3.500000e+00	4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.500000e+00	5.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=blue
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=blue
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=blue
+ScaledBy=6.19466512584469066e-06
+Title=VBFNLO 3+Herwig 7
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.939483e-01	2.074311e-04	2.074311e-04
+2.500000e+00	3.500000e+00	2.551254e-01	1.090702e-04	1.090702e-04
+3.500000e+00	4.500000e+00	4.435970e-02	4.918531e-05	4.918531e-05
+4.500000e+00	5.500000e+00	6.529794e-03	2.060265e-05	2.060265e-05
+5.500000e+00	6.500000e+00	8.922302e-04	8.024625e-06	8.024625e-06
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=brown
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=brown
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=brown
+ScaledBy=9.99999999999999334e-01
+Title=MG5_aMC+Pythia 8
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.366809e-01	2.556592e-03	2.556592e-03
+2.500000e+00	3.500000e+00	4.146215e-01	2.039084e-03	2.039084e-03
+3.500000e+00	4.500000e+00	8.456748e-02	1.243526e-03	1.243526e-03
+4.500000e+00	5.500000e+00	1.283907e-02	6.830906e-04	6.830906e-04
+5.500000e+00	6.500000e+00	1.429134e-03	3.597096e-04	3.597096e-04
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=cyan
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=cyan
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=cyan
+ScaledBy=2.66577807397533929e-02
+Title=PHANTOM+???
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	6.138887e-01	9.045692e-04	9.045692e-04
+2.500000e+00	3.500000e+00	4.079707e-01	7.374141e-04	7.374141e-04
+3.500000e+00	4.500000e+00	1.504712e-01	4.478408e-04	4.478408e-04
+4.500000e+00	5.500000e+00	4.571676e-02	2.468509e-04	2.468509e-04
+5.500000e+00	6.500000e+00	1.282373e-02	1.307387e-04	1.307387e-04
+# END HISTO1D
+
