@@ -1,28 +1,67 @@
 As mentioned previously, the EW contribution is dominated by the scattering of two W gauge bosons.
-Therefore it is justified to approximation the full EW contributions simply 
+Therefore it is justified to approximate the full EW contributions simply by the VBS contributions.
+Nonetheless, this set of contributions is not gauge invariant.
+To make it gauge-invariant, one should project on-shell the incoming W boson.
+Unfortunately, this momentum is space-like and thus a simple on-shell projection is not possible.
+Instead, one can keep the W boson leg connected to the external quark line off-shell while the one connected to the scattering is put on-shell.
+Then the polarisation of the gauge boson is accommodated following the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
+Such an approximation is usually called effective vector-boson approximation (EVBA).
 
+A more refined approximation consists in considering all $t$- and $u$- diagrams and square them separately.
+Nonetheless, different type of diagrams are not squared which amounts to neglecting interferences.
+These interferences are expected to be small in the VBS fiducial region.
+The $s$-channel contributions can still be left out.
+This approximation is often called $t$-/$u$- approximation or even VBS approximation.
+We will adopt the latter denomination in the following of the article.
+Such an approximation is implemented at LO in the computer codes {\sc Bonsay} and {\sc Powheg}.
+The physical origin of this approximation is that each proton emitting a quark represent two independent copies of $SU_c\left(3\right)$ gauge group.
 
-Describe the physics and mention the code that simulate these cases. \\
-Start with LO (one paragraph each). \\
+The squared matrix element of the $s$-channel contributions can then be added but all interferences between different kinematic channels are neglected.
+This is what is done in {\sc VBFNLO}.
 
-- Details on the description starting from the VBS approximation which we define as the t-u approximation (other names in the litterature) \\
-Start from the idea of two independent protons etc. (POWHEG) \\
-- adding $s$-channel contributions, explain why this is possible to add them separately (VBFNLO)\\
-- Full computation (MG, MoCaNLO-Recola, Phantom) \\
+All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard}) consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
+Note that the final W boson can always be considered either on-shell or off-shell without affecting the previous discussion.
+All the codes mentioned here are described in details in the following sub-section.
 
-Move to NLO (one paragraph each). \\
+Moving on to NLO accuracy, one can extend the approximation presented at LO.
+The VBS approximation at NLO is simply extending the same approximation to real as well as to virtual corrections.
+This is implemented in {\sc POWHEG}.
+This approximation can be used in combination with a double-pole approximation [REF] for the virtual contribution.
+This require the computation of factorisable as well as non-factorisable corrections \cite{Dittmaier:2015bfe} separately.
+Such an approximation is implemented in {\sc Bonsay}.
+In {\sc VBFNLO}, the VBS approximation at NLO with $s$-channel contributions is implemented.
 
-- VBS approximation at NLO (POWHEG) \\
-- VBS approximation at NLO + DPA for virt (Bonsay) \\
-- VBS approximation + $s$-channel (VBS NLO) \\
-- Hybrid VBS approximation (MG) \\
-- Explanation why EW corrections are needed in the full computation (Recola) \\
+A further refinement is to consider the full real contributions as well as part of the virtual \MP{I cannot remember exactly what is included}.
+This assumes a cancellation of infrared poles.
+Such predictions are provided by {\sc MG5\_aMC}.
 
-\MP{Part written by Giovanni to be included}
+Finally the full computation implies to also consider EW corrections in the virtual as well as real corrections \cite{Biedermann:2017bss}.
+Such full predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
 
-The VBS approximation [?] is frequently employed for VBS computations and we aim at the identification of kinematical regions where it provides trustworthy prediction for the $W^+W^+$ scattering.
-At LO, given the full set of diagrams contributing at order $\mathcal{O}(\alpha_{ew}^6)$, the approximations consists in:
+In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
 \begin{itemize}
-\item discarding interferences between $t$ and $u$ channel diagrams, which are expected to be suppressed in the fiducial volume, after VBF cuts;
-\item discarding $s$--channel diagrams shown in \autoref{fig:jjpeak_diag}, which contain $q\bar{q}'$ annihilations ($W^-\rightarrow q \bar{q}'$); with a hard cut on the $jj$--pair invariant mass, these contributions are strongly suppressed.
+    \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
+    \item interferences between diagrams are included at LO;
+    \item diagrams which do not feature two resonant vector bosons are included;
+    \item the so-called non-factorisable (NF) QCD corrections, that is the corrections where (real or virtual) gluons are exchanged between different quark lines,
+        are included;
+    \item EW corrections to the $\mathcal O (\alpha^5\alphas)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
+        the  $\mathcal O (\alpha^6$) term.
 \end{itemize}
+
+\begin{table*}[ht!]
+    \footnotesize
+    \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
+        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alphas \alpha^5)$  \\
+        \hline
+        \hline
+        {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
+        {\sc POWHEG}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc MG5\_aMC}      &  Yes      &  Yes      &  Yes              &  Yes   & No virt. &  No \\
+        {\sc MoCaNLO+Recola}&  Yes      &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
+        {\sc PHANTOM}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\  
+        {\sc VBFNLO}        &  Yes      &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc Whizard}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\  
+    \end{tabularx}
+    \caption{\label{tab:wg1_codes} Summary of the different properties of the codes employed in the comparison.}
+\end{table*}
