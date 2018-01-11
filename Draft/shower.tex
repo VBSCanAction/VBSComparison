@@ -34,13 +34,66 @@ We now turn to present the results:
     \begin{tabular}{c|c|c|c}
         Code  &  $\sigma[\rm{fb}]$  \\
         \hline
-        \hline
-%         {\sc Bonsay}  &  $X \pm 0.0009$  \\
-        {\sc MG5\_aMC}&  $X  \pm 0.003$  \\
+        {\sc MG5\_aMC}+{\sc Pythia8}&  $1.450 (1.368) \pm 0.$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}&  $1.445 (1.363) \pm 0.$  \\
         {\sc POWHEG}  &  $1.3633 \pm 0.0004$  \\
-%         {\sc Recola+MoCaNLO}  &  $X \pm 0.004 $ \\
         {\sc VBFNLO}  &  $X \pm 0.0003$  \\
+        \hline
+        {\sc MG5\_aMC}+{\sc Pythia8} (LO)&  $1.352 (1.275) \pm 0.$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++} (LO)&  $X  \pm 0.$  \\
+        {\sc PHANTOM} &  $1.235  \pm 0.$  \\
     \end{tabular}
-    \caption{\label{tab:wg1_NLOrates} Rates at NLO-QCD accuracy matched to parton shower within VBS cuts obtained with the different codes used in this comparison, 
-    for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process.}
+    \caption{\label{tab:wg1_NLOrates} Rates at NLO-QCD (LO-QCD) accuracy matched to parton shower within VBS cuts obtained with the different codes used in this comparison, 
+    for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process. Numbers in parentheses for the {\sc MG5\_aMC} simulations
+    are rescaled to account for the effect related to the boson widths computed by {\sc MadSpin}, see the text for details.}
+{\bf MZ: MC uncertainties???}
 \end{table}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/jetsexclusive.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
+\caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result
+    computed with \sc{VBFNLO}}
+\label{fig:PSnjet}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/m_jj.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/m_jj.pdf}
+\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the invariant mass of the two tagging jets.}
+\label{fig:PSmjj}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/Deltay_jj.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/Deltay_jj.pdf}
+\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the rapidity separation of the two tagging jets.}
+\label{fig:PSdyjj}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/pT_j1.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j1.pdf}
+\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the invariant mass of the two tagging jets.}
+\label{fig:PSpt1}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/pT_j2.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j2.pdf}
+\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the invariant mass of the two tagging jets.}
+\label{fig:PSpt2}
+\end{figure*}
+
+\begin{figure*}[hbt]
+\centering
+\includegraphics[width=0.47\textwidth]{figures/LOPS/y_j3.pdf}
+\includegraphics[width=0.47\textwidth]{figures/NLOPS/y_j3.pdf}
+\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the invariant mass of the two tagging jets.}
+\label{fig:PSy3}
+\end{figure*}
