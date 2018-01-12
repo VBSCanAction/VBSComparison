@@ -4,6 +4,14 @@
 *.out
 *.toc
 
+# BibTeX generated
+*.bbl
+*.blg
+
+# Latexmk generated
+*.fdb_latexmk
+*.fls
+
 # compiler generated
 *.o
 *.so
