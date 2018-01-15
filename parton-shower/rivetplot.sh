@@ -62,8 +62,15 @@ rivet-mkhtml -o rivet-LOPS \
 :"ErrorBandColor=brown"\
 :"RatioPlotErrorBandColor=brown"\
 :"ErrorBandOpacity=0.3"\
-  PHANTOM/plots_loose_cuts2/phantom_norm.yoda\
-:"Title=PHANTOM+???"\
+  MG5_aMC/run_HWPP_1M_LOPS.yoda\
+:"Title=MG5_aMC+Herwig 2.7.1"\
+:"LineColor=magenta"\
+:"ErrorBands=1"\
+:"ErrorBandColor=magenta"\
+:"RatioPlotErrorBandColor=magenta"\
+:"ErrorBandOpacity=0.3"\
+  PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda\
+:"Title=PHANTOM+Pythia 8"\
 :"LineColor=cyan"\
 :"ErrorBands=1"\
 :"ErrorBandColor=cyan"\

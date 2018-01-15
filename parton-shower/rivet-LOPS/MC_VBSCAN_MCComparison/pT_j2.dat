@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/pT_j2
-DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/pT_j2
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/pT_j2
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/pT_j2 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/pT_j2
 Title=Transverse momentum of the subleading jet
 RatioPlot=1
 LogY=1
@@ -177,16 +177,71 @@ YLabel=
 9.750000e+02	1.000000e+03	1.059759e-06	3.671631e-07	3.671631e-07
 # END HISTO1D
 
-# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/pT_j2
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/pT_j2
+ErrorBandColor=magenta
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=magenta
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/pT_j2
+RatioPlotErrorBandColor=magenta
+ScaledBy=6.19645389419520692e-06
+Title=MG5_aMC+Herwig 2.7.1
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.500000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+01	5.000000e+01	8.245992e-03	4.526042e-05	4.526042e-05
+5.000000e+01	7.500000e+01	1.173930e-02	5.401773e-05	5.401773e-05
+7.500000e+01	1.000000e+02	1.019366e-02	5.037622e-05	5.037622e-05
+1.000000e+02	1.250000e+02	7.407736e-03	4.294389e-05	4.294389e-05
+1.250000e+02	1.500000e+02	5.101168e-03	3.564938e-05	3.564938e-05
+1.500000e+02	1.750000e+02	3.396152e-03	2.908085e-05	2.908085e-05
+1.750000e+02	2.000000e+02	2.263193e-03	2.375433e-05	2.375433e-05
+2.000000e+02	2.250000e+02	1.513422e-03	1.943752e-05	1.943752e-05
+2.250000e+02	2.500000e+02	1.072234e-03	1.633233e-05	1.633233e-05
+2.500000e+02	2.750000e+02	7.430788e-04	1.362093e-05	1.362093e-05
+2.750000e+02	3.000000e+02	5.291772e-04	1.150607e-05	1.150607e-05
+3.000000e+02	3.250000e+02	3.898809e-04	9.880187e-06	9.880187e-06
+3.250000e+02	3.500000e+02	2.929684e-04	8.543021e-06	8.543021e-06
+3.500000e+02	3.750000e+02	2.025001e-04	7.110549e-06	7.110549e-06
+3.750000e+02	4.000000e+02	1.509456e-04	6.146682e-06	6.146682e-06
+4.000000e+02	4.250000e+02	1.050919e-04	5.151635e-06	5.151635e-06
+4.250000e+02	4.500000e+02	8.402392e-05	4.590397e-06	4.590397e-06
+4.500000e+02	4.750000e+02	7.138316e-05	4.206292e-06	4.206292e-06
+4.750000e+02	5.000000e+02	4.932376e-05	3.513996e-06	3.513996e-06
+5.000000e+02	5.250000e+02	4.089660e-05	3.183796e-06	3.183796e-06
+5.250000e+02	5.500000e+02	2.404224e-05	2.441120e-06	2.441120e-06
+5.500000e+02	5.750000e+02	2.181152e-05	2.325116e-06	2.325116e-06
+5.750000e+02	6.000000e+02	1.759793e-05	2.117701e-06	2.117701e-06
+6.000000e+02	6.250000e+02	1.660650e-05	2.058865e-06	2.058865e-06
+6.250000e+02	6.500000e+02	1.363220e-05	1.838165e-06	1.838165e-06
+6.500000e+02	6.750000e+02	8.179320e-06	1.466348e-06	1.466348e-06
+6.750000e+02	7.000000e+02	7.931460e-06	1.402097e-06	1.402097e-06
+7.000000e+02	7.250000e+02	4.957164e-06	1.108455e-06	1.108455e-06
+7.250000e+02	7.500000e+02	3.222156e-06	8.936653e-07	8.936653e-07
+7.500000e+02	7.750000e+02	3.470014e-06	9.274003e-07	9.274003e-07
+7.750000e+02	8.000000e+02	4.461448e-06	1.051573e-06	1.051573e-06
+8.000000e+02	8.250000e+02	1.487149e-06	6.071260e-07	6.071260e-07
+8.250000e+02	8.500000e+02	9.914328e-07	4.957164e-07	4.957164e-07
+8.500000e+02	8.750000e+02	1.239291e-06	5.542277e-07	5.542277e-07
+8.750000e+02	9.000000e+02	1.982865e-06	7.010487e-07	7.010487e-07
+9.000000e+02	9.250000e+02	7.435744e-07	4.293029e-07	4.293029e-07
+9.250000e+02	9.500000e+02	9.914328e-07	4.957164e-07	4.957164e-07
+9.500000e+02	9.750000e+02	7.435744e-07	4.293029e-07	4.293029e-07
+9.750000e+02	1.000000e+03	4.957164e-07	3.505244e-07	3.505244e-07
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/pT_j2
 ErrorBandColor=cyan
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=cyan
 LineStyle=solid
-Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm.yoda/MC_VBSCAN_MCComparison/pT_j2
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/pT_j2
 RatioPlotErrorBandColor=cyan
 ScaledBy=2.66577807397533929e-02
-Title=PHANTOM+???
+Title=PHANTOM+Pythia 8
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
