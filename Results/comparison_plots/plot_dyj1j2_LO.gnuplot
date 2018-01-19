@@ -76,9 +76,9 @@ set key at graph 0.7, graph 0.4 noautotitles spacing 2.4
 
 plot \
 "../VBFNLO/LO/hist.yjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/LO/dy_j1j2_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../MG5_aMC/LO/Dyjj_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/LO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/LO/histogram_rapiditdy_j1j2_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
 "../BONSAY/LO/ew-lo.dyjj" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../WHIZARD/LO/hist_DeltaRapJets.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
 "../PHANTOM/LO/EW6/dyjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
@@ -101,9 +101,9 @@ set ylabel 'Ratio /VBFNLO' offset 1
 
 plot \
 "<paste ../VBFNLO/LO/hist.yjj.dat ../VBFNLO/LO/hist.yjj.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/LO/hist.yjj.dat ../MG5_aMC/LO/dy_j1j2_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
+"<paste ../VBFNLO/LO/hist.yjj.dat ../MG5_aMC/LO/Dyjj_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/LO/hist.yjj.dat ../POWHEG/LO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/LO/hist.yjj.dat ../Recola/LO/histogram_rapiditdy_j1j2_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/LO/hist.yjj.dat ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/LO/hist.yjj.dat ../BONSAY/LO/ew-lo.dyjj" u (($1+$2)/2):(BONSAY_fact*$10*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 "<paste ../VBFNLO/LO/hist.yjj.dat ../WHIZARD/LO/hist_DeltaRapJets.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
 "<paste ../VBFNLO/LO/hist.yjj.dat ../PHANTOM/LO/EW6/dyjj.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
