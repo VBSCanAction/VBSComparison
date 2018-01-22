@@ -1,4 +1,4 @@
-In the comparison, the following codes are used: 
+In the comparison, the following codes are used:
 \begin{itemize}
  \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator
 and matrix elements taken from several sources: Born matrix elements are
@@ -11,9 +11,9 @@ One loop integrals are evaluated using the {\sc Collier} library
   \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
       including NLO QCD corrections both at fixed order and including matching to parton showers. It makes use of the FKS subtraction method~\cite{Frixione:1995ms,
         Frixione:1997np} (automated in the module {\sc MadFKS}~\cite{Frederix:2009yq,
-        Frederix:2016rdc}) for regulating IR singularities. The computationsof one-loop amplitudes are carried out by switching dynamically between 
+        Frederix:2016rdc}) for regulating IR singularities. The computations of one-loop amplitudes are carried out by switching dynamically between
         two integral-reduction techniques, OPP~\cite{Ossola:2006us} or Laurent-series expansion~\cite{Mastrolia:2012bu},
-        and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which 
+        and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
         in turn exploits {\sc CutTools}~\cite{Ossola:2007ax}, {\sc Ninja}~\cite{Peraro:2014cba,
         Hirschi:2016mdz}, or {\sc IREGI}~\cite{ShaoIREGI}, together with an in-house implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}.\\
         The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
@@ -24,19 +24,19 @@ One loop integrals are evaluated using the {\sc Collier} library
 > output #4
 \end{verbatim}
   With these commands the complex-mass scheme is turned on {\tt \#1}, then the NLO-capable model is loaded {\tt \#2}\footnote{Despite
-            the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electro-weak corrections, it is not yet possible to compute such corrections 
+            the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electro-weak corrections, it is not yet possible to compute such corrections
         with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
-        and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections, 
+        and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections,
         only loops with QCD-interacting particles are generated.
         \MP{Detail of the approximation done, divergent part, assumed to cancel etc.}
-        
+
   \item {{\sc{Phantom}}~\cite{Ballestrero:2007xq} is a dedicated tree--level Monte Carlo for six parton final states at $pp,\, p\bar{p}$
   and $e^+e^-$ colliders at $\alpha^6$ and $\alpha^4\alphas^2$ including interferences between the two sets of diagrams.
-It employs complete tree--level matrix elements in the complex--mass scheme~\cite{Denner:2006ic} computed via the modular helicity 
+It employs complete tree--level matrix elements in the complex--mass scheme~\cite{Denner:2006ic} computed via the modular helicity
 formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}. The integration uses a multichannel approach~\cite{BERENDS1985441} and an adaptive
-strategy~\cite{PETERLEPAGE1978192}. {\sc{Phantom}} generates unweighted events at parton--level for both the SM and a few instances of BSM theories.}      
+strategy~\cite{PETERLEPAGE1978192}. {\sc{Phantom}} generates unweighted events at parton--level for both the SM and a few instances of BSM theories.}
 
-  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for mathcing NLO-QCD calculations with parton showers.
+  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automaticaly construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
 \MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}

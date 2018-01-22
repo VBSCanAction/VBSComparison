@@ -1,10 +1,10 @@
-We simulate VBS production at the LHC, with a center-of-mass energy $\sqrt s = 13 \TeV$. We assume five massless flavours in the proton, and employ the NNPDF~3.0 parton 
+We simulate VBS production at the LHC, with a center-of-mass energy $\sqrt s = 13 \TeV$. We assume five massless flavours in the proton, and employ the NNPDF~3.0 parton
 density~\cite{Ball:2014uwa}
 with NLO QCD evolution (the {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} for this set is 260000) and strong coupling constant $\alphas\left( \MZ \right) = 0.118$. Since
-the employed PDF set has no photonic density, photon-induced processes are not considered. Initial-state collinear singularity are factorised with the  ${\overline{\rm MS}}$ 
+the employed PDF set has no photonic density, photon-induced processes are not considered. Initial-state collinear singularities are factorised with the  ${\overline{\rm MS}}$
 scheme, consistently with what is done in NNPDF.\\
 We use the following values for the mass and width of the massive particles:
-% 
+%
 \begin{alignat}{2}
                   \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
                 \MZOS &=  91.1876\GeV,      & \quad \quad \quad \GZOS &= 2.4952\GeV,  \nonumber \\
@@ -15,7 +15,7 @@ and renormalise the EW coupling in the $G_\mu$ scheme \cite{Denner:2000bj} where
 \begin{equation}
     G_{\mu}    = 1.16637\times 10^{-5}\GeV^{-2}.
 \end{equation}
-The derived value of the EW coupling $\alpha$, corresponding to our choice of input parameters, is 
+The derived value of the EW coupling $\alpha$, corresponding to our choice of input parameters, is
 \begin{equation}
  \alpha = 7.555310522369 \times 10^{-3}. \\
 \end{equation}
@@ -28,7 +28,7 @@ The renormalisation and factorisation scales are set dynamically as
  \mu_{\rm ren} = \mu_{\rm fac} = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}},
 \end{equation}
 
-Cross sections and distribution are computed within the following VBS cuts inspired from experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}: 
+Cross sections and distribution are computed within the following VBS cuts inspired from experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}:
 \begin{itemize}
     \item The two same-sign charged leptons are required to have
         \begin{align}
@@ -39,7 +39,7 @@ Cross sections and distribution are computed within the following VBS cuts inspi
         \begin{align}
           \etsub{\text{miss}}=p_{\rm T, miss} >  40\GeV\,.
         \end{align}
-    \item QCD partons (quark and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with distance parameter $R=0.4$. Jets are required
+    \item QCD partons (quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with distance parameter $R=0.4$. Jets are required
         to have
         \begin{align}
          \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad \Delta R_{\Pj\Pl} > 0.3 \,.
@@ -52,7 +52,7 @@ Cross sections and distribution are computed within the following VBS cuts inspi
 %         \begin{align}
 %          \qquad\Delta R_{\Pj\Pl} > 0.3 .
 %         \end{align}
-    \item When EW corrections are computed, real photons and charged fermion are clustered together using the anti-$k_T$ algorithm with 
+    \item When EW corrections are computed, real photons and charged fermion are clustered together using the anti-$k_T$ algorithm with
         radius parameter $R=0.1$. In this case, leptons and quarks mentioned above must be understood as {\it dressed fermions}. Photons
         which are not combined at this step are clustered with QCD partons to form jets as it is described previously.
 \end{itemize}
