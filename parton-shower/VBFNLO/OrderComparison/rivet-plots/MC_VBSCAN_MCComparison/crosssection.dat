@@ -1,0 +1,79 @@
+# BEGIN PLOT
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+Title=Integrated cross-section
+RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotSameStyle=1
+RatioPlot=1
+LogY=0
+RatioPlotYLabel=Ratio
+XLabel=$\sqrt{s}$~[GeV]
+ShowZero=0
+YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=red
+ErrorBandOpacity=0.3
+ErrorBands=0
+LineColor=red
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=red
+ScaledBy=1.91088153257004890e-04
+Title=NLO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.371503e+00	8.863793e-01	8.863793e-01
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=green
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=green
+ScaledBy=6.19836737110714303e-06
+Title=LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.383874e+00	2.453750e-04	2.453750e-04
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=brown
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=brown
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=brown
+ScaledBy=1.05355021816678726e-03
+Title=MC@NLO-Dipole
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.338925e+00	6.295618e-04	6.295618e-04
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+ErrorBandColor=blue
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=blue
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotErrorBandColor=blue
+ScaledBy=6.19466512584469066e-06
+Title=MC@LO-Dipole
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.300980e+00	2.405073e-04	2.405073e-04
+# END HISTO1D
+

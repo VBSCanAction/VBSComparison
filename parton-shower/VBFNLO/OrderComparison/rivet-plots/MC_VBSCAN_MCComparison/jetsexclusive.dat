@@ -1,0 +1,102 @@
+# BEGIN PLOT
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+Title=Exclusive jet cross section
+RatioPlot=1
+LogY=0
+RatioPlotYLabel=Ratio
+RatioPlotSameStyle=1
+RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+XLabel=number of jets
+YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=red
+ErrorBandOpacity=0.3
+ErrorBands=0
+LineColor=red
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/NLO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=red
+ScaledBy=1.91088153257004890e-04
+Title=NLO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.850521e-01	8.863790e-01	8.863790e-01
+2.500000e+00	3.500000e+00	3.864511e-01	6.070185e-04	6.070185e-04
+3.500000e+00	4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.500000e+00	5.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=green
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/LO/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=green
+ScaledBy=6.19836737110714303e-06
+Title=LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.383874e+00	2.453750e-04	2.453750e-04
+2.500000e+00	3.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+3.500000e+00	4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+4.500000e+00	5.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=brown
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=brown
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatNLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=brown
+ScaledBy=1.05355021816678726e-03
+Title=MC@NLO-Dipole
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.001434e+00	5.144236e-04	5.144236e-04
+2.500000e+00	3.500000e+00	2.744722e-01	2.860627e-04	2.860627e-04
+3.500000e+00	4.500000e+00	5.263509e-02	1.265980e-04	1.265980e-04
+4.500000e+00	5.500000e+00	8.723162e-03	1.520414e-04	1.520414e-04
+5.500000e+00	6.500000e+00	1.449968e-03	1.031592e-04	1.031592e-04
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ErrorBandColor=blue
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=blue
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/branches/VBSCAN/runs/PS/MCatLO-Dipole/LHC.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotErrorBandColor=blue
+ScaledBy=6.19466512584469066e-06
+Title=MC@LO-Dipole
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.939483e-01	2.074311e-04	2.074311e-04
+2.500000e+00	3.500000e+00	2.551254e-01	1.090702e-04	1.090702e-04
+3.500000e+00	4.500000e+00	4.435970e-02	4.918531e-05	4.918531e-05
+4.500000e+00	5.500000e+00	6.529794e-03	2.060265e-05	2.060265e-05
+5.500000e+00	6.500000e+00	8.922302e-04	8.024625e-06	8.024625e-06
+# END HISTO1D
+
