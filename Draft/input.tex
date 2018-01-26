@@ -1,9 +1,9 @@
-We simulate VBS production at the LHC, with a center-of-mass energy $\sqrt s = 13 \TeV$. We assume five massless flavours in the proton, and employ the NNPDF~3.0 parton
-density~\cite{Ball:2014uwa}
-with NLO QCD evolution (the {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} for this set is 260000) and strong coupling constant $\alphas\left( \MZ \right) = 0.118$. Since
-the employed PDF set has no photonic density, photon-induced processes are not considered. Initial-state collinear singularities are factorised with the  ${\overline{\rm MS}}$
-scheme, consistently with what is done in NNPDF.\\
-We use the following values for the mass and width of the massive particles:
+The VBS production mechanism is simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$. 
+The five flavour scheme is used and the NNPDF~3.0 parton density~\cite{Ball:2014uwa} with NLO QCD evolution is employed and strong coupling constant $\alphas\left( \MZ \right) = 0.118$.\footnote{The corresponding {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} is 260000.} 
+Since the employed PDF set has no photonic density, photon-induced processes are not considered.
+Initial-state collinear singularities are factorised with the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF.
+
+For the mass and width of the massive particles, the following values are used:
 %
 \begin{alignat}{2}
                   \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
@@ -11,24 +11,33 @@ We use the following values for the mass and width of the massive particles:
                 \MWOS &=  80.385\GeV,       & \GWOS &= 2.085\GeV,  \nonumber \\
                 M_{\rm H} &=  125.0\GeV,       &  \GH   &=  4.07 \times 10^{-3}\GeV,
 \end{alignat}
-and renormalise the EW coupling in the $G_\mu$ scheme \cite{Denner:2000bj} where
+%
+and the EW coupling is renormalised in the $G_\mu$ scheme \cite{Denner:2000bj} where
+%
 \begin{equation}
     G_{\mu}    = 1.16637\times 10^{-5}\GeV^{-2}.
 \end{equation}
-The derived value of the EW coupling $\alpha$, corresponding to our choice of input parameters, is
+%
+The numerical value of $\alpha$, corresponding to the choice of input parameters, is
+%
 \begin{equation}
- \alpha = 7.555310522369 \times 10^{-3}. \\
+ \alpha = 7.555310522369 \times 10^{-3}.
 \end{equation}
-We employ the complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg} to treat unstable intermediate particles in a gauge-invariant manner {\bf CHECK THAT ALL CODES USE THE CMS}.\\
+%
+The complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg} is used throughout to treat unstable intermediate particles in a gauge-invariant manner.
 
-The renormalisation and factorisation scales are set dynamically as
+The renormalisation and factorisation scales are set dynamically to
 %
 \begin{equation}
 \label{eq:defscale}
- \mu_{\rm ren} = \mu_{\rm fac} = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}},
+ \mu_{\rm ren} = \mu_{\rm fac} = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}}.
 \end{equation}
+%
+This choice of scale has been shown to provide stable NLO predictions \cite{Denner:2012dz}.
 
-Cross sections and distribution are computed within the following VBS cuts inspired from experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}:
+The cross sections and distribution are computed within the following event selecton.
+These are inspired from experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}.
+
 \begin{itemize}
     \item The two same-sign charged leptons are required to have
         \begin{align}

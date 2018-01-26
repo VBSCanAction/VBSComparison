@@ -1,12 +1,10 @@
 In the comparison, the following codes are used:
+
 \begin{itemize}
- \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator
-and matrix elements taken from several sources: Born matrix elements are
-adapted from the program {\sc Lusifer} \cite{Dittmaier:2002ap} for the partonic
-processes, real matrix elements are written by Marina Billoni, and virtual
-matrix elements by Stefan Dittmaier.
-One loop integrals are evaluated using the {\sc Collier} library
-\cite{Denner:2014gla,Denner:2016kdg}.
+
+ \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator and matrix elements taken from several sources.
+ Born matrix elements are adapted from the program {\sc Lusifer} \cite{Dittmaier:2002ap} for the partonic processes, real matrix elements are written by Marina Billoni, and virtual matrix elements by Stefan Dittmaier.
+One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
 
   \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
       including NLO QCD corrections both at fixed order and including matching to parton showers. It makes use of the FKS subtraction method~\cite{Frixione:1995ms,
@@ -30,18 +28,18 @@ One loop integrals are evaluated using the {\sc Collier} library
         only loops with QCD-interacting particles are generated.
         \MP{Detail of the approximation done, divergent part, assumed to cancel etc.}
 
-  \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states at $\Pp \Pp,\, \Pp\bar{\Pp}$
-  and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alpha^4\alphas^2$ including interferences between the two sets of diagrams.
-It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:2006ic} computed via the modular helicity
-formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}. The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive
-strategy~\cite{Lepage:1977sw}. {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
+  \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
+  at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.
+It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
+The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
+{\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
 
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automaticaly construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
 \MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}
 
-\item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO}~\cite{MoCaNLO} and of the general matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
+\item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the general matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
 The fast integration is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}.
 The IR divergences appearing in the real corrections are handles with the help of the Cantani--Seymour dipole formalism \cite{Catani:1996vz,Dittmaier:1999mb}.
 To numerically evaluate the one-loop scalar and tensor integrals, {\sc Recola} relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg}.
@@ -65,7 +63,3 @@ the VBS channel in terms of both higher-dimensional operators as well as explici
 resonances.
 
 \end{itemize}
-
-
-%
-%
