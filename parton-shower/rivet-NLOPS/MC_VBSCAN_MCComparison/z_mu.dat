@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu
-DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu
 Title=Normalized average rapidity of the muon
 RatioPlot=1
 LogY=0
@@ -67,7 +67,7 @@ Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFN
 RatioPlotErrorBandColor=blue
 Scale=2
 ScaledBy=1.05355021816678726e-03
-Title=VBFNLO 3+Herwig 7
+Title=VBFNLO 3+Herwig 7-Dipole
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -101,6 +101,51 @@ YLabel=
 1.350000e+00	1.400000e+00	5.533622e-04	3.841819e-05	3.841819e-05
 1.400000e+00	1.450000e+00	4.239796e-04	3.323483e-05	3.323483e-05
 1.450000e+00	1.500000e+00	2.484804e-04	2.327771e-05	2.327771e-05
+# END HISTO1D
+
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/z_mu
+ErrorBandColor=cyan
+ErrorBandOpacity=0.3
+ErrorBands=1
+LineColor=cyan
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/z_mu
+RatioPlotErrorBandColor=cyan
+ScaledBy=6.13846458628156426e-05
+Title=VBFNLO 3+Herwig 7-QTilde
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e-02	3.586142e+00	4.779784e-03	4.779784e-03
+5.000000e-02	1.000000e-01	3.508480e+00	4.770468e-03	4.770468e-03
+1.000000e-01	1.500000e-01	3.333768e+00	4.789915e-03	4.789915e-03
+1.500000e-01	2.000000e-01	3.104320e+00	4.671198e-03	4.671198e-03
+2.000000e-01	2.500000e-01	2.784234e+00	4.344546e-03	4.344546e-03
+2.500000e-01	3.000000e-01	2.401268e+00	4.788564e-03	4.788564e-03
+3.000000e-01	3.500000e-01	1.988896e+00	3.789776e-03	3.789776e-03
+3.500000e-01	4.000000e-01	1.572296e+00	3.380228e-03	3.380228e-03
+4.000000e-01	4.500000e-01	1.154291e+00	2.922460e-03	2.922460e-03
+4.500000e-01	5.000000e-01	7.911946e-01	2.378814e-03	2.378814e-03
+5.000000e-01	5.500000e-01	5.594500e-01	1.979282e-03	1.979282e-03
+5.500000e-01	6.000000e-01	4.093662e-01	1.746511e-03	1.746511e-03
+6.000000e-01	6.500000e-01	2.925924e-01	1.541031e-03	1.541031e-03
+6.500000e-01	7.000000e-01	2.008144e-01	1.246600e-03	1.246600e-03
+7.000000e-01	7.500000e-01	1.364135e-01	1.524197e-03	1.524197e-03
+7.500000e-01	8.000000e-01	9.478176e-02	8.202448e-04	8.202448e-04
+8.000000e-01	8.500000e-01	6.666222e-02	7.323983e-04	7.323983e-04
+8.500000e-01	9.000000e-01	4.615278e-02	7.499211e-04	7.499211e-04
+9.000000e-01	9.500000e-01	3.192356e-02	5.280251e-04	5.280251e-04
+9.500000e-01	1.000000e+00	2.126358e-02	5.291584e-04	5.291584e-04
+1.000000e+00	1.050000e+00	1.509712e-02	3.890580e-04	3.890580e-04
+1.050000e+00	1.100000e+00	1.091425e-02	3.263993e-04	3.263993e-04
+1.100000e+00	1.150000e+00	7.098332e-03	3.541004e-04	3.541004e-04
+1.150000e+00	1.200000e+00	4.970948e-03	3.277841e-04	3.277841e-04
+1.200000e+00	1.250000e+00	3.506168e-03	1.513364e-04	1.513364e-04
+1.250000e+00	1.300000e+00	2.484880e-03	1.094962e-04	1.094962e-04
+1.300000e+00	1.350000e+00	1.938048e-03	1.448239e-04	1.448239e-04
+1.350000e+00	1.400000e+00	1.214616e-03	1.174617e-04	1.174617e-04
+1.400000e+00	1.450000e+00	7.504760e-04	5.178760e-05	5.178760e-05
+1.450000e+00	1.500000e+00	4.549942e-04	5.224004e-05	5.224004e-05
 # END HISTO1D
 
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/z_mu
@@ -194,7 +239,7 @@ ErrorBandColor=magenta
 ErrorBandOpacity=0.3
 ErrorBands=1
 LineColor=magenta
-LineStyle=solid
+LineStyle=dashed
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/z_mu
 RatioPlotErrorBandColor=magenta
 ScaledBy=4.29481468359931388e-06
