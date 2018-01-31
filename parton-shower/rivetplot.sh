@@ -62,7 +62,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"ErrorBandColor=blue"\
 :"RatioPlotErrorBandColor=blue"\
 :"ErrorBandOpacity=0.3"\
-  MG5_aMC/run_PY8_10M_NLOPS.yoda\
+  MG5_aMC/run_PY8_1M_LOPS.yoda\
 :"Title=MG5_aMC+Pythia 8"\
 :"LineColor=brown"\
 :"ErrorBands=1"\
