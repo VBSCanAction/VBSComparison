@@ -21,6 +21,10 @@ XLabel=number of jets
 YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
+XMin=1.5
+XMax=6.5
+YMin=0
+YMax=1.15
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/m_jj
@@ -28,6 +32,12 @@ Title=Dijet invariant mass
 XLabel=$m_{j1,j2}$~[GeV]
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~m_{j1,j2}$~[fb/GeV]
 RatioPlotSameStyle=1
+XMin=500
+XMax=4000
+YMin=2e-5
+YMax=2e-3
+LegendXPos=0.075
+LegendYPos=0.575
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/Deltay_jj
@@ -36,6 +46,12 @@ XLabel=$\Delta y_{j1,j2}$
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~\Delta y_{j1,j2}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
+XMin=2.5
+XMax=9
+YMin=0
+YMax=0.5
+LegendXPos=0.54
+LegendYPos=0.95
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/pT_j1
@@ -43,6 +59,12 @@ Title=Transverse momentum of the leading jet
 XLabel=$p_{T,j1}$~[GeV]
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~p_{T,j1}$~[fb/GeV]
 RatioPlotSameStyle=1
+XMin=25
+XMax=1000
+YMin=1e-5
+YMax=1e-2
+LegendXPos=0.53
+LegendYPos=0.99
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/y_j1
@@ -58,6 +80,12 @@ Title=Transverse momentum of the subleading jet
 XLabel=$p_{T,j2}$~[GeV]
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~p_{T,j2}$~[fb/GeV]
 RatioPlotSameStyle=1
+XMin=25
+XMax=1000
+YMin=1e-7
+YMax=2e-2
+LegendXPos=0.53
+LegendYPos=0.99
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/y_j2
@@ -66,6 +94,12 @@ XLabel=$y_{j2}$
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~y_{j2}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
+XMin=-4.5
+XMax=4.5
+YMin=0
+YMax=0.3
+LegendXPos=0.25
+LegendYPos=0.99
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/m_ll
@@ -104,6 +138,12 @@ XLabel=$y_{j3}$
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~y_{j3}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
+XMin=-4.5
+XMax=4.5
+YMin=0
+YMax=0.115
+LegendXPos=0.25
+LegendYPos=0.99
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/z_j3
@@ -112,5 +152,9 @@ XLabel=$z_{j3}$
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~z_{j3}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
+XMin=0
+XMax=1.5
+YMin=0
+YMax=1.2
 # END PLOT
 

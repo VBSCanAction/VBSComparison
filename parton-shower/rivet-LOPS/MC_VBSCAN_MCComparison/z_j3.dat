@@ -1,14 +1,18 @@
 # BEGIN PLOT
 LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_1M_LOPS.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda/MC_VBSCAN_MCComparison/z_j3
 DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_1M_LOPS.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/z_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda/MC_VBSCAN_MCComparison/z_j3
+YMax=1.2
 Title=Normalized average rapidity of the third jet
+RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_j3
+RatioPlotSameStyle=1
 RatioPlot=1
 LogY=0
 RatioPlotYLabel=Ratio
-RatioPlotSameStyle=1
-RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/z_j3
 XLabel=$z_{j3}$
+XMax=1.5
 YLabel=$d~\sigma_{WW\to e^+\nu \mu^+\nu}/d~z_{j3}$~[fb]
+XMin=0
+YMin=0
 Legend=1
 # END PLOT
 
@@ -66,7 +70,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/z_j3
 RatioPlotErrorBandColor=blue
 ScaledBy=6.19466512584469066e-06
-Title=VBFNLO 3+Herwig 7
+Title=VBFNLO 3+H7-Dipole
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -156,7 +160,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/z_j3
 RatioPlotErrorBandColor=magenta
 ScaledBy=6.19645389419520692e-06
-Title=MG5_aMC+Herwig++ 2.7.1
+Title=MG5_aMC+H++ 2.7.1
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -246,7 +250,7 @@ LineStyle=dashed
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda/MC_VBSCAN_MCComparison/z_j3
 RatioPlotErrorBandColor=green
 ScaledBy=2.66577797444126551e-06
-Title=PHANTOM+Herwig++ 2.7.1
+Title=PHANTOM+H++ 2.7.1
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
