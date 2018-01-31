@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FIGS="jetsexclusive m_jj pT_j1 pT_j2 Deltay_jj y_j3"
+FIGS="jetsexclusive m_jj pT_j1 pT_j2 y_j2 Deltay_jj y_j3 z_j3"
 
 for ORD in LOPS NLOPS; do
     for F in $FIGS; do
