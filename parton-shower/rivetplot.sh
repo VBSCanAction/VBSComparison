@@ -8,14 +8,14 @@ rivet-mkhtml -o rivet-NLOPS \
 :"RatioPlotErrorBandColor=red"\
 :"ErrorBandOpacity=0.3"\
   VBFNLO/Herwig-MCatNLO-DipoleShower.yoda\
-:"Title=VBFNLO 3+Herwig 7-Dipole"\
+:"Title=VBFNLO 3+H7-Dipole"\
 :"LineColor=blue"\
 :"ErrorBands=1"\
 :"ErrorBandColor=blue"\
 :"RatioPlotErrorBandColor=blue"\
 :"ErrorBandOpacity=0.3"\
   VBFNLO/Herwig-MCatNLO-DefaultShower.yoda\
-:"Title=VBFNLO 3+Herwig 7-QTilde"\
+:"Title=VBFNLO 3+H7-QTilde"\
 :"LineColor=cyan"\
 :"ErrorBands=1"\
 :"ErrorBandColor=cyan"\
@@ -33,7 +33,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"LineColor=green"\
 :"LineStyle=dashed"\
   MG5_aMC/run_HWPP_5M_NLOPS.yoda\
-:"Title=MG5_aMC+Herwig 2.7.1"\
+:"Title=MG5_aMC+H++ 2.7.1"\
 :"LineColor=magenta"\
 :"ErrorBands=1"\
 :"ErrorBandColor=magenta"\
@@ -56,7 +56,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor=red"\
 :"ErrorBandOpacity=0.3"\
   VBFNLO/Herwig-MCatLO-DipoleShower.yoda\
-:"Title=VBFNLO 3+Herwig 7"\
+:"Title=VBFNLO 3+H7-Dipole"\
 :"LineColor=blue"\
 :"ErrorBands=1"\
 :"ErrorBandColor=blue"\
@@ -70,7 +70,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor=brown"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/run_HWPP_1M_LOPS.yoda\
-:"Title=MG5_aMC+Herwig++ 2.7.1"\
+:"Title=MG5_aMC+H++ 2.7.1"\
 :"LineColor=magenta"\
 :"ErrorBands=1"\
 :"ErrorBandColor=magenta"\
@@ -84,7 +84,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor=cyan"\
 :"ErrorBandOpacity=0.3"\
   PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda\
-:"Title=PHANTOM+Herwig++ 2.7.1"\
+:"Title=PHANTOM+H++ 2.7.1"\
 :"LineColor=green"\
 :"ErrorBands=1"\
 :"ErrorBandColor=green"\

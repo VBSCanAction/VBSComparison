@@ -9,11 +9,11 @@ employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used
 and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For {\sc POWHEG}, the omonymous matching procedure is 
 employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8}
 {\bf MZ VERSION? if same as MG5, put it at the end together with the tune}. {\sc VBFNLO} makes it possible to choose between the {\sc MC@NLO} and {\sc POWHEG}
-matching, in both cases together with {\sc Herwig7}~CITEREF. Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8}.
+matching, in both cases together with {\sc Herwig7}~CITEREF. Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected.\\
 
 Results will be presented within the cuts described in Section~\ref{subsec:inputpar}, applied after shower and hadronization (this implies that jets
-are obtained by clustering stable hadrons, and not QCD partons). This implies that at the event-generation level, looser cuts (or no cuts at all)
+are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or no cuts at all)
 must be employed in order not to bias the results. {\bf MZ lepton-jet separation at the hard-event level?}.\\
 
 A slightly different setup has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
@@ -53,7 +53,7 @@ the following. For any observable, results will be presented in two plots, shown
 with different colours in the main frame. In the inset, these predictions are compared in both cases with the fixed-order prediciton at NLO accuracy (obtained with 
 {\sc VBFNLO}). For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above.\\
 
-The first observable we invesigate is the exclusive jet multiplicity, shown in Figure~\ref{fig:PSnjet}. Looking at the LO+PS predictions, one can appreciate that the
+The first observable we investigate is the exclusive jet multiplicity, shown in Figure~\ref{fig:PSnjet}. Looking at the LO+PS predictions, one can appreciate that the
 main effects are driven by the parton shower that is employed {\sc Herwig++/7} or {\sc Pythia8}, with the clear tendency of producing more radiation for the latter, 
 leading to higher jet multiplicities. Difference among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the shower. The main effect of NLO corrections for this (rather inclusive) observable is to stabilize the predictions for the two-jet bin, where discrepancies 
@@ -83,20 +83,20 @@ stabilization at NLO+PS. However, some (small) differences in the shape remain a
 obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; {\sc Powheg}\ displays an enhancement of the central region, and a consequent suppression in the
 peripheral region, while {\sc VBFNLO} shows an opposite behaviour. However, the effect is rather small, with the largest departure from the fixed-order prediction being 
 at most 10\%.\\
-Finally, we conclude the list of differential observable with two observables related to the third jet, the rapidity and the $z$ variable, Figures~\ref{fig:PSy3} and~\ref{fig:PSz3}. 
-{\bf MZ the rapidity can be dropped (check also the following discussion in case); if z is defined elsewhere in the paper, then add a ref to the proper sectiomn. Otherwise define it here} 
+Finally, focusing on the third jet, we conclude the list of differential observable with the rapidity and the $z$ variable, Figures~\ref{fig:PSy3} and~\ref{fig:PSz3}. 
+{\bf MZ the rapidity can be dropped (check also the following discussion in case); if z is defined elsewhere in the paper, then add a ref to the proper section. Otherwise define it here} 
 In general, for observables which involve the third jet, one 
 can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The rapidity and $z$ variable
 are a striking example: both at LO and NLO, the tendency of {\sc Pythia8} to generate more hard and central radiation (corresponding to low values of $z$) 
 is clearly visible; it is interesting to notice that
 this effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+Pythia8}. If it is true that the central enhancement
-is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC} with the fixed-NLO prediciton), however even at NLO+PS the central region 
+is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediciton), however even at NLO+PS the central region 
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. \\
 
 In conclusion, the comparison of tools including matching with parton-shower clearly shows the benefits of the inclusion of NLO corrections: for most observables described
 effectively at NLO accuracy differences between tools are at (or below) the 10\% level. {\bf MZ compare this number with scale uncertainties} 
 Some exceptions exist, e.g. the rapidity separation of the two tagging jets, which
-on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it still worth to investigate more in details the way QCD radiation is 
+on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in details the way QCD radiation is 
 generated {\bf MZ cite here H VBF at NNLO?}. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that 
 experimental analyses should rely as least as possible on those observables and, in any case, use conservative estimate of the theory uncertainties. In order to improve the
 description of these observables, a simulation of VBS+j at NLO, currently unavailable but within the reach of modern automated tools, is certainly desirable.

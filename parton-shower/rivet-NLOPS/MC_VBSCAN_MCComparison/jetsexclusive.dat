@@ -1,14 +1,18 @@
 # BEGIN PLOT
 LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_10M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+YMax=1.15
 Title=Exclusive jet cross section
+RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotSameStyle=1
 RatioPlot=1
 LogY=0
 RatioPlotYLabel=Ratio
-RatioPlotSameStyle=1
-RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 XLabel=number of jets
+XMax=6.5
 YLabel=$\sigma_{WW\to e^+\nu \mu^+\nu}$~[fb]
+XMin=1.5
+YMin=0
 Legend=1
 # END PLOT
 
@@ -43,7 +47,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=blue
 ScaledBy=1.05355021816678726e-03
-Title=VBFNLO 3+Herwig 7-Dipole
+Title=VBFNLO 3+H7-Dipole
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -65,7 +69,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=cyan
 ScaledBy=6.13846458628156426e-05
-Title=VBFNLO 3+Herwig 7-QTilde
+Title=VBFNLO 3+H7-QTilde
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -127,7 +131,7 @@ LineStyle=dashed
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/jetsexclusive
 RatioPlotErrorBandColor=magenta
 ScaledBy=4.29481468359931388e-06
-Title=MG5_aMC+Herwig 2.7.1
+Title=MG5_aMC+H++ 2.7.1
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
