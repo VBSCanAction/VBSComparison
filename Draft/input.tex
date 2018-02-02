@@ -1,5 +1,5 @@
-The VBS production mechanism is simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$. 
-The NNPDF~3.0 parton density~\cite{Ball:2014uwa} with five flavour scheme, NLO QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ is employed.\footnote{The corresponding {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} is 260000.} 
+The VBS production mechanism is simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$.
+The NNPDF~3.0 parton density~\cite{Ball:2014uwa} with five flavour scheme, NLO QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ is employed.\footnote{The corresponding {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} is 260000.}
 Since the employed PDF set has no photonic density, photon-induced processes are not considered.
 Initial-state collinear singularities are factorised with the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF.
 
@@ -15,7 +15,10 @@ For the mass and width of the massive particles, the following values are used:
 The measured on-shell (OS) values for the masses and widths of the W and Z bosons are converted into pole values for the gauge bosons ($V=\PW,\PZ$) according to Ref.~\cite{Bardin:1988xt},
 %
 \begin{equation}
-        M_V = \MVOS/\sqrt{1+(\GVOS/\MVOS)^2}\,,\qquad  \Gamma_V = \GVOS/\sqrt{1+(\GVOS/\MVOS)^2}.
+\begin{split}
+        M_V &= \MVOS/\sqrt{1+(\GVOS/\MVOS)^2}\,, \\
+   \Gamma_V &= \GVOS/\sqrt{1+(\GVOS/\MVOS)^2}.
+\end{split}
 \end{equation}
 %
 The EW coupling is renormalised in the $G_\mu$ scheme \cite{Denner:2000bj} where
@@ -29,10 +32,11 @@ The numerical value of $\alpha$, corresponding to the choice of input parameters
 \begin{equation}
  \alpha = 7.555310522369 \times 10^{-3}.
 \end{equation}
+The CKM-Matrix is assumed to be diagonal, meaning that we neglect mixing between different quark families.
 %
 The complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg} is used throughout to treat unstable intermediate particles in a gauge-invariant manner.
 
-The renormalisation and factorisation scales are set dynamically to
+The renormalisation and factorisation scales are set to the dynamical scale
 %
 \begin{equation}
 \label{eq:defscale}
