@@ -2,6 +2,7 @@
 - EM coupling is \alpha (and not \alpha_ew)
 - Electroweak (EW)
 - Ref.~\cite{X1} or Ref.~\cite{X1,X2} unless it is at the beginning of a sentence, then it is Reference~\cite{X1} References~\cite{X1,X2}
+- The same for Sec.~\ref{X1}, Tab.~\ref{}, Fig.~\ref{}
 - cross section
 - Don't write "infinite" Latex lines, go to the line at least after each sentence.
 - all variables are in italic while constants are in roman.

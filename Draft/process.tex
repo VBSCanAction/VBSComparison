@@ -7,27 +7,27 @@ Instead, one can keep the W boson leg connected to the external quark line off-s
 Then the polarisation of the gauge boson is accommodated following the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
 Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
 
-A more refined approximation consists in considering all $t$- and $u$- diagrams and square them separately.
-Nonetheless, different type of diagrams are not squared which amounts to neglecting interferences.
+A less crude approximation consists in considering all $t$- and $u$- diagrams and squaring them separately and neglecting their interferences.
 These interferences are expected to be small in the VBS fiducial region.
-The $s$-channel contributions can still be left out.
-This approximation is often called $t$-/$u$- approximation or even VBS approximation.
+The $s$-channel squared diagrams and interferences with $s$-channels are left out as well.
+This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
 We will adopt the latter denomination in the following of the article.
 Such an approximation is implemented at LO in the computer codes {\sc Bonsay} and {\sc Powheg}.
-The physical origin of this approximation is that each proton emitting a quark represents two independent copies of the $SU_c\left(3\right)$ gauge group.
+This approximation is gauge-invariant, which can be seen by considering the quark coming from different protons belonging to different $SU \left(3\right)$ gauge groups.
 
-The squared matrix element of the $s$-channel contributions can then be added but all interferences between different kinematic channels are neglected.
+The squared matrix element of the $s$-channel contributions can added back, but all interferences between different kinematic channels are still neglected.
 This is what is done in {\sc VBFNLO}.
 
 All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard}) consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
 Note that the final W boson can always be considered either on-shell or off-shell without affecting the previous discussion.
 All the codes mentioned here are described in details in the following sub-section.
 
-Moving on to NLO accuracy, one can extend the approximation presented at LO.
-The VBS approximation at NLO is simply extending the same approximation to real as well as to virtual corrections.
+Moving on to NLO accuracy, one can extend the approximations presented at LO.
+The VBS approximation at NLO is straightforward for the virtual contributions, for the real-contributions one must be careful about gluon-initiated processes\footnote{The initial gluon must not couple to the other initial quark, otherwise there are infrared divergences proportional to $s$-channels which do not match with the ones found in the virtual contributions.
+The subset of diagrams where all couplings of the initial state gluon to initial state quark are neglected forms a gauge-invariant subset, with the same argument as presented above.
+}.
 This is implemented in {\sc POWHEG}.
-This approximation can be used in combination with a double-pole approximation [REF] for the virtual contribution.
-This requires the computation of factorisable as well as non-factorisable corrections \cite{Dittmaier:2015bfe} separately.
+This approximation can be used in combination with a double-pole approximation \cite{Dittmaier:2015bfe} for the virtual contribution.
 Such an approximation is implemented in {\sc Bonsay}.
 In {\sc VBFNLO}, the VBS approximation at NLO with $s$-channel contributions is implemented.
 
