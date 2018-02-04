@@ -1,4 +1,6 @@
-Cross sections at NLO
+In Tab.~\ref{tab:wg1_NLOrates}, the cross sections of the various tools at NLO QCD accuracy are presented.
+The order considered is $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
+In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions seems to visibly differing according to the approximations used already at the level of the fiducial cross section.
 
 \begin{table}[h!]
     \centering
@@ -12,10 +14,16 @@ Cross sections at NLO
         {\sc POWHEG}  &  $1.3556 \pm 0.0009$  \\
         {\sc VBFNLO}  &  $1.3916 \pm 0.0001$  \\
     \end{tabular}
-    \caption{\label{tab:wg1_NLOrates} Rates at NLO-QCD accuracy within VBS cuts obtained with the different codes used in this comparison, 
-    for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process.
-    \MP{Please add or check your respective numbers}}
+    \caption{\label{tab:wg1_NLOrates} Cross sections for the LHC process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy and order $\mathcal{O}(\alpha^6)$.
+    The uncertainties shown refers to estimated statistical error of the Monte Carlo programs.
+    The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
+    \MP{Please add or check your respective numbers.}}
 \end{table}
 
-At NLO, the rates show slightly larger discrepancies, as it can be observed in Tab.~\ref{tab:wg1_NLOrates}.
-This is most likely due to low di-jet invariant-mass configurations, where $s$-channel diagrams and interferences are less suppressed than at LO, because of the presence of extra QCD radiation.
+The first observation is that the predictions featuring two versions of the VBS approximation ({\sc Bonsay} and {\sc POWHEG}) are close.
+This means that the double-pole approximation on the two W bosons used in {\sc Bonsay} constitutes a good approximation of the VBS-approximated virtual corrections implemented in {\sc POWHEG}.
+Both predictions differ by about $2\%$ with respect to the full computation ({\sc MoCaNLO+Recola}).
+The second observation is that the inclusion of $s$-channel contributions seems to have a significant impact.
+Indeed, its inclusion (as done in {\sc VBFNLO}) approximates the full computation by less than a per-cent ($0.7\%$).
+This behaviour is most likely due to low di-jet invariant-mass configurations, where $s$-channel diagrams and interferences are less suppressed than at LO, because of the presence of extra QCD radiation.
+\MP{To be developed with more physics insight}.
