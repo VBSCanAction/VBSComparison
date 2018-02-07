@@ -69,7 +69,7 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 1, graph 0.8 noautotitles spacing 2.4
+set key at graph 0.45, graph 0.55 noautotitles spacing 2.4
 
 plot \
 "../VBFNLO/NLO/hist.mjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
