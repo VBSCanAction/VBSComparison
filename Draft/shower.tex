@@ -2,14 +2,24 @@ We now turn to discuss how different predictions compare when the matching to pa
 a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
 matching schemes, PS employed and of the other details of the matching (such as the choice of the shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, {\sc POWHEG} and {\sc VBFNLO}
-can also provide results at (N)LO+PS accuracy. Besides, also {\sc PHANTOM} is employed for LO+PS results.\\
+can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO}, we
+restrict ourselves to showing results only in the VBS approximation,
+{\emph i.e.} the $s$-channel contributions are neglected here. Besides,
+also {\sc PHANTOM} is employed for LO+PS results.\\
 {\sc MG5\_aMC},
 which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 2.2.3)
 and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For {\sc POWHEG}, the omonymous matching procedure is
 employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8}
-{\bf MZ VERSION? if same as MG5, put it at the end together with the tune}. {\sc VBFNLO} makes it possible to choose between the {\sc MC@NLO} and {\sc POWHEG}
-matching, in both cases together with {\sc Herwig7}~CITEREF. Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.
+{\bf MZ VERSION? if same as MG5, put it at the end together with the
+tune}. {\sc VBFNLO} serves as a matrix-element and phase-space provider
+for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
+Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the BLHA
+interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbox} module makes it
+possible to choose between {\sc MC@NLO}-like and {\sc POWHEG}-like
+matching. As parton shower, both the default angular-ordered shower as
+well as the dipole shower can be employed.
+Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected.\\
 
 Results will be presented within the cuts described in Section~\ref{subsec:inputpar}, applied after shower and hadronization (this implies that jets
@@ -27,23 +37,24 @@ on the results.
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{c|c|c|c}
-        Code  &  $\sigma[\rm{fb}]$  \\
+    \begin{tabular}{c|r@{ $\pm$ }l}
+      Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
+        \hline\hline
+        {\sc MG5\_aMC}+{\sc Pythia8}&  $1.450 (1.368)$ & $0.004$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}&  $1.445 (1.363)$ & $0.004$  \\
+        {\sc POWHEG}  &  $1.3642$ & $0.0004$  \\
+        {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3389$ & $0.0006$  \\
+        {\sc VBFNLO}+{\sc Herwig7-Default} &  $1.3067$ & $0.0006$  \\
         \hline
-        {\sc MG5\_aMC}+{\sc Pythia8}&  $1.450 (1.368) \pm 0.$  \\
-        {\sc MG5\_aMC}+{\sc Herwig++}&  $1.445 (1.363) \pm 0.$  \\
-        {\sc POWHEG}  &  $1.3633 \pm 0.0004$  \\
-        {\sc VBFNLO}  &  $1.339 \pm 0.$  \\
-        \hline
-        {\sc MG5\_aMC}+{\sc Pythia8} (LO)&  $1.352 (1.275) \pm 0.$  \\
-        {\sc MG5\_aMC}+{\sc Herwig++} (LO)&  $1.343 (1.267)  \pm 0.$  \\
-        {\sc PHANTOM}+{\sc Pythia8} &  $1.235  \pm 0.$  \\
-        {\sc PHANTOM}+{\sc Herwig++} &  $1.260  \pm 0.$  \\
+        {\sc MG5\_aMC}+{\sc Pythia8} (LO)&  $1.352 (1.275)$ & $0.003$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++} (LO)&  $1.343 (1.267)$ & $ 0.003$  \\
+        {\sc PHANTOM}+{\sc Pythia8} &  $1.235\phantom{0} $ & $0.001$  \\
+        {\sc PHANTOM}+{\sc Herwig++} &  $1.260\phantom{0} $ & $0.001$  \\
+        {\sc VBFNLO}+{\sc Herwig7} (LO) &  $1.3001$ & $0.0002$  \\
     \end{tabular}
     \caption{\label{tab:PSrates} Rates at NLO-QCD (LO-QCD) accuracy matched to parton shower within VBS cuts obtained with the different codes used in this comparison,
     for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process. Numbers in parentheses for the {\sc MG5\_aMC} simulations
     are rescaled to account for the effect related to the boson widths computed by {\sc MadSpin}, see the text for details.}
-{\bf MZ: MC uncertainties???}
 \end{table}
 
 We now turn to present the results of predictions matched to parton shower: the total rates within VBS cuts are displayed in Table~\ref{tab:PSrates}, both at LO and NLO
@@ -83,7 +94,7 @@ stabilization at NLO+PS. However, some (small) differences in the shape remain a
 obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; {\sc Powheg}\ displays an enhancement of the central region, and a consequent suppression in the
 peripheral region, while {\sc VBFNLO} shows an opposite behaviour. However, the effect is rather small, with the largest departure from the fixed-order prediction being
 at most 10\%.\\
-Finally, focusing on the third jet, we conclude the list of differential observables with the rapidity and the $z$ variable, Figures~\ref{fig:PSy3} and~\ref{fig:PSz3}.
+Finally, focusing on the third jet, we conclude the list of differential observables with the rapidity and the Zeppenfeld variable defined in Eq.~\eqref{eq:Zeppenfeld}, Figures~\ref{fig:PSy3} and~\ref{fig:PSz3}.
 {\bf MZ the rapidity can be dropped (check also the following discussion in case); if z is defined elsewhere in the paper, then add a ref to the proper section. Otherwise define it here}
 In general, for observables which involve the third jet, one
 can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The rapidity and $z$ variable

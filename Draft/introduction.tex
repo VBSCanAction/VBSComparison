@@ -1,4 +1,4 @@
-Vector-boson scattering (VBS) is a class of processes that allow to probe the nature of Higgs-vector-vector couplings and quartic gauge couplings.
+Vector-boson scattering (VBS) is a class of processes that allow to probe the nature of Higgs-vector-vector couplings and triple and quartic gauge couplings.
 It is usually understood that VBS refers to the scattering of massive vector-bosons ($\PW^\pm,\PZ$), which therefore couple to the Higgs boson and can be longitudinally polarized.
 The scattering of longitudinally polarized bosons is of particular interest, because the corresponding matrix elements feature both gauge and unitarity cancellations that strongly depend on the actual form of the Higgs sector.
 A detailed study of this class of processes will therefore further constrain the Higgs couplings and hint at or exclude non-Standard Model Higgs bosons.
@@ -11,8 +11,8 @@ The $\PW^+\PW^+$ scattering is the simplest VBS process to calculate, because of
 It also implies that irreducible backgrounds are comparatively small, which make this VBS process experimentally favourable in comparison to \eg to $\PW^+\PW^-$ scattering, which has the largest cross section.
 Therefore, the $\PW^+\PW^+$ scattering is an ideal candidate for a detailed study of various theoretical predictions.
 
-In the last few years, several leading order (LO) and next-to-leading order (NLO) computations became available for both the VBS process~\cite{Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
-These computations all rely on approximations, while recently the complete NLO corrections have been performed~\cite{Biedermann:2017bss}.
+In the last few years, several leading order (LO) and next-to-leading order (NLO) computations became available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
+The VBS computations all rely on approximations, while recently the complete NLO corrections have been performed~\cite{Biedermann:2017bss}.
 It is therefore interesting to infer in details the quality of the various approximations.
 Indeed, apart from Ref.~\cite{Biedermann:2017bss} where it is commented on, \MP{more references?} no detailed comparison of the VBS approximations have been carried out.
 Preliminary results have already been made public in Ref.~\cite{Anders:2018gfr}.
@@ -36,15 +36,19 @@ To our knowledge, such a detailed study was still missing.
 
 Finally, several predictions featuring parton shower are compared.
 This allows to infer systematic differences between the various predictions.
-This is the first time in the literature that such an analysis has been carried out \MP{True?}.
+A first study for the $\PW^+ \PW^- \Pj \Pj$ VBS process has been presented in
+Ref.~\cite{Rauch:2016upa}, comparing the angular-ordered default shower and the dipole
+shower and both{\sc MC@NLO}-like~\cite{Frixione:2002ik} and {\sc POWHEG}-like~\cite{Nason:2004rx,Frixione:2007vw} matching as implemented
+in {\sc Herwig 7}~\cite{Bellm:2015jjp}, also showing scale-variation uncertainties.
+This is the first time in the literature that NLO QCD calculations for VBS processed matched to parton shower are compared between different generators.
 
 Obviously all VBS processes deserve such a detailed study but the present article sets standards for inferring systematics related to NLO corrections and beyond.
 
 
-The article is organised as follow:
-in Sec.~\ref{sec:definition} the studied process is defined.
+The article is organised as follows:
+First, we define the process under study in Sec.~\ref{sec:definition}.
 Various approximation at LO and NLO are described in Sec.~\ref{sec:details}.
 This is followed by a presentation of the programs used for the computations.
-Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study, respectively.
-Section~\ref{sec:matching} deals with the matching to parton shower.
+Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study at fixed order, respectively.
+Section~\ref{sec:matching} then adds the effect of parton showers and hadronization to the fixed-order results by matching the two.
 The last section consists in concluding remarks and recommendations for experimental collaborations.

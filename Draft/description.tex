@@ -46,11 +46,17 @@ To numerically evaluate the one-loop scalar and tensor integrals, {\sc Recola} r
 These tools have been successfully used for the computation of NLO corrections for high-multiplicity processes and in particular VBS~\cite{Biedermann:2016yds,Biedermann:2017bss}.
 
   \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
-parton-level Monte Carlo for processes with electroweak bosons. It
-allows the calculation of VBS processes at NLO QCD in the VBF
-approximation and including the s-channel triboson contribution,
-neglecting interferences between the two. Besides the SM, also anomalous
-couplings of the Higgs and gauge bosons can be simulated.
+    parton-level Monte Carlo for processes with electroweak bosons. It
+    allows the calculation of VBS processes at NLO QCD in the VBS
+    approximation, with process IDs between 200 and 290. The corresponding
+    s-channel contributions are available separately as triboson processes with
+    semi-leptonic decays, with process IDs in the 400 range. These can simply
+    be added on top of the VBS contribution, as interferences between the two are neglected.
+    The usage of leptonic tensors in the calculation, pioneered in
+    Ref.~\cite{Jager:2006zc}, thereby leads to a significant speed improvement over
+    automatically generated code.  Besides the SM, also a variety of
+    new-physics models including anomalous couplings of the Higgs and gauge
+    bosons can be simulated.
 
   \item {\sc Whizard}~\cite{Moretti:2001zz,Kilian:2007gr} is a multi-purpose
 event generator with the LO matrix element generator {\sc O'Mega}. It
