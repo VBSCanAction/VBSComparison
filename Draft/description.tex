@@ -13,7 +13,7 @@ One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:20
         two integral-reduction techniques, OPP~\cite{Ossola:2006us} or Laurent-series expansion~\cite{Mastrolia:2012bu},
         and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
         in turn exploits {\sc CutTools}~\cite{Ossola:2007ax}, {\sc Ninja}~\cite{Peraro:2014cba,
-        Hirschi:2016mdz}, or {\sc IREGI}~\cite{ShaoIREGI}, together with an in-house implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}.\\
+        Hirschi:2016mdz}, or {\sc IREGI}~\cite{ShaoIREGI}, \MP{Is Collier not missing here? I think it made it to one of the default if I am correct} together with an in-house implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}.\\
         The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
 \begin{verbatim}
 > set complex_mass_scheme #1
@@ -35,15 +35,18 @@ The integration uses a multichannel approach~\cite{Berends:1984gf} and an adapti
 {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
 
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for matching NLO-QCD calculations with parton showers.
-It relies on the user providing the matrix elements and Born phase space, but will automaticaly construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
+It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
 \MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}
 
-\item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the general matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
-The fast integration is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}.
-The IR divergences appearing in the real corrections are handles with the help of the Catani--Seymour dipole formalism \cite{Catani:1996vz,Dittmaier:1999mb}.
-To numerically evaluate the one-loop scalar and tensor integrals, {\sc Recola} relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg}.
-These tools have been successfully used for the computation of NLO corrections for high-multiplicity processes and in particular VBS~\cite{Biedermann:2016yds,Biedermann:2017bss}.
+\item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
+It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
+This is made possible by the fact that {\sc Recola} can compute arbitrary processes at tree and one-loop level in the Standard Model.
+To that end, it relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg} to numerically evaluate the one-loop scalar and tensor integrals.
+In addition, the subtraction of the IR divergences appearing in the real corrections has been automatised thanks to the Catani--Seymour dipole formalism for both QCD and QED \cite{Catani:1996vz,Dittmaier:1999mb}.
+The code has demonstrated its ability to compute at NLO high multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
+In particular the full NLO corrections to VBS and its irreducible background \cite{Biedermann:2016yds,Biedermann:2017bss} have been obtained from this tool.
+One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}.
 
   \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
     parton-level Monte Carlo for processes with electroweak bosons. It

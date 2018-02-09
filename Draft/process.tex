@@ -5,7 +5,7 @@ However, this set of contributions is not gauge invariant.
 To make it gauge invariant, one should perform an on-shell projection of the incoming W bosons.
 Unfortunately, these momenta are space-like and thus a simple on-shell projection is not possible.
 Instead, one can keep the W boson legs connected to the external quark line off-shell while the ones connected to the final-state leptons, which are already time-like, are put on-shell.
-Then the polarisation of the gauge boson is accommodated following the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
+Then the polarisation of the gauge boson is accommodated following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
 Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
 
 A less crude approximation consists in considering all $t$- and $u$- diagrams and squaring them separately, neglecting interference contributions between the two.
@@ -16,7 +16,8 @@ We will adopt the latter denomination in the following of the article.
 Such an approximation is implemented at LO in the computer codes {\sc Bonsay} and {\sc Powheg}.
 This approximation is gauge-invariant, which can be seen by considering that the two protons and therefore the two incoming quarks belong to two different, but otherwise identical, copies of the $SU \left(3\right)$ gauge group.
 
-The squared matrix element of the $s$-channel contributions can be added in addition, but all interferences between different kinematic channels are still neglected. This is the level of simulation available in {\sc VBFNLO}.
+The squared matrix element of the $s$-channel contributions can be added in addition, but all interferences between different kinematic channels are still neglected.
+This is the level of simulation available in {\sc VBFNLO}.
 
 All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard}) consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
 Note that the final W boson can always be considered either on-shell or off-shell without affecting the previous discussion.
@@ -40,7 +41,9 @@ In particular one can consider only one-loop amplitudes where there is no gluon 
 \MR{What about gauge invariance? A comment about that would be useful as well.}
 Such predictions are provided by {\sc MG5\_aMC}.
 
-Finally the full $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ computation consists also of EW corrections in the virtual as well as real corrections \cite{Biedermann:2017bss}.
+Finally, when considering the full one-loop amplitude of order $\mathcal{O}(g_{\rm s}^2 g^6)$ and its corresponding real QCD radiation, other contributions have to be added.
+Indeed, in order to cancel all infrared (IR) divergences arising, also one-loop amplitudes of order $\mathcal{O}(g^8)$ of EW type and their corresponding QED radiations have to be included.
+The full computation of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consists thus not only of QCD-type corrections but also of EW ones.\footnote{For more details, the reader is referred to Ref.~\cite{Biedermann:2017bss}.} 
 Such predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
 
 In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
