@@ -13,7 +13,9 @@ One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:20
         two integral-reduction techniques, OPP~\cite{Ossola:2006us} or Laurent-series expansion~\cite{Mastrolia:2012bu},
         and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
         in turn exploits {\sc CutTools}~\cite{Ossola:2007ax}, {\sc Ninja}~\cite{Peraro:2014cba,
-        Hirschi:2016mdz}, or {\sc IREGI}~\cite{ShaoIREGI}, \MP{Is Collier not missing here? I think it made it to one of the default if I am correct} together with an in-house implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}.\\
+        Hirschi:2016mdz}, {\sc IREGI}~\cite{ShaoIREGI}, or {\sc Collier}~\cite{Denner:2016kdg}, together with an in-house 
+        implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}. Finally, scale and PDF uncertainties can be obtained in an exact manner via reweigthing
+        at zero additional CPU cost~\cite{Frederix:2011ss}.\\
         The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
 \begin{verbatim}
 > set complex_mass_scheme #1
@@ -25,8 +27,10 @@ One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:20
             the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electro-weak corrections, it is not yet possible to compute such corrections
         with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
         and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections,
-        only loops with QCD-interacting particles are generated.
-        \MP{Detail of the approximation done, divergent part, assumed to cancel etc.}
+        only loops with QCD-interacting particles are generated. As it has been already mentioned, such an approximation is equivalent to the assumption that the finite part of
+        those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
+        pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
+        {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards/FKS\_params.dat} file to -1.
 
   \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
   at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.

@@ -20,6 +20,7 @@
  \usepackage{tabularx}
  \usepackage{lmodern}
  \usepackage{url}
+ \usepackage{morefloats}
 %  \usepackage{siunitx}
 % \usepackage
 % [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
@@ -172,70 +173,49 @@ The Netherlands\label{nikh}
 \input{abstract}
 
 \section{Introduction}
-
 \input{introduction}
 
 \section{Definition of the process}
-\label{sec:definition}
-
-\input{definition}
+    \label{sec:definition}
+    \input{definition}
 
 \section{Details of the calculations}
-\label{sec:details}
-
-\subsection{Several descriptions for one process}
-
-\input{process}
-
-\subsection{Description of the predictions}
-\label{subsec:codedescr}
-
-\input{description}
-
-\subsection{Input parameters}
-\label{subsec:inputpar}
-
-\input{input}
+    \label{sec:details}
+    \subsection{Several descriptions for one process}
+        \input{process}
+    \subsection{Description of the predictions}
+        \label{subsec:codedescr}
+        \input{description}
+    \subsection{Input parameters}
+        \label{subsec:inputpar}
+        \input{input}
 
 \section{Leading-order study}
-\label{sec:LO}
-
-\subsection{Three contributions}
-\label{subsec:contributions}
-
-\input{contributions}
-
-\subsection{Inclusive comparison}
-\label{subsec:LOinclusive}
-
-\input{scanLO}
-
-\subsection{Comparison in the fiducial region}
-\label{subsec:LOfiducial}
-
-\input{crosssectionLO}
-
-\input{distributionsLO}
+    \label{sec:LO}
+    \subsection{Three contributions}
+        \label{subsec:contributions}
+        \input{contributions}
+    \subsection{Inclusive comparison}
+        \label{subsec:LOinclusive}
+        \input{scanLO}
+    \subsection{Comparison in the fiducial region}
+        \label{subsec:LOfiducial}
+        \input{crosssectionLO}
+        \input{distributionsLO}
 
 \section{Next-to-leading order QCD}
-\label{sec:NLO}
-
-\subsection{Inclusive comparision}
-\label{subsec:NLOinclusive}
-
-\input{scanNLO}
-
-\subsection{Comparison in the fiducial region}
-
-\input{crosssectionNLO}
-
-\input{distributionsNLO}
-
+    \label{sec:NLO}
+    \subsection{Inclusive comparision}
+        \label{subsec:NLOinclusive}
+        \input{scanNLO}
+    \subsection{Comparison in the fiducial region}
+        \input{crosssectionNLO}
+        \input{distributionsNLO}
 
 \section{Matching to parton shower}
-\label{sec:matching}
+    \label{sec:matching}
+    \input{shower}
 
-\input{shower}
 
 \section{Conclusion}
 \label{sec:conclusion}
