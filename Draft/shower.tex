@@ -122,8 +122,15 @@ Finally, focusing on the third jet, we conclude the list of differential observa
 In general, for observables which involve the third jet, one
 can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The rapidity and Zeppenfeld variable $z$
 are a striking example: both at LO and NLO, the tendency of {\sc Pythia8} to generate more hard and central radiation (corresponding to low values of $z$)
-is clearly visible; it is interesting to notice that
-this effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+Pythia8}. If it is true that the central enhancement
+is clearly visible\footnote{The effect, which is related to the way {\sc Pythia8} deals with the recoil of the radiation in VBF/S-type processes,
+can be mitigated by setting {\tt SpaceShower:dipoleRecoil = on} in the {\sc Pythia8} input file (this requires version $\ge8.230$). 
+However, such a setting is not compatible with the matching
+in {\sc MG5\_aMC}, and has other effects, though smaller, on the rapidity spectrum of the two hardest jets.}; it is interesting to notice that
+this effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+Pythia8}. A similar
+behaviour of {\sc Pythia8}
+has been also observed in the study of EW production of a Z boson in association with two jets (see the recent CMS measurement, 
+Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}. 
+If it is true that the central enhancement
 is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediction), however even at NLO+PS the central region
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. \\
 
@@ -132,8 +139,12 @@ effectively at NLO accuracy differences between tools are at (or below) the $10\
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in details the way QCD radiation is
 generated {\bf MZ cite here H VBF at NNLO?}. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
-experimental analyses should rely as least as possible on those observables and, in any case, use conservative estimate of the theory uncertainties. In order to improve the
-description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern automated tools, is certainly desirable.
+experimental analyses should rely as least as possible on those observables and, in any case, use conservative estimate of the theory 
+uncertainties. On the one hand, un order to improve the
+description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern 
+automated tools, is certainly desirable; on the other hand, measurements of processes with similar 
+color flow (EW production of a single vector boson plus jets,
+ VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data.
 
 \begin{figure*}[hbt]
 \centering
