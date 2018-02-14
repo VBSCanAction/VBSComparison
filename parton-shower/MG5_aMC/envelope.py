@@ -15,14 +15,14 @@ import  optparse, sys, math
 
 parser = optparse.OptionParser(usage=__doc__)
 parser.add_option('-o', '--output', default='-', dest='OUTPUT_FILE')
-#parser.add_option('-c', '--central', default='-', dest='CENTRAL_FILE')
+parser.add_option('-c', '--central', default='-', dest='CENTRAL_FILE')
 opts, fileargs = parser.parse_args()
             
 ####################
 
 ## Put the incoming objects into a dict from each path to a list of histos and scalings
 
-filenames = []
+filenames = [opts.CENTRAL_FILE]
 for fa in fileargs:
   filenames += [fa]
 
@@ -52,20 +52,26 @@ if True:
         continue
       path = ao.path.split()
       scatter.path = path[0]
-      if path[1] == "PDF=":
+      if len(path) <= 1: #central
+        scatters_central.setdefault(path[0], []).append(scatter)
         scatters_all.setdefault(path[0], []).append(scatter)
         scatters_pdf.setdefault(path[0], []).append(scatter)
-        if path[2] == "260000":
-          scatters_central.setdefault(path[0], []).append(scatter)
-      elif path[1] == "dyn=":
-        scatters_all.setdefault(path[0], []).append(scatter)
         scatters_scale.setdefault(path[0], []).append(scatter)
-      elif path[1] == "0":
-        pass # ignore
-      elif path[1] == "central":
-        pass # ignore
       else:
-        print "Unknown path object: ", ao.path
+        if path[1] == "PDF=":
+          scatters_all.setdefault(path[0], []).append(scatter)
+          scatters_pdf.setdefault(path[0], []).append(scatter)
+          #if path[2] == "260000":
+          #  scatters_central.setdefault(path[0], []).append(scatter)
+        elif path[1] == "dyn=":
+          scatters_all.setdefault(path[0], []).append(scatter)
+          scatters_scale.setdefault(path[0], []).append(scatter)
+        elif path[1] == "0":
+          pass # ignore
+        elif path[1] == "central":
+          pass # ignore
+        else:
+          print "Unknown path object: ", ao.path
 
   # write out
   scatters_outall = {}
@@ -73,6 +79,7 @@ if True:
   scatters_outscale = {}
 
   ## all
+  ### scale
   for p, scatters in scatters_all.iteritems():
     for pcentral, scattercentral in scatters_central.iteritems():
       if pcentral == p:
@@ -89,6 +96,25 @@ if True:
         point.yErrs = (point.y-lower, upper-point.y)
   # write envelopes
   outname = opts.OUTPUT_FILE.replace(".yoda","_all.yoda")
+  yoda.write(scatters_outall.values(), outname)
+  ### scale + stat
+  for p, scatters in scatters_all.iteritems():
+    for pcentral, scattercentral in scatters_central.iteritems():
+      if pcentral == p:
+        scatters_outall[scattercentral[0].path] = scattercentral[0].clone()
+    for i, point in enumerate(scatters_outall[scatters[0].path].points):
+      upper = float('-inf')
+      lower = float('inf')
+      for scatter in scatters:
+        val = scatter.points[i].yMax;
+        if val > upper:
+          upper = val
+        val = scatter.points[i].yMin;
+        if val < lower:
+          lower = val
+        point.yErrs = (point.y-lower, upper-point.y)
+  # write envelopes
+  outname = opts.OUTPUT_FILE.replace(".yoda","_allstat.yoda")
   yoda.write(scatters_outall.values(), outname)
   ## pdf
   for p, scatters in scatters_pdf.iteritems():
@@ -108,6 +134,25 @@ if True:
   # write envelopes
   outname = opts.OUTPUT_FILE.replace(".yoda","_pdf.yoda")
   yoda.write(scatters_outpdf.values(), outname)
+  ## pdf + stat
+  for p, scatters in scatters_pdf.iteritems():
+    for pcentral, scattercentral in scatters_central.iteritems():
+      if pcentral == p:
+        scatters_outpdf[scattercentral[0].path] = scattercentral[0].clone()
+    for i, point in enumerate(scatters_outpdf[scatters[0].path].points):
+      upper = float('-inf')
+      lower = float('inf')
+      for scatter in scatters:
+        val = scatter.points[i].yMax;
+        if val > upper:
+          upper = val
+        val = scatter.points[i].yMin;
+        if val < lower:
+          lower = val
+        point.yErrs = (point.y-lower, upper-point.y)
+  # write envelopes
+  outname = opts.OUTPUT_FILE.replace(".yoda","_pdfstat.yoda")
+  yoda.write(scatters_outpdf.values(), outname)
   ## scale
   for p, scatters in scatters_scale.iteritems():
     for pcentral, scattercentral in scatters_central.iteritems():
@@ -124,5 +169,23 @@ if True:
           lower = val
         point.yErrs = (point.y-lower, upper-point.y)
   outname = opts.OUTPUT_FILE.replace(".yoda","_scale.yoda")
+  yoda.write(scatters_outscale.values(), outname)
+  ## scale + stat
+  for p, scatters in scatters_scale.iteritems():
+    for pcentral, scattercentral in scatters_central.iteritems():
+      if pcentral == p:
+        scatters_outscale[scattercentral[0].path] = scattercentral[0].clone()
+    for i, point in enumerate(scatters_outscale[scatters[0].path].points):
+      upper = float('-inf')
+      lower = float('inf')
+      for scatter in scatters:
+        val = scatter.points[i].yMax;
+        if val > upper:
+          upper = val
+        val = scatter.points[i].yMin;
+        if val < lower:
+          lower = val
+        point.yErrs = (point.y-lower, upper-point.y)
+  outname = opts.OUTPUT_FILE.replace(".yoda","_scalestat.yoda")
   yoda.write(scatters_outscale.values(), outname)
 
