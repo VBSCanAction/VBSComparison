@@ -78,44 +78,6 @@ if True:
   scatters_outpdf = {}
   scatters_outscale = {}
 
-  ## all
-  ### scale
-  for p, scatters in scatters_all.iteritems():
-    for pcentral, scattercentral in scatters_central.iteritems():
-      if pcentral == p:
-        scatters_outall[scattercentral[0].path] = scattercentral[0].clone()
-    for i, point in enumerate(scatters_outall[scatters[0].path].points):
-      upper = float('-inf')
-      lower = float('inf')
-      for scatter in scatters:
-        val = scatter.points[i].y;
-        if val > upper:
-          upper = val
-        if val < lower:
-          lower = val
-        point.yErrs = (point.y-lower, upper-point.y)
-  # write envelopes
-  outname = opts.OUTPUT_FILE.replace(".yoda","_all.yoda")
-  yoda.write(scatters_outall.values(), outname)
-  ### scale + stat
-  for p, scatters in scatters_all.iteritems():
-    for pcentral, scattercentral in scatters_central.iteritems():
-      if pcentral == p:
-        scatters_outall[scattercentral[0].path] = scattercentral[0].clone()
-    for i, point in enumerate(scatters_outall[scatters[0].path].points):
-      upper = float('-inf')
-      lower = float('inf')
-      for scatter in scatters:
-        val = scatter.points[i].yMax;
-        if val > upper:
-          upper = val
-        val = scatter.points[i].yMin;
-        if val < lower:
-          lower = val
-        point.yErrs = (point.y-lower, upper-point.y)
-  # write envelopes
-  outname = opts.OUTPUT_FILE.replace(".yoda","_allstat.yoda")
-  yoda.write(scatters_outall.values(), outname)
   ## pdf
   for p, scatters in scatters_pdf.iteritems():
     for pcentral, scattercentral in scatters_central.iteritems():
@@ -134,25 +96,25 @@ if True:
   # write envelopes
   outname = opts.OUTPUT_FILE.replace(".yoda","_pdf.yoda")
   yoda.write(scatters_outpdf.values(), outname)
-  ## pdf + stat
-  for p, scatters in scatters_pdf.iteritems():
-    for pcentral, scattercentral in scatters_central.iteritems():
-      if pcentral == p:
-        scatters_outpdf[scattercentral[0].path] = scattercentral[0].clone()
-    for i, point in enumerate(scatters_outpdf[scatters[0].path].points):
-      upper = float('-inf')
-      lower = float('inf')
-      for scatter in scatters:
-        val = scatter.points[i].yMax;
-        if val > upper:
-          upper = val
-        val = scatter.points[i].yMin;
-        if val < lower:
-          lower = val
-        point.yErrs = (point.y-lower, upper-point.y)
-  # write envelopes
-  outname = opts.OUTPUT_FILE.replace(".yoda","_pdfstat.yoda")
-  yoda.write(scatters_outpdf.values(), outname)
+#  ## pdf + stat
+#  for p, scatters in scatters_pdf.iteritems():
+#    for pcentral, scattercentral in scatters_central.iteritems():
+#      if pcentral == p:
+#        scatters_outpdf[scattercentral[0].path] = scattercentral[0].clone()
+#    for i, point in enumerate(scatters_outpdf[scatters[0].path].points):
+#      upper = float('-inf')
+#      lower = float('inf')
+#      for scatter in scatters:
+#        val = scatter.points[i].yMax;
+#        if val > upper:
+#          upper = val
+#        val = scatter.points[i].yMin;
+#        if val < lower:
+#          lower = val
+#        point.yErrs = (point.y-lower, upper-point.y)
+#  # write envelopes
+#  outname = opts.OUTPUT_FILE.replace(".yoda","_pdfstat.yoda")
+#  yoda.write(scatters_outpdf.values(), outname)
   ## scale
   for p, scatters in scatters_scale.iteritems():
     for pcentral, scattercentral in scatters_central.iteritems():
@@ -170,22 +132,38 @@ if True:
         point.yErrs = (point.y-lower, upper-point.y)
   outname = opts.OUTPUT_FILE.replace(".yoda","_scale.yoda")
   yoda.write(scatters_outscale.values(), outname)
-  ## scale + stat
-  for p, scatters in scatters_scale.iteritems():
-    for pcentral, scattercentral in scatters_central.iteritems():
-      if pcentral == p:
-        scatters_outscale[scattercentral[0].path] = scattercentral[0].clone()
-    for i, point in enumerate(scatters_outscale[scatters[0].path].points):
-      upper = float('-inf')
-      lower = float('inf')
-      for scatter in scatters:
-        val = scatter.points[i].yMax;
-        if val > upper:
-          upper = val
-        val = scatter.points[i].yMin;
-        if val < lower:
-          lower = val
-        point.yErrs = (point.y-lower, upper-point.y)
-  outname = opts.OUTPUT_FILE.replace(".yoda","_scalestat.yoda")
-  yoda.write(scatters_outscale.values(), outname)
+#  ## scale + stat
+#  for p, scatters in scatters_scale.iteritems():
+#    for pcentral, scattercentral in scatters_central.iteritems():
+#      if pcentral == p:
+#        scatters_outscale[scattercentral[0].path] = scattercentral[0].clone()
+#    for i, point in enumerate(scatters_outscale[scatters[0].path].points):
+#      upper = float('-inf')
+#      lower = float('inf')
+#      for scatter in scatters:
+#        val = scatter.points[i].yMax;
+#        if val > upper:
+#          upper = val
+#        val = scatter.points[i].yMin;
+#        if val < lower:
+#          lower = val
+#        point.yErrs = (point.y-lower, upper-point.y)
+#  outname = opts.OUTPUT_FILE.replace(".yoda","_scalestat.yoda")
+#  yoda.write(scatters_outscale.values(), outname)
+
+  ## all -- linear combination of both
+  scatters_outall = scatters_outscale
+  for p, scatters in scatters_outall.iteritems():
+    for ppdf, scatterpdf in scatters_outpdf.iteritems():
+      if ppdf == p:
+        break
+    for i, point in enumerate(scatters_outall[p].points):
+      lowers = scatters.points[i].yErrs[0]
+      uppers = scatters.points[i].yErrs[1]
+      lowerp = scatterpdf.points[i].yErrs[0]
+      upperp = scatterpdf.points[i].yErrs[1]
+      point.yErrs = (lowers+lowerp, uppers+upperp)
+  # write envelopes
+  outname = opts.OUTPUT_FILE.replace(".yoda","_all.yoda")
+  yoda.write(scatters_outall.values(), outname)
 
