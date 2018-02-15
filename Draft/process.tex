@@ -1,26 +1,26 @@
 As mentioned previously, the contribution of main interest in our process is
-the scattering of two W gauge bosons, which includes the quartic gauge-boson vertex.
+the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex.
 Therefore it is justified to approximate the full EW contributions simply by only these contributions which contain the $2\rightarrow 2$ scattering process as a subpart.
-However, this set of contributions is not gauge invariant.
-To make it gauge invariant, one should perform an on-shell projection of the incoming W bosons.
+However, this set of contributions is not gauge invariant. In order to make it gauge invariant, one 
+should perform an on-shell projection of the incoming and outgoing $\PW$ bosons {\bf MZ: it is incoming and outgoing, right? in case modify what follows}.
 Unfortunately, these momenta are space-like and thus a simple on-shell projection is not possible.
-Instead, one can keep the W boson legs connected to the external quark line off-shell while the ones connected to the final-state leptons, which are already time-like, are put on-shell.
+Instead, one can keep the $\PW$ boson legs connected to the external quark line off-shell while the ones connected to the final-state leptons, which are already time-like, are put on-shell.
 Then the polarisation of the gauge boson is accommodated following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
 Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
 
 A less crude approximation consists in considering all $t$- and $u$- diagrams and squaring them separately, neglecting interference contributions between the two.
 These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed.
-The $s$-channel squared diagrams and any interferences with $s$-channels are left out as well.
+The $s$-channel squared diagrams and any interferences with $s$-channels are also discarded.
 This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
 We will adopt the latter denomination in the following of the article.
 Such an approximation is implemented at LO in the computer codes {\sc Bonsay} and {\sc Powheg}.
 This approximation is gauge-invariant, which can be seen by considering that the two protons and therefore the two incoming quarks belong to two different, but otherwise identical, copies of the $SU \left(3\right)$ gauge group.
 
-The squared matrix element of the $s$-channel contributions can be added in addition, but all interferences between different kinematic channels are still neglected.
-This is the level of simulation available in {\sc VBFNLO}.
+A further refinement is to add the squared matrix element of the $s$-channel contributions, still neglecting 
+all interferences between different kinematic channels, as it is implemented in in {\sc VBFNLO}.
 
 All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard}) consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
-Note that the final W boson can always be considered either on-shell or off-shell without affecting the previous discussion.
+Note that the final $\PW$ boson can always be considered either on-shell or off-shell without affecting the previous discussion.
 All the codes mentioned here are described in details in the following sub-section.
 
 Moving on to NLO accuracy, one can extend the approximations presented at LO.
