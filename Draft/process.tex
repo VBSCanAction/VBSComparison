@@ -2,24 +2,24 @@ As mentioned previously, the contribution of main interest in our process is
 the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex.
 Therefore it is justified to approximate the full EW contributions simply by only these contributions which contain the $2\rightarrow 2$ scattering process as a subpart.
 However, this set of contributions is not gauge invariant. In order to make it gauge invariant, one 
-should perform an on-shell projection of the incoming and outgoing $\PW$ bosons {\bf MZ: it is incoming and outgoing, right? in case modify what follows}.
+should perform an on-shell projection of the incoming and outgoing $\PW$ bosons \MZ{it is incoming and outgoing, right? in case modify what follows}.
 Unfortunately, these momenta are space-like and thus a simple on-shell projection is not possible.
 Instead, one can keep the $\PW$ boson legs connected to the external quark line off-shell while the ones connected to the final-state leptons, which are already time-like, are put on-shell.
-Then the polarisation of the gauge boson is accommodated following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
+Then the polarisation of the gauge boson is accommodated for following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
 Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
 
 A less crude approximation consists in considering all $t$- and $u$- diagrams and squaring them separately, neglecting interference contributions between the two.
-These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed.
+These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed~\cite{Oleari:2003tc}.
 The $s$-channel squared diagrams and any interferences with $s$-channels are also discarded.
 This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
 We will adopt the latter denomination in the following of the article.
-Such an approximation is implemented at LO in the computer codes {\sc Bonsay} and {\sc Powheg}.
+Such an approximation is implemented at LO in the computer codes {\sc Bonsay} \AK{CITATIONS} and the {\sc Powheg-Box}~\cite{Alioli:2010xd}.
 This approximation is gauge-invariant, which can be seen by considering that the two protons and therefore the two incoming quarks belong to two different, but otherwise identical, copies of the $SU \left(3\right)$ gauge group.
 
 A further refinement is to add the squared matrix element of the $s$-channel contributions, still neglecting 
-all interferences between different kinematic channels, as it is implemented in in {\sc VBFNLO}.
+all interferences between different kinematic channels, as it is implemented in in {\sc VBFNLO}\AK{CITATIONS}.
 
-All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard}) consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
+All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard})\AK{CITATIONS} consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
 Note that the final $\PW$ boson can always be considered either on-shell or off-shell without affecting the previous discussion.
 All the codes mentioned here are described in details in the following sub-section.
 
@@ -27,13 +27,13 @@ Moving on to NLO accuracy, one can extend the approximations presented at LO.
 The VBS approximation at NLO is straightforward for the virtual contributions, for the real-contributions one must be careful about gluon-initiated processes\footnote{The initial gluon must not couple to the other initial quark, otherwise there are infrared divergences proportional to $s$-channels which do not match with the ones found in the virtual contributions.
 The subset of diagrams where all couplings of the initial state gluon to initial state quark are neglected forms a gauge-invariant subset, with the same argument as presented above. This approach is also fully consistent with the picture of two separate SU(3) copies.
 }.
-This is implemented in {\sc POWHEG}.
+This is implemented in the {\sc Powheg-Box}.
 This approximation can be used in combination with a double-pole approximation \cite{Dittmaier:2015bfe} for the virtual contribution.
 Such an approximation is implemented in {\sc Bonsay}.
 In {\sc VBFNLO}, the $s$-channel contributions are available as well and can be
 added on top of the VBS approximation. For the real emission diagrams, thereby
 as simplification the gluon emission is fully modelled only for initial-state
-radiation. The effect of final-state radiation together with the corresponding
+radiation\AK{I don't understand this sentence. What does 'thereby' refer to?}. The effect of final-state radiation together with the corresponding
 virtual contributions is included as a $K$-factor. 
 
 A further refinement is to consider the full real contributions as well as part of the virtual.
@@ -42,7 +42,7 @@ assuming a cancellation of the infrared (IR) poles. Such an approximation is imp
 
 Finally, when considering the full one-loop amplitude of order $\mathcal{O}(g_{\rm s}^2 g^6)$ and its corresponding real QCD radiation, other contributions have to be added.
 Indeed, in order to cancel all infrared (IR) divergences arising, also one-loop amplitudes of order $\mathcal{O}(g^8)$ of EW type and their corresponding QED radiations have to be included.
-The full computation of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consists thus not only of QCD-type corrections but also of EW ones.\footnote{For more details, the reader is referred to Ref.~\cite{Biedermann:2017bss}.} 
+The full computation of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consists thus not only of QCD-type corrections but also of EW ones.\footnote{For more details, the reader is referred to Ref.~\cite{Biedermann:2017bss}.\AK{Do we need this footnote given that the next sentence gives the reference?}} 
 Such predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
 
 In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
@@ -63,7 +63,7 @@ In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In pa
         \hline
         \hline
         {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
-        {\sc POWHEG}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc Powheg}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
         {\sc MG5\_aMC}      &  Yes      &  Yes      &  Yes              &  Yes   & No virt. &  No \\
         {\sc MoCaNLO+Recola}&  Yes      &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
         {\sc PHANTOM}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\
