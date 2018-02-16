@@ -2,8 +2,8 @@ As mentioned previously, the contribution of main interest in our process is
 the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex.
 Therefore it is justified to approximate the full EW contributions simply by only these contributions which contain the $2\rightarrow 2$ scattering process as a subpart.
 However, this set of contributions is not gauge invariant. In order to make it gauge invariant, one 
-should perform an on-shell projection of the incoming and outgoing $\PW$ bosons \MZ{it is incoming and outgoing, right? in case modify what follows}.
-Unfortunately, these momenta are space-like and thus a simple on-shell projection is not possible.
+should perform an on-shell projection of the incoming and outgoing $\PW$ bosons.
+Unfortunately, the former momenta are space-like and thus a simple on-shell projection is not possible.
 Instead, one can keep the $\PW$ boson legs connected to the external quark line off-shell while the ones connected to the final-state leptons, which are already time-like, are put on-shell.
 Then the polarisation of the gauge boson is accommodated for following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
 Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
@@ -14,12 +14,12 @@ The $s$-channel squared diagrams and any interferences with $s$-channels are als
 This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
 We will adopt the latter denomination in the following of the article.
 Such an approximation is implemented at LO in the computer codes {\sc Bonsay} \AK{CITATIONS} and the {\sc Powheg-Box}~\cite{Alioli:2010xd}.
-This approximation is gauge-invariant, which can be seen by considering that the two protons and therefore the two incoming quarks belong to two different, but otherwise identical, copies of the $SU \left(3\right)$ gauge group.
+This approximation is gauge-invariant, which can be seen by considering that the two protons and therefore the two incoming quarks belong to two different, but otherwise identical, copies of the SU(3) gauge group.
 
 A further refinement is to add the squared matrix element of the $s$-channel contributions, still neglecting 
 all interferences between different kinematic channels, as it is implemented in in {\sc VBFNLO}\AK{CITATIONS}.
 
-All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard})\AK{CITATIONS} consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
+All other codes ({\sc MG5\_aMC}, {\sc MoCaNLO+Recola}, {\sc PHANTOM}, and {\sc Whizard})\AK{CITATIONS} \MP{No ref. for MoCaNLO+Recola} consider all contributions of order $\mathcal{O}{\left(\alpha^{6}\right)}$ as well as all possible interferences.
 Note that the final $\PW$ boson can always be considered either on-shell or off-shell without affecting the previous discussion.
 All the codes mentioned here are described in details in the following sub-section.
 
@@ -38,11 +38,13 @@ virtual contributions is included as a $K$-factor.
 
 A further refinement is to consider the full real contributions as well as part of the virtual.
 In particular one can consider only one-loop amplitudes where there is no gluon exchange between the quarks and 
-assuming a cancellation of the infrared (IR) poles. Such an approximation is implemented by {\sc MG5\_aMC}.
+assuming a cancellation of the infrared (IR) poles.
+Such an approximation is implemented by {\sc MG5\_aMC}.
+\MP{I think this is not a gauge invariant approximation. If not, this should be commented on.}
 
 Finally, when considering the full one-loop amplitude of order $\mathcal{O}(g_{\rm s}^2 g^6)$ and its corresponding real QCD radiation, other contributions have to be added.
 Indeed, in order to cancel all infrared (IR) divergences arising, also one-loop amplitudes of order $\mathcal{O}(g^8)$ of EW type and their corresponding QED radiations have to be included.
-The full computation of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consists thus not only of QCD-type corrections but also of EW ones.\footnote{For more details, the reader is referred to Ref.~\cite{Biedermann:2017bss}.\AK{Do we need this footnote given that the next sentence gives the reference?}} 
+The full computation of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consists thus not only of QCD-type corrections but also of EW ones. 
 Such predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
 
 In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In particular, it is specified whether
@@ -50,7 +52,7 @@ In Tab.~\ref{tab:wg1_codes} the details of the various codes are reported. In pa
     \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
     \item interferences between diagrams are included at LO;
     \item diagrams which do not feature two resonant vector bosons are included;
-    \item the so-called non-factorisable (NF) QCD corrections, that is the corrections where (real or virtual) gluons are exchanged between different quark lines,
+    \item the so-called non-factorisable (NF) QCD corrections, \emph{i.e.}\ the corrections where (real or virtual) gluons are exchanged between different quark lines,
         are included;
     \item EW corrections to the $\mathcal O (\alpha^5\alphas)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
         the  $\mathcal O (\alpha^6$) term.
