@@ -86,13 +86,20 @@ if True:
     for i, point in enumerate(scatters_outpdf[scatters[0].path].points):
       upper = float('-inf')
       lower = float('inf')
+      sumy = 0
+      sumysq = 0
       for scatter in scatters:
         val = scatter.points[i].y;
-        if val > upper:
-          upper = val
-        if val < lower:
-          lower = val
-        point.yErrs = (point.y-lower, upper-point.y)
+## NNPDF error is the standard deviation, not the envelope
+#        if val > upper:
+#          upper = val
+#        if val < lower:
+#          lower = val
+        sumy += val
+        sumysq += val**2
+      n = len(scatters)
+      err = math.sqrt(sumysq/n - (sumy/n)**2)
+      point.yErrs = (err,err)
   # write envelopes
   outname = opts.OUTPUT_FILE.replace(".yoda","_pdf.yoda")
   yoda.write(scatters_outpdf.values(), outname)
