@@ -38,10 +38,9 @@ It employs complete tree-level matrix elements in the complex-mass scheme~\cite{
 The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
 {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
 
-  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for matching NLO-QCD calculations with parton showers.
+  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
-For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
-\MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}
+For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}. The {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_s$. The renormalisation and factorisation scale used differ slightly from \eqref{eq:defscale}, as rather than constructing the jets the {\sc Powheg-Box} uses the transverse momentum of the two final-state quarks in the underlying Born event. 
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
 It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
