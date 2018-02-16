@@ -1,17 +1,36 @@
-Vector-boson scattering (VBS) is a class of processes that make it possible 
-to probe the nature of Higgs-vector-vector couplings and triple and quartic gauge couplings.
-It is usually understood that VBS refers to the scattering of massive vector bosons ($\PW^\pm,\PZ$), which therefore couple to the Higgs boson and can be longitudinally polarised.
-The scattering of longitudinally-polarised bosons is of particular interest, because the corresponding matrix elements feature both gauge and unitarity cancellations that strongly depend on the actual structure of the Higgs sector.
-A detailed study of this class of processes will therefore further constrain the Higgs couplings and hint at or exclude non-Standard Model Higgs bosons.
+Vector-boson scattering (VBS) at a hadron collider 
+usually refers to the interaction of massive vector-bosons ($\PW^\pm,\PZ$),
+irradiated by partons (quarks) of the incoming protons, 
+which in turn are deflected from the beam direction 
+and enter the volume of the particle detectors.
+As a consequence, the typical signature of VBS events
+is characterised by two energetic jets 
+and four fermions,
+originating from the decay of the two vector bosons.
+Among the possible diagrams,
+the scattering process can be mediated also by a Higgs boson
+and involve in particular their longitudinal component.
+The interaction of of longitudinally polarised bosons is of particular interest, 
+because the corresponding matrix elements feature both gauge and unitarity cancellations 
+that strongly depend on the actual structure of the Higgs sector.
+A detailed study of this class of processes will therefore further constrain the Higgs couplings 
+at a very different energy scale with respect to the Higgs boson mass,
+and hint at, or exclude, non-Standard Model behaviours.
 
-The process with two positively charged $\PW$ bosons is the VBS process with the largest signal-to-background ratio at the LHC, for which evidence has been found in $8 \TeV$ data~\cite{Aad:2014zda,Khachatryan:2014sta} and has been subsequently
-observed~\cite{Sirunyan:2017ret} and measured~\cite{Aaboud:2016ffv} in $13\TeV$ data. At present 
-the measurements of VBS processes are limited by statistics but the situation will change in a near future.
-On the theoretical side, it is thus of prime importance to provide precise predictions and infer their related systematic errors.
+The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio at the LHC:
+evidence for it was found at the centre-of-mass energy of $8~\TeV$ already~\cite{Aad:2014zda,Khachatryan:2014sta},
+and it has been recently observed~\cite{Sirunyan:2017ret} and measured~\cite{Aaboud:2016ffv} 
+at $13\TeV$ as well.
+Presently, the measurements of VBS processes are limited by statistics, but the situation will change in a near future.
+On the theoretical side, 
+it is thus of prime importance to provide predictions with systematic uncertainties
+at least comparable to the current and experimental precisions~\cite{CMS:2016rcn}.
 
-The $\PW^+\PW^+$ scattering is the simplest VBS process to calculate, because of the double-charge structure of the leptonic final state that limits the number of partonic processes and total number of Feynman diagrams for each process.
-It also implies that irreducible backgrounds are comparatively small, which make this VBS process experimentally favourable in comparison to \eg $\PW^+\PW^-$ scattering, which has the largest cross section.
-Therefore, the $\PW^+\PW^+$ scattering is an ideal candidate for a detailed study of various theoretical predictions.
+
+The $\PW^+\PW^+$ scattering is also the simplest VBS process to calculate, 
+because the double-charge structure of the leptonic final state 
+limits the number of partonic processes and total number of Feynman diagrams for each process.
+Therefore, this process is the ideal candidate for a comparative study of the different simulation tools.
 
 In the last few years, several next-to-leading order (NLO) computations became available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
 The VBS computations all rely on approximations, while recently the complete NLO corrections have been performed~\cite{Biedermann:2017bss}.
@@ -19,10 +38,11 @@ It is therefore interesting to infer in details the quality of the various appro
 Indeed, apart from Ref.~\cite{Biedermann:2017bss} where it is commented on, \MP{more references?} no detailed comparison of the VBS approximations have been carried out.
 Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}.
 
-The hadronic process ito be considered is $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$, which includes the $\PW^+\PW^+$ scattering.
-This final state possesses three contributions at leading order (LO) whose coupling orders are $\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$, and $\mathcal{O}{\left(\alphas^{2}\alpha^{4}\right)}$.
+The full gauge-invariant process including the $\PW^+\PW^+$ scattering 
+ is $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
+This final state receives three contributions at leading order (LO) whose coupling orders are $\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$, and $\mathcal{O}{\left(\alphas^{2}\alpha^{4}\right)}$.
 They are commonly referred to as electroweak (EW), interference, and QCD contributions, respectively.%
-\footnote{The EW contribution is sometimes referred to as the VBS contribution even it possesses non-VBS contributions.}
+\footnote{The EW contribution is sometimes referred to as the VBS contribution, even it involves also non-VBS contributions.}
 Therefore, the present work starts with a LO study of these three contributions as a function of typical VBS cuts.
 This allows to quantify the various contributions to the final state $\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj$.
 This is followed by a LO comparison between the various predictions at the level of the cross section and differential distributions.
@@ -44,9 +64,9 @@ results obtained by {\sc MadGraph5\_aMC@NLO}, {\sc Powheg} and {\sc Phantom} {\b
 This is the first time in the literature that NLO QCD calculations for VBS processed matched to parton shower are compared between different generators.
 
 The article is organised as follows:
-First, we define the process under study in Sec.~\ref{sec:definition}.
-Various approximation at LO and NLO are described in Sec.~\ref{sec:details}.
+first, we define the process under study in Sec.~\ref{sec:definition}.
+The various approximation which are provided by the different computer codes at LO and NLO are described in Sec.~\ref{sec:details}.
 This is followed by a presentation of the programs used for the computations.
 Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study at fixed order, respectively.
-Section~\ref{sec:matching} then adds the effect of parton showers and hadronization to the fixed-order results by matching the two.
+Section~\ref{sec:matching} complements our study by comparing predictions at LO and LO which include the effect of parton showers and hadronization.
 The last section consists in concluding remarks and recommendations for experimental collaborations.
