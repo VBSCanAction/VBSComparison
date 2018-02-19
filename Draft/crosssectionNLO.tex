@@ -1,6 +1,6 @@
 In Tab.~\ref{tab:wg1_NLOrates}, the cross sections of the various tools at NLO-QCD accuracy are presented.
 The order considered is again the order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$ and the fiducial volume is the one described in Sec.~\ref{subsec:inputpar}.
-In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions are visibly differ according to the approximations used.
+In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions differ visibly according to the approximations used.
 
 \begin{table}[h!]
     \centering
@@ -8,10 +8,10 @@ In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions are visibly dif
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline
         \hline
-        {\sc Bonsay}  &  $X$ & $0.0009$  \\
+        {\sc Bonsay}  &  $1.35039 \pm 0.00006$  \\
         {\sc MG5\_aMC}&  $1.363\phantom{0}$ & $0.004$  \\
         {\sc MoCaNLO+Recola}  &  $ 1.382\phantom{0}$ & $0.002$ \\
-        {\sc POWHEG}  &  $1.3556$ & $0.0009$  \\
+        {\sc Powheg-Box}  &  $1.362$  & $0.003$   \\
         {\sc VBFNLO}  &  $1.3916$ & $0.0001$  \\
     \end{tabular}
     \caption{\label{tab:wg1_NLOrates} Cross sections for the LHC process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy and order $\mathcal{O}(\alpha^6)$.
@@ -19,10 +19,11 @@ In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions are visibly dif
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
     \MP{Please add or check your respective numbers.}}
     \MR{My $t$-/$u$-channel-only number is $1.3703(1)$, so something additionally must be going on with Powheg, which we should comment on.}
+    \AK{The number here was wrong. I have updated the table and plots. I am also running some more statistics... }
 \end{table}
 
-The first observation is that the predictions featuring two versions of the VBS approximation ({\sc Bonsay} and {\sc POWHEG}) are close.
-This means that the double-pole approximation on the two W bosons used in {\sc Bonsay} constitutes a good approximation of the VBS-approximated virtual corrections implemented in {\sc POWHEG}.
+The first observation is that the predictions featuring two versions of the VBS approximation ({\sc Bonsay} and the {\sc Powheg-Box}) are close.
+This means that the double-pole approximation on the two W bosons used in {\sc Bonsay} constitutes a good approximation of the VBS-approximated virtual corrections implemented in the {\sc Powheg-Box}.
 Both predictions differ by about $2\%$ with respect to the full computation ({\sc MoCaNLO+Recola}).
 The second observation is that the inclusion of $s$-channel contributions seems to have a significant impact.
 Indeed, its inclusion (as done in {\sc VBFNLO}) approximates the full computation by less than a per-cent ($0.7\%$).

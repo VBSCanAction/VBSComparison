@@ -1,6 +1,6 @@
 Vector-boson scattering (VBS) at a hadron collider 
 usually refers to the interaction of massive vector-bosons ($\PW^\pm,\PZ$),
-irradiated by partons (quarks) of the incoming protons, 
+radiated by partons (quarks) of the incoming protons, 
 which in turn are deflected from the beam direction 
 and enter the volume of the particle detectors.
 As a consequence, the typical signature of VBS events
@@ -8,35 +8,37 @@ is characterised by two energetic jets
 and four fermions,
 originating from the decay of the two vector bosons.
 Among the possible diagrams,
-the scattering process can be mediated also by a Higgs boson
+the scattering process can be mediated by a Higgs boson
 and involve in particular their longitudinal component.
-The interaction of of longitudinally polarised bosons is of particular interest, 
+The interaction of longitudinally polarised bosons is of particular interest, 
 because the corresponding matrix elements feature both gauge and unitarity cancellations 
 that strongly depend on the actual structure of the Higgs sector.
 A detailed study of this class of processes will therefore further constrain the Higgs couplings 
 at a very different energy scale with respect to the Higgs boson mass,
 and hint at, or exclude, non-Standard Model behaviours.
 
-The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio at the LHC:
+The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio at the LHC of all the VBS processes:
 evidence for it was found at the centre-of-mass energy of $8~\TeV$ already~\cite{Aad:2014zda,Khachatryan:2014sta},
 and it has been recently observed~\cite{Sirunyan:2017ret} and measured~\cite{Aaboud:2016ffv} 
 at $13\TeV$ as well.
-Presently, the measurements of VBS processes are limited by statistics, but the situation will change in a near future.
+Presently, the measurements of VBS processes are limited by statistics, but the situation will change in the near future.
 On the theoretical side, 
 it is thus of prime importance to provide predictions with systematic uncertainties
-at least comparable to the current and experimental precisions~\cite{CMS:2016rcn}.
+at least comparable to the current and envisaged experimental precisions~\cite{CMS:2016rcn}.
 
 
-The $\PW^+\PW^+$ scattering is also the simplest VBS process to calculate, 
+$\PW^+\PW^+$ scattering is also the simplest VBS process to calculate, 
 because the double-charge structure of the leptonic final state 
 limits the number of partonic processes and total number of Feynman diagrams for each process.
+Nonetheless, it posses all features of VBS at the LHC and is thus representative of other VBS signature.
 Therefore, this process is the ideal candidate for a comparative study of the different simulation tools.
+\AK{Could one not argue the opposite? That because it is easy and only has a certain class of diagrams it doesn't capture all the differences one might find between different simulation programs? This sentence is not very convincing to me.}
+\MP{I added ``Nontheless [...]'' but I am not sure it is more convincing...}
 
-In the last few years, several next-to-leading order (NLO) computations became available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
-The VBS computations all rely on approximations, while recently the complete NLO corrections have been performed~\cite{Biedermann:2017bss}.
-It is therefore interesting to infer in details the quality of the various approximations.
-Indeed, apart from Ref.~\cite{Biedermann:2017bss} where it is commented on, \MP{more references?} no detailed comparison of the VBS approximations have been carried out.
-Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}.
+In the last few years, several next-to-leading order (NLO) computations have become available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
+These VBS computations all rely on various approximations, typically neglecting contributions which are expected to be small under realistic experimental setups~\cite{Oleari:2003tc}. Recently the complete NLO corrections to $\PW^+\PW^+$ have been performed in Ref.~\cite{Biedermann:2017bss}, making it possible for the first time to study in detail the quality of the VBS approximations used in most tools. \AK{I have changed this sentence a bit, as I felt it didn't convey the message strongly enough. I also added a reference to Oleari and Zeppenfeld which have a statement about the VBS approximation being accurate at the 0.3\% level at LO. }
+
+Indeed, apart from Ref.~\cite{Biedermann:2017bss} where it is commented on, \MP{more references?} no detailed comparison of the VBS approximations have been carried out beyond the leading-order~\cite{Oleari:2003tc}\AK{As stated above this paper has a statement on the LO approximation. As far as I can see all further papers cite this one as the reason why the VBS approximation is good enough.}. Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}.
 
 The full gauge-invariant process including the $\PW^+\PW^+$ scattering 
  is $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
@@ -44,29 +46,28 @@ This final state receives three contributions at leading order (LO) whose coupli
 They are commonly referred to as electroweak (EW), interference, and QCD contributions, respectively.%
 \footnote{The EW contribution is sometimes referred to as the VBS contribution, even it involves also non-VBS contributions.}
 Therefore, the present work starts with a LO study of these three contributions as a function of typical VBS cuts.
-This allows to quantify the various contributions to the final state $\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj$.
-This is followed by a LO comparison between the various predictions at the level of the cross section and differential distributions.
+This allows us to quantify the various contributions to the final state $\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj$.
+It is followed by a LO comparison between the various predictions at the level of the cross section and differential distributions.
 
 At NLO, the process possesses four contributions of orders $\mathcal{O}{\left(\alpha^{7}\right)}$, $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$, $\mathcal{O}{\left(\alphas^{2}\alpha^{5}\right)}$, and $\mathcal{O}{\left(\alphas^{3}\alpha^{4}\right)}$.
 The largest ones are the EW corrections~\cite{Biedermann:2017bss,Biedermann:2016yds} of order $\mathcal{O}{\left(\alpha^{7}\right)}$.
 The contribution to the order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ is the second largest NLO contribution and is often referred to as the QCD corrections to the VBS process.
-In the following, this order is the one where our comparisons are focused on and we will refer to it as simply \emph{NLO}.
+The main focus of the paper is the comparison of these corrections, and we will henceforth refer to this order simply as \emph{NLO}.
 As for the LO study, the various predictions are compared at the level of the cross section and differential distributions now at NLO accuracy.
 In particular, this makes it possible to infer the accuracy of the so-called VBS approximation, which we will define in more details later.
-To our knowledge, such a detailed study was still missing.
+To our knowledge, such a detailed study was still missing. \AK{Vague statement. It is either missing or not. I suggest simply removing the sentence.}
 
-Finally, several predictions featuring parton shower are compared, giving the possibility to infer systematic differences between the various predictions.
-A first study for the $\PW^+ \PW^- \Pj \Pj$ VBS process has been presented in
-Ref.~\cite{Rauch:2016upa}, comparing the angular-ordered default shower and the dipole
-shower and both{\sc MC@NLO}-like~\cite{Frixione:2002ik} and {\sc POWHEG}-like~\cite{Nason:2004rx,Frixione:2007vw} matching as implemented
-in {\sc Herwig 7}~\cite{Bellm:2015jjp}, also showing scale-variation uncertainties. In this work we extend such a comparison by presenting 
-results obtained by {\sc MadGraph5\_aMC@NLO}, {\sc Powheg} and {\sc Phantom} {\bf CITES}, possibly matched with different parton-showers.
-This is the first time in the literature that NLO QCD calculations for VBS processed matched to parton shower are compared between different generators.
+Finally, several parton shower matched predictions are compared, giving the possibility to infer systematic differences between the various parton showers and matching prescriptions.
+A similar study for the $\PW^+ \PW^- \Pj \Pj$ VBS process has been presented in
+Ref.~\cite{Rauch:2016upa}. Here a comparison of the default angular-ordered shower and the dipole
+shower  in {\sc Herwig 7}~\cite{Bellm:2015jjp} was carried out. Both {\sc MC@NLO}-like~\cite{Frixione:2002ik} and {\sc Powheg}-like~\cite{Nason:2004rx,Frixione:2007vw} matching was studied. In this work we extend such a comparison by presenting 
+results obtained by {\sc MadGraph5\_aMC@NLO}, {\sc Powheg} and {\sc Phantom} {\bf CITES} for the $\PW^+ \PW^+ \Pj \Pj$ VBS process, possibly\AK{Why possibly?} matched with different parton-showers.
+This is the first time in the literature that NLO QCD calculations for VBS processes matched to parton shower are compared between different generators. 
 
 The article is organised as follows:
-first, we define the process under study in Sec.~\ref{sec:definition}.
+In Sec.~\ref{sec:definition}, we define the VBS process.
 The various approximation which are provided by the different computer codes at LO and NLO are described in Sec.~\ref{sec:details}.
 This is followed by a presentation of the programs used for the computations.
 Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study at fixed order, respectively.
-Section~\ref{sec:matching} complements our study by comparing predictions at LO and LO which include the effect of parton showers and hadronization.
-The last section consists in concluding remarks and recommendations for experimental collaborations.
+Section~\ref{sec:matching} complements our study by comparing predictions at LO and NLO which include the effect of parton showers and hadronisation.
+The last section consists of concluding remarks and recommendations for experimental collaborations.

@@ -32,17 +32,6 @@ One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:20
         pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
         {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards/FKS\_params.dat} file to -1.
 
-  \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
-  at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.
-It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
-The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
-{\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
-
-  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw} is a framework for matching NLO-QCD calculations with parton showers.
-It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
-For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
-\MP{Mention the non-clustering for the scale as well as the different running of alphas at NLO.}
-
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
 It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
 This is made possible by the fact that {\sc Recola} can compute arbitrary processes at tree and one-loop level in the Standard Model.
@@ -51,6 +40,18 @@ In addition, the subtraction of the IR divergences appearing in the real correct
 The code has demonstrated its ability to compute at NLO high multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
 In particular the full NLO corrections to VBS and its irreducible background \cite{Biedermann:2016yds,Biedermann:2017bss} have been obtained from this tool.
 One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}.
+        
+  \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
+  at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.
+It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
+The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
+{\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
+
+  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
+It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
+For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
+The {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.
+The renormalisation and factorisation scale used differ slightly from one defined in Eq.~\eqref{eq:defscale}, as rather than constructing the jets the {\sc Powheg-Box} uses the transverse momentum of the two final-state quarks in the underlying Born event. 
 
   \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
     parton-level Monte Carlo for processes with electroweak bosons. It

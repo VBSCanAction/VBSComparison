@@ -1,29 +1,29 @@
 We now discuss how different predictions compare when the matching to parton-shower (PS) is included. For such
 a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
 matching schemes, parton shower employed and of other details of the matching (such as the choice of the parton shower initial scale). Among
-the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, {\sc POWHEG}, and {\sc VBFNLO}
+the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO}, we
 restrict ourselves to showing results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
 also {\sc PHANTOM} is employed for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For {\sc POWHEG}, the homonymous \MP{Is it the correct word? Because it would mean that the work ``Powheg'' has different meaning. Isn't it?}
-matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8}
-{\bf MZ VERSION? if same as MG5, put it at the end together with the
-tune}. {\sc VBFNLO} serves as a matrix-element and phase-space provider
+and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For the {\sc Powheg-Box}, the eponymous 
+\MP{Is it the correct word? Because it would mean that the word ``Powheg'' has different meaning. Isn't it?} 
+\AK{Changed to epononymous. Although still not correct as the powheg-box takes its name from the powheg matching and not the other way around... :)}
+matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the BLHA
 interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbox} module makes it
-possible to choose between {\sc MC@NLO}-like and {\sc POWHEG}-like
+possible to choose between {\sc MC\-@NLO}-like and {\sc Powheg}-like
 matching. As parton shower, both the default angular-ordered shower as
 well as the dipole shower can be employed.
-Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.
+Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.\AK{versions??}
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected.
 
 Results will be presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
 are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or even no cuts at all)
-must be employed in order not to bias the results. {\bf MZ lepton-jet separation at the hard-event level?}.
+must be employed in order not to bias the results. {\bf MZ lepton-jet separation at the hard-event level?} \AK{In powheg the separation is done after shower. So it's really the jet.}.
 
 Compared to the fixed order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is anyway dominated by doubly-resonant contribution, the
@@ -61,7 +61,7 @@ on the results \MP{Is it true? Because I remember some numbers from Christopher 
         {\sc MG5\_aMC}+{\sc Herwig++}&  $1.445 $ & $0.004$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.368$ & $0.004$  \\
         {\sc MG5\_aMC}+{\sc Herwig++}, $\Gamma_{\rm resc}$&  $1.363$ & $0.004$  \\
-        {\sc POWHEG}  &  $1.3642$ & $0.0004$  \\
+        {\sc Powheg-Box}  & $1.3642$ & $0.0004$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3389 ^{+0\%}_{-1\%}$ & $0.0006$  \\
         {\sc VBFNLO}+{\sc Herwig7-Default} &  $1.3067$ & $0.0006$  \\
     \end{tabular}
@@ -75,8 +75,8 @@ are respectively the nine-point scale uncertainty and the PDF one.}
 We now present the results of predictions matched to parton shower: the total rates within VBS cuts are displayed in Tables~\ref{tab:PSratesLO} and
 \ref{tab:PSratesNLO}, at LO and NLO
 accuracy respectively. For {\sc MG5\_aMC}, 
-the numbers whith $\Gamma_{\rm resc}$ are rescaled to 
-take into account the width effects described in the above paragraph.d  At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
+the numbers with $\Gamma_{\rm resc}$ are rescaled to 
+take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
 theoretical uncertainties: for the former, we show both PDF and scale uncertainties, obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalization and factorization
 scale by a factor 2 around its central value, Eq.~\ref{eq:defscale} (nine-point variations); for the latter, we show the 
 three-point scale uncertainties, obtained by considering correlated variations of the renormalization and factorization scales. 
@@ -84,7 +84,7 @@ We observe that, once the width effect is taken into
 account, total rates from different tools agree within few per cent, both at LO and NLO. Larger discrepancies however will appear for differential observables, which we are going to discuss in
 the following. Before turning to the differential observables, we point out the smallness of the theory uncertainties due to the scale variations, both when
 scales are varied independently and when they are varied in a correlated manner, as well as those due to PDF.  
-Concerning differential kinematic distributions, for each observable we will display results two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
+Concerning differential kinematic distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
 with different colours in the main frame. In the inset, these predictions are compared in both cases with a fixed-order prediction at NLO accuracy (obtained with
 {\sc VBFNLO} \emph{i.e.}\ the VBS approximation with $s$-channel contributions). For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
 obtained with {\sc VBFNLO} and {\sc MG5\_aMC}: 
@@ -96,8 +96,8 @@ main effects are driven by the parton shower that is employed {\sc Herwig++/7} o
 leading to higher jet multiplicities. Difference among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the parton shower. The main effect of NLO corrections for this (rather inclusive) observable is to stabilise the predictions for the two-jet bin, where discrepancies
 among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large: the largest rate is predicted by
-{\sc MG5\_aMC}, while the smallest rate is predicted by {\sc Powheg}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
-is different among the two tools. In particular, for {\sc Powheg}, the first emission is generated with an internal Sudakov form factor (the
+{\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
+is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
 prediction dubbed {\sc Powheg-no shower} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
 interplay between the real-emission matrix element and the shower emission.
 
@@ -106,7 +106,7 @@ interplay between the real-emission matrix element and the shower emission.
 \includegraphics[width=0.47\textwidth]{figures/LOPS/jetsexclusive.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
 \caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result
-    computed with \sc{VBFNLO}}
+    computed with \sc{VBFNLO}. \MP{The plots themselves should probably have the label LO and NLO for the FO+PS predictions. One should also describe how the bands are obtaineds.}}
 \label{fig:PSnjet}
 \end{figure*}
  
@@ -126,7 +126,7 @@ about -30\% at the end of the displayed range. At NLO+PS, this effect is much mo
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj} has some similarities to the invariant-mass distribution: at LO+PS all predictions,
 except for {\sc VBFNLO3+Herwig7} where the effect is mitigated, show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
 quantitatively similar way. At NLO+PS, when the extra radiation is described by the real matrix element, such an effect is greatly reduced. A notable
-exception is the {\sc Powheg} prediction, which still shows a suppression at large separations: since such a suppression is already there for the {\sc Powheg-no shower} sample,
+exception is the the {\sc Powheg-Box} prediction, which still shows a suppression at large separations: since such a suppression is already there for the {\sc Powheg-no shower} sample,
 it is very likely that it is driven by the way the first emission is generated. A minor effect in the same direction is visible in the last two bins of the
 {\sc MG5\_aMC+Herwig++} prediction (although with rather large statistical uncertainties).
 
@@ -135,13 +135,13 @@ it is very likely that it is driven by the way the first emission is generated. 
 The transverse momentum of the hardest and second-hardest jets are shown in Figures~\ref{fig:PSpt1} and~\ref{fig:PSpt2} respectively. In general, for both observables,
 predictions from different tools agree rather well with each other, with a spread at most at the 10\% level. At LO+PS, typically the transverse-momentum spectra are softer than
 the fixed-NLO ones, and this effect is more marked for the second-hardest jet which, as expected, is more sensitive to the description of the extra radiation. Again, this
-effect is mitigated by NLO corrections. The only feature that may be worth noticing among the NLO+PS predictions is the tendency of {\sc Powheg} to suppress the
-hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).\\
+effect is mitigated by NLO corrections. The only feature that may be worth noticing among the NLO+PS predictions is the tendency of the {\sc Powheg-Box} to suppress the
+hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).\AK{This effect seems to be cured by the dipole shower.}\\
 If we consider the rapidity of the second jet, Fig.~\ref{fig:PSy2}, we observe again rather small differences among tools, with the tendency towards a general
 stabilisation at NLO+PS. However, some (small) differences in the shape remain at NLO+PS, which are worth to be briefly discussed: predictions
-obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; {\sc Powheg}\ displays an enhancement of the central region, and a consequent suppression in the
+obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; the {\sc Powheg-Box}\ displays an enhancement of the central region, and a consequent suppression in the
 peripheral region, while {\sc VBFNLO} shows an opposite behaviour. However, the effect is rather small, with the largest departure from the fixed-order prediction being
-at most $10\%$.
+at most $10\%$ \AK{This effect again seems to be evened out by the dipole shower}.
 
 
 
@@ -156,9 +156,9 @@ However, such a setting is not compatible with the matching
 in {\sc MG5\_aMC}, and has other effects, though smaller, on the rapidity spectrum of the two hardest jets.}; it is interesting to notice that
 this effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+Pythia8}. A similar
 behaviour of {\sc Pythia8}
-has been also observed in the study of EW production of a Z boson in association with two jets (see the recent CMS measurement, 
+has also been observed in the study of EW production of a Z boson in association with two jets (see the recent CMS measurement, 
 Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}. 
-If it is true that the central enhancement
+It is true that the central enhancement
 is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediction), however even at NLO+PS the central region
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. \\
 
@@ -166,15 +166,15 @@ In conclusion, the comparison of tools including matching with parton-shower cle
 effectively at NLO accuracy differences between tools are at (or below) the $10\%$ level. 
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in details the way QCD radiation is
-generated {\bf MZ cite here H VBF at NNLO?}. It is remarkable the fact that, even for those observables that display small discrepancies,
+generated {\bf MZ cite here H VBF at NNLO?} \AK{I agree! :)}. It is a remarkable fact that, even for those observables that display small discrepancies,
 the theoretical uncertainty estimated via scale variations systematically underestimates the spread of predictions. Again, this stresses the need
  to employ at least two different tools in order to have a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
-experimental analyses should rely as least as possible on those observables and, in any case, use conservative estimate of the theory 
-uncertainties. On the one hand, un order to improve the
+experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimate of the theory 
+uncertainties.\AK{Are there any current analyses with a central jet veto in VBS? The experimentalists might take this statement a little too literal.} On the one hand, in order to improve the
 description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern 
 automated tools, is certainly desirable; on the other hand, measurements of processes with similar 
 color flow (EW production of a single vector boson plus jets,
- VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data.
+ VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data. \AK{Include some references here?}
 
 \begin{figure*}[hbt]
 \centering

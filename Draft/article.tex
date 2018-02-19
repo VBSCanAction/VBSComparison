@@ -21,6 +21,7 @@
  \usepackage{lmodern}
  \usepackage{url}
  \usepackage{morefloats}
+ \usepackage[utf8]{inputenc}
 %  \usepackage{siunitx}
 % \usepackage
 % [subrefformat=parens,position=top,skip=-15pt,margin=15pt,justification=justified,singlelinecheck=false]
@@ -44,6 +45,8 @@
 
 \newcommand{\MP}[1]{{ {\color{blue}{ [MP: #1]}} }}
 \newcommand{\MR}[1]{{ {\color{red}{ [MR: #1]}} }}
+\newcommand{\AK}[1]{{ {\color{magenta}{ [AK: #1]}} }}
+\newcommand{\ZM}[1]{{ {\color{green}{ [MZ: #1]}} }}
 
 %% ---------------------------------
 %% | ToDo Marker - only for draft! |
@@ -59,7 +62,7 @@
 
 \input{macros}
 %
-\journalname{PREPRINT NUMBERS HERE}
+\journalname{ZU-TH-08/18} % Preprint numbers here
 %
 \begin{document}
 
@@ -78,6 +81,8 @@ Stefan Dittmaier\thanksref{frei}
 Pietro Govoni\thanksref{mila}
 \and
 Michele Grossi\thanksref{pavia,ibm}
+\and
+Barbara J\"ager\thanksref{tub}
 \and
 Alexander Karlberg\thanksref{uzh}
 \and
@@ -100,6 +105,8 @@ Vincent Rothe\thanksref{desy}
 Christopher Schwan\thanksref{frei}
 \and
 Pascal Stienemeier\thanksref{desy}
+\and
+Giulia Zanderighi\thanksref{cern}
 \and
 Marco Zaro\thanksref{nikh}
 }
@@ -134,8 +141,10 @@ Circonvallazione Idroscalo , %
 20090 Segrate (MI), %
 Italy\label{ibm}
 \and
-Department of Physics, University of Z\"urich, %
-8057 Z\"urich,
+Physik-Institut,
+Universit\"at Z\"urich,
+Winterthurerstrasse 190,
+CH-8057 Z\"urich,
 Switzerland\label{uzh}
 \and
 INFN, Sezione di Torino, %
@@ -166,10 +175,26 @@ Nikhef,
 Science Park 105,
 1098XG Amsterdam,
 The Netherlands\label{nikh}
+\and
+CERN,
+Theoretical Physics Department,
+CH-1211, Geneva 23,
+Switzerland\label{cern}
+\and
+Institute for Theoretical Physics,
+University of T\"ubingen,
+Auf der Morgenstelle 14,
+72076 T\"ubingen,
+Germany\label{tub}
 }
 
 \maketitle
-
+\AK{Some general comments: We don't write the names of programs consistently everywhere. I think the nicest is to use}
+\begin{verbatim} 
+{\sc Generator}
+\end{verbatim}
+\AK{Ie captial first letter and lower-case everywhere else for generator names instead of all capital. But this is a matter of taste of course...}
+\AK{We may want to make it more clear in the abstract/introduction why this study is worth publishing. So focus on the large contributions from non-VBS approxiamtion at NLO which until now has been reproted as small, and the large discrepancies in the NLO+PS predictions. That plus the recommendations we give should be the main selling point, I think.}
 \input{abstract}
 
 \section{Introduction}
