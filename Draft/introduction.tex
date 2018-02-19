@@ -11,7 +11,7 @@ Among the possible diagrams,
 the scattering process can be mediated by a Higgs boson
 and involve in particular their longitudinal component.
 The interaction of longitudinally polarised bosons is of particular interest, 
-because the corresponding matrix elements feature both gauge and unitarity cancellations 
+because the corresponding matrix elements feature unitarity cancellations 
 that strongly depend on the actual structure of the Higgs sector.
 A detailed study of this class of processes will therefore further constrain the Higgs couplings 
 at a very different energy scale with respect to the Higgs boson mass,
@@ -30,25 +30,34 @@ at least comparable to the current and envisaged experimental precisions~\cite{C
 $\PW^+\PW^+$ scattering is also the simplest VBS process to calculate, 
 because the double-charge structure of the leptonic final state 
 limits the number of partonic processes and total number of Feynman diagrams for each process.
-Nonetheless, it posses all features of VBS at the LHC and is thus representative of other VBS signature.
+Nonetheless, it posseses all features of VBS at the LHC and is thus representative of other VBS signatures.
 Therefore, this process is the ideal candidate for a comparative study of the different simulation tools.
-\AK{Could one not argue the opposite? That because it is easy and only has a certain class of diagrams it doesn't capture all the differences one might find between different simulation programs? This sentence is not very convincing to me.}
-\MP{I added ``Nontheless [...]'' but I am not sure it is more convincing...}
 
 In the last few years, several next-to-leading order (NLO) computations have become available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
-These VBS computations all rely on various approximations, typically neglecting contributions which are expected to be small under realistic experimental setups~\cite{Oleari:2003tc}. Recently the complete NLO corrections to $\PW^+\PW^+$ have been performed in Ref.~\cite{Biedermann:2017bss}, making it possible for the first time to study in detail the quality of the VBS approximations used in most tools. \AK{I have changed this sentence a bit, as I felt it didn't convey the message strongly enough. I also added a reference to Oleari and Zeppenfeld which have a statement about the VBS approximation being accurate at the 0.3\% level at LO. }
+All these VBS computations rely on various approximations, typically neglecting contributions which are expected to be small under realistic experimental setups~\cite{Oleari:2003tc,Denner:2012dz}. Recently, the complete NLO corrections to $\PW^+\PW^+$ have been evaluated in Ref.~\cite{Biedermann:2017bss}, making it possible for the first time to study in detail the quality of the VBS approximations used in most tools. 
 
-Indeed, apart from Ref.~\cite{Biedermann:2017bss} where it is commented on, \MP{more references?} no detailed comparison of the VBS approximations have been carried out beyond the leading-order~\cite{Oleari:2003tc}\AK{As stated above this paper has a statement on the LO approximation. As far as I can see all further papers cite this one as the reason why the VBS approximation is good enough.}. Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}.
+{\bf MZ: we can remove the following sentence, up to the citation of Oleari}
+Apart from Ref.~\cite{Biedermann:2017bss}, no detailed comparison of the VBS approximations have been carried out beyond the leading-order~\cite{Oleari:2003tc}. 
 
+\iffalse
 The full gauge-invariant process including the $\PW^+\PW^+$ scattering 
  is $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
 This final state receives three contributions at leading order (LO) whose coupling orders are $\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$, and $\mathcal{O}{\left(\alphas^{2}\alpha^{4}\right)}$.
 They are commonly referred to as electroweak (EW), interference, and QCD contributions, respectively.%
 \footnote{The EW contribution is sometimes referred to as the VBS contribution, even it involves also non-VBS contributions.}
-Therefore, the present work starts with a LO study of these three contributions as a function of typical VBS cuts.
-This allows us to quantify the various contributions to the final state $\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj$.
-It is followed by a LO comparison between the various predictions at the level of the cross section and differential distributions.
+\fi
+After having defined the VBS process in Sec.~\ref{sec:definition} and having described the approximations of the various computer 
+codes in Sec.~\ref{sec:details}, in Sec.~\ref{sec:LO} a leading-order (LO) study 
+of the different contributions which lead to the production of two same-sign $\PW$ bosons and 
+two jets is performed, as a function of typical VBS cuts. In the same section predictions for VBS from different tools are compared
+the level of the cross section and differential distributions. The article continues in Sec.~\ref{sec:NLO} where the comparison is extended to the
+NLO corrections to VBS. The effect of the inclusion of matching LO and NLO computations to parton-shower (PS) is 
+discussed in Sec.~\ref{sec:matching}. Finally,
+Sec.~\ref{sec:conclusion} contains concluding remarks and recommendations for experimental collaborations.
 
+Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}.
+
+\iffalse
 At NLO, the process possesses four contributions of orders $\mathcal{O}{\left(\alpha^{7}\right)}$, $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$, $\mathcal{O}{\left(\alphas^{2}\alpha^{5}\right)}$, and $\mathcal{O}{\left(\alphas^{3}\alpha^{4}\right)}$.
 The largest ones are the EW corrections~\cite{Biedermann:2017bss,Biedermann:2016yds} of order $\mathcal{O}{\left(\alpha^{7}\right)}$.
 The contribution to the order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ is the second largest NLO contribution and is often referred to as the QCD corrections to the VBS process.
@@ -71,3 +80,4 @@ This is followed by a presentation of the programs used for the computations.
 Sections~\ref{sec:LO} and \ref{sec:NLO} are devoted to a LO and NLO study at fixed order, respectively.
 Section~\ref{sec:matching} complements our study by comparing predictions at LO and NLO which include the effect of parton showers and hadronisation.
 The last section consists of concluding remarks and recommendations for experimental collaborations.
+\fi

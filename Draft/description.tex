@@ -1,8 +1,26 @@
-In the comparison, the following codes are used:
+\begin{table*}[ht!]
+    \footnotesize
+    \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
+        Code  &  $\mathcal O(\alpha^6)$ $|s|^2/$ $|t|^2/|u|^2$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to $\mathcal O(\alphas \alpha^5)$  \\
+        \hline
+        \hline
+        {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
+        {\sc Powheg}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc MG5\_aMC}      &  Yes      &  Yes      &  Yes              &  Yes   & No virt. &  No \\
+        {\sc MoCaNLO+Recola}&  Yes      &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
+        {\sc PHANTOM}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\
+        {\sc VBFNLO}        &  Yes      &  No       &  Yes              &  Yes   & No       &  No  \\
+        {\sc Whizard}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\
+    \end{tabularx}
+    \caption{\label{tab:wg1_codes} Summary of the different properties of the codes employed in the comparison.}
+\end{table*}
+
+In the following, the codes employed throughout this paper and the approximations implemented in each of them will be discussed:
 
 \begin{itemize}
 
- \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator and matrix elements taken from several sources.
+    \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator. It implements the VBS approximation at LO and NLO, with
+        the exception of the virtual matrix elements, which are computed in the EVBA. Matrix elements are taken from several sources.
  Born matrix elements are adapted from the program {\sc Lusifer} \cite{Dittmaier:2002ap} for the partonic processes, real matrix elements are written by Marina Billoni, and virtual matrix elements by Stefan Dittmaier.
 One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
 
@@ -26,11 +44,13 @@ One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:20
   With these commands the complex-mass scheme is turned on {\tt \#1}, then the NLO-capable model is loaded {\tt \#2}\footnote{Despite
             the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electro-weak corrections, it is not yet possible to compute such corrections
         with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
-        and written to disk {\tt \#4}. Because of some internal limitations, which will be lifted in the future version capable of computing both QCD and EW corrections,
-        only loops with QCD-interacting particles are generated. As it has been already mentioned, such an approximation is equivalent to the assumption that the finite part of
+        and written to disk {\tt \#4}. No approximation is performed for the Born and real-emission matrix elements. 
+        For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
+        only loops with QCD-interacting particles are generated. Such an approximation is equivalent to the assumption that the finite part of
         those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
         pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
         {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards/FKS\_params.dat} file to -1.
+        {\bf MZ what exactly needs to be clarified here? perhaps I am just too used to this that I do not see problems here}
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
 It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
@@ -39,7 +59,8 @@ To that end, it relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:
 In addition, the subtraction of the IR divergences appearing in the real corrections has been automatised thanks to the Catani--Seymour dipole formalism for both QCD and QED \cite{Catani:1996vz,Dittmaier:1999mb}.
 The code has demonstrated its ability to compute at NLO high multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
 In particular the full NLO corrections to VBS and its irreducible background \cite{Biedermann:2016yds,Biedermann:2017bss} have been obtained from this tool.
-One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}.
+One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}. 
+In {\sc MoCaNLO+Recola} no approximation is performed at LO as well as at NLO, and, in particular, also contributions stemming from EW corrections to the interference are computed.
         
   \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
   at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.
@@ -50,6 +71,7 @@ The integration uses a multichannel approach~\cite{Berends:1984gf} and an adapti
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
+{\bf MZ : I would move these sentences in the setup part, possibly as footnotes}
 The {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.
 The renormalisation and factorisation scale used differ slightly from one defined in Eq.~\eqref{eq:defscale}, as rather than constructing the jets the {\sc Powheg-Box} uses the transverse momentum of the two final-state quarks in the underlying Born event. 
 
@@ -67,7 +89,7 @@ The renormalisation and factorisation scale used differ slightly from one define
     bosons can be simulated.
 
   \item {\sc Whizard}~\cite{Moretti:2001zz,Kilian:2007gr} is a multi-purpose
-event generator with the LO matrix element generator {\sc O'Mega}. It
+      event generator with the LO matrix element generator {\sc O'Mega}. {\bf MZ: if NLO results for this processes cannot be provided, we should skip what follows, or at least clarify the limitations}
 provides FKS subtraction terms for any NLO process, while virtual matrix
 elements are provided externally by {\sc
 OpenLoops}~\cite{Cascioli:2011va} (alternatively, {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}
@@ -77,3 +99,15 @@ the VBS channel in terms of both higher-dimensional operators as well as explici
 resonances.
 
 \end{itemize}
+
+We conclude this section by summarizing the details of the various codes in Tab.~\ref{tab:wg1_codes}. In particular, it is specified whether
+\begin{itemize}
+    \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
+    \item interferences between diagrams are included at LO;
+    \item diagrams which do not feature two resonant vector bosons are included;
+    \item the so-called non-factorisable (NF) QCD corrections, \emph{i.e.}\ the corrections where (real or virtual) gluons are exchanged between different quark lines,
+        are included;
+    \item EW corrections to the $\mathcal O (\alpha^5\alphas)$ interference are included. These corrections are of the same order as the NLO QCD corrections to
+        the  $\mathcal O (\alpha^6$) term.
+\end{itemize}
+
