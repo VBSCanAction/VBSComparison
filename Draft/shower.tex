@@ -8,9 +8,7 @@ restrict ourselves to showing results only in the VBS approximation,
 also {\sc PHANTOM} is employed for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For the {\sc Powheg-Box}, the eponymous 
-\MP{Is it the correct word? Because it would mean that the word ``Powheg'' has different meaning. Isn't it?} 
-\AK{Changed to epononymous. Although still not correct as the powheg-box takes its name from the powheg matching and not the other way around... :)}
+and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the BLHA
@@ -23,7 +21,7 @@ Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is select
 
 Results will be presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
 are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or even no cuts at all)
-must be employed in order not to bias the results. {\bf MZ lepton-jet separation at the hard-event level?} \AK{In powheg the separation is done after shower. So it's really the jet.}.
+must be employed in order not to bias the results. \ZM{lepton-jet separation at the hard-event level?} \AK{In powheg the separation is done after shower. So it's really the jet.}.
 
 Compared to the fixed order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is anyway dominated by doubly-resonant contribution, the
@@ -31,8 +29,8 @@ events are produced for the process with two stable W$^+$ bosons (${\rm p}{\rm p
 are decayed with {\sc MadSpin}~\cite{Artoisenet:2012st} (keeping spin correlations) before the PS. Since {\sc MadSpin}\ computes
 the partial and total decay width of the W bosons at LO accuracy only, while in Section~\ref{subsec:inputpar} the NLO width is employed,
 a small effect (6\%) on the normalisation of distribution is induced. Finally, when the renormalisation
-and factorisation scales are set, the $\Delta R_{\Pj\Pl}$ cut is not imposed during the jet-clustering procedure, but this has no visible effect
-on the results \MP{Is it true? Because I remember some numbers from Christopher with $1\%$ or so}.
+and factorisation scales are set, the $\Delta R_{\Pj\Pl}$ cut is not imposed during the jet-clustering procedure.
+But this effect is below a per cent at the level of the fiducial cross sections.
 
 \begin{table}[h!]
     \centering
