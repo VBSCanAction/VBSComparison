@@ -2,10 +2,10 @@ We now discuss how different predictions compare when the matching to parton-sho
 a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
 matching schemes, parton shower employed and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
-can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO}, we
+can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} \BJ{ and the {\sc Powheg-Box}}, we
 restrict ourselves to showing results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
-also {\sc PHANTOM} is employed for LO+PS results.\\
+also {\sc PHANTOM} is used for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
 and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For the {\sc Powheg-Box}, the eponymous 
@@ -68,7 +68,7 @@ on the results \MP{Is it true? Because I remember some numbers from Christopher 
     \caption{\label{tab:PSratesNLO} Rates at NLO-QCD  accuracy matched to parton shower within VBS cuts obtained with the different codes used in this comparison,
     for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process. The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$ 
     are rescaled to account for the effect related to the boson widths computed by {\sc MadSpin} (see the text for details). For
-    {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties is shown, while for  {\sc MG5\_aMC}+{\sc Pythia8} the two displayed uncertainties
+    {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for  {\sc MG5\_aMC}+{\sc Pythia8} the two displayed uncertainties
 are respectively the nine-point scale uncertainty and the PDF one.}
 \end{table}
 
@@ -78,21 +78,21 @@ accuracy respectively. For {\sc MG5\_aMC},
 the numbers with $\Gamma_{\rm resc}$ are rescaled to 
 take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
 theoretical uncertainties: for the former, we show both PDF and scale uncertainties, obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalization and factorization
-scale by a factor 2 around its central value, Eq.~\ref{eq:defscale} (nine-point variations); for the latter, we show the 
+scale by a factor of two around its central value, Eq.~(\ref{eq:defscale}) (nine-point variations); for the latter, we show the 
 three-point scale uncertainties, obtained by considering correlated variations of the renormalization and factorization scales. 
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within few per cent, both at LO and NLO. Larger discrepancies however will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within a few per cent, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Before turning to the differential observables, we point out the smallness of the theory uncertainties due to the scale variations, both when
 scales are varied independently and when they are varied in a correlated manner, as well as those due to PDF.  
 Concerning differential kinematic distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
 with different colours in the main frame. In the inset, these predictions are compared in both cases with a fixed-order prediction at NLO accuracy (obtained with
-{\sc VBFNLO} \emph{i.e.}\ the VBS approximation with $s$-channel contributions). For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
+{\sc VBFNLO} \emph{i.e.}\ the VBS approximation with $s$-channel \BJ{Note that first paragraph of the Sec. says that s-channel contributions are neglected in VBFNLO.} For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
 obtained with {\sc VBFNLO} and {\sc MG5\_aMC}: 
 again, for the first the band corresponds to three-point variations, while for the second the darker (lighter) band corresponds to nine-point 
 scale variations (plus PDF uncertainties, linearly added). 
 
 The first observable we investigate is the exclusive jet multiplicity, shown in Fig.~\ref{fig:PSnjet}. Looking at the LO+PS predictions, one can appreciate that the
-main effects are driven by the parton shower that is employed {\sc Herwig++/7} or {\sc Pythia8}, with the clear tendency of producing more radiation for the latter,
+main effects are driven by the parton shower that is employed ({\sc Herwig++/7} or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
 leading to higher jet multiplicities. Difference among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the parton shower. The main effect of NLO corrections for this (rather inclusive) observable is to stabilise the predictions for the two-jet bin, where discrepancies
 among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large: the largest rate is predicted by
@@ -106,7 +106,7 @@ interplay between the real-emission matrix element and the shower emission.
 \includegraphics[width=0.47\textwidth]{figures/LOPS/jetsexclusive.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
 \caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result
-    computed with \sc{VBFNLO}. \MP{The plots themselves should probably have the label LO and NLO for the FO+PS predictions. One should also describe how the bands are obtaineds.}}
+    computed with \sc{VBFNLO}. \MP{The plots themselves should probably have the label LO and NLO for the FO+PS predictions. One should also describe how the bands are obtained.}}
 \label{fig:PSnjet}
 \end{figure*}
  
@@ -123,16 +123,16 @@ the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the 6\% width effect for {\sc MG5\_aMC}); LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
 about -30\% at the end of the displayed range. At NLO+PS, this effect is much more mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
  
-The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj} has some similarities to the invariant-mass distribution: at LO+PS all predictions,
+The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities to the invariant-mass distribution: at LO+PS all predictions,
 except for {\sc VBFNLO3+Herwig7} where the effect is mitigated, show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
 quantitatively similar way. At NLO+PS, when the extra radiation is described by the real matrix element, such an effect is greatly reduced. A notable
-exception is the the {\sc Powheg-Box} prediction, which still shows a suppression at large separations: since such a suppression is already there for the {\sc Powheg-no shower} sample,
+exception is the {\sc Powheg-Box} prediction, which still shows a suppression at large separations: since such a suppression is already there for the {\sc Powheg-no shower} sample,
 it is very likely that it is driven by the way the first emission is generated. A minor effect in the same direction is visible in the last two bins of the
 {\sc MG5\_aMC+Herwig++} prediction (although with rather large statistical uncertainties).
 
 
 
-The transverse momentum of the hardest and second-hardest jets are shown in Figures~\ref{fig:PSpt1} and~\ref{fig:PSpt2} respectively. In general, for both observables,
+The transverse momentum of the hardest and second-hardest jets are shown in Figs.~\ref{fig:PSpt1} and~\ref{fig:PSpt2}, respectively. In general, for both observables,
 predictions from different tools agree rather well with each other, with a spread at most at the 10\% level. At LO+PS, typically the transverse-momentum spectra are softer than
 the fixed-NLO ones, and this effect is more marked for the second-hardest jet which, as expected, is more sensitive to the description of the extra radiation. Again, this
 effect is mitigated by NLO corrections. The only feature that may be worth noticing among the NLO+PS predictions is the tendency of the {\sc Powheg-Box} to suppress the
@@ -145,7 +145,7 @@ at most $10\%$ \AK{This effect again seems to be evened out by the dipole shower
 
 
 
-Finally, focusing on the third jet, we conclude the list of differential observables with the rapidity and the Zeppenfeld variable defined in Eq.~\eqref{eq:Zeppenfeld}, Figures~\ref{fig:PSy3} and~\ref{fig:PSz3}.
+Finally, focusing on the third jet, we conclude the list of differential observables with the rapidity and the Zeppenfeld variable defined in Eq.~\eqref{eq:Zeppenfeld}, Figs.~\ref{fig:PSy3} and~\ref{fig:PSz3}.
 {\bf MZ the rapidity can be dropped (check also the following discussion in case)}
 In general, for observables which involve the third jet, one
 can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The rapidity and Zeppenfeld variable $z$
