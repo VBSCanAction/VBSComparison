@@ -2,13 +2,13 @@ We now discuss how different predictions compare when the matching to parton-sho
 a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
 matching schemes, parton shower employed and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
-can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} \BJ{ and the {\sc Powheg-Box}}, we
+can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} and the {\sc Powheg-Box}, we
 restrict ourselves to showing results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
 also {\sc PHANTOM} is used for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). For the {\sc Powheg-Box}, the namesake
+and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). The same parton showers will be employed for the LO results of {\sc PHANTOM}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the BLHA
@@ -16,12 +16,11 @@ interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbo
 possible to choose between {\sc MC\-@NLO}-like and {\sc Powheg}-like
 matching. As parton shower, both the default angular-ordered shower as
 well as the dipole shower can be employed.
-Finally, {\sc PHANTOM} results will be shown matched with {\sc Pythia 8} and {\sc Herwig++}.\AK{versions??}
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected.
 
 Results will be presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
 are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or even no cuts at all)
-must be employed in order not to bias the results. \ZM{lepton-jet separation at the hard-event level?} \AK{In powheg the separation is done after shower. So it's really the jet.}.
+must be employed in order not to bias the results. 
 
 Compared to the fixed order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is anyway dominated by doubly-resonant contribution, the
@@ -77,7 +76,7 @@ the numbers with $\Gamma_{\rm resc}$ are rescaled to
 take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
 theoretical uncertainties: for the former, we show both PDF and scale uncertainties, obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalization and factorization
 scale by a factor of two around its central value, Eq.~(\ref{eq:defscale}) (nine-point variations); for the latter, we show the 
-three-point scale uncertainties, obtained by considering correlated variations of the renormalization and factorization scales. 
+three-point scale uncertainties, obtained by considering correlated variations of the renormalization and factorization scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
 account, total rates from different tools agree within a few per cent, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Before turning to the differential observables, we point out the smallness of the theory uncertainties due to the scale variations, both when
@@ -103,8 +102,9 @@ interplay between the real-emission matrix element and the shower emission.
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/jetsexclusive.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
-\caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result
-    computed with \sc{VBFNLO}. \MP{The plots themselves should probably have the label LO and NLO for the FO+PS predictions. One should also describe how the bands are obtained.}}
+\caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result computed with {\sc VBFNLO}. At NLO+PS accuracy, for
+    {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond  
+    respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly. \MP{The plots themselves should probably have the label LO and NLO for these predictions}}
 \label{fig:PSnjet}
 \end{figure*}
  
@@ -143,20 +143,19 @@ at most $10\%$ \AK{This effect again seems to be evened out by the dipole shower
 
 
 
-Finally, focusing on the third jet, we conclude the list of differential observables with the rapidity and the Zeppenfeld variable defined in Eq.~\eqref{eq:Zeppenfeld}, Figs.~\ref{fig:PSy3} and~\ref{fig:PSz3}.
-{\bf MZ the rapidity can be dropped (check also the following discussion in case)}
-In general, for observables which involve the third jet, one
-can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The rapidity and Zeppenfeld variable $z$
-are a striking example: both at LO and NLO, the tendency of {\sc Pythia8} to generate more hard and central radiation (corresponding to low values of $z$)
-is clearly visible\footnote{The effect, which is related to the way {\sc Pythia8} deals with the recoil of the radiation in VBF/S-type processes,
-can be mitigated by setting {\tt SpaceShower:dipoleRecoil = on} in the {\sc Pythia8} input file (this requires version $\ge8.230$). 
-However, such a setting is not compatible with the matching
-in {\sc MG5\_aMC}, and has other effects, though smaller, on the rapidity spectrum of the two hardest jets.}; it is interesting to notice that
-this effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+Pythia8}. A similar
+Finally, focusing on the third jet, we conclude the list of differential observables with showing the Zeppenfeld variable defined in Eq.~\eqref{eq:Zeppenfeld}, Fig.~\ref{fig:PSz3}. This 
+variable is closed related to the third jet rapidity, and small (large) value of $z$ correpsond to central (peripheral) rapidities. In general, for observables which involve the third jet, one
+can clearly see a degradation of the agreement among the various tools, because of the poorer perturbative description of these observables. The Zeppenfeld variable is 
+a striking example: both at LO and NLO, the tendency of {\sc Pythia8} to generate more hard and central radiation, corresponding to low values of $z$,
+is clearly visible. Such an effect, which is related to the way {\sc Pythia8} deals with the recoil of the radiation in VBF(VBS)-type processes,
+can be mitigated by setting {\tt SpaceShower:dipole\-Recoil = on} in the {\sc Pythia8} input file;\footnote{this requires version $\ge8.230$. 
+Note that such a setting is not compatible with the NLO matching
+in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other effects, though smaller, on the rapidity spectra of the two hardest jets.} it is interesting to notice that
+it survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+ Pythia8}. A similar
 behaviour of {\sc Pythia8}
-has also been observed in the study of EW production of a Z boson in association with two jets (see the recent CMS measurement, 
+has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement, 
 Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}. 
-It is true that the central enhancement
+The central enhancement
 is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediction), however even at NLO+PS the central region
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. \\
 
@@ -164,8 +163,8 @@ In conclusion, the comparison of tools including matching with parton-shower cle
 effectively at NLO accuracy differences between tools are at (or below) the $10\%$ level. 
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in details the way QCD radiation is
-generated {\bf MZ cite here H VBF at NNLO?} \AK{I agree! :)}. It is a remarkable fact that, even for those observables that display small discrepancies,
-the theoretical uncertainty estimated via scale variations systematically underestimates the spread of predictions. Again, this stresses the need
+generated, e.g. when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}. It is a remarkable fact that, even for those observables that display small discrepancies,
+the theoretical uncertainty obtained via scale variations systematically underestimates the spread of predictions. Again, this stresses the need
  to employ at least two different tools in order to have a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimate of the theory 
 uncertainties.\AK{Are there any current analyses with a central jet veto in VBS? The experimentalists might take this statement a little too literal.} On the one hand, in order to improve the
@@ -206,14 +205,6 @@ color flow (EW production of a single vector boson plus jets,
 \label{fig:PSy2}
 \end{figure*}
 
-\begin{figure*}[hbt]
-\centering
-\includegraphics[width=0.47\textwidth]{figures/LOPS/y_j3.pdf}
-\includegraphics[width=0.47\textwidth]{figures/NLOPS/y_j3.pdf}
-\caption{Same as in Fig.~\protect\ref{fig:PSnjet}, for the rapidity of the third-hardest jet.}
-\label{fig:PSy3}
-\end{figure*}
- 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/z_j3.pdf}
