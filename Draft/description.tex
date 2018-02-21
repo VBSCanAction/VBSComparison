@@ -38,20 +38,20 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
         at zero additional CPU cost~\cite{Frederix:2011ss}.\\
         The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
 \begin{verbatim}
-> set complex_mass_scheme #1
-> import model loop_qcd_qed_sm_Gmu #2
-> generate p p > e+ ve mu+ vm j j QCD=0 [QCD] #3
-> output #4
+> set complex_mass_scheme
+> import model loop_qcd_qed_sm_Gmu
+> generate p p > e+ ve mu+ vm j j QCD=0 [QCD]
+> output
 \end{verbatim}
-  With these commands the complex-mass scheme is turned on {\tt \#1}, then the NLO-capable model is loaded {\tt \#2}\footnote{Despite
+  With these commands the complex-mass scheme is turned on, then the NLO-capable model is loaded,\footnote{Despite
             the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electro-weak corrections, it is not yet possible to compute such corrections
-        with the current version of the code.}, finally the process code is generated {\tt \#3} (note the {\tt QCD=0} syntax to select the purely-electroweak process)
-        and written to disk {\tt \#4}. No approximation is performed for the Born and real-emission matrix elements. 
+        with the current version of the code.} finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-electroweak process)
+        and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
         For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
         only loops with QCD-interacting particles are generated. Such an approximation is equivalent to the assumption that the finite part of
         those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
         pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
-        {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards/FKS\_params.dat} file to -1.
+        {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards\-/FKS\_\-params.dat} file to -1.
         {\bf MZ what exactly needs to be clarified here? perhaps I am just too used to this that I do not see problems here}
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
