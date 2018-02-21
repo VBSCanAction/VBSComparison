@@ -7,11 +7,13 @@ This has not only been performed in a typical VBS fiducial region but also in mo
 We quantify precisely the differences that arise for several physical observables and in particular for the di-jet invariant mass and the rapidity-separation of the leading two jets.
 This is the first time that such an in-depth study is performed and should be representative of the quality of the approximations for other VBS signatures.
 In addition to fixed order predictions we have also investigated the impact of parton-shower.
-To that end, several fixed-order computations matched to parton shower have been used.
-It turns out that very large differences can appear for certain observables.
-These differences appear in the central region where for VBS, colour-recombination plays a significant role.
+To that end, several generators which include matching to parton shower have been employed, and various observables have been thoroughly compared.
+While in general observables which are described at NLO accuracy show reasonable agreement among the tools, larger differences can 
+appear for those observables described at a lower accuracy, such as those that involve the third jet.
+These differences appear in the central region where for VBS, colour-recombination plays a significant role \ZM{it is not color recombination, it 
+is the recoil scheme of the shower}.
 These findings are new and should trigger further investigations in the theoretical community as well as by experimental collaborations.
-Indeed, measurements of such observables should allow for a better understanding of colour-recombination in parton shower.
+Indeed, measurements of related observables for similar processes should allow for a better understanding of these  issues.
 \MP{It might be too strong a statement. At least Simon will rephrase it.}
 
 The results presented here are exclusively theoretical.
@@ -24,13 +26,14 @@ In Ref.~\cite{Biedermann:2016yds}, it has been demonstrated that these large EW 
 Therefore we recommend to combined them in a multiplicative way.
 Concerning the estimation of missing higher-order corrections of EW type they can be obtained, in a first approximation, from $\pm \delta^2_{\rm NLO EW}$.
 The missing higher-order mixed QCD-EW corrections can be estimate by taking the difference between the multiplicative and additive prescription.
-A detailed study of the combination of higher-order corrections has been carried out in the context of SM background for dark matter searches at the LHC \cite{Lindert:2017olm} and could be followed here as well.
+A detailed study of the combination of higher-order corrections has been carried out e.g. in the context of top-pair production~\cite{Czakon:2017wor} or SM 
+background for dark matter searches at the LHC \cite{Lindert:2017olm} and could be followed here as well.
 
-We have shown how good the VBS approximation is performing in both inclusive and exclusive set-ups at both LO and NLO-QCD accuracy.
-It turns out that for typical fiducial region used by experimental collaborations for their measurements, the agreement between the approximations and full calculation is certainly satisfactory given the current experimental precision.
+For the typical fiducial region used by experimental collaborations for their measurements, the agreement between the approximations and full calculation is certainly satisfactory given the current {\bf MZ and future?} experimental precision.
 Nonetheless, in the future when experimental measurements will improve, care has to be taken when using such approximations, in particular, if more inclusive phase-space are used.
 
-Concerning the fixed-order predictions supplemented with parton shower, we have shown that for observables defined at LO, the differences are reasonable.
+{\bf MZ there are many repetitions here}
+Concerning predictions that include parton shower, we have shown that for observables defined at NLO, the differences are reasonable.
 On the other hand, for observables only defined at NLO-QCD, such as the ones related to the third hardest jet, large differences can arise between different parton-shower algorithms.
 Therefore, jet-veto procedures or selections based on extra radiation should be avoided as they carry rather large uncertainties.
 
@@ -47,13 +50,16 @@ As demonstrated above, numerous programs exist to simulate the process $\Pp\Pp\t
 So far there is no public code that perform the full NLO computation matched with parton shower.
 Nonetheless, full computations at NLO and publicly available tools at NLO-QCD accuracy in the VBS approximation matched to parton shower are available.
 Therefore, we encourage experimental collaborations to move to NLO accuracy supplemented with parton shower as much as possible.
-In particular, we are willing to support this effort. \MP{Are we?}
+In particular, we are willing to support this effort. \MP{Are we? - MZ: remove this sentence}
 
 The present study has focused on the orders $\mathcal{O}{\left(\alpha^{6}\right)}$ at LO and $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ at NLO.
 Nonetheless NLO computations and publicly available tools also exist for the QCD-induced process \cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba,Biedermann:2017bss}.
 They should therefore be also used as much as possible.
 
 Uncertainties related to PDF has been hardly addressed in the present article.
+{\bf MZ I would remove this and the following sentence: we computed PDF uncertainties,
+    it is true that we did not comment much on it, but I think sayng 'Hardly addressed' is too much. I would anyway cite CS's proceedings when we
+show the PDF uncertainties in the shower section}
 It has only be discussed briefly in Sec.~\ref{sec:matching} where scale variation in combination with PDF variation has been shown.
 Some of us have already presented preliminary results on this subject \cite{Schwan:2017yy}. % Radcor proceedings from Christopher.
 Forthcoming publications will thus address related questions.
