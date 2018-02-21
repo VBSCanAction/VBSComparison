@@ -1,8 +1,9 @@
 #! /bin/sh
 
+cp ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison_NLO.plot ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison.plot
 rivet-mkhtml -o rivet-NLOPS \
   VBFNLO/VBFNLO-NLO.yoda\
-:"Title=NLO"\
+:"Title=NLO (fixed order)"\
 :"LineColor={[rgb]{0.40,0.40,0.40}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -63,9 +64,10 @@ rivet-mkhtml -o rivet-NLOPS \
 :"ErrorBandOpacity=0.3"\
 
 
+cp ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison_LO.plot ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison.plot
 rivet-mkhtml -o rivet-LOPS \
   VBFNLO/VBFNLO-NLO.yoda\
-:"Title=NLO"\
+:"Title=NLO (fixed order)"\
 :"LineColor={[rgb]{0.40,0.40,0.40}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
