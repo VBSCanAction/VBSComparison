@@ -1,7 +1,11 @@
 The hadronic scattering processes are simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$.
 The NNPDF~3.0 parton distribution functions~(PDFs)~\cite{Ball:2014uwa} with five flavour scheme, NLO-QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ are employed.\footnote{The corresponding identifier {\tt lhaid} in LHAPDF6~\cite{Buckley:2014ana} is 260000.}
-Since this PDF set has no photonic density, photon-induced processes are not considered. \BJ{I would change that sentence to simply {\em Photon-induced processes are not considered.}, as there are more reasons for disregarding the photon-induced contributions. } 
-Initial-state collinear singularities are factorised according to the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF. \BJ{Should we say something about singularities due to soft photon exchange in the $t$-channel that are removed in VBFNLO and POWHEG by a technical cutoff?}
+Since this PDF set has no photonic density, photon-induced processes are not considered.
+\BJ{I would change that sentence to simply {\em Photon-induced processes are not considered.}, as there are more reasons for disregarding the photon-induced contributions. } 
+Initial-state collinear singularities are factorised according to the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF.
+\BJ{Should we say something about singularities due to soft photon exchange in the $t$-channel that are removed in VBFNLO and POWHEG by a technical cutoff?}
+Note that no bottom-quark induced processes are included.
+They would lead to top quarks in the final state which have a different experimental signature than two light jets, missing transverse energy, and two positively charged leptons.
 
 For the massive particles, the following masses and decay widths are used:
 %
@@ -60,7 +64,7 @@ Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan
           \etsub{\text{miss}}=p_{\rm T, miss} >  40\GeV\,.
         \end{align}
         %
-    \item QCD partons (quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with distance parameter $R=0.4$. %Jets are required to have
+    \item QCD partons (light quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp} with distance parameter $R=0.4$. %Jets are required to have
     We impose cuts on the jets' transverse momenta, rapidities, and their separation from leptons,  
         \begin{align}
         \label{cut:3}
