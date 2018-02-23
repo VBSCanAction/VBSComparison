@@ -1,7 +1,7 @@
 We now turn to discuss the various approximations which are implemented in computer programs for the EW contribution at
 $\mathcal{O}{\left(\alpha^{6}\right)}$. Since we are mostly interested in 
 the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex, may appear justified to approximate the 
-full process by considering just those diagrams which contain the $2\rightarrow 2$ scattering process as a subpart.
+full process by considering just those diagrams which contain the $2\rightarrow 2$ scattering process as a sub-part.
 However, this set of contributions is not gauge invariant.
 In order ensure gauge invariance, an on-shell projection of the incoming and outgoing $\PW$ bosons should be performed {\bf MZ CITE}.
 Unfortunately, the former momenta are space-like and thus a simple on-shell projection is not possible.
@@ -13,7 +13,7 @@ Such an approximation is usually called effective vector-boson approximation (EV
 
 An improvement of such an approximation consists 
 in considering all $t$- and $u$-channel diagrams and squaring them separately, neglecting interference contributions between the two classes.
-These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed~\cite{Oleari:2003tc}.
+These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed~\cite{Oleari:2003tc,Denner:2012dz}.
 The $s$-channel squared diagrams and any interferences between them and the  $t/u$-channels are also discarded.
 This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
 We will adopt the latter denomination in the following of the article.
@@ -22,9 +22,9 @@ This approximation is gauge-invariant, a fact that can be appreciated by conside
 
 A further refinement is to add to the VBS approximation the squared matrix element of the $s$-channel contributions.
 
-The approximations performed at LO can be extended when NLO QCD corrections to the $\mathcal{O}{\left(\alpha^{6}\right)}$ are computed.
-The VBS approximation can be extended at NLO in a straightforward manner for what concerns the virtual contributions; 
-for the real-emission contributions special care must be taken for the gluon-initiated processes\footnote{The initial-state gluon and quark 
+The approximations performed at LO can be extended when NLO QCD corrections to the order $\mathcal{O}{\left(\alpha^{6}\right)}$ are computed.
+The VBS approximation can be extended at NLO in a straightforward manner for what concerns the virtual contributions.
+For the real-emission contributions special care must be taken for the gluon-initiated processes\footnote{The initial-state gluon and quark 
     must not couple together, otherwise infrared divergences proportional to $s$-channels will appear, 
      which do not match with the ones found in the virtual contributions.
      The subset of diagrams where all couplings of the initial state gluon to initial state quark are neglected forms a gauge-invariant subset, with the same argument presented above.}.
@@ -40,14 +40,14 @@ virtual contributions is included as a $K$-factor.
 \fi
 
 A further refinement is to consider the full real contributions, which include all interferences, and part of the virtual.
-In particular one can consider only one-loop amplitudes where there is no gluon exchange between the quarks and 
+In particular one can consider only one-loop amplitudes where there is no gluon exchange between the two quark lines and 
 assuming a cancellation of the infrared (IR) poles.
 %Such an approximation is implemented by {\sc MG5\_aMC}.
 %\MP{I think this is not a gauge invariant approximation. If not, this should be commented on (if yes also as this is not transparent to me).}
 
 When considering the full one-loop amplitude of order $\mathcal{O}(g_{\rm s}^2 g^6)$ squared with the tree amplitude of order $\mathcal{O}(g^6)$, not only real QCD radiation but also QED ones have to be included in order cancel IR singularities.
 But all IR singularities related to photon emissions are not cancelled by the above mentioned virtual corrections.
-Another type of virtual corrections have to incorporated, namely the one-loop amplitudes of order $\mathcal{O}(g^8)$ interfered with the tree-level ones of order $\mathcal{O}(g_{\rm s}^2 g^4)$.
+Another type of virtual corrections has to be incorporated, namely the one-loop amplitude of order $\mathcal{O}(g^8)$ interfered with the tree-level one of order $\mathcal{O}(g_{\rm s}^2 g^4)$.
 Hence the full NLO corrections of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consist not only of QCD-type corrections but also of EW ones \cite{Biedermann:2017bss}.
 %Such predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
 
