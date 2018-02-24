@@ -53,7 +53,7 @@ BONSAY_fact=1e-3 #numbers are in fb/GeV
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
 set label "NLO" font ",10" at graph 0.03, graph 0.88
 set xrange [0:1000]
-set yrange [1e-11:1e-2]
+set yrange [1e-7:1e-2]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -69,7 +69,7 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.5, graph 0.55 noautotitles spacing 2.4
+set key at graph 0.5, graph 0.53 noautotitles spacing 2.4
 
 plot \
 "../BONSAY/NLO/ew-nlo.mll" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
