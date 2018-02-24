@@ -69,7 +69,7 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.7, graph 0.3 noautotitles spacing 2.4
+set key at graph 0.7, graph 0.32 noautotitles spacing 2.4
 
 plot \
 "../BONSAY/NLO/ew-nlo.yj2" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
