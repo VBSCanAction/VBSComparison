@@ -97,16 +97,16 @@ unset format y
 unset key
 set xlabel 'y(j_1)'
 
-set ylabel 'Ratio /VBFNLO' offset 1
+set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../VBFNLO/LO/hist.yj1.dat ../VBFNLO/LO/hist.yj1.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../MG5_aMC/LO/y_j1_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../POWHEG/LO/Y_jet_1-_VBF_CUTS_index___8.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../Recola/LO/histogram_rapidity_j1_born.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../BONSAY/LO/ew-lo.yj1" u (($1+$2)/2):(BONSAY_fact*$10*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../WHIZARD/LO/hist_rapidityHardestJet.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
-"<paste ../VBFNLO/LO/hist.yj1.dat ../PHANTOM/LO/EW6/yj1.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../VBFNLO/LO/hist.yj1.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../MG5_aMC/LO/y_j1_LO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../POWHEG/LO/Y_jet_1-_VBF_CUTS_index___8.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../Recola/LO/histogram_rapidity_j1_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../BONSAY/LO/ew-lo.yj1" u (($2+$3)/2):(BONSAY_fact*$20*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../WHIZARD/LO/hist_rapidityHardestJet.dat" using 19:(($20*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
+"<paste ../Recola/LO/histogram_rapidity_j1_born.dat ../PHANTOM/LO/EW6/yj1.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
 
 
 unset multiplot

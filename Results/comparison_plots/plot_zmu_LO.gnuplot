@@ -97,16 +97,16 @@ unset format y
 unset key
 set xlabel 'z({/Symbol m}^+)'
 
-set ylabel 'Ratio /VBFNLO' offset 1
+set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../VBFNLO/LO/hist.zmu.dat ../VBFNLO/LO/hist.zmu.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../MG5_aMC/LO/z_mu_LO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__13.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../BONSAY/LO/ew-lo.zmu" u (($1+$2)/2):(BONSAY_fact*$10*0.05/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../WHIZARD/LO/hist_zeppenfeldMuPlus.dat" using 9:(($10*WHIZARD_fact)/($7*VBFNLO_fact*($2-$1))) ls 10 title 'WHIZARD',\
-"<paste ../VBFNLO/LO/hist.zmu.dat ../PHANTOM/LO/EW6/zepp_mu.dat" using (($1+$2)/2):(($11*PHANTOM_fact*($2-$1))/($7*VBFNLO_fact*($2-$1))) ls 8 title 'PHANTOM',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../VBFNLO/LO/hist.zmu.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../MG5_aMC/LO/z_mu_LO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../POWHEG/LO/zstar_-muon-_VBF_CUTS_index__13.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../Recola/LO/histogram_zeppenfeld_zmup_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../BONSAY/LO/ew-lo.zmu" u (($2+$3)/2):(BONSAY_fact*$20*0.05/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../WHIZARD/LO/hist_zeppenfeldMuPlus.dat" using 19:(($20*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
+"<paste ../Recola/LO/histogram_zeppenfeld_zmup_born.dat ../PHANTOM/LO/EW6/zepp_mu.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
 
 
 unset multiplot

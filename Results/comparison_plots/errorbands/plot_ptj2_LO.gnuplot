@@ -98,7 +98,7 @@ unset format y
 unset key
 set xlabel 'P_T(j_2) [GeV]'
 
-set ylabel 'Ratio /VBFNLO' offset 1
+set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
 "<paste ../../VBFNLO/LO/hist.ptj2.dat ../../VBFNLO/LO/hist.ptj2.dat" u (($1+$2)/2):(($15+$16)*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))):(($15-$16)*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) with filledcurves ls 1 t 'VBFNLO',\

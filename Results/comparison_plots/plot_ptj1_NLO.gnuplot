@@ -92,14 +92,14 @@ unset format y
 unset key
 set xlabel 'P_T(j_1) [GeV]'
 
-set ylabel 'Ratio /VBFNLO' offset 1
+set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../VBFNLO/NLO/hist.ptj1.dat ../VBFNLO/NLO/hist.ptj1.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
-"<paste ../VBFNLO/NLO/hist.ptj1.dat ../MG5_aMC/NLO/Pt_j1_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
-"<paste ../VBFNLO/NLO/hist.ptj1.dat ../POWHEG/NLO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/NLO/hist.ptj1.dat ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../VBFNLO/NLO/hist.ptj1.dat ../BONSAY/NLO/ew-nlo.ptj1" u (($1+$2)/2):(BONSAY_fact*$10*25/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat ../VBFNLO/NLO/hist.ptj1.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat ../MG5_aMC/NLO/Pt_j1_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat ../POWHEG/NLO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j1_nlo.dat ../BONSAY/NLO/ew-nlo.ptj1" u (($2+$3)/2):(BONSAY_fact*$20*25/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 
 
 
