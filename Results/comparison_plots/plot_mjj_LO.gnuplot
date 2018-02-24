@@ -54,7 +54,7 @@ WHIZARD_fact=1e-3/n_entries_WHIZARD
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
 set label "LO" font ",10" at graph 0.03, graph 0.88
-set xrange [0:4000]
+set xrange [500:4000]
 set yrange [1e-6:1e-3]
 set logscale y
 set origin 0.00, 0.5
@@ -71,7 +71,7 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.6, graph 0.52 noautotitles spacing 2.5
+set key at graph 0.48, graph 0.52 noautotitles spacing 2.5
 
 plot \
 "../BONSAY/LO/ew-lo.mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\

@@ -52,7 +52,7 @@ BONSAY_fact=1e-3 #numbers are in fb/GeV
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
 set label "NLO" font ",10" at graph 0.03, graph 0.88
-set xrange [-5:5]
+set xrange [-4.5:4.5]
 set yrange [1e-6:1e-3]
 set logscale y
 set origin 0.00, 0.5
