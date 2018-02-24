@@ -75,7 +75,7 @@ plot \
 "../VBFNLO/NLO/hist.yj3.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/NLO/y_j3_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'Recola',\
 "../BONSAY/NLO/ew-nlo.yj3" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 
 
@@ -100,7 +100,7 @@ plot \
 "<paste ../VBFNLO/NLO/hist.yj3.dat ../VBFNLO/NLO/hist.yj3.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
 "<paste ../VBFNLO/NLO/hist.yj3.dat ../MG5_aMC/NLO/y_j3_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/NLO/hist.yj3.dat ../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index__10.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/NLO/hist.yj3.dat ../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($1+$2)/2):($11*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/NLO/hist.yj3.dat ../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
 "<paste ../VBFNLO/NLO/hist.yj3.dat ../BONSAY/NLO/ew-nlo.yj3" u (($1+$2)/2):(BONSAY_fact*$10*0.5/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 
 

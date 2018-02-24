@@ -75,7 +75,7 @@ plot \
 "../../VBFNLO/NLO/hist.ptj2.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../../MG5_aMC/NLO/Pt_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../../POWHEG/NLO/PT_jet_2-_VBF_CUTS_index___6.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../../Recola/NLO/histogram_transverse_momentum_j2_nlo.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../../Recola/NLO/histogram_transverse_momentum_j2_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'Recola',\
 "../../BONSAY/NLO/ew-nlo.ptj2" u 1:(BONSAY_fact*$2*25) ls 6 t 'BONSAY',\
 
 unset label

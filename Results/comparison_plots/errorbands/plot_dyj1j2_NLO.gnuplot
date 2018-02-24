@@ -75,7 +75,7 @@ plot \
 "../../VBFNLO/NLO/hist.yjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../../MG5_aMC/NLO/Dyjj_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../../POWHEG/NLO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../../Recola/NLO/histogram_rapiditdy_j1j2_born.dat" u (($1+$2)/2):($3*RECOLA_fact*($2-$1)) ls 4 t 'Recola',\
+"../../Recola/NLO/histogram_rapiditdy_j1j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'Recola',\
 "../../BONSAY/NLO/ew-nlo.dyjj" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../../PHANTOM/NLO/EW6/dyjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 
