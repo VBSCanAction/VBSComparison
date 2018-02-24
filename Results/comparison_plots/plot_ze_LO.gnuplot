@@ -55,7 +55,7 @@ WHIZARD_fact=1e-3/n_entries_WHIZARD
 
 
 set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
-set label "MonteCarlo comparison, LO fixed order" font ",10" at graph 0.03, graph 0.88
+set label "LO" font ",10" at graph 0.03, graph 0.88
 set xrange [0:1.5]
 set yrange [1e-8:1e-3]
 set logscale y
