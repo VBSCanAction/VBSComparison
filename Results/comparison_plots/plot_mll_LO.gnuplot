@@ -75,13 +75,13 @@ set format x ''
 set key at graph 1, graph 0.88 noautotitles spacing 2.25
 
 plot \
-"../VBFNLO/LO/hist.mll.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/LO/M_lep_lep_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/LO/ew-lo.mll" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
-"../WHIZARD/LO/hist_invariantMassOfTwoChargedLeptons.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
+"../MG5_aMC/LO/M_lep_lep_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../PHANTOM/LO/EW6/mll.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
+"../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../VBFNLO/LO/hist.mll.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
+"../WHIZARD/LO/hist_invariantMassOfTwoChargedLeptons.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
 
 unset label
 set yrange [0.85:1.15]
@@ -100,13 +100,13 @@ set xlabel 'M(e^+{/Symbol m}^+) [GeV]'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../VBFNLO/LO/hist.mll.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../MG5_aMC/LO/M_lep_lep_LO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../BONSAY/LO/ew-lo.mll" u (($2+$3)/2):(BONSAY_fact*$20*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../WHIZARD/LO/hist_invariantMassOfTwoChargedLeptons.dat" using 19:(($20*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../MG5_aMC/LO/M_lep_lep_LO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../PHANTOM/LO/EW6/mll.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../VBFNLO/LO/hist.mll.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../WHIZARD/LO/hist_invariantMassOfTwoChargedLeptons.dat" using 19:(($20*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
 
 
 

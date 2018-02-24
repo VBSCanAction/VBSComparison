@@ -72,11 +72,11 @@ set format x ''
 set key at graph 0.45, graph 0.55 noautotitles spacing 2.4
 
 plot \
-"../VBFNLO/NLO/hist.mjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/NLO/ew-nlo.mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
+"../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
+"../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../VBFNLO/NLO/hist.mjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 
 unset label
 set yrange [0.85:1.15]
@@ -95,11 +95,11 @@ set xlabel 'M(j_1j_2) [GeV]'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../VBFNLO/NLO/hist.mjj.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../BONSAY/NLO/ew-nlo.mjj" u (($2+$3)/2):(BONSAY_fact*$20*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../POWHEG/NLO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../VBFNLO/NLO/hist.mjj.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
 
 
 

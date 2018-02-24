@@ -72,11 +72,11 @@ set format x ''
 set key at graph 0.7, graph 0.3 noautotitles spacing 2.4
 
 plot \
-"../VBFNLO/NLO/hist.yj2.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/NLO/y_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/NLO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_rapidity_j2_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/NLO/ew-nlo.yj2" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
+"../MG5_aMC/NLO/y_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../Recola/NLO/histogram_rapidity_j2_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
+"../POWHEG/NLO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../VBFNLO/NLO/hist.yj2.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 
 
 unset label
@@ -96,11 +96,11 @@ set xlabel 'y(j_2)'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../VBFNLO/NLO/hist.yj2.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../MG5_aMC/NLO/y_j2_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../POWHEG/NLO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../Recola/NLO/histogram_rapidity_j2_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../BONSAY/NLO/ew-nlo.yj2" u (($2+$3)/2):(BONSAY_fact*$20*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../MG5_aMC/NLO/y_j2_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../Recola/NLO/histogram_rapidity_j2_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../POWHEG/NLO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/NLO/histogram_rapidity_j2_nlo.dat ../VBFNLO/NLO/hist.yj2.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
 
 
 
