@@ -75,7 +75,7 @@ plot \
 "../VBFNLO/NLO/hist.mll.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/NLO/M_lep_lep_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/NLO/Ml1l2-_VBF_CUTS_index__11.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_invariant_mass_epmu_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'Recola',\
+"../Recola/NLO/histogram_invariant_mass_epmu_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/NLO/ew-nlo.mll" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
 
 unset label
@@ -98,7 +98,7 @@ plot \
 "<paste ../VBFNLO/NLO/hist.mll.dat ../VBFNLO/NLO/hist.mll.dat" u (($1+$2)/2):($15*VBFNLO_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 1 t 'VBFNLO',\
 "<paste ../VBFNLO/NLO/hist.mll.dat ../MG5_aMC/NLO/M_lep_lep_NLO.dat" u (($1+$2)/2):($11)/($7*VBFNLO_fact*($2-$1)) ls 2 t 'MG5\_aMC',\
 "<paste ../VBFNLO/NLO/hist.mll.dat ../POWHEG/NLO/Ml1l2-_VBF_CUTS_index__11.dat" u (($1+$2)/2):($11*POWHEG_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 3 t 'POWHEG',\
-"<paste ../VBFNLO/NLO/hist.mll.dat ../Recola/NLO/histogram_invariant_mass_epmu_nlo.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'Recola',\
+"<paste ../VBFNLO/NLO/hist.mll.dat ../Recola/NLO/histogram_invariant_mass_epmu_nlo.dat" u (($1+$2)/2):($12*RECOLA_fact*($2-$1)/($7*VBFNLO_fact*($2-$1))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../VBFNLO/NLO/hist.mll.dat ../BONSAY/NLO/ew-nlo.mll" u (($1+$2)/2):(BONSAY_fact*$10*100/($7*VBFNLO_fact*($2-$1))) ls 6 t 'BONSAY',\
 
 
