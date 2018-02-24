@@ -75,7 +75,7 @@ plot \
 "../VBFNLO/NLO/hist.yjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/NLO/Dyjj_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/NLO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
+"../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/NLO/ew-nlo.dyjj" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../PHANTOM/NLO/EW6/dyjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 
@@ -96,12 +96,12 @@ set xlabel '{/Symbol D}y(j_1,j_2)'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../VBFNLO/NLO/hist.yjj.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../MG5_aMC/NLO/Dyjj_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../POWHEG/NLO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../BONSAY/NLO/ew-nlo.dyjj" u (($2+$3)/2):(BONSAY_fact*$20*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
-"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_born.dat ../PHANTOM/NLO/EW6/dyjj.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../VBFNLO/NLO/hist.yjj.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../MG5_aMC/NLO/Dyjj_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../POWHEG/NLO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../BONSAY/NLO/ew-nlo.dyjj" u (($2+$3)/2):(BONSAY_fact*$20*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat ../PHANTOM/NLO/EW6/dyjj.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
 
 
 unset multiplot
