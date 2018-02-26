@@ -91,7 +91,7 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel '{/Symbol D}y(j_1,j_2)'
+set xlabel '{/Symbol D}y_{j_1j_2}'
 
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 

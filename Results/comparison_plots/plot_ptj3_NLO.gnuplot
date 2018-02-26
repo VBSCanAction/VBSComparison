@@ -90,7 +90,7 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel 'P_T(j_3) [GeV]'
+set xlabel 'p_{T,j_3} [GeV]'
 
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
