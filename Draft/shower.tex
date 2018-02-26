@@ -74,7 +74,8 @@ We now present the results of predictions matched to parton shower: the total ra
 accuracy respectively. For {\sc MG5\_aMC}, 
 the numbers with $\Gamma_{\rm resc}$ are rescaled to 
 take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
-theoretical uncertainties: for the former, we show both PDF and scale uncertainties, obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalization and factorization
+theoretical uncertainties: for the former, we show both PDF and scale uncertainties (a preliminar study on PDF uncertainties in VBS has appeared 
+in Ref.~\cite{Schwan:2017yy}), obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalization and factorization
 scale by a factor of two around its central value, Eq.~(\ref{eq:defscale}) (nine-point variations); for the latter, we show the 
 three-point scale uncertainties, obtained by considering correlated variations of the renormalization and factorization scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
@@ -104,7 +105,7 @@ interplay between the real-emission matrix element and the shower emission.
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
 \caption{Exclusive jet multiplicity from predictions matched to parton shower, at LO (left) or NLO (right) accuracy, compared with the fixed-NLO result computed with {\sc VBFNLO}. At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond  
-    respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly. \MP{The plots themselves should probably have the label LO and NLO for these predictions}}
+    respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly. }
 \label{fig:PSnjet}
 \end{figure*}
  
@@ -134,12 +135,15 @@ The transverse momentum of the hardest and second-hardest jets are shown in Figs
 predictions from different tools agree rather well with each other, with a spread at most at the 10\% level. At LO+PS, typically the transverse-momentum spectra are softer than
 the fixed-NLO ones, and this effect is more marked for the second-hardest jet which, as expected, is more sensitive to the description of the extra radiation. Again, this
 effect is mitigated by NLO corrections. The only feature that may be worth noticing among the NLO+PS predictions is the tendency of the {\sc Powheg-Box} to suppress the
-hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).\AK{This effect seems to be cured by the dipole shower.}\\
+hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).\\
 If we consider the rapidity of the second jet, Fig.~\ref{fig:PSy2}, we observe again rather small differences among tools, with the tendency towards a general
 stabilisation at NLO+PS. However, some (small) differences in the shape remain at NLO+PS, which are worth to be briefly discussed: predictions
 obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; the {\sc Powheg-Box}\ displays an enhancement of the central region, and a consequent suppression in the
 peripheral region, while {\sc VBFNLO} shows an opposite behaviour. However, the effect is rather small, with the largest departure from the fixed-order prediction being
-at most $10\%$ \AK{This effect again seems to be evened out by the dipole shower}.
+at most $10\%$.\footnote{If the setting {\tt SpaceShower:dipole\-Recoil = on} (discussed in the following of the article) 
+is used when {\sc Pythia8}\ is employed together with the {\sc Powheg-Box}, the enhancement at central rapidities and the depletion 
+at small value of transverse momentum are partially compensated.}
+
 
 
 
@@ -150,8 +154,9 @@ a striking example: both at LO and NLO, the tendency of {\sc Pythia8} to generat
 is clearly visible. Such an effect, which is related to the way {\sc Pythia8} deals with the recoil of the radiation in VBF(VBS)-type processes,
 can be mitigated by setting {\tt SpaceShower:dipole\-Recoil = on} in the {\sc Pythia8} input file;\footnote{this requires version $\ge8.230$. 
 Note that such a setting is not compatible with the NLO matching
-in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other effects, though smaller, on the rapidity spectra of the two hardest jets.} it is interesting to notice that
-it survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+ Pythia8}. A similar
+in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other 
+effects, though smaller, on the rapidity spectra of the two hardest jets.} it is interesting to notice that
+the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+ Pythia8}. A similar
 behaviour of {\sc Pythia8}
 has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement, 
 Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}. 
@@ -167,11 +172,11 @@ generated, e.g. when fully-differential computations at NNLO will become availab
 the theoretical uncertainty obtained via scale variations systematically underestimates the spread of predictions. Again, this stresses the need
  to employ at least two different tools in order to have a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimate of the theory 
-uncertainties.\AK{Are there any current analyses with a central jet veto in VBS? The experimentalists might take this statement a little too literal.} On the one hand, in order to improve the
+uncertainties. On the one hand, in order to improve the
 description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern 
 automated tools, is certainly desirable; on the other hand, measurements of processes with similar 
 color flow (EW production of a single vector boson plus jets,
- VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data. \AK{Include some references here?}
+VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data~\cite{Aaboud:2017emo,Sirunyan:2017jej}.
 
 \begin{figure*}[hbt]
 \centering

@@ -1,71 +1,68 @@
-In the present article, a detailed study of the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$ at the LHC has been presented.
-The main focus is the electroweak (EW) production of such a final state where vector-boson scattering (VBS) occurs.
-So far, all NLO computations have been performed in the so-called VBS approximation.
-Only recently a full computation became available \cite{Biedermann:2017bss}.
-Various theoretical predictions have been compared to the full computation.
-This has not only been performed in a typical VBS fiducial region but also in more inclusive volumes.
-We quantify precisely the differences that arise for several physical observables and in particular for the di-jet invariant mass and the rapidity-separation of the leading two jets.
-This is the first time that such an in-depth study is performed and should be representative of the quality of the approximations for other VBS signatures.
-In addition to fixed order predictions we have also investigated the impact of parton-shower.
-To that end, several generators which include matching to parton shower have been employed, and various observables have been thoroughly compared.
+In the present article, a detailed study of the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$ at the LHC has been presented, 
+mainly focused on the electroweak production mechanism which involves the scattering fo massive vector bosons.
+Until very recently, when the complete calculation became available for the NLO QCD corrections ($\mathcal O (\alphas\alpha^6)$),
+the so-called VBS approximation was the standard for this kind of simulations. For this reason, various theoretical predictions 
+have been compared to the full computation, both in a typical VBS fiducial region and also in more inclusive phase-space.
+We have precisely quantified the differences that arise for several physical observables, 
+in particular for the di-jet invariant mass and the rapidity-separation of the leading two jets.
+This is the first time that such an in-depth study is performed.
+%%%%and should be representative of the quality of the approximations for other VBS signatures.
+Besides the study of fixed-order predictions, we have also investigated the impact of parton-shower.
+To that end, several LO and NLO event generators 
+which give the possibility to perform matching to parton showers have been employed, and various observables have been thoroughly compared.
 While in general observables which are described at NLO accuracy show reasonable agreement among the tools, larger differences can 
 appear for those observables described at a lower accuracy, such as those that involve the third jet.
-These differences appear in the central region where for VBS, colour-recombination plays a significant role \ZM{it is not color recombination, it 
-is the recoil scheme of the shower}.
-These findings are new and should trigger further investigations in the theoretical community as well as by experimental collaborations.
-Indeed, measurements of related observables for similar processes should allow for a better understanding of these  issues.
-\MP{It might be too strong a statement. At least Simon will rephrase it.}
+These differences appear in the central region where for VBS, and are the largest for those simulations which employ {\sc Pythia8}. The effect
+has been understood, and it can be somehow mitigated by changed the recoil scheme of the parton shower. These findings makes it worth 
+to further investigate these issues not only in the theoretical community, but also by experimental collaborations, for example by 
+measuring related observables for similar processes.
 
-The results presented here are exclusively theoretical.
-Nonetheless, they should raise significant interests in the experimental collaborations.
-Therefore, to supplement this summary, we provide several concluding remarks concerning the use of theoretical predictions.
+%The results presented here are exclusively theoretical.
+%Nonetheless, they should raise significant interests in the experimental collaborations.
+The last part of our work is devoted to 
+ remarks and recommendations concerning the usage of theoretical predictions by experimental collaborators.
+\begin{itemize}
+    \item As found in Ref.~\cite{Biedermann:2017bss}, the NLO EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ are 
+        the dominant NLO contribution to the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
+        It is thus highly desirable that they are combined with NLO-QCD predictions matched with parton shower, or at least that they accounted for
+        by experimental analyses. Since, as shown in~\cite{Biedermann:2017bss}, 
+        these large EW corrections originate from the Sudakov logarithms which factorise, we recommend to combine them with QCD 
+        corrections in a multiplicative way. The estimate of missing higher-order EW corrections can be done, 
+        in a first approximation, by considering $\pm \delta^2_{\rm NLO EW}$, while the missing higher-order mixed QCD-EW corrections 
+        can be estimated by taking the difference between the multiplicative and additive prescription.
+        For more detailed studies of the combination of QCD and EW higher-order corrections, see
+        e.g., Ref.~\cite{Czakon:2017wor} in the context of top-pair production, or Ref.~\cite{Lindert:2017olm} for SM 
+        backgrounds for dark matter searches at the LHC.
+    \item For the typical fiducial region used by experimental collaborations for their measurements, 
+        the agreement between the approximations and the full calculation is certainly satisfactory given 
+        the current experimental precision, as well as the one foreseen for the near future \ZM{references, etc}.
+        Nonetheless, care has to be taken when using such approximations, in particular if more inclusive phase-space cuts are used.
 
-As found in Ref.~\cite{Biedermann:2017bss}, the NLO EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ are the dominant NLO contributions to the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
-It is thus highly desirable that they are combined with NLO-QCD predictions matched with parton shower.
-In Ref.~\cite{Biedermann:2016yds}, it has been demonstrated that these large EW corrections originate from the Sudakov logarithms which factorise.
-Therefore we recommend to combine them in a multiplicative way.
-Concerning the estimation of missing higher-order corrections of EW type they can be obtained, in a first approximation, from $\pm \delta^2_{\rm NLO EW}$.
-The missing higher-order mixed QCD-EW corrections can be estimated by taking the difference between the multiplicative and additive prescription.
-A detailed study of the combination of higher-order corrections has been carried out, e.g., in the context of top-pair production~\cite{Czakon:2017wor} or SM 
-backgrounds for dark matter searches at the LHC \cite{Lindert:2017olm} and could be followed here as well.
+%{\bf MZ there are many repetitions here} \BJ{I would suggest to remove the following paragraph as it repeats what was already said before.}
+%Concerning predictions that include parton shower, we have shown that for observables defined at NLO, the differences are reasonable.
+%On the other hand, for observables only defined at NLO-QCD, such as the ones related to the third hardest jet, large differences can arise between different parton-shower algorithms.
+%Therefore, jet-veto procedures or selections based on extra radiation should be avoided as they carry rather large uncertainties.
 
-For the typical fiducial region used by experimental collaborations for their measurements, the agreement between the approximations and full calculation is certainly satisfactory given the current {\bf MZ and future?} experimental precision.
-Nonetheless, in the future when experimental measurements will improve, care has to be taken when using such approximations, in particular, if more inclusive phase-space are used.
-
-{\bf MZ there are many repetitions here} \BJ{I would suggest to remove the following paragraph as it repeats what was already said before.}
-Concerning predictions that include parton shower, we have shown that for observables defined at NLO, the differences are reasonable.
-On the other hand, for observables only defined at NLO-QCD, such as the ones related to the third hardest jet, large differences can arise between different parton-shower algorithms.
-Therefore, jet-veto procedures or selections based on extra radiation should be avoided as they carry rather large uncertainties.
-
-In addition to the standard interpretation of EW signal versus QCD background, combined measurements should also be presented as they are well defined theoretically.
-At LO, the interferences can be included in the background component.
-Nonetheless, at NLO the concept of EW and QCD component become meaningless as at the order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ both types of amplitudes mix.
-Therefore, a combined measurement including the EW, QCD, and interference contributions is desirable.
+    \item In addition to the standard interpretation of EW signal versus QCD background, 
+        combined measurements should also be presented as they are better defined theoretically. In fact, while at at LO 
+        the interference term can be included in the background component, at NLO the separation of EW and QCD component become more blurred, as, e.g.,
+        as at the order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ both types of amplitudes mix.
+        Therefore, a combined measurement including the EW, QCD, and interference contributions is desirable.
+        \ZM{the following has to be clarified. one way would be to suggest to use  phase-space  cuts to enhance/suppress configurations 
+            where EW/QCD are the dominant contributions}
 Note that with such a measurement, an interpretation in terms of EW component is still possible.
 This would amount to replace the subtraction of the QCD component based on Monte Carlo predictions by an actual measurement.
 \MP{I am aware that this might be the most touchy point.
 Therefore we should probably discuss it all together to ensure that we all agree on a definite statement.}
 
-As demonstrated above, numerous programs exist to simulate the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$ at the LHC.
-So far there is no public code that performs the full NLO computation matched with parton shower.
-Nonetheless, full computations at NLO and publicly available tools at NLO-QCD accuracy in the VBS approximation matched to parton shower are available.
-Therefore, we encourage experimental collaborations to move to NLO accuracy supplemented with parton shower as much as possible.
-In particular, we are willing to support this effort. \MP{Are we? - MZ: remove this sentence}
+    \item Since the inclusion of NLO QCD corrections gives a better control of extra QCD radiations and reduces the ambiguites related to the 
+        matching details and/or the parton-shower employed, we encourage the use of NLO-accurate event generators in experimental analyses.
 
-The present study has focused on the orders $\mathcal{O}{\left(\alpha^{6}\right)}$ at LO and $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ at NLO.
-Nonetheless, NLO computations and publicly available tools also exist for the QCD-induced process \cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba,Biedermann:2017bss}.
-They should therefore be also used as much as possible.
+    \item The present study has focused on the orders $\mathcal{O}{\left(\alpha^{6}\right)}$ at 
+    LO and $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ at NLO. NLO computations and publicly-available tools also exist for the QCD-induced process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba,Biedermann:2017bss,Alwall:2014hca}.
 
-Uncertainties related to PDFs have been hardly addressed in the present article.
-{\bf MZ I would remove this and the following sentence: we computed PDF uncertainties,
-    it is true that we did not comment much on it, but I think sayng 'Hardly addressed' is too much. I would anyway cite CS's proceedings when we
-show the PDF uncertainties in the shower section}
-These have only been discussed briefly in Sec.~\ref{sec:matching} where scale variations in combination with PDF variations have been shown.
-Some of us have already presented preliminary results on this subject \cite{Schwan:2017yy}. % Radcor proceedings from Christopher.
-Forthcoming publications will thus address related questions.
-
-Finally, the study presented here concentrates on the ${\rm W}^+{\rm W}^+$ signature.
-The features observed here (validity of the VBS approximation or comparison of theoretical predictions matched to parton shower, for example) should be qualitatively similar for other VBS signatures with massive gauge bosons. \BJ{I am not sure this statement is generally true. For other VBS channels, backgrounds are much more troublesome. If we want to make a statement like ``qualitatively similar for other VBS signatures'' we need to say more explicitly in which respect, for instance concerning the validity of the VBS approximation.}
-But the quantitative conclusions are strictly restricted to ${\rm W}^+{\rm W}^+$ signature.
-For other signatures, similar quantitative studies should be performed.
-Beyond the theoretical findings of this work, we also hope that it can serve as a guideline for experimental collaborations in their quest for the measurements of VBS processes at the LHC.
+    \item For practical reasons, we have focused on the ${\rm W}^+{\rm W}^+$ signature. Nonetheless, 
+    the observed features 
+    (e.g. validity of the VBS approximation or comparison of theoretical predictions matched to parton shower) should 
+    be qualitatively similar for other VBS signatures with massive gauge bosons. For these other signatures, similar quantitative studies should be performed.
+\end{itemize}

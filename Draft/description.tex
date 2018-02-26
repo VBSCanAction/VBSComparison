@@ -52,7 +52,6 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
         those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
         pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
         {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards\-/FKS\_\-params.dat} file to -1.
-        {\bf MZ what exactly needs to be clarified here? perhaps I am just too used to this that I do not see problems here}
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
 It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
@@ -73,9 +72,6 @@ The integration uses a multichannel approach~\cite{Berends:1984gf} and an adapti
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are the similar to those used in {\sc VBFNLO}.
-{\bf MZ : I would move these sentences in the setup part, possibly as footnotes}
-The {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.
-The renormalisation and factorisation scale used differ slightly from the one defined in Eq.~\eqref{eq:defscale}, as rather than constructing the jets the {\sc Powheg-Box} uses the transverse momentum of the two final-state quarks in the underlying Born event. 
 
   \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
     parton-level Monte Carlo for processes with electroweak bosons. It
@@ -91,7 +87,7 @@ The renormalisation and factorisation scale used differ slightly from the one de
     bosons can be simulated.
 
   \item {\sc Whizard}~\cite{Moretti:2001zz,Kilian:2007gr} is a multi-purpose
-      event generator with the LO matrix element generator {\sc O'Mega}. {\bf MZ: if NLO results for this processes cannot be provided, we should skip what follows, or at least clarify the limitations}
+      event generator with the LO matrix element generator {\sc O'Mega}. \ZM{ if NLO results for this processes cannot be provided, we should skip what follows, or at least clarify the limitations}
 provides FKS subtraction terms for any NLO process, while virtual matrix
 elements are provided externally by {\sc
 OpenLoops}~\cite{Cascioli:2011va} (alternatively, {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}
