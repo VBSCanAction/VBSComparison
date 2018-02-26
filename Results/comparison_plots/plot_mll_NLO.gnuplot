@@ -1,5 +1,7 @@
 reset
 
+load 'MinMax.gnuplot'
+
 set lmargin 10
 set rmargin 0
 
