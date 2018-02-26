@@ -52,8 +52,8 @@ n_entries_WHIZARD = int(STATS_sum)
 WHIZARD_fact=1e-3/n_entries_WHIZARD
 
 
-set label "e^+mu^+{/Symbol nn}jj production at the LHC, 13 TeV" font ",12" at graph 0.03, graph 0.94
-set label "LO" font ",10" at graph 0.03, graph 0.88
+
+set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [500:4000]
 set yrange [1e-6:3e-4]
 set logscale y
