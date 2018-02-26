@@ -101,13 +101,13 @@ set xlabel 'P_T(j_1) [GeV]'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../BONSAY/LO/ew-lo.ptj1" u (($2+$3)/2):(BONSAY_fact*$20*25/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../MG5_aMC/LO/Pt_j1_LO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../PHANTOM/LO/EW6/ptj1.dat" using (($2+$3)/2):(($21*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../VBFNLO/LO/hist.ptj1.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../WHIZARD/LO/hist_ptHardestJet.dat" using 19:(($20*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../BONSAY/LO/ew-lo.ptj1" u (($2+$3)/2):(BONSAY_fact*$44*25/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../MG5_aMC/LO/Pt_j1_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../PHANTOM/LO/EW6/ptj1.dat" using (($2+$3)/2):(($45*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../VBFNLO/LO/hist.ptj1.dat" u (($2+$3)/2):($49*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../WHIZARD/LO/hist_ptHardestJet.dat" using 43:(($44*WHIZARD_fact)/($4*RECOLA_fact*($3-$2))) ls 10 title 'WHIZARD',\
 
 
 

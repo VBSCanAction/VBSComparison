@@ -97,11 +97,11 @@ set xlabel 'y(j_3)'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
-"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../VBFNLO/NLO/hist.yj3.dat" u (($2+$3)/2):($25*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../MG5_aMC/NLO/y_j3_NLO.dat" u (($2+$3)/2):($21)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
-"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index__10.dat" u (($2+$3)/2):($21*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
-"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($2+$3)/2):($22*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
-"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../BONSAY/NLO/ew-nlo.yj3" u (($2+$3)/2):(BONSAY_fact*$20*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
+"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../VBFNLO/NLO/hist.yj3.dat" u (($2+$3)/2):($49*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
+"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../MG5_aMC/NLO/y_j3_NLO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../POWHEG/NLO/Y_jet_3-_VBF_CUTS_index__10.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
+"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../Recola/NLO/histogram_rapidity_j3_nlo.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
+"<paste ../Recola/NLO/histogram_rapidity_j3_nlo.dat ../BONSAY/NLO/ew-nlo.yj3" u (($2+$3)/2):(BONSAY_fact*$44*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 
 
 
