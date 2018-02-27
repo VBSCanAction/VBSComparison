@@ -29,8 +29,8 @@ YMax=1.15
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/m_jj
 Title=Dijet invariant mass (NLO+PS)
-XLabel=$m_{j1,j2}$~[GeV]
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~m_{j1,j2}$~[fb/GeV]
+XLabel=$m_{\rm j_1 j_2}$~[GeV]
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~m_{\rm j_1 j_2}$~[fb/GeV]
 RatioPlotSameStyle=1
 XMin=500
 XMax=4000
@@ -42,8 +42,8 @@ LegendYPos=0.575
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/Deltay_jj
 Title=Rapidity difference of the two leading jets (NLO+PS)
-XLabel=$\Delta y_{j1,j2}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~\Delta y_{j1,j2}$~[fb]
+XLabel=$\delta y_{\rm j_1 j_2}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~\delta y_{\rm j_1 j_2}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 XMin=2.5
@@ -56,8 +56,8 @@ LegendYPos=0.95
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/pT_j1
 Title=Transverse momentum of the leading jet (NLO+PS)
-XLabel=$p_{T,j1}$~[GeV]
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{T,j1}$~[fb/GeV]
+XLabel=$p_{\rm T, j_1}$~[GeV]
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{\rm T, j_1}$~[fb/GeV]
 RatioPlotSameStyle=1
 XMin=25
 XMax=1000
@@ -69,16 +69,16 @@ LegendYPos=0.99
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/y_j1
 Title=Rapidity of the leading jet (NLO+PS)
-XLabel=$y_{j1}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{j1}$~[fb]
+XLabel=$y_{\rm j_1}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{\rm j_1}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/pT_j2
 Title=Transverse momentum of the subleading jet (NLO+PS)
-XLabel=$p_{T,j2}$~[GeV]
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{T,j2}$~[fb/GeV]
+XLabel=$p_{\rm T, j_2}$~[GeV]
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{\rm T, j_2}$~[fb/GeV]
 RatioPlotSameStyle=1
 XMin=25
 XMax=1000
@@ -90,8 +90,8 @@ LegendYPos=0.99
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/y_j2
 Title=Rapidity of the subleading jet (NLO+PS)
-XLabel=$y_{j2}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{j2}$~[fb]
+XLabel=$y_{\rm j_2}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{\rm j_2}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 XMin=-4.5
@@ -127,15 +127,15 @@ LogY=0
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/pT_j3
 Title=Transverse momentum of the third jet (NLO+PS)
-XLabel=$p_{T,j3}$~[GeV]
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{T,j3}$~[fb/GeV]
+XLabel=$p_{\rm T, j_3}$~[GeV]
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{\rm T, j_3}$~[fb/GeV]
 RatioPlotSameStyle=1
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/y_j3
 Title=Rapidity of the third jet (NLO+PS)
-XLabel=$y_{j3}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{j3}$~[fb]
+XLabel=$y_{\rm j_3}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~y_{\rm j_3}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 XMin=-4.5
@@ -148,8 +148,8 @@ LegendYPos=0.99
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/z_j3
 Title=Normalised average rapidity of the third jet (NLO+PS)
-XLabel=$z_{j3}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~z_{j3}$~[fb]
+XLabel=$z_{\rm j_3}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~z_{\rm j_3}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 XMin=0
