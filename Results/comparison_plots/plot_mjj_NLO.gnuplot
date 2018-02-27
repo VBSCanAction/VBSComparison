@@ -56,7 +56,7 @@ BONSAY_fact=1/binwidth #numbers are in fb/GeV
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
 set xrange [500:4000]
-set yrange [1e-8:2e-6]
+set yrange [2e-5:2e-3]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4

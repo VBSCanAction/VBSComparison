@@ -61,7 +61,7 @@ WHIZARD_fact=1/n_entries_WHIZARD/binwidth
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [0:1000]
-set yrange [1e-9:5e-5]
+set yrange [1e-7:2e-2]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -78,7 +78,7 @@ set format y "10^{%T}"
 
 set format x ''
 # set key at graph 0.52, graph 0.5 noautotitles spacing 2.4
-set key at graph 0.99, graph 0.92 noautotitles spacing 2.4
+set key at graph 0.99, graph 1.01 noautotitles spacing 2.25
 
 plot \
 "../Recola/LO/histogram_transverse_momentum_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\

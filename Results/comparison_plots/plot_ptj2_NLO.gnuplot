@@ -56,7 +56,7 @@ BONSAY_fact=1/binwidth #numbers are in fb/GeV
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
 set xrange [0:1000]
-set yrange [1e-9:5e-5]
+set yrange [1e-7:2e-2]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -72,7 +72,7 @@ set ylabel "d{/Symbol s}/d p_{T,j_2} [fb/GeV]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 1, graph 0.8 noautotitles spacing 2.4
+set key at graph 0.98, graph 0.98 noautotitles spacing 2.4
 
 plot \
 "../Recola/NLO/histogram_transverse_momentum_j2_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\

@@ -57,23 +57,23 @@ PHANTOM_fact=1/binwidth #numbers are in fb/GeV
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
 set xrange [2.5:9]
-set yrange [1e-7:1e-3]
-set logscale y
+set yrange [0:0.5]
+#
 set origin 0.00, 0.5
 set size 0.9, 0.4
 set bmargin 0
 set tmargin 0
 set xtics 1 nomirror
-set ytics 10
-#set ytics 100
+set ytics 0.1
+#set ytics 0.10
 set mxtics 2
 set mytics 10
-set ylabel "d{/Symbol s}/d {/Symbol D}y_{j_1j_2} [fb]"
+set ylabel "d{/Symbol s}/d {/Symbol d}y_{j_1j_2} [fb]"
 #set xtics nomirror
-set format y "10^{%T}"
+#
 
 set format x ''
-set key at graph 0.65, graph 0.52 noautotitles spacing 2.4
+set key at graph 0.98, graph 0.98 noautotitles spacing 2.4
 
 plot \
 "../Recola/NLO/histogram_rapidity_separation_abs_j1j2_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
@@ -88,7 +88,7 @@ plot \
 
 unset label
 set yrange [0.85:1.15]
-unset logscale y
+
 set origin 0.00, 0.3
 set size 0.9, 0.2
 set bmargin 0
@@ -98,7 +98,7 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel '{/Symbol D}y_{j_1j_2}'
+set xlabel '{/Symbol d}y_{j_1j_2}'
 
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 

@@ -59,22 +59,22 @@ WHIZARD_fact=1/binwidth/n_entries_WHIZARD
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [2.5:9]
 set yrange [0:0.5]
-#set logscale y
+#
 set origin 0.00, 0.5
 set size 0.9, 0.4
 set bmargin 0
 set tmargin 0
 set xtics 1 nomirror
 set ytics 0.1
-#set ytics 100
+#set ytics 0.10
 set mxtics 2
 set mytics 10
-set ylabel "d{/Symbol s}/d {/Symbol D}y_{j_1j_2} [fb]"
+set ylabel "d{/Symbol s}/d {/Symbol d}y_{j_1j_2} [fb]"
 #set xtics nomirror
-#set format y "10^{%T}"
+#
 
 set format x ''
-set key at graph 0.5, graph 0.71 noautotitles spacing 2.4
+set key at graph 0.98, graph 0.98 noautotitles spacing 2.4
 
 
 plot \
@@ -91,7 +91,7 @@ plot \
 
 unset label
 set yrange [0.85:1.15]
-unset logscale y
+
 set origin 0.00, 0.3
 set size 0.9, 0.2
 set bmargin 0
@@ -101,7 +101,7 @@ set mytics 10
 unset format x
 unset format y
 unset key
-set xlabel '{/Symbol D}y_{j_1j_2}'
+set xlabel '{/Symbol d}y_{j_1j_2}'
 
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
