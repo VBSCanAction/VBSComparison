@@ -45,15 +45,15 @@ set multiplot
 set tics front
 
 binwidth=100.0
-MADGRAPH_fact=1/binwidth
-VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
-POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
-RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
-BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
-PHANTOM_fact=1e-3/binwidth #numbers are in fb/GeV
+MADGRAPH_fact=1e+3/binwidth
+VBFNLO_fact=1/binwidth #numbers are in fb/GeV
+POWHEG_fact=1/binwidth #numbers are in fb/GeV
+RECOLA_fact=1/binwidth #numbers are in fb/GeV
+BONSAY_fact=1/binwidth #numbers are in fb/GeV
+PHANTOM_fact=1/binwidth #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-WHIZARD_fact=1e-3/n_entries_WHIZARD/binwidth
+WHIZARD_fact=1/n_entries_WHIZARD/binwidth
 
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
@@ -69,7 +69,7 @@ set ytics 10
 #set ytics 100
 set mxtics 10
 set mytics 10
-set ylabel "d{/Symbol s}/d m_{j_1j_2} [pb/GeV]"
+set ylabel "d{/Symbol s}/d m_{j_1j_2} [fb/GeV]"
 #set xtics nomirror
 set format y "10^{%T}"
 

@@ -47,15 +47,15 @@ set multiplot
 set tics front
 
 binwidth=0.05
-MADGRAPH_fact=1/binwidth
-VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
-POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
-RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
-BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
-PHANTOM_fact=1e-3/binwidth #numbers are in fb/GeV
+MADGRAPH_fact=1e+3/binwidth
+VBFNLO_fact=1/binwidth #numbers are in fb/GeV
+POWHEG_fact=1/binwidth #numbers are in fb/GeV
+RECOLA_fact=1/binwidth #numbers are in fb/GeV
+BONSAY_fact=1/binwidth #numbers are in fb/GeV
+PHANTOM_fact=1/binwidth #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_zeppenfeldEPlus.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-WHIZARD_fact=1e-3/n_entries_WHIZARD/binwidth
+WHIZARD_fact=1/n_entries_WHIZARD/binwidth
 
 
 
@@ -72,7 +72,7 @@ set ytics 10
 #set ytics 100
 set mxtics 2
 set mytics 10
-set ylabel "d{/Symbol s}/d z_{e^+} [pb]"
+set ylabel "d{/Symbol s}/d z_{e^+} [fb]"
 #set xtics nomirror
 set format y "10^{%T}"
 

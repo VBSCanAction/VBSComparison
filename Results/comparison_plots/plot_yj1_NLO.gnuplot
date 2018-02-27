@@ -47,11 +47,11 @@ set multiplot
 set tics front
 
 binwidth=0.5
-MADGRAPH_fact=1/binwidth
-VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
-POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
-RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
-BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
+MADGRAPH_fact=1e+3/binwidth
+VBFNLO_fact=1/binwidth #numbers are in fb/GeV
+POWHEG_fact=1/binwidth #numbers are in fb/GeV
+RECOLA_fact=1/binwidth #numbers are in fb/GeV
+BONSAY_fact=1/binwidth #numbers are in fb/GeV
 
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
@@ -67,7 +67,7 @@ set ytics 10
 #set ytics 100
 set mxtics 2
 set mytics 10
-set ylabel "d{/Symbol s}/d y_{j_1} [pb]"
+set ylabel "d{/Symbol s}/d y_{j_1} [fb]"
 #set xtics nomirror
 set format y "10^{%T}"
 

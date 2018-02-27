@@ -47,11 +47,11 @@ set multiplot
 set tics front
 
 binwidth=100.0
-MADGRAPH_fact=1/binwidth
-VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
-POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
-RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
-BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
+MADGRAPH_fact=1e+3/binwidth
+VBFNLO_fact=1/binwidth #numbers are in fb/GeV
+POWHEG_fact=1/binwidth #numbers are in fb/GeV
+RECOLA_fact=1/binwidth #numbers are in fb/GeV
+BONSAY_fact=1/binwidth #numbers are in fb/GeV
 
 
 
@@ -68,7 +68,7 @@ set ytics 10
 #set ytics 100
 set mxtics 10
 set mytics 10
-set ylabel "d{/Symbol s}/d m_{e^+{/Symbol m}^+} [pb/GeV]"
+set ylabel "d{/Symbol s}/d m_{e^+{/Symbol m}^+} [fb/GeV]"
 #set xtics nomirror
 set format y "10^{%T}"
 

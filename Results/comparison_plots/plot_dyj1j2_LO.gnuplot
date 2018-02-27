@@ -45,33 +45,33 @@ set multiplot
 set tics front
 
 binwidth=0.5
-MADGRAPH_fact=1/binwidth
-VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
-POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
-RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
-BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
-PHANTOM_fact=1e-3/binwidth #numbers are in fb/GeV
+MADGRAPH_fact=1e+3/binwidth
+VBFNLO_fact=1/binwidth #numbers are in fb/GeV
+POWHEG_fact=1/binwidth #numbers are in fb/GeV
+RECOLA_fact=1/binwidth #numbers are in fb/GeV
+BONSAY_fact=1/binwidth #numbers are in fb/GeV
+PHANTOM_fact=1/binwidth #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_DeltaRapJets.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-WHIZARD_fact=1e-3/binwidth/n_entries_WHIZARD
+WHIZARD_fact=1/binwidth/n_entries_WHIZARD
 
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [2.5:9]
-set yrange [1e-7:1e-3]
-set logscale y
+set yrange [0:0.5]
+#set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
 set bmargin 0
 set tmargin 0
 set xtics 1 nomirror
-set ytics 10
+set ytics 0.1
 #set ytics 100
 set mxtics 2
 set mytics 10
-set ylabel "d{/Symbol s}/d {/Symbol D}y_{j_1j_2} [pb]"
+set ylabel "d{/Symbol s}/d {/Symbol D}y_{j_1j_2} [fb]"
 #set xtics nomirror
-set format y "10^{%T}"
+#set format y "10^{%T}"
 
 set format x ''
 set key at graph 0.5, graph 0.71 noautotitles spacing 2.4
