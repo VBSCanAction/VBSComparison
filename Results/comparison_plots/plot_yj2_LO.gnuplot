@@ -78,6 +78,9 @@ set format x ''
 set key at graph 0.7, graph 0.39 noautotitles spacing 2.2
 
 plot \
+"../Recola/LO/histogram_rapidity_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
+"../Recola/LO/histogram_rapidity_j2_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_rapidity_j2_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.yj2" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../MG5_aMC/LO/y_j2_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../Recola/LO/histogram_rapidity_j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
@@ -103,6 +106,9 @@ set xlabel 'y_{j_2}'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
+"<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../Recola/LO/histogram_rapidity_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
+"<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../Recola/LO/histogram_rapidity_j2_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../Recola/LO/histogram_rapidity_j2_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../VBFNLO/LO/hist.yj2.dat" u (($2+$3)/2):($49*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
 "<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../MG5_aMC/LO/y_j2_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_rapidity_j2_born.dat ../POWHEG/LO/Y_jet_2-_VBF_CUTS_index___9.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\

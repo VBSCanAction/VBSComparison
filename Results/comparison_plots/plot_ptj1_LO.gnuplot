@@ -74,9 +74,12 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.52, graph 0.5 noautotitles spacing 2.4
+set key at graph 0.52, graph 0.52 noautotitles spacing 2.4
 
 plot \
+"../Recola/LO/histogram_transverse_momentum_j1_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
+"../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../VBFNLO/LO/hist.ptj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
 "../MG5_aMC/LO/Pt_j1_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
@@ -103,6 +106,9 @@ set xlabel 'p_{T,j_1} [GeV]'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../BONSAY/LO/ew-lo.ptj1" u (($2+$3)/2):(BONSAY_fact*$44*25/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../MG5_aMC/LO/Pt_j1_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_transverse_momentum_j1_born.dat ../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\

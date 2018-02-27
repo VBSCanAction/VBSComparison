@@ -74,6 +74,9 @@ set format x ''
 set key at graph 0.7, graph 0.32 noautotitles spacing 2.4
 
 plot \
+"../Recola/NLO/histogram_rapidity_j1_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
+"../Recola/NLO/histogram_rapidity_j1_nlo.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/NLO/histogram_rapidity_j1_nlo.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/NLO/ew-nlo.yj1" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../MG5_aMC/NLO/y_j1_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
@@ -98,6 +101,9 @@ set xlabel 'y_{j_1}'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
+"<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
+"<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../BONSAY/NLO/ew-nlo.yj1" u (($2+$3)/2):(BONSAY_fact*$44*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../MG5_aMC/NLO/y_j1_NLO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/NLO/histogram_rapidity_j1_nlo.dat ../Recola/NLO/histogram_rapidity_j1_nlo.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\

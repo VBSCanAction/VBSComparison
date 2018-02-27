@@ -55,7 +55,7 @@ BONSAY_fact=1e-3 #numbers are in fb/GeV
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
 set xrange [500:4000]
-set yrange [1e-6:3e-4]
+set yrange [1e-6:2e-4]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -74,6 +74,9 @@ set format x ''
 set key at graph 0.5, graph 0.51 noautotitles spacing 2.4
 
 plot \
+"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
+"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/NLO/ew-nlo.mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
 "../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
 "../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
@@ -97,6 +100,9 @@ set xlabel 'm_{j_1j_2} [GeV]'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../BONSAY/NLO/ew-nlo.mjj" u (($2+$3)/2):(BONSAY_fact*$44*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../MG5_aMC/NLO/M_j1_j2_NLO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat ../Recola/NLO/histogram_invariant_mass_mjj12_nlo.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
