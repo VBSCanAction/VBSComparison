@@ -1,7 +1,7 @@
 min(A,B,C,D,E,F,G) = A < B ? (A < C ? (A < D ? (A < E ? (A < F ? (A < G ? A : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G))) : (D < E ? (D < F ? (D < G ? D : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G)))) : (C < D ? (C < E ? (C < F ? (C < G ? C : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G))) : (D < E ? (D < F ? (D < G ? D : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G))))) : (B < C ? (B < D ? (B < E ? (B < F ? (B < G ? B : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G))) : (D < E ? (D < F ? (D < G ? D : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G)))) : (C < D ? (C < E ? (C < F ? (C < G ? C : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G))) : (D < E ? (D < F ? (D < G ? D : G) : (F < G ? F : G)) : (E < F ? (E < G ? E : G) : (F < G ? F : G)))))
 
-min(a,b) = (a < b) ? a : b
+#min(a,b) = (a < b) ? a : b
 
 max(A,B,C,D,E,F,G) = A > B ? (A > C ? (A > D ? (A > E ? (A > F ? (A > G ? A : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G))) : (D > E ? (D > F ? (D > G ? D : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G)))) : (C > D ? (C > E ? (C > F ? (C > G ? C : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G))) : (D > E ? (D > F ? (D > G ? D : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G))))) : (B > C ? (B > D ? (B > E ? (B > F ? (B > G ? B : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G))) : (D > E ? (D > F ? (D > G ? D : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G)))) : (C > D ? (C > E ? (C > F ? (C > G ? C : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G))) : (D > E ? (D > F ? (D > G ? D : G) : (F > G ? F : G)) : (E > F ? (E > G ? E : G) : (F > G ? F : G)))))
 
-max(a,b) = (a < b) ? b : a
+#max(a,b) = (a < b) ? b : a

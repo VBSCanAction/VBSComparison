@@ -41,8 +41,6 @@ set style line 26 dt 5 lc rgb "dark-magenta"lw 1.8
 
 set style data histeps
 
-
-
 set multiplot
 set tics front
 
@@ -58,7 +56,7 @@ WHIZARD_fact=1e-3/n_entries_WHIZARD
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [2.5:9]
-set yrange [1e-6:1e-3]
+set yrange [1e-7:1e-3]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -74,12 +72,16 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.65, graph 0.5 noautotitles spacing 2.4
+set key at graph 0.5, graph 0.71 noautotitles spacing 2.4
+
 
 plot \
+"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
+"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.dyjj" u 1:(BONSAY_fact*$2*0.5) ls 6 t 'BONSAY',\
 "../MG5_aMC/LO/Dyjj_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
+"../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 title 'MoCaNLO+Recola',\
 "../PHANTOM/LO/EW6/dyjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 "../POWHEG/LO/rap_j1j2tag_-_VBF_CUTS_index___4.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../VBFNLO/LO/hist.yjj.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
@@ -102,6 +104,9 @@ set xlabel '{/Symbol D}y_{j_1j_2}'
 set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
+"<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
+"<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../BONSAY/LO/ew-lo.dyjj" u (($2+$3)/2):(BONSAY_fact*$44*0.5/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../MG5_aMC/LO/Dyjj_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat ../Recola/LO/histogram_rapidity_separation_abs_j1j2_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
