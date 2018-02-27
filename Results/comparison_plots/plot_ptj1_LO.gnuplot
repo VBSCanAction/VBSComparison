@@ -74,19 +74,19 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.52, graph 0.52 noautotitles spacing 2.4
+set key at graph 0.99, graph 1.0 noautotitles spacing 2.25
 
 plot \
 "../Recola/LO/histogram_transverse_momentum_j1_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
 "../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../Recola/LO/histogram_transverse_momentum_j1_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
-"../VBFNLO/LO/hist.ptj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
-"../MG5_aMC/LO/Pt_j1_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
-"../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
-"../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../BONSAY/LO/ew-lo.ptj1" u 1:(BONSAY_fact*$2*25) ls 6 t 'BONSAY',\
-"../WHIZARD/LO/hist_ptHardestJet.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
+"../MG5_aMC/LO/Pt_j1_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../Recola/LO/histogram_transverse_momentum_j1_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../PHANTOM/LO/EW6/ptj1.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
+"../POWHEG/LO/PT_jet_1-_VBF_CUTS_index___5.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
+"../VBFNLO/LO/hist.ptj1.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
+"../WHIZARD/LO/hist_ptHardestJet.dat" using 1:($2*WHIZARD_fact) ls 10 title 'WHIZARD',\
 
 
 unset label

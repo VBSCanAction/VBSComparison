@@ -75,7 +75,7 @@ set ylabel "{/Symbol s} per bin [pb]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.7, graph 0.39 noautotitles spacing 2.2
+set key at graph 0.93, graph 0.56 noautotitles spacing 2.2
 
 plot \
 "../Recola/LO/histogram_rapidity_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
