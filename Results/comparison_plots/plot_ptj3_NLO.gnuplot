@@ -46,16 +46,17 @@ set style data histeps
 set multiplot
 set tics front
 
-VBFNLO_fact=1e-3 #numbers are in fb/GeV
-POWHEG_fact=1e-3 #numbers are in fb/GeV
-RECOLA_fact=1e-3 #numbers are in fb/GeV
-BONSAY_fact=1e-3 #numbers are in fb/GeV
-
+binwidth=10.0
+MADGRAPH_fact=1/binwidth
+VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
+POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
+RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
+BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
 
 
 set label "NLO" font ",10" at graph 0.03, graph 0.94
 set xrange [0:1000]
-set yrange [2e-10:2e-3]
+set yrange [1e-13:1e-4]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -78,7 +79,7 @@ plot \
 "../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/NLO/ew-nlo.ptj3" u 1:(BONSAY_fact*$2*10) ls 6 t 'BONSAY',\
-"../MG5_aMC/NLO/Pt_j3_NLO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../MG5_aMC/NLO/Pt_j3_NLO.dat" u (($1+$2)/2):($3*MADGRAPH_fact) ls 2 t 'MG5\_aMC',\
 "../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../POWHEG/NLO/PT_jet_3-_VBF_CUTS_index___7.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
 "../VBFNLO/NLO/hist.ptj3.dat" u (($1+$2)/2):($7*VBFNLO_fact*($2-$1)) ls 1 t 'VBFNLO',\
@@ -104,7 +105,7 @@ plot \
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../VBFNLO/NLO/hist.ptj3.dat" u (($2+$3)/2):($49*VBFNLO_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 1 t 'VBFNLO',\
-"<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../MG5_aMC/NLO/Pt_j3_NLO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../MG5_aMC/NLO/Pt_j3_NLO.dat" u (($2+$3)/2):($45*MADGRAPH_fact)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../POWHEG/NLO/PT_jet_3-_VBF_CUTS_index___7.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/NLO/histogram_transverse_momentum_j3_nlo.dat ../BONSAY/NLO/ew-nlo.ptj3" u (($2+$3)/2):(BONSAY_fact*$44*10/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\

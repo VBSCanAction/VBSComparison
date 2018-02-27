@@ -44,20 +44,21 @@ set style data histeps
 set multiplot
 set tics front
 
-VBFNLO_fact=1e-3 #numbers are in fb/GeV
-POWHEG_fact=1e-3 #numbers are in fb/GeV
-RECOLA_fact=1e-3 #numbers are in fb/GeV
-BONSAY_fact=1e-3 #numbers are in fb/GeV
-PHANTOM_fact=1e-3 #numbers are in fb/GeV
+binwidth=100.0
+MADGRAPH_fact=1/binwidth
+VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
+POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
+RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
+BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
+PHANTOM_fact=1e-3/binwidth #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_invariantMassOfTwoHardestJets.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-WHIZARD_fact=1e-3/n_entries_WHIZARD
-
+WHIZARD_fact=1e-3/n_entries_WHIZARD/binwidth
 
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [500:4000]
-set yrange [1e-6:2e-4]
+set yrange [3e-8:2e-6]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -73,14 +74,14 @@ set ylabel "d{/Symbol s}/d m_{j_1j_2} [pb/GeV]"
 set format y "10^{%T}"
 
 set format x ''
-set key at graph 0.47, graph 0.64 noautotitles spacing 2.5
+set key at graph 0.46, graph 0.63 noautotitles spacing 2.5
 
 plot \
 "../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
 "../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.mjj" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
-"../MG5_aMC/LO/M_j1_j2_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../MG5_aMC/LO/M_j1_j2_LO.dat" u (($1+$2)/2):($3*MADGRAPH_fact) ls 2 t 'MG5\_aMC',\
 "../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../PHANTOM/LO/EW6/mjj.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 "../POWHEG/LO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
@@ -109,7 +110,7 @@ plot \
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../BONSAY/LO/ew-lo.mjj" u (($2+$3)/2):(BONSAY_fact*$44*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
-"<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../MG5_aMC/LO/M_j1_j2_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../MG5_aMC/LO/M_j1_j2_LO.dat" u (($2+$3)/2):($45*MADGRAPH_fact)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../Recola/LO/histogram_invariant_mass_mjj12_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../PHANTOM/LO/EW6/mjj.dat" using (($2+$3)/2):(($45*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
 "<paste ../Recola/LO/histogram_invariant_mass_mjj12_born.dat ../POWHEG/LO/M_j1j2tag_-_VBF_CUTS_index___3.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\

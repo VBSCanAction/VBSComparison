@@ -46,19 +46,21 @@ set style data histeps
 set multiplot
 set tics front
 
-VBFNLO_fact=1e-3 #numbers are in fb/GeV
-POWHEG_fact=1e-3 #numbers are in fb/GeV
-RECOLA_fact=1e-3 #numbers are in fb/GeV
-BONSAY_fact=1e-3 #numbers are in fb/GeV
-PHANTOM_fact=1e-3 #numbers are in fb/GeV
+binwidth=100.0
+MADGRAPH_fact=1/binwidth
+VBFNLO_fact=1e-3/binwidth #numbers are in fb/GeV
+POWHEG_fact=1e-3/binwidth #numbers are in fb/GeV
+RECOLA_fact=1e-3/binwidth #numbers are in fb/GeV
+BONSAY_fact=1e-3/binwidth #numbers are in fb/GeV
+PHANTOM_fact=1e-3/binwidth #numbers are in fb/GeV
 stats '../WHIZARD/LO/hist_invariantMassOfTwoChargedLeptons.dat' every ::0 using 5 nooutput
 n_entries_WHIZARD = int(STATS_sum)
-WHIZARD_fact=1e-3/n_entries_WHIZARD
+WHIZARD_fact=1e-3/n_entries_WHIZARD/binwidth
 
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [0:1000]
-set yrange [1e-7:2e-3]
+set yrange [1e-9:2e-5]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
@@ -81,7 +83,7 @@ plot \
 "../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.mll" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
-"../MG5_aMC/LO/M_lep_lep_LO.dat" u (($1+$2)/2):($3) ls 2 t 'MG5\_aMC',\
+"../MG5_aMC/LO/M_lep_lep_LO.dat" u (($1+$2)/2):($3*MADGRAPH_fact) ls 2 t 'MG5\_aMC',\
 "../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
 "../PHANTOM/LO/EW6/mll.dat" using (($1+$2)/2):($3*PHANTOM_fact*($2-$1)) ls 8 title 'PHANTOM',\
 "../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($1+$2)/2):($3*POWHEG_fact*($2-$1)) ls 3 t 'POWHEG',\
@@ -109,7 +111,7 @@ plot \
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../BONSAY/LO/ew-lo.mll" u (($2+$3)/2):(BONSAY_fact*$44*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../MG5_aMC/LO/M_lep_lep_LO.dat" u (($2+$3)/2):($45)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../MG5_aMC/LO/M_lep_lep_LO.dat" u (($2+$3)/2):($45*MADGRAPH_fact)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../PHANTOM/LO/EW6/mll.dat" using (($2+$3)/2):(($45*PHANTOM_fact*($3-$2))/($4*RECOLA_fact*($3-$2))) ls 8 title 'PHANTOM',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../POWHEG/LO/Ml1l2-_VBF_CUTS_index__11.dat" u (($2+$3)/2):($45*POWHEG_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 3 t 'POWHEG',\
