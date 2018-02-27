@@ -66,7 +66,7 @@ set ytics 10
 #set ytics 100
 set mxtics 2
 set mytics 10
-set ylabel "{/Symbol s} per bin [pb]"
+set ylabel "d{/Symbol s}/d z_{j_3} [pb]"
 #set xtics nomirror
 set format y "10^{%T}"
 
