@@ -1,0 +1,14 @@
+**********************************************************
+LEGEND for
+
+        LO_stu_MCerr.dat [fig. 4 right]
+  	LO_tu_MCerr.dat [fig. 4 left]
+  	NLO_stu_MCerr.dat [fig. 7 right]
+  	NLO_tu_MCerr.dat [fig. 7 left]
+
+**********************************************************
+ bin[dyjj,mjj]===> value +/- err
+
+ We divided the dyjj range [0,4.5] into 9 bins with 0.5 width.
+ We divided the mjj range [0,800] into 16 bins with 50 GeV width.
+ If the bin[i,j] doesn't appear, it means that the value has not been plotted or it's content is zero. 
