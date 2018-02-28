@@ -23,7 +23,7 @@ In the following, the codes employed throughout this paper and the approximation
 Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, real matrix elements are written by Marina Billoni, and virtual matrix elements by Stefan Dittmaier.
 One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
 For the fiducial cross sections it uses the VBS approximation at LO and NLO.
-The virtuals are additionally approximated using a double pole approximation.
+The virtual corrections are additionally approximated using a double pole approximation.
 For more inclusive cross sections at LO the exact matrix elements ($s$-channels, interferences) are used.
 
   \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
@@ -34,7 +34,7 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
         and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
         in turn exploits {\sc CutTools}~\cite{Ossola:2007ax}, {\sc Ninja}~\cite{Peraro:2014cba,
         Hirschi:2016mdz}, {\sc IREGI}~\cite{ShaoIREGI}, or {\sc Collier}~\cite{Denner:2016kdg}, together with an in-house 
-        implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}. Finally, scale and PDF uncertainties can be obtained in an exact manner via reweigthing
+        implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}. Finally, scale and PDF uncertainties can be obtained in an exact manner via reweighting
         at zero additional CPU cost~\cite{Frederix:2011ss}.\\
         The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
 \begin{verbatim}
@@ -50,7 +50,7 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
         For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
         only loops with QCD-interacting particles are generated. Such an approximation is equivalent to the assumption that the finite part of
         those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
-        pole-cancelation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
+        pole-cancellation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
         {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards\-/FKS\_\-params.dat} file to -1.
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
@@ -77,7 +77,7 @@ For the VBS processes all matrix elements are being provided by a previous versi
     parton-level Monte Carlo for processes with electroweak bosons. It
     allows the calculation of VBS processes at NLO QCD in the VBS
     approximation, with process IDs between 200 and 290. The corresponding
-    s-channel contributions are available separately as triboson processes with
+    s-channel contributions are available separately as tri-boson processes with
     semi-leptonic decays, with process IDs in the 400 range. These can simply
     be added on top of the VBS contribution, as interferences between the two are neglected.
     The usage of leptonic tensors in the calculation, pioneered in
@@ -98,7 +98,7 @@ resonances.
 
 \end{itemize}
 
-We conclude this section by summarizing the details of the various codes in Tab.~\ref{tab:wg1_codes}. In particular, it is specified whether
+We conclude this section by summarising the details of the various codes in Tab.~\ref{tab:wg1_codes}. In particular, it is specified whether
 \begin{itemize}
     \item all $s$- and $t/u$-channel diagrams that lead to the considered final state are included;
     \item interferences between diagrams are included at LO;
