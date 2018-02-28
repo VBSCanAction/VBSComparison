@@ -46,6 +46,14 @@ rivet-mkhtml -o rivet-NLOPS \
 :"LineColor={[rgb]{0.85,0.37,0.01}}"\
 :"LineStyle=dashed"\
 :"ErrorBands=0"\
+  VBFNLO/Herwig-MCatNLO-DefaultShower.yoda\
+:"Title=VBFNLO 3+H7-Default"\
+:"LineColor={[rgb]{0.40,0.65,0.12}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
+:"ErrorBandOpacity=0.3"\
   VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda\
 :"Title=VBFNLO 3+H7-Dipole"\
 :"LineColor={[rgb]{0.11,0.62,0.47}}"\
@@ -53,14 +61,6 @@ rivet-mkhtml -o rivet-NLOPS \
 :"ErrorBands=1"\
 :"ErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
-:"ErrorBandOpacity=0.3"\
-  VBFNLO/Herwig-MCatNLO-DefaultShower.yoda\
-:"Title=VBFNLO 3+H7-QTilde"\
-:"LineColor={[rgb]{0.40,0.65,0.12}}"\
-:"LineStyle=solid"\
-:"ErrorBands=0"\
-:"ErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
-:"RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
 :"ErrorBandOpacity=0.3"\
 
 

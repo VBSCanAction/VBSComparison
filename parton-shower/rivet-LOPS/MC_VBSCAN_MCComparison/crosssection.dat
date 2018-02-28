@@ -26,7 +26,7 @@ Title=NLO (fixed order)
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
-1.299950e+04	1.300050e+04	1.370330e+00	1.144339e-04	1.144339e-10
+1.299950e+04	1.300050e+04	1.391603e-06	1.150245e-10	1.150245e-10
 # END HISTO1D
 
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/crosssection

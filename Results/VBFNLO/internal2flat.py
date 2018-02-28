@@ -35,10 +35,10 @@ YLabel=
   fin = open(dataconversion[key],'r')
   for l in fin:
     entries = l.split()
-    fout.write("{0}   {1}   {2}   {3}   {3}\n".format(entries[0],entries[1],entries[2],entries[3]))
+    fout.write("{0}   {1}   {2}   {3}   {3}\n".format(entries[0],entries[1],entries[6],entries[7]))
     if key == "jetsinclusive" and float(entries[0]) == 1.5:
-      cs = float(entries[2])
-      cserr = float(entries[3])
+      cs = float(entries[6])
+      cserr = float(entries[7])
   fout.write("# END HISTO1D\n")
   fin.close()
 

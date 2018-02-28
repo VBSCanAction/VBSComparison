@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
-DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
 YMax=0.115
 Title=Rapidity of the third jet (NLO+PS)
 RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
@@ -32,24 +32,24 @@ XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
--4.500000e+00	-4.000000e+00	1.026427e-02	6.471920e-06	6.471920e-06
--4.000000e+00	-3.500000e+00	2.711317e-02	1.217367e-05	1.217367e-05
--3.500000e+00	-3.000000e+00	4.976426e-02	1.858437e-05	1.858437e-05
--3.000000e+00	-2.500000e+00	6.884879e-02	2.353625e-05	2.353625e-05
--2.500000e+00	-2.000000e+00	7.543039e-02	2.663978e-05	2.663978e-05
--2.000000e+00	-1.500000e+00	6.819693e-02	2.577234e-05	2.577234e-05
--1.500000e+00	-1.000000e+00	5.276349e-02	2.356438e-05	2.356438e-05
--1.000000e+00	-5.000000e-01	3.718892e-02	2.083490e-05	2.083490e-05
--5.000000e-01	0.000000e+00	2.782133e-02	1.841809e-05	1.841809e-05
-0.000000e+00	5.000000e-01	2.779137e-02	2.008951e-05	2.008951e-05
-5.000000e-01	1.000000e+00	3.715426e-02	2.108808e-05	2.108808e-05
-1.000000e+00	1.500000e+00	5.272035e-02	2.441177e-05	2.441177e-05
-1.500000e+00	2.000000e+00	6.810902e-02	2.646550e-05	2.646550e-05
-2.000000e+00	2.500000e+00	7.538077e-02	2.674063e-05	2.674063e-05
-2.500000e+00	3.000000e+00	6.879595e-02	2.466872e-05	2.466872e-05
-3.000000e+00	3.500000e+00	4.974006e-02	1.974404e-05	1.974404e-05
-3.500000e+00	4.000000e+00	2.708411e-02	1.377051e-05	1.377051e-05
-4.000000e+00	4.500000e+00	1.025332e-02	6.957145e-06	6.957145e-06
+-4.500000e+00	-4.000000e+00	1.027400e-02	6.475930e-06	6.475930e-06
+-4.000000e+00	-3.500000e+00	2.716909e-02	1.219615e-05	1.219615e-05
+-3.500000e+00	-3.000000e+00	4.997187e-02	1.863601e-05	1.863601e-05
+-3.000000e+00	-2.500000e+00	6.938941e-02	2.364793e-05	2.364793e-05
+-2.500000e+00	-2.000000e+00	7.645853e-02	2.687785e-05	2.687785e-05
+-2.000000e+00	-1.500000e+00	6.970989e-02	2.598747e-05	2.598747e-05
+-1.500000e+00	-1.000000e+00	5.454392e-02	2.383875e-05	2.383875e-05
+-1.000000e+00	-5.000000e-01	3.902172e-02	2.109617e-05	2.109617e-05
+-5.000000e-01	0.000000e+00	2.961497e-02	1.872527e-05	1.872527e-05
+0.000000e+00	5.000000e-01	2.958183e-02	2.040132e-05	2.040132e-05
+5.000000e-01	1.000000e+00	3.898363e-02	2.137184e-05	2.137184e-05
+1.000000e+00	1.500000e+00	5.449831e-02	2.467491e-05	2.467491e-05
+1.500000e+00	2.000000e+00	6.962082e-02	2.670449e-05	2.670449e-05
+2.000000e+00	2.500000e+00	7.640467e-02	2.689571e-05	2.689571e-05
+2.500000e+00	3.000000e+00	6.933252e-02	2.476182e-05	2.476182e-05
+3.000000e+00	3.500000e+00	4.994639e-02	1.980025e-05	1.980025e-05
+3.500000e+00	4.000000e+00	2.713895e-02	1.378352e-05	1.378352e-05
+4.000000e+00	4.500000e+00	1.026335e-02	6.963316e-06	6.963316e-06
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
@@ -219,6 +219,41 @@ YLabel=
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
+ErrorBandColor={[rgb]{0.40,0.65,0.12}}
+ErrorBandOpacity=0.3
+ErrorBands=0
+LineColor={[rgb]{0.40,0.65,0.12}}
+LineStyle=solid
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
+RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}
+ScaledBy=6.13846458628156426e-05
+Title=VBFNLO 3+H7-Default
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+-4.500000e+00	-4.000000e+00	1.071706e-02	8.582930e-05	8.582930e-05
+-4.000000e+00	-3.500000e+00	2.590518e-02	1.405185e-04	1.405185e-04
+-3.500000e+00	-3.000000e+00	4.565146e-02	1.861914e-04	1.861914e-04
+-3.000000e+00	-2.500000e+00	6.196196e-02	2.094293e-04	2.094293e-04
+-2.500000e+00	-2.000000e+00	6.605072e-02	2.072711e-04	2.072711e-04
+-2.000000e+00	-1.500000e+00	5.762438e-02	1.853687e-04	1.853687e-04
+-1.500000e+00	-1.000000e+00	4.281682e-02	1.640904e-04	1.640904e-04
+-1.000000e+00	-5.000000e-01	2.888510e-02	1.314648e-04	1.314648e-04
+-5.000000e-01	0.000000e+00	2.069984e-02	1.194906e-04	1.194906e-04
+0.000000e+00	5.000000e-01	2.070650e-02	1.049096e-04	1.049096e-04
+5.000000e-01	1.000000e+00	2.881474e-02	1.366408e-04	1.366408e-04
+1.000000e+00	1.500000e+00	4.268180e-02	1.714016e-04	1.714016e-04
+1.500000e+00	2.000000e+00	5.724236e-02	1.930707e-04	1.930707e-04
+2.000000e+00	2.500000e+00	6.610304e-02	2.043945e-04	2.043945e-04
+2.500000e+00	3.000000e+00	6.210858e-02	2.169439e-04	2.169439e-04
+3.000000e+00	3.500000e+00	4.576158e-02	1.770804e-04	1.770804e-04
+3.500000e+00	4.000000e+00	2.608686e-02	1.367867e-04	1.367867e-04
+4.000000e+00	4.500000e+00	1.086695e-02	9.382106e-05	9.382106e-05
+4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
 ErrorBandColor={[rgb]{0.11,0.62,0.47}}
 ErrorBandOpacity=0.3
@@ -248,41 +283,6 @@ Title=VBFNLO 3+H7-Dipole
 3.000000e+00	3.500000e+00	4.232482e-02	4.562080e-03	3.899360e-03
 3.500000e+00	4.000000e+00	2.255950e-02	2.481300e-03	2.299680e-03
 4.000000e+00	4.500000e+00	7.842632e-03	5.156300e-04	1.158726e-03
-4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-# END HISTO1D
-
-# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
-ErrorBandColor={[rgb]{0.40,0.65,0.12}}
-ErrorBandOpacity=0.3
-ErrorBands=0
-LineColor={[rgb]{0.40,0.65,0.12}}
-LineStyle=solid
-Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3
-RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}
-ScaledBy=6.13846458628156426e-05
-Title=VBFNLO 3+H7-QTilde
-XLabel=
-YLabel=
-# xlow	 xhigh	 val	 errminus	 errplus
--5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
--4.500000e+00	-4.000000e+00	1.071706e-02	8.582930e-05	8.582930e-05
--4.000000e+00	-3.500000e+00	2.590518e-02	1.405185e-04	1.405185e-04
--3.500000e+00	-3.000000e+00	4.565146e-02	1.861914e-04	1.861914e-04
--3.000000e+00	-2.500000e+00	6.196196e-02	2.094293e-04	2.094293e-04
--2.500000e+00	-2.000000e+00	6.605072e-02	2.072711e-04	2.072711e-04
--2.000000e+00	-1.500000e+00	5.762438e-02	1.853687e-04	1.853687e-04
--1.500000e+00	-1.000000e+00	4.281682e-02	1.640904e-04	1.640904e-04
--1.000000e+00	-5.000000e-01	2.888510e-02	1.314648e-04	1.314648e-04
--5.000000e-01	0.000000e+00	2.069984e-02	1.194906e-04	1.194906e-04
-0.000000e+00	5.000000e-01	2.070650e-02	1.049096e-04	1.049096e-04
-5.000000e-01	1.000000e+00	2.881474e-02	1.366408e-04	1.366408e-04
-1.000000e+00	1.500000e+00	4.268180e-02	1.714016e-04	1.714016e-04
-1.500000e+00	2.000000e+00	5.724236e-02	1.930707e-04	1.930707e-04
-2.000000e+00	2.500000e+00	6.610304e-02	2.043945e-04	2.043945e-04
-2.500000e+00	3.000000e+00	6.210858e-02	2.169439e-04	2.169439e-04
-3.000000e+00	3.500000e+00	4.576158e-02	1.770804e-04	1.770804e-04
-3.500000e+00	4.000000e+00	2.608686e-02	1.367867e-04	1.367867e-04
-4.000000e+00	4.500000e+00	1.086695e-02	9.382106e-05	9.382106e-05
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
