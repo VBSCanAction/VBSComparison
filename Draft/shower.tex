@@ -2,7 +2,7 @@ We now discuss how different predictions compare when the matching to parton-sho
 a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
 matching schemes, parton shower employed and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
-can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} and the {\sc Powheg-Box}, we
+can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
 restrict ourselves to showing results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
 also {\sc PHANTOM} is used for LO+PS results.\\
@@ -33,16 +33,16 @@ But this effect is below a per cent at the level of the fiducial cross sections.
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{c|r@{ $\pm$ }l}
+    \begin{tabular}{c|l@{ $\pm$ }l}
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.352 $ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Herwig++}&  $1.343 $ & $ 0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.275$ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Herwig++}, $\Gamma_{\rm resc}$&  $1.267$ & $ 0.003$  \\
-        {\sc PHANTOM}+{\sc Pythia8} &  $1.235\phantom{0} $ & $0.001$  \\
-        {\sc PHANTOM}+{\sc Herwig++} &  $1.260\phantom{0} $ & $0.001$  \\
-        {\sc VBFNLO}+{\sc Herwig7} &  $1.3001$ & $0.0002$  \\
+        {\sc PHANTOM}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
+        {\sc PHANTOM}+{\sc Herwig++} &  $1.260 $ & $0.001$  \\
+        {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
     \end{tabular}
     \caption{\label{tab:PSratesLO} Rates at LO-QCD accuracy matched to parton shower within VBS cuts obtained with the different codes used in this comparison,
     for the ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process. The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$ 
@@ -51,7 +51,7 @@ But this effect is below a per cent at the level of the fiducial cross sections.
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{c|r@{ $\pm$ }l}
+    \begin{tabular}{c|l@{ $\pm$ }l}
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.450 ^{+2\%}_{-1\%} {}^{+2\%}_{-2\%} $ & $0.004$  \\
@@ -84,7 +84,8 @@ the following. Before turning to the differential observables, we point out the 
 scales are varied independently and when they are varied in a correlated manner, as well as those due to PDF.  
 Concerning differential kinematic distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
 with different colours in the main frame. In the inset, these predictions are compared in both cases with a fixed-order prediction at NLO accuracy (obtained with
-{\sc VBFNLO} \emph{i.e.}\ the VBS approximation with $s$-channel \BJ{Note that first paragraph of the Sec. says that s-channel contributions are neglected in VBFNLO.} For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
+{\sc VBFNLO}, \emph{i.e.}\ the VBS approximation with $s$-channel).
+For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
 obtained with {\sc VBFNLO} and {\sc MG5\_aMC}: 
 again, for the first the band corresponds to three-point variations, while for the second the darker (lighter) band corresponds to nine-point 
 scale variations (plus PDF uncertainties, linearly added). 
