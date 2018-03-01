@@ -82,8 +82,8 @@ set key at graph 0.99, graph 1.01 noautotitles spacing 2.25
 
 plot \
 "../Recola/LO/histogram_transverse_momentum_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
-"../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
-"../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2+1):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2-1):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.ptj2" u 1:(BONSAY_fact*$2*25) ls 6 t 'BONSAY',\
 "../MG5_aMC/LO/Pt_j2_LO.dat" u (($1+$2)/2):($3*MADGRAPH_fact) ls 2 t 'MG5\_aMC',\
 "../Recola/LO/histogram_transverse_momentum_j2_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
@@ -110,8 +110,8 @@ set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
 "<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
-"<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
-"<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2+1):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u ($2-1):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../BONSAY/LO/ew-lo.ptj2" u (($2+$3)/2):(BONSAY_fact*$44*25/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../MG5_aMC/LO/Pt_j2_LO.dat" u (($2+$3)/2):($45*MADGRAPH_fact)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_transverse_momentum_j2_born.dat ../Recola/LO/histogram_transverse_momentum_j2_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
