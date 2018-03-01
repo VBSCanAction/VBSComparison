@@ -61,7 +61,7 @@ WHIZARD_fact=1/n_entries_WHIZARD/binwidth
 
 set label "LO" font ",10" at graph 0.03, graph 0.94
 set xrange [0:1000]
-set yrange [1e-7:2e-2]
+set yrange [1e-7:4e-2]
 set logscale y
 set origin 0.00, 0.5
 set size 0.9, 0.4
