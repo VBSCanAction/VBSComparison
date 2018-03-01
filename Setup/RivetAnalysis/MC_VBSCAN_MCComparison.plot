@@ -42,8 +42,8 @@ LegendYPos=0.575
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/Deltay_jj
 Title=Rapidity difference of the two leading jets (LO+PS)
-XLabel=$\delta y_{\rm j_1 j_2}$
-YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~\delta y_{\rm j_1 j_2}$~[fb]
+XLabel=$\Delta y_{\rm j_1 j_2}$
+YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~\Delta y_{\rm j_1 j_2}$~[fb]
 RatioPlotSameStyle=1
 LogY=0
 XMin=2.5
