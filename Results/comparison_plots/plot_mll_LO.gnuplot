@@ -80,8 +80,8 @@ set key at graph 0.48, graph 0.58 noautotitles spacing 2.25
 
 plot \
 "../Recola/LO/histogram_invariant_mass_epmu_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)) w fillsteps fs solid 0.3 ls 4 notitle,\
-"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
-"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-0.01):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+1):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-1):(min($4,$10,$16,$22,$28,$34,$40)*RECOLA_fact*($3-$2)) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "../BONSAY/LO/ew-lo.mll" u 1:(BONSAY_fact*$2*100) ls 6 t 'BONSAY',\
 "../MG5_aMC/LO/M_lep_lep_LO.dat" u (($1+$2)/2):($3*MADGRAPH_fact) ls 2 t 'MG5\_aMC',\
 "../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($4*RECOLA_fact*($3-$2)) ls 4 t 'MoCaNLO+Recola',\
@@ -108,8 +108,8 @@ set ylabel 'Ratio /MoCaNLO+Recola' offset 1
 
 plot \
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u 2:((max($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 0.3 ls 4 notitle,\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
-"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-0.01):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2+1):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
+"<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u ($2-1):((min($4,$10,$16,$22,$28,$34,$40))*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) w fillsteps fs solid 1 lw 4 lc rgb 'white' notitle,\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../BONSAY/LO/ew-lo.mll" u (($2+$3)/2):(BONSAY_fact*$44*100/($4*RECOLA_fact*($3-$2))) ls 6 t 'BONSAY',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../MG5_aMC/LO/M_lep_lep_LO.dat" u (($2+$3)/2):($45*MADGRAPH_fact)/($4*RECOLA_fact*($3-$2)) ls 2 t 'MG5\_aMC',\
 "<paste ../Recola/LO/histogram_invariant_mass_epmu_born.dat ../Recola/LO/histogram_invariant_mass_epmu_born.dat" u (($2+$3)/2):($46*RECOLA_fact*($3-$2)/($4*RECOLA_fact*($3-$2))) ls 4 t 'MoCaNLO+Recola',\
