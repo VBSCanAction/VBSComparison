@@ -1,15 +1,19 @@
 We now discuss the various approximations which are implemented in computer programs for the EW contribution at order $\mathcal{O}{\left(\alpha^{6}\right)}$.
 Since we are mostly interested in 
-the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex, may appear justified to approximate the 
+the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex, it may appear justified to approximate the 
 full process by considering just those diagrams which contain the $2\rightarrow 2$ scattering process as a sub-part.
 However, this set of contributions is not gauge invariant.
-In order ensure gauge invariance, an on-shell projection of the incoming and outgoing $\PW$ bosons should be performed {\bf MZ CITE}.
-Unfortunately, the former momenta are space-like and thus a simple on-shell projection is not possible.
-Instead, one can keep the $\PW$ boson legs connected to the external quark line off-shell while the ones connected 
-to the final-state leptons, which are already time-like, are put on-shell. \ZM{is this still gauge invariant? if so, one should change 
-the sentence above ``In order to ensure..''}
-Then the polarisation of the gauge boson is accommodated following for example the implementations of Refs.~\cite{Kuss:1995yv,Accomando:2006hq}.
-Such an approximation is usually called effective vector-boson approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
+In order ensure gauge invariance, an on-shell projection of
+the incoming and outgoing W bosons should be performed.
+While this can be done in the usual way for the time-like
+outgoing W bosons, the treatment of the space-like W bosons
+emitted from the incoming quarks requires some care.
+Following Refs.~\cite{Kuss:1995yv,Accomando:2006hq} these W-boson lines can be split,
+the W bosons entering the scattering process can be projected
+on-shell, and the emission of the W bosons from the quarks can be
+described by vector-boson luminosities.
+Such an approximation is usually called effective vector-boson
+approximation (EVBA) \cite{Dawson:1984gx,Duncan:1985vj,Cahn:1983ip}.
 
 An improvement of such an approximation consists 
 in considering all $t$- and $u$-channel diagrams and squaring them separately, neglecting interference contributions between the two classes.
@@ -45,9 +49,14 @@ assuming a cancellation of the infrared (IR) poles.
 %Such an approximation is implemented by {\sc MG5\_aMC}.
 %\MP{I think this is not a gauge invariant approximation. If not, this should be commented on (if yes also as this is not transparent to me).}
 
-When considering the full one-loop amplitude of order $\mathcal{O}(g_{\rm s}^2 g^6)$ squared with the tree amplitude of order $\mathcal{O}(g^6)$, not only real QCD radiation but also QED ones have to be included in order cancel IR singularities.
-But all IR singularities related to photon emissions are not cancelled by the above mentioned virtual corrections.
-Another type of virtual corrections has to be incorporated, namely the one-loop amplitude of order $\mathcal{O}(g^8)$ interfered with the tree-level one of order $\mathcal{O}(g_{\rm s}^2 g^4)$.
-Hence the full NLO corrections of order $\mathcal{O}{\left(\alphas \alpha^{6}\right)}$ consist not only of QCD-type corrections but also of EW ones \cite{Biedermann:2017bss}.
-%Such predictions are provided by the combination {\sc MoCaNLO+Recola} as published in Ref.~\cite{Biedermann:2017bss}.
-
+When considering the NLO corrections of order
+$\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$
+to the full process, besides real and virtual QCD corrections
+to the EW tree-level contribution of order
+$\mathcal{O}{\left(\alpha^{6}\right)}$
+also real and virtual EW corrections to the LO interference
+of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$
+have to be taken into account. Since some loop diagrams contribute
+to both types of corrections, QCD and EW corrections cannot be
+separated any more on the basis of Feynman diagrams, and the
+cancellation of IR singularities requires to include all of them \cite{Biedermann:2017bss}.
