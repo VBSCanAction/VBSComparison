@@ -1,12 +1,14 @@
 In Figs.~(\ref{fig:distNLO1}-\ref{fig:distNLO3}), several differential distributions are shown.
 All these predictions are performed at NLO accuracy at the order $\mathcal{O}(\alphas\alpha^6)$.
+In the upper panel, the absolute predictions are shown while in the lower panel, the ratio with respect to the full predictions are displayed.
+The band corresponds to a seven-points variation of the factorisation and renormalisation scales.
 
 We start with Fig.~\ref{fig:distNLO1} which displays the invariant mass (left) and the rapidity separation (right) of the two tagging jets.
 For high invariant mass, all predictions agree rather well.
 On the other hand, for low invariant mass, the hierarchy present at the level of the cross section is here reproduced.
 The VBS-approximated predictions ({\sc Bonsay} and {\sc Powheg-Box}) are lower than the full calculation ({\sc MoCaNLO}+{\sc Recola}).
 The full calculation is rather well approximated by the hybrid VBS approximation implemented in {\sc MadGraph5\_aMC\-@NLO}.
-Finally, {\sc VBFNLO} which includes as well $s$-channel contributions provides larger predictions at low invariant mass.
+Finally, {\sc VBFNLO} which includes also $s$-channel contributions provides larger predictions at low invariant mass.
 For the rapidity difference between the two tagging jets, the hierarchy between the predictions is rather similar.
 Therefore, depending on the approximation used, it can vary by $\pm7\%$ and $\pm4\%$ with respect to the full computation at low invariant mass and low rapidity difference for the tagging jets, respectively
 
@@ -17,7 +19,8 @@ Therefore, depending on the approximation used, it can vary by $\pm7\%$ and $\pm
 \caption{\label{fig:distNLO1} Differential distributions in the invariant mass (left) and rapidity difference of the two tagging jets (right).
 The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy and order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
 The description of the different programs used can be found in Sec.~\ref{subsec:codedescr}.
-The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
+The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
 The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
 }
 \end{figure*}
@@ -40,7 +43,8 @@ For larger rapidity, the other codes constitute a better description of the full
 \caption{\label{fig:distNLO2} Differential distributions in the transverse momentum (left) and rapidity of the hardest jet (right).
 The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy and order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
 The description of the different programs used can be found in Sec.~\ref{subsec:codedescr}.
-The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
+The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
 The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
 }
 \end{figure*}
@@ -58,13 +62,14 @@ The other three VBS approximations are close to each other within few per cent.
 \caption{\label{fig:distNLO3} Differential distributions in the invariant mass of the two charged leptons (left) and Zeppenfeld variable for the muon (right).
 The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy and order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
 The description of the different programs used can be found in Sec.~\ref{subsec:codedescr}.
-The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
+The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
 The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
 }
 \end{figure*}
 
 In the end, the quality of the VBS-approximations is good up to $10\%$ in the fiducial region.
-These differences are larger than at what is observed at LO.
+These differences are larger than at LO.
 
 The contributions from $s$-channel amplitude can be sizeable especially at low invariant mass for the two tagging jet (comparing the predictions of {\sc VBFNLO} against the ones of {\sc Bonsay} and {\sc Powheg}).
 This can be explained by the fact that $s$-channel contributions are less suppressed at NLO.
@@ -72,10 +77,10 @@ In the real, an extra gluon-jet can be radiated from any of the charged particle
 Therefore, the jet requirements ($ m_{\Pj \Pj} >  500\GeV$ and $|\Delta y_{\Pj \Pj}| > 2.5$) that were suppressing $s$-channel contributions at LO are partially lifted with the inclusion of a third jet at NLO.
 Such an effect has also been observed for top--antitop production in the lepton+jet channel at NLO QCD \cite{Denner:2017kzu}.
 
-At the $s$-channel contributions are sizeable, their interferences with the $t$/$u$-channel can be of similar size in the phase-space region where the former are large.
+As the $s$-channel contributions are sizeable, their interferences with the $t$/$u$-channel can be of similar size in the phase-space region where the former are large.
 This can be observed by comparing the predictions of {\sc VBFNLO} against the ones of {\sc MadGraph5\_aMC\-@NLO}.
 
 Finally, the effect of EW corrections and non-factorisable contributions in the virtual corrections are usually small.
-But they can be particularly large (about $10\%$) for large transverse momentum of the hardest jet.
+But they can be relatively large (about $10\%$) for large transverse momentum of the hardest jet.
 These high-energy region of the phase space are where EW Sudakov logarithms become large.
 Nonetheless these regions are rather suppressed and thus these effects are hardly visible at the level of the cross section.

@@ -5,9 +5,10 @@ Eq.~(\ref{cut:4}).
 In Tab.~\ref{tab:LOscanXsec}, the cross sections of the three contributions are reported.
 The EW, QCD, and interference contributions amount to $57\%$, $37\%$, and $6\%$ of the total inclusive cross section, respectively.
 The QCD contribution does not posses external gluons due to charge conservation.
-Thus the $\mathcal{O}(\alphas^2\alpha^4)$ diagrams only involve gluon exchange in the $t/u$-channel between the quark lines.
+Thus the diagrams of order $\mathcal{O}(\alphas^2\alpha^4)$ only involve gluon exchange in the $t/u$-channel between the quark lines.
 This results in a small contribution although the VBS cuts have not been imposed.
-The interference between EW and QCD contributions is small, due to color suppression, but not negligible ($t/u$ and $t/s$ interferences with identical fermions).
+The interference between EW and QCD contributions is small, due to color suppression, but not negligible.
+% ($t/u$ and $t/s$ interferences with identical fermions).
 
 \begin{table}[h!]
     \centering
@@ -18,25 +19,26 @@ The interference between EW and QCD contributions is small, due to color suppres
         $\sigma[\rm{fb}]$ & $ 2.292 \pm 0.002 $ & $ 1.477 \pm 0.001 $ & $ 0.223 \pm 0.003 $ \\
 %         {\sc Xxx}&  $ \pm $ & $ \pm $ & $ \pm $
     \end{tabular}
-    \caption{\label{tab:LOscanXsec} Cross sections at LO accuracy for the three contributions to the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$, obtained with full matrix elements.
-    These results are for the set-up described in Sec.~\ref{subsec:inputpar}, dropping the $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ cuts.}
+    \caption{\label{tab:LOscanXsec} Cross sections at LO accuracy for the three contributions to the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$, obtained with exact matrix elements.
+    These results are for the set-up described in Sec.~\ref{subsec:inputpar} but no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.
+    The uncertainties shown refer to the estimated statistical error of the Monte Carlo programs.}
 \end{table}
 
 In Fig.~\ref{fig:mjjdyjj_1d} these three contributions are shown separately and summed in the differential distribution of the di-jet invariant mass $m_{\Pj\Pj}$ and the rapidity difference $|\Delta y_{\Pj\Pj}|$.
-In the distributions in the di-jet invariant mass (left), one can observe that the EW contribution peaks around an invariant mass of about $80\GeV$.
+For the distribution in the di-jet invariant mass (left), one can observe that the EW contribution peaks around an invariant mass of about $80\GeV$.
 These are due to diagrams where the two jets originate from the decay of a W boson (see middle and right diagrams in Fig.~\ref{diag:LO}).
 Note that these contributions are not present in calculations relying on the VBS approximation.
 The EW contribution becomes dominant for di-jet invariant mass larger than $500\GeV$.
 The same holds true for jet rapidity difference larger than $2.5$ (right).
-This clearly explains why cuts on these two observables are used in order to enhance the EW contribution over the QCD one.
+This justifies why cuts on these two observables are used in order to enhance the EW contribution over the QCD one.
 In particular, in order to have a large EW contribution, rather exclusive cuts are required.
 
 \begin{figure*}[hbt]
 \centering
 \includegraphics[scale=0.395]{figures/scanfigures/mjj_full.pdf}
 \includegraphics[scale=0.395]{figures/scanfigures/dyjj_full.pdf}
-\caption{Differential distribution in the di-jet invariant mass $m_{\Pj\Pj}$ (left) and the difference of the jet rapidities $|\Delta y_{\Pj\Pj}|$ (right) at LO.
-The EW contribution is in red, the QCD one in green, and the interference in grey.
+\caption{Differential distribution in the di-jet invariant mass $m_{\Pj\Pj}$ (left) and the difference of the jet rapidities $|\Delta y_{\Pj\Pj}|$ (right) for the three LO contributions to the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$.
+The EW contribution is in red, the QCD one in green, and the interference one in grey.
 The sum of all the contributions is in blue.
 The cuts applied are the ones of of Sec.~\ref{subsec:inputpar} but no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.}
 \label{fig:mjjdyjj_1d}
@@ -53,7 +55,7 @@ This motivates in particular the choice of employing the cut $m_{\Pj\Pj} > 200\G
 \includegraphics[scale=0.395]{figures/scanfigures/scan_ew6.pdf}
 \includegraphics[scale=0.395]{figures/scanfigures/scan_ew5qcd1.pdf}
 \includegraphics[scale=0.395]{figures/scanfigures/scan_ew4qcd2.pdf}
-\caption{Cross sections (fb) per bin in the plan $\left(m_{\Pj\Pj}, \Delta y_{\Pj\Pj}\right)$ for the three LO contributions of orders $\mathcal{O}(\alpha^6)$ (top), $\mathcal{O}(\alphas\alpha^5)$ (middle), and $\mathcal{O}(\alphas^2 \alpha^4)$ (bottom).
+\caption{Double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ for the three LO contributions of orders $\mathcal{O}(\alpha^6)$ (top left), $\mathcal{O}(\alphas\alpha^5)$ (top right), and $\mathcal{O}(\alphas^2 \alpha^4)$ (bottom).
 The cuts applied are the ones of of Sec.~\ref{subsec:inputpar} but no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.
 }
 \label{fig:mjjdyjj_2d_LO}
