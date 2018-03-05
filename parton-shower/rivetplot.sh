@@ -114,3 +114,12 @@ rivet-mkhtml -o rivet-LOPS \
 :"ErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
 :"ErrorBandOpacity=0.3"\
+  WHIZARD/WHIZARD_EW_Pyth8223_4M.yoda\
+:"Title=WHIZARD+Pythia 8"\
+:"LineColor={[rgb]{0.01,0.58,0.6}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.01,0.58,0.6}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.01,0.58,0.6}}"\
+:"ErrorBandOpacity=0.3"\
+
