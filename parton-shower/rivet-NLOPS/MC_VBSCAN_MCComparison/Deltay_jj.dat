@@ -28,8 +28,8 @@ Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFN
 RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}
 ScaledBy=1
 Title=NLO (fixed order)
-XLabel=
-YLabel=
+XLabel=~
+YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -53,6 +53,7 @@ YLabel=
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_5M_NLOPS.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.46,0.44,0.70}}
 ErrorBandOpacity=0.3
@@ -63,8 +64,8 @@ Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_
 RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}
 ScaledBy=4.29481468359931388e-06
 Title=MG5_aMC+H++ 2.7.1
-XLabel=
-YLabel=
+XLabel=~
+YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -87,6 +88,7 @@ YLabel=
 9.000000e+00	9.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
+
 
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.91,0.16,0.54}}
@@ -120,6 +122,7 @@ Title=MG5_aMC+Pythia 8
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.91,0.16,0.54}}
 ErrorBandOpacity=0.5
@@ -152,6 +155,7 @@ Title=
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.85,0.37,0.01}}
 ErrorBandOpacity=0.3
@@ -162,8 +166,8 @@ Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powh
 RatioPlotErrorBandColor={[rgb]{0.85,0.37,0.01}}
 ScaledBy=3.25552498400246410e-05
 Title=Powheg+Pythia 8
-XLabel=
-YLabel=
+XLabel=~
+YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -187,6 +191,7 @@ YLabel=
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBands=0
 LineColor={[rgb]{0.85,0.37,0.01}}
@@ -194,8 +199,8 @@ LineStyle=dashed
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ScaledBy=3.19361318241456415e-05
 Title=Powheg-no shower
-XLabel=
-YLabel=
+XLabel=~
+YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -219,6 +224,7 @@ YLabel=
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
+
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.40,0.65,0.12}}
 ErrorBandOpacity=0.3
@@ -229,8 +235,8 @@ Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFN
 RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}
 ScaledBy=6.13846458628156426e-05
 Title=VBFNLO 3+H7-Default
-XLabel=
-YLabel=
+XLabel=~
+YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 0.000000e+00	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -253,6 +259,7 @@ YLabel=
 9.000000e+00	9.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 9.500000e+00	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
+
 
 # BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/Deltay_jj
 ErrorBandColor={[rgb]{0.11,0.62,0.47}}

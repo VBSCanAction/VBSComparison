@@ -1,5 +1,7 @@
 #! /bin/sh
 
+export RIVET_ANALYSIS_PATH=`realpath ../Setup/RivetAnalysis`
+
 cp ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison_NLO.plot ../Setup/RivetAnalysis/MC_VBSCAN_MCComparison.plot
 rivet-mkhtml -o rivet-NLOPS \
   VBFNLO/VBFNLO-NLO.yoda\
@@ -116,10 +118,10 @@ rivet-mkhtml -o rivet-LOPS \
 :"ErrorBandOpacity=0.3"\
   WHIZARD/WHIZARD_EW_Pyth8223_4M.yoda\
 :"Title=WHIZARD+Pythia 8"\
-:"LineColor={[rgb]{0.01,0.58,0.6}}"\
+:"LineColor={[rgb]{0.96,0.50,0.75}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
-:"ErrorBandColor={[rgb]{0.01,0.58,0.6}}"\
-:"RatioPlotErrorBandColor={[rgb]{0.01,0.58,0.6}}"\
+:"ErrorBandColor={[rgb]{0.96,0.50,0.75}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.96,0.50,0.75}}"\
 :"ErrorBandOpacity=0.3"\
 
