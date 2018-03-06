@@ -20,16 +20,16 @@ Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is select
 
 Results will be presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
 are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or even no cuts at all)
-must be employed in order not to bias the results.
+must be employed in order not to bias the results. This also implies that the tagging jets, whose momenta enter in the 
+renormalisation and factorisation scales, Eq.~(\ref{eq:defscale}), are now defined without imposing
+the $\Delta R_{\Pj\Pl}$ cut. The effect of this change is below one per cent at the level of the fiducial cross sections.
 
 Compared to the fixed order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is dominated by doubly-resonant contribution, the
 events are produced for the process with two stable ${\rm W}^+$-bosons (${\rm p}{\rm p}\to{\rm W^+}{\rm W^+}{\rm j}{\rm j}$), and the decay of these ${\rm W}^+$-bosons
 is simulated with {\sc MadSpin}~\cite{Artoisenet:2012st} (ensuring spin correlations) before the PS. Since {\sc MadSpin}\ computes
 the partial and total decay width of the W bosons at LO accuracy only, while in Section~\ref{subsec:inputpar} the NLO width is employed,
-an effect ($6\%$) on the normalisation is induced. Finally, when the renormalisation
-and factorisation scales are set, the $\Delta R_{\Pj\Pl}$ cut is not imposed during the jet-clustering procedure.
-This effect is below a per cent at the level of the fiducial cross sections.
+an effect ($6\%$) on the normalisation is induced. 
 
 \begin{table}[h!]
     \centering
