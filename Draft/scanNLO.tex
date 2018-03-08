@@ -1,19 +1,13 @@
-According to the results shown in Secs.~\ref{subsec:contributions} and \ref{subsec:LOinclusive}, the VBS approximation at LO fails drastically in the region $m_{\Pj\Pj} < 200$ GeV, $|\Delta y_{\Pj\Pj}| < 2$.
-Therefore, we present an inclusive study at NLO QCD for the EW component, namely the order $\mathcal{O}(\alphas\alpha^6)$ for the set-up described in Sec.~\ref{subsec:inputpar} but imposing $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.
-
-
-% For the inclusive region (see Eq.~\eqref{eq:inclusive}), this approximation is good up to $\pm10\%$ apart for large di-jet differences and low di-jet invariant mass.
-% It is therefore interesting to check how good this approximation performs at NLO.
-% Thus, we impose the same kinematic cuts shown in Sec.~\ref{subsec:inputpar} and apply the VBS cuts of Eq.~\eqref{eq:inclusive}.
+According to the results of Secs.~\ref{subsec:contributions} and \ref{subsec:LOinclusive}, the VBS approximation at LO fails drastically in the region $m_{\Pj\Pj} < 200$ GeV, $|\Delta y_{\Pj\Pj}| < 2$.
+Therefore, we present an inclusive study at NLO QCD for the EW component, namely the order $\mathcal{O}(\alphas\alpha^6)$ for the set-up described in Sec.~\ref{subsec:inputpar} but imposing the requirements $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.
 
 We compare three different predictions at NLO QCD: 
-the VBS approximation (dubbed $|t|^2+|u|^2$) implemented in {\sc Bonsay}, the VBS approximation with the $s$-channel contributions from {\sc VBFNLO} (dubbed $|s|^2+|t|^2+|u|^2$), and the full computation.
-The full computation employs full matrix elements meaning that $t/u/s$ interferences, factorisable and non-factorisable QCD corrections, as well as EW corrections to the order $\mathcal{O}(\alphas \alpha^5)$ are included.
-% This means that in order to cancel all IR singularities, also EW correction to the $\mathcal{O}(\alphas\alpha^5)$ interference have to be included \cite{Biedermann:2016yds}.
+the VBS approximation implemented in {\sc Bonsay} (dubbed $|t|^2+|u|^2$), the VBS approximation with the $s$-channel contributions from {\sc VBFNLO} (dubbed $|s|^2+|t|^2+|u|^2$), and the full computation.
+The full computation employs exact matrix elements meaning that $t/u/s$ interferences, factorisable and non-factorisable QCD corrections, as well as EW corrections to the order $\mathcal{O}(\alphas \alpha^5)$ are included.
 
 The total cross sections within the above mentioned kinematic cuts are shown in Tab.~\ref{tab:crosssecINCLUSIVE}.
-The $|t|^2+|u|^2$ approximation for NLO QCD predictions is lower by about $6\%$ with respect to the full calculation.
-The inclusion of $s$-channel diagrams improves the approximate prediction, leading to a slight excess at the $2\%$-level.
+The $|t|^2+|u|^2$ approximation for NLO QCD predictions is lower by about $6\%$ than the full calculation.
+The inclusion of $s$-channel diagrams improves the approximate prediction, leading to an excess at the $3\%$-level.
 
 \begin{table}[h!]
 \centering
@@ -23,9 +17,9 @@ Prediction & $\sigma_{\textrm{tot}}\,[\textrm{fb}]$ & $\delta [\%]$ \\
 \hline
 full &  $1.733\phantom{0} \pm 0.002\phantom{0}$ & - \\
 \hline
-$|t|^2 + |u|^2$ & $1.6292 \pm 0.0001$  &  $-6$ \\
+$|t|^2 + |u|^2$ & $1.6292 \pm 0.0001$  &  $-6.0$ \\
 \hline
-$|s|^2 + |t|^2 + |u|^2$ & $1.7780 \pm 0.0001$  & $+2$
+$|s|^2 + |t|^2 + |u|^2$ & $1.7780 \pm 0.0001$  & $+2.6$
 \end{tabular}
 \caption{Cross sections at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
 In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.
@@ -33,21 +27,13 @@ The uncertainties shown refer to the estimated statistical error of the Monte Ca
 \label{tab:crosssecINCLUSIVE}
 \end{table}
 
-These differences are much more evident in differential distributions.
-In Fig.~\ref{fig:mjjdyjj_1d_1}, we show the distributions in the di-jet invariant mass $m_{\Pj\Pj}$ and rapidity separation $|\Delta y_{\Pj\Pj}|$.
+These differences are more evident in differential distributions.
+In Fig.~\ref{fig:mjjdyjj_1d_1}, we show the differential distributions in the di-jet invariant mass $m_{\Pj\Pj}$ and rapidity separation $|\Delta y_{\Pj\Pj}|$.
 For large $m_{\Pj\Pj}$ and large $|\Delta y_{\Pj\Pj}|$, as expected, the VBS approximation is performing well and its $s$-channel extension agrees with the full calculation within $10\%$ per cent.
-% On the other hand, for low invariant and low rapidity separation the the VBS approximation is failing at a level of at least $30\%$.
-% In this very same region, the VBS approximation with $s$-channel is good within $10\%$.
 This is in contrast with the region  $200 \GeV < m_{\Pj\Pj} < 500 \GeV$ and $2<|\Delta y_{\Pj\Pj}|<2.5$, where
-the difference between the $|t|^2+|u|^2$ approximation and the full computation can reach $30\%$.
-The inclusion of $s$-channels cures partly this behaviour in this region.
-Still, for the very low $m_{\Pj\Pj}$ a difference of more than $10\%$ remains.
+the difference between the $|t|^2+|u|^2$ approximation and the full computation can be above $30\%$.
+The inclusion of $s$-channels cures partly this behaviour by rendering the approximation good by about $10\%$.
 This tends to indicate that interference contributions and/or non-factorisable QCD corrections play a non-negligible role in this phase-space region.
-
-In order to investigate further the jet-pair kinematics, we look at the double-differential distribution in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$.
-In particular, we compute in each bin the ratio of the approximated cross sections over the full one.
-In Fig.~\ref{fig:ratio2d_NLO} we show the ratio $\sigma(|t|^2+|u|^2)/\sigma(\textrm{full})$ and $\sigma(|s|^2+|t|^2+|u|^2)/\sigma(\textrm{full})$.
-
 
 \begin{figure*}[hbt]
 \centering
@@ -60,6 +46,14 @@ In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the val
 \label{fig:mjjdyjj_1d_1}
 \end{figure*}
 
+In order to investigate further the jet-pair kinematics, we study the double-differential distribution in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$.
+In particular, in Fig.~\ref{fig:ratio2d_NLO}, we compute in each bin the ratios of the approximated cross sections over the full one [$\sigma(|t|^2+|u|^2)/\sigma(\textrm{full})$ and $\sigma(|s|^2+|t|^2+|u|^2)/\sigma(\textrm{full})$].
+As expected, in the low invariant-mass and low rapidity-separation region of the jet pair ($200 \GeV < m_{\Pj\Pj} < 500 \GeV$, $2<|\Delta y_{\Pj\Pj}|<2.5$) the VBS approximation fails significantly (by more than $40\%$).
+Including the $s$-channel contributions leads to a difference of less than $10\%$ in this very region.
+However, in the region of large di-jet invariant mass and low rapidity separation of the jets, the $|s|^2+|t|^2+|u|^2$ approximation overestimate the full computation by more than $40\%$.\footnote{The bin
+in the top-left corner of the right-hand side plot of Fig.~\ref{fig:ratio2d_NLO} suffers from large uncertainty ($30\%$) while the other errors are at the per-cent level.}
+Again, this seems to support the fact that interferences and non-factorisable corrections can be non-negligible in this region.
+On the other hand, in the typical VBS region, the VBS approximation shows a good agreement with the full computation as documented in details in Sec.~\ref{sec:fidNLO}.
 
 \begin{figure*}[hbt]
 \centering
@@ -71,35 +65,6 @@ The approximated squared amplitudes are computed as $|\mathcal{A}|^2 \sim |t|^2+
 In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.}
 \label{fig:ratio2d_NLO}
 \end{figure*}
-%
-% \begin{figure}[hbt]
-% \centering
-% {\includegraphics[scale=0.39]{figures/scanfigures/a6as_vbfnloVSrecola_stu.pdf}}
-% \caption{Ratio of cross sections (fb) per bin in the plan $\left(m_{\Pj\Pj}, |\Delta y_{\Pj\Pj}| \right)$ at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the VBS approximation with $s$-channel contributions over the full computation.
-% In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values: $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.}
-% \label{fig:mjjdyjj_2d_NLO}
-% \end{figure}
-
-As expected, in the low invariant-mass and low rapidity-separation region of the jet pair ($200 \GeV < m_{\Pj\Pj} < 500 \GeV$, $2<|\Delta y_{\Pj\Pj}|<2.5$) the VBS approximation fails significantly (up to $30\%$ discrepancy).
-Including the $s$-channel contributions leads to a difference of $5\%$.
-However, in the region of large di-jet invariant mass and low rapidity separation of the jets, the $|s|^2+|t|^2+|u|^2$ approximation overshoot the full computation by $40\%$.
-On the other hand, in the typical VBS region, the VBS approximation shows a good agreement with the full computation as documented in details in Sec.~\ref{sec:fidNLO}
-
-% However, the positive discrepancy shown in the low $m_{\Pj\Pj}$ region (black curve on the upper plots of Fig.~\ref{fig:mjjdyjj_1d_1}) can be traced back to the low $m_{\Pj\Pj}$, large $\Delta y_{\Pj\Pj}$ region of Fig.~\ref{fig:ratio2d_NLO}.
-% In this region, the two leading jets have soft transverse momenta, according to the following low-angle approximation
-% 
-% \begin{equation}
-% \begin{split}
-% m_{\Pj_i\Pj_j}^2 &= 2\,\ptsub{\Pj_i}\ptsub{\Pj_j}\,(\cosh \Delta y_{\Pj_i\Pj_j} - \cos \Delta\phi_{\Pj_i\Pj_j}) \\
-% &\approx 2\,\ptsub{\Pj_i}\ptsub{\Pj_j}\,\cosh \Delta y_{\Pj_i\Pj_j} \,\,.
-% \end{split}
-% \end{equation}
-
-% The same positive discrepancy for the $|s|^2 + |t|^2 + |u|^2$ approximation, can be seen in the low transverse-momentum region of the leading jet in the upper plot of Fig.~\ref{fig:mjjdyjj_1d_2}.
-% In the large invariant mass--small rapidity separation region of Fig.~\ref{fig:ratio2d_NLO}, discrepancies at the level of $15\%$ are present.
-% This can be traced back to the large $\pt$ and central rapidity region of the leading jets kinematics, shown in Fig.~\ref{fig:mjjdyjj_1d_2}.
-% For such distributions, despite the $s$-channel inclusion, the discrepancy between the approximated and full result is about $5-10\%$.
-% In the VBS signal-region the VBS approximation shows a good agreement with the full calculation as documented in details below.
 
 In Fig.~\ref{fig:mjjdyjj_1d_2}, the distributions in the transverse momentum of the hardest jet and its rapidity are shown.
 At low transverse momentum, $|t|^2+|u|^2$ and $|s|^2+|t|^2+|u|^2$ approximations are lower and higher than the full computation by about $20\%$, respectively.
@@ -122,7 +87,6 @@ In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the val
 Concerning leptonic observables, we show in Fig.~\ref{fig:mjjdyjj_1d_3} the distributions in the di-lepton invariant mass and in the Zeppenfeld variable of the electron, defined as
 %
 \begin{equation}
-%  z_{\Pe^+} = \frac{y_{\Pe^+}-\frac{y_{\Pj_1}+y_{\Pj2}}2}{|y_{\Pj_1}-y_{\Pj_2}|} \,.
   z_{\Pe^+} = \frac{y_{\Pe^+}-\frac{y_{\Pj_1}+y_{\Pj2}}2}{|\Delta y_{jj}|} \,.
   \label{eq:Zeppenfeld}
 \end{equation}
@@ -141,18 +105,11 @@ In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the val
 %
 The $|s|^2+|t|^2+|u|^2$ predictions for $m_{\rm e^+\mu^+}$ agrees rather well with the full curve, obtained from {\sc MoCa\-NLO+Recola}.
 The prediction from {\sc Bonsay} is about $10\%$ lower around $1000 \GeV$.
-% ; this discrepancy reaches about $20\%$ in the very high mass region. 
-%The discrepancies are roughly constant over the whole spectrum.
-% Instead, the right panel of Fig.~\ref{fig:mjjdyjj_1d_3} clearly shows that
-The Zeppenfeld variable of the positron $z_e$ is more strongly affected by the exclusion of $s$-channels.
-% with increasing negative discrepancy with respect to the full result at large values (up to $30\%$ for $z_{e^+}>1.2$).
-% Including $s$-channels makes this discrepancy become positive, but smaller than $10\%$ over the whole spectrum.
-% The muon observable $z_{\mu}$ behaves identically to the electron one, $z_e$.
-For increasing $z_{\rm e}$, the $|t|^2+|u|^2$ approximation diverges from the full computation to reach about a $25\%$ difference  at $1.5$.
+The Zeppenfeld variable of the positron $z_e$ is more strongly affected by the exclusion of $s$-channel contributions.
+For increasing $z_{\rm e}$, the $|t|^2+|u|^2$ approximation diverges from the full computation to reach a difference of about $25\%$ at $1.5$.
 On the other hand, including $s$-channel contributions leads to a better approximation, staying within $10\%$ difference over the whole range.
 
 In conclusion, both the loose minimum di-jet invariant mass cut and the inclusion of QCD radiative correction make the $s$-channel contributions less suppressed than at LO, making their inclusion mandatory, in order to provide trustworthy predictions at NLO accuracy.
-% Nevertheless, interferences and non-factorizable QCD corrections should be included to reduce the discrepancies down to about $1\%$, mainly in inclusive analyses.
 In the inclusive region studied here, neglecting $s$-channel, non-factorisable corrections, and electroweak corrections can lead to discrepancies of up to $30\%$ with respect to the full computation.
 Nevertheless, the VBS approximation at NLO provides a good approximation of full calculations in the kinematic region where VBS contributions are dominant ($m_{\Pj\Pj} \gtrsim 500 \GeV$, $|\Delta y_{\Pj\Pj}| \gtrsim 2.5$), for both total cross section and differential distributions.
 This more exclusive region is studied in more details in the next section.
