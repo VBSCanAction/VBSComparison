@@ -9,12 +9,12 @@ For the fiducial cross sections it uses the VBS approximation at LO and NLO.
 The virtual corrections are additionally approximated using a double-pole approximation.
 For more inclusive cross sections at LO the exact matrix elements ($s$-channels, interferences) can also be used.
 
-  \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
-      including NLO QCD corrections both at fixed order and including matching to parton showers. It makes use of the FKS subtraction method~\cite{Frixione:1995ms,
+  \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} (henceforth {\sc MG5\_aMC}) is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
+      including NLO QCD corrections both at fixed order and including matching to parton showers, using the {\sc MC@NLO}\ method~\cite{Frixione:2002ik}. It makes use of the FKS subtraction method~\cite{Frixione:1995ms,
         Frixione:1997np} (automated in the module {\sc MadFKS}~\cite{Frederix:2009yq,
         Frederix:2016rdc}) for regulating IR singularities. The computations of one-loop amplitudes are carried out by switching dynamically between
         two integral-reduction techniques, OPP~\cite{Ossola:2006us} or Laurent-series expansion~\cite{Mastrolia:2012bu},
-        and TIR~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
+        and tensor-integral reduction~\cite{Passarino:1978jh,Davydychev:1991va,Denner:2005nn}. These have been automated in the module {\sc MadLoop}~\cite{Hirschi:2011pa}, which
         in turn exploits {\sc CutTools}~\cite{Ossola:2007ax}, {\sc Ninja}~\cite{Peraro:2014cba,
         Hirschi:2016mdz}, {\sc IREGI}~\cite{ShaoIREGI}, or {\sc Collier}~\cite{Denner:2016kdg}, together with an in-house 
         implementation of the {\sc OpenLoops} optimisation~\cite{Cascioli:2011va}. Finally, scale and PDF uncertainties can be obtained in an exact manner via reweighting
@@ -27,8 +27,8 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
 > output
 \end{verbatim}
   With these commands the complex-mass scheme is turned on, then the NLO-capable model is loaded\footnote{Despite
-            the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing electroweak corrections, it is not yet possible to compute such corrections
-        with the current version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-electroweak process)
+            the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing EW corrections, it is not yet possible to compute such corrections
+        with the current public version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-EW process)
         and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
         For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
         only loops with QCD-interacting particles are generated. Such an approximation is equivalent to the assumption that the finite part of
@@ -48,21 +48,21 @@ In {\sc MoCaNLO+Recola} no approximation is performed neither at LO nor at NLO.
 It implies that, also contributions stemming from EW corrections to the interference are computed.
         
   \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
-  at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\alpha^6$ and $\alphas^2\alpha^4$ including interferences between the two sets of diagrams.
+  at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at  $\mathcal O(\alpha^6)$ and $\mathcal O(\alphas^2\alpha^4)$ including interferences between the two sets of diagrams.
 It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
 The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
-{\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of BSM theories.
+{\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 
   \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase-space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are similar to those used in {\sc VBFNLO}.
 
   \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
-    parton-level Monte Carlo for processes with electroweak bosons. It
+    parton-level Monte Carlo for processes with EW bosons. It
     allows the calculation of VBS processes at NLO QCD in the VBS
     approximation, with process IDs between 200 and 290. The corresponding
     $s$-channel contributions are available separately as tri-boson processes with
-    semi-leptonic decays, with process IDs in the 400 range. These can simply
+    semi-leptonic decays, with process IDs in the 400 range\ZM{which range is it?}. These can simply
     be added on top of the VBS contribution. Interferences between the two are therefore neglected.
     The usage of leptonic tensors in the calculation, pioneered in
     Ref.~\cite{Jager:2006zc}, thereby leads to a significant speed improvement over

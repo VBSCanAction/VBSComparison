@@ -8,7 +8,7 @@ Therefore, we present an inclusive study at NLO QCD for the EW component, namely
 
 We compare three different predictions at NLO QCD: 
 the VBS approximation (dubbed $|t|^2+|u|^2$) implemented in {\sc Bonsay}, the VBS approximation with the $s$-channel contributions from {\sc VBFNLO} (dubbed $|s|^2+|t|^2+|u|^2$), and the full computation.
-The full computation employs full matrix elements meaning that $t/u/s$ interferences, factorisable and non-factorisable QCD corrections, as well as EW corrections to the order $\mathcal{O}(\alphas \alpha^5)$ are included.
+The full computation employs full matrix elements meaning that $t/u/s$ interferences, factorisable and NF QCD corrections, as well as EW corrections up to $\mathcal{O}(\alphas \alpha^5)$ are included.
 % This means that in order to cancel all IR singularities, also EW correction to the $\mathcal{O}(\alphas\alpha^5)$ interference have to be included \cite{Biedermann:2016yds}.
 
 The total cross sections within the above mentioned kinematic cuts are shown in Tab.~\ref{tab:crosssecINCLUSIVE}.
@@ -35,14 +35,14 @@ The uncertainties shown refer to the estimated statistical error of the Monte Ca
 
 These differences are much more evident in differential distributions.
 In Fig.~\ref{fig:mjjdyjj_1d_1}, we show the distributions in the di-jet invariant mass $m_{\Pj\Pj}$ and rapidity separation $|\Delta y_{\Pj\Pj}|$.
-For large $m_{\Pj\Pj}$ and large $|\Delta y_{\Pj\Pj}|$, as expected, the VBS approximation is performing well and its $s$-channel extension agrees with the full calculation within $10\%$ per cent.
+For large $m_{\Pj\Pj}$ and large $|\Delta y_{\Pj\Pj}|$, as expected, the VBS approximation is performing well and its $s$-channel extension agrees with the full calculation within $10\%$.
 % On the other hand, for low invariant and low rapidity separation the the VBS approximation is failing at a level of at least $30\%$.
 % In this very same region, the VBS approximation with $s$-channel is good within $10\%$.
 This is in contrast with the region  $200 \GeV < m_{\Pj\Pj} < 500 \GeV$ and $2<|\Delta y_{\Pj\Pj}|<2.5$, where
 the difference between the $|t|^2+|u|^2$ approximation and the full computation can reach $30\%$.
 The inclusion of $s$-channels cures partly this behaviour in this region.
 Still, for the very low $m_{\Pj\Pj}$ a difference of more than $10\%$ remains.
-This tends to indicate that interference contributions and/or non-factorisable QCD corrections play a non-negligible role in this phase-space region.
+This tends to indicate that interference contributions and/or NF QCD corrections play a non-negligible role in this phase-space region.
 
 In order to investigate further the jet-pair kinematics, we look at the double-differential distribution in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$.
 In particular, we compute in each bin the ratio of the approximated cross sections over the full one.
@@ -55,7 +55,7 @@ In Fig.~\ref{fig:ratio2d_NLO} we show the ratio $\sigma(|t|^2+|u|^2)/\sigma(\tex
 {\includegraphics[scale=0.35]{figures/scanfigures/dyjj_nlo.pdf}}
 \caption{
 Differential distributions in the di-jet invariant mass (left) and the rapidity-separation of the two tagging jets (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
 In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
 \label{fig:mjjdyjj_1d_1}
 \end{figure*}
@@ -66,7 +66,7 @@ In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the val
 {\includegraphics[scale=0.395]{figures/scanfigures/a6as_vbfnloVSrecola_tu.pdf}}
 {\includegraphics[scale=0.395]{figures/scanfigures/a6as_vbfnloVSrecola_stu.pdf}}
 \caption{Ratios of double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the VBS approximation over the full computation.
-Ratio of approximated squared amplitudes over the full matrix element.
+Ratio of the approximated squared amplitudes over the full matrix element.
 The approximated squared amplitudes are computed as $|\mathcal{A}|^2 \sim |t|^2+|u|^2$ (left) and $|\mathcal{A}|^2 \sim |s|^2+|t|^2+|u|^2$ (right)
 In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.}
 \label{fig:ratio2d_NLO}
@@ -114,7 +114,7 @@ In the peripheral region, the $|t|^2+|u|^2$ approximation is rather close to the
 {\includegraphics[scale=0.35]{figures/scanfigures/ptj1_nlo.pdf}}
 {\includegraphics[scale=0.35]{figures/scanfigures/yj1_nlo.pdf}}
 \caption{Differential distributions in the transverse momentum (left) and rapidity of the hardest tagging jet (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
 In addition to the cuts of Sec.~\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
 \label{fig:mjjdyjj_1d_2}
 \end{figure*}
