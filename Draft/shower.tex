@@ -3,7 +3,7 @@ a comparison we expect larger discrepancy than what we found at fixed-order, as 
 matching schemes, parton shower employed, and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
-restrict ourselves to showing results only in the VBS approximation,
+restrict ourselves to show results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
 also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
 {\sc MG5\_aMC}, which
@@ -11,7 +11,7 @@ employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used
 and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
-Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the BLHA
+Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houcehs Accord
 interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbox} module makes it
 possible to choose between {\sc MC\-@NLO}-like and {\sc Powheg}-like
 matching. As parton shower, both the default angular-ordered shower as
@@ -28,7 +28,7 @@ Compared to the fixed order computations, a slightly different set-up has been e
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is dominated by doubly-resonant contribution, the
 events are produced for the process with two stable ${\rm W}^+$-bosons (${\rm p}{\rm p}\to{\rm W^+}{\rm W^+}{\rm j}{\rm j}$), and the decay of these ${\rm W}^+$-bosons
 is simulated with {\sc MadSpin}~\cite{Artoisenet:2012st} (ensuring spin correlations) before the PS. Since {\sc MadSpin}\ computes
-the partial and total decay width of the W bosons at LO accuracy only, while in Section~\ref{subsec:inputpar} the NLO width is employed,
+the partial and total decay widths of the W bosons at LO accuracy only, while in Section~\ref{subsec:inputpar} the NLO width is employed,
 an effect ($6\%$) on the normalisation is induced. 
 
 \begin{table}[h!]
@@ -80,12 +80,12 @@ the numbers with $\Gamma_{\rm resc}$ are rescaled to
 take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
 theoretical uncertainties.
 For the former, we show both PDF and scale uncertainties,\footnote{A preliminary study on PDF uncertainties in VBS has appeared
-in Ref.~\cite{Schwan:2017yy}.} obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalisation and factorization
-scale by a factor of two around its central value, Eq.~(\ref{eq:defscale}) (nine-point variations).
+in Ref.~\cite{Schwan:2017yy}.} obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalisation and factorisation
+scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nine-point variations).
 For the latter, we show the
 three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within a few per cent, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within a few per cents, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
 independent or correlated variations of the renormalisation and factorisation scales.
 Concerning differential distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
@@ -120,7 +120,7 @@ interplay between the real-emission matrix element and the shower emission.
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
 \caption{Differential distribution in the
 exclusive jet multiplicity
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -133,7 +133,7 @@ from predictions matched to parton shower, at LO (left) or NLO (right) accuracy 
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/m_jj.pdf}
 \caption{Differential distribution in the
 invariant mass of the two tagging jets
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -162,7 +162,8 @@ The transverse momentum of the hardest and second-hardest jets are shown in Figs
 predictions from different tools agree rather well with each other, with a spread at most at the 10\% level. At LO+PS, typically the transverse-momentum spectra are softer than
 the fixed-NLO ones, and this effect is more marked for the second-hardest jet which, as expected, is more sensitive to the description of the extra radiation. Again, this
 effect is mitigated by NLO corrections. The only feature that may be worth noticing among the NLO+PS predictions is the tendency of the {\sc Powheg-Box} to suppress the
-hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).\\
+hardest-jet spectrum at low transverse momentum ($\ptsub{\Pj_1}<100 \GeV$).
+
 If we consider the rapidity of the second jet, Fig.~\ref{fig:PSy2}, we observe again rather small differences among tools, with the tendency towards a general
 stabilisation at NLO+PS. However, some (small) differences in the shape remain at NLO+PS, which are worth to be briefly discussed: predictions
 obtained with {\sc MG5\_aMC} are very close to the fixed-order prediction; the {\sc Powheg-Box}\ displays an enhancement of the central region, and a consequent suppression in the
@@ -209,7 +210,7 @@ VBF, \ldots) can certainly help in order to discriminate which tools perform bet
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/Deltay_jj.pdf}
 \caption{Differential distribution in the
 rapidity separation of the two tagging jets
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -222,7 +223,7 @@ from predictions matched to parton shower, at LO (left) or NLO (right) accuracy 
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j1.pdf}
 \caption{Differential distribution in the
 transverse momentum of the hardest jet
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -235,7 +236,7 @@ from predictions matched to parton shower, at LO (left) or NLO (right) accuracy 
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j2.pdf}
 \caption{Differential distribution in the
 transverse momentum of the second-hardest jet
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -248,7 +249,7 @@ from predictions matched to parton shower, at LO (left) or NLO (right) accuracy 
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/y_j2.pdf}
 \caption{Differential distribution in the
 rapidity of the second-hardest jet
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
@@ -261,7 +262,7 @@ from predictions matched to parton shower, at LO (left) or NLO (right) accuracy 
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/z_j3.pdf}
 \caption{Differential distribution in the
 Zeppenfeld variable of the third-hardest jet
-from predictions matched to parton shower, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
+from predictions matched to parton showers, at LO (left) or NLO (right) accuracy (upper plot), compared with the fixed-NLO result computed with {\sc VBFNLO} (lower plot). At NLO+PS accuracy, for
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for {\sc MG5\_aMC}+{\sc Pythia8} the darker and lighter bands correspond
     respectively to the nine-point scale uncertainty and the scale and PDF uncertainties combined linearly.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.}
