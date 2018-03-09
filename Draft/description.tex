@@ -10,7 +10,7 @@ The virtual corrections are additionally approximated using a double-pole approx
 For more inclusive cross sections at LO the exact matrix elements ($s$-channels, interferences) can also be used.
 
   \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} (henceforth {\sc MG5\_aMC}) is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
-      including NLO QCD corrections both at fixed order and including matching to parton showers, using the {\sc MC@NLO}\ method~\cite{Frixione:2002ik}. It makes use of the subtraction method by Frixione-Kunszt and Signer (FKS)~\cite{Frixione:1995ms,
+      including NLO QCD corrections both at fixed order and including matching to parton showers, using the {\sc MC@NLO}\ method~\cite{Frixione:2002ik}. It makes use of the subtraction method by Frixione, Kunszt and Signer (FKS)~\cite{Frixione:1995ms,
         Frixione:1997np} (automated in the module {\sc MadFKS}~\cite{Frederix:2009yq,
         Frederix:2016rdc}) for regulating IR singularities. The computations of one-loop amplitudes are carried out by switching dynamically between
         two integral-reduction techniques, OPP~\cite{Ossola:2006us} or Laurent-series expansion~\cite{Mastrolia:2012bu},
@@ -53,7 +53,7 @@ It employs complete tree-level matrix elements in the complex-mass scheme~\cite{
 The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
 {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 
-  \item The {\sc Powheg-Box}~\cite{Alioli:2010xd,Frixione:2007vw,Nason:2006hfa} is a framework for matching NLO-QCD calculations with parton showers.
+  \item The {\sc Powheg-Box}~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} is a framework for matching NLO-QCD calculations with parton showers.
 It relies on the user providing the matrix elements and Born phase-space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
 For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are similar to those used in {\sc VBFNLO}.
 
