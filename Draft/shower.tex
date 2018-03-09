@@ -111,7 +111,7 @@ The main effect of NLO corrections for this (rather inclusive) observable is to 
 among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large: the largest rate is predicted by
 {\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
 is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
-prediction dubbed {\sc Powheg-no shower} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
+prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
 interplay between the real-emission matrix element and the shower emission.
 
 \begin{figure*}[hbt]
@@ -152,7 +152,7 @@ quantitatively similar way,
 except for {\sc VBFNLO+Herwig7} where the effect is mitigated. At 
 NLO+PS, when the extra radiation is described by the real matrix element, such an effect is greatly reduced. A notable
 exception is the {\sc Powheg-Box} prediction, which still shows a suppression at large separations.
-Since such a suppression is already there for the {\sc Powheg-no shower} sample (at the LHE level),
+Since such a suppression is already there for the {\sc Powheg-LHE} sample,
 it is very likely that it is driven by the way the first emission is generated. A minor effect in the same direction is visible in the last two bins of the
 {\sc MG5\_aMC+Herwig++} prediction (although with rather large statistical uncertainties).
 
@@ -181,7 +181,7 @@ can be mitigated by setting {\tt SpaceShower:dipole\-Recoil = on} in the {\sc Py
 Note that such a setting is not compatible with the NLO matching
 in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other
 effects, though smaller, on the rapidity spectra of the two hardest jets.} It is interesting to notice that
-the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-no shower} with {\sc Powheg+ Pythia8}. A similar
+the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-LHE} with {\sc Powheg+ Pythia8}. A similar
 behaviour of {\sc Pythia8}
 has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement,
 Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}.
@@ -194,7 +194,10 @@ effectively at NLO accuracy differences between tools are at (or below) the $10\
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in detail the way QCD radiation is
 generated, \emph{e.g.}\ when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}). It is a remarkable fact that, even for those observables that display small discrepancies,
-the theoretical uncertainty obtained via scale variations systematically underestimates the spread of predictions. Again, this stresses the need
+the theoretical uncertainty obtained via scale variations systematically underestimates the spread of predictions. We note 
+that in the only VBF process where NNLO corrections are known, i.e. VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
+the NLO scale-uncertainty band does not include the NNLO prediction. This suggest that the NLO scale variation 
+underestimates the size of the perturbative uncertainty. Again, this stresses the need
  to employ at least two different tools in order to obtain a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimate of the theory
 uncertainties. On the one hand, in order to improve the
