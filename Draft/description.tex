@@ -30,15 +30,18 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
             the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing EW corrections, it is not yet possible to compute such corrections
         with the current public version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-EW process)
         and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
-        For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
-        only loops with QCD-interacting particles are generated. Such an approximation is equivalent to the assumption that the finite part of
+%         For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
+%         only loops with QCD-interacting particles are generated.
+	Only QCD-interacting particles circulating in the loops are generated for the virtual matrix element.
+	The version capable of computing both QCD and EW corrections will be released in the future.
+        Such an approximation is equivalent to the assumption that the finite part of
         those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
         pole-cancellation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
         {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards\-/FKS\_\-params.dat} file to -1.
 
 \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
-It can compute arbitrary processes for the LHC at both NLO QCD and EW accuracy in the Standard Model.
-This is made possible by the fact that {\sc Recola} can compute arbitrary processes at tree and one-loop level in the Standard Model.
+It can compute arbitrary processes at the LHC with both NLO QCD and EW accuracy in the SM.
+This is made possible by the fact that {\sc Recola} can compute arbitrary processes at tree and one-loop level in the SM.
 To that end, it relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg} to numerically evaluate the one-loop scalar and tensor integrals.
 In addition, the subtraction of the IR divergences appearing in the real corrections has been automatised thanks to the Catani--Seymour dipole formalism for both QCD and QED \cite{Catani:1996vz,Dittmaier:1999mb}.
 The code has demonstrated its ability to compute at NLO high multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
@@ -86,7 +89,7 @@ We conclude this section by summarising the characteristics of the various codes
 In particular, it is specified whether
 \begin{itemize}
     \item all $s$- and $t/u$-channel diagrams are included;
-    \item interferences between different diagrams of diagrams ($s/t/u$-channel) are included at LO;
+    \item interferences between diagrams of different types ($s/t/u$-channel) are included at LO;
     \item diagrams which do not feature two resonant vector-bosons are included;
     \item the so-called non-factorisable (NF) QCD corrections, \emph{i.e.}\ the corrections where (real or virtual) gluons are exchanged between different quark lines,
         are included;
