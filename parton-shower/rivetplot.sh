@@ -12,7 +12,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"ErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
 :"ErrorBandOpacity=0.3"\
-  MG5_aMC/run_HWPP_5M_NLOPS.yoda\
+  MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda\
 :"Title=MG5_aMC+H++ 2.7.1"\
 :"LineColor={[rgb]{0.46,0.44,0.70}}"\
 :"LineStyle=solid"\
@@ -20,7 +20,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"ErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
 :"ErrorBandOpacity=0.3"\
-  MG5_aMC/run_PY8_5M_NLOPS_error_all.yoda\
+  MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda\
 :"Title=MG5_aMC+Pythia 8"\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"LineStyle=solid"\
@@ -28,7 +28,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"ErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.3"\
-  MG5_aMC/run_PY8_5M_NLOPS_error_scale.yoda\
+  MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda\
 :"Title="\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBands=1"\
