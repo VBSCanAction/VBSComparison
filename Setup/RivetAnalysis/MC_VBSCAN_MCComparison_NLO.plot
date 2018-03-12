@@ -81,9 +81,9 @@ XLabel=$p_{\rm T, j_2}$~[GeV]
 YLabel=$d~\sigma_{pp\to e^+\nu \mu^+\nu jj}/d~p_{\rm T, j_2}$~[fb/GeV]
 RatioPlotSameStyle=1
 XMin=25
-XMax=1000
-YMin=1e-7
-YMax=2e-2
+XMax=500
+YMin=3e-5
+YMax=3e-2
 LegendXPos=0.53
 LegendYPos=0.99
 # END PLOT
