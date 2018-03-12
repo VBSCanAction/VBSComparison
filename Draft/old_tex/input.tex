@@ -1,0 +1,82 @@
+The hadronic scattering processes are simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$.
+The NNPDF~3.0 parton distribution functions~(PDFs)~\cite{Ball:2014uwa} with five massless flavours,\footnote{For the process considered, no bottom (anti-)quarks appear in the initial or final state at LO and NLO, as they will lead to top quarks, and not light jets, in the final state.} 
+NLO-QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ are employed.\footnote{The corresponding identifier {\tt lhaid} in the program LHAPDF6~\cite{Buckley:2014ana} is 260000.}\footnote{Note that the {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.}
+Initial-state collinear singularities are factorised according to the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF.
+
+For the massive particles, the following masses and decay widths are used:
+%
+\begin{alignat}{2}
+                  \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
+                \MZOS &=  91.1876\GeV,      & \quad \quad \quad \GZOS &= 2.4952\GeV,  \nonumber \\
+                \MWOS &=  80.385\GeV,       & \GWOS &= 2.085\GeV,  \nonumber \\
+                M_{\rm H} &=  125.0\GeV,       &  \GH   &=  4.07 \times 10^{-3}\GeV.
+\end{alignat}
+%
+The measured on-shell (OS) values for the masses and widths of the W and Z bosons are converted into pole values for the gauge bosons ($V=\PW,\PZ$) according to Ref.~\cite{Bardin:1988xt},
+%
+\begin{equation}
+\begin{split}
+        M_V &= \MVOS/\sqrt{1+(\GVOS/\MVOS)^2}\,, \\
+   \Gamma_V &= \GVOS/\sqrt{1+(\GVOS/\MVOS)^2}.
+\end{split}
+\end{equation}
+%
+The EW coupling is renormalised in the $G_\mu$ scheme \cite{Denner:2000bj}, where
+%
+\begin{equation}
+    G_{\mu}    = 1.16637\times 10^{-5}\GeV^{-2}.
+\end{equation}
+%
+The numerical value of $\alpha$, corresponding to the choice of input parameters is
+%
+\begin{equation}
+ 1/\alpha = 132.3572\ldots\,.
+\end{equation}
+The Cabibbo-Kobayashi-Maskawa matrix is assumed to be diagonal, meaning that the mixing between different quark generations is neglected.
+The complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} is used throughout to treat unstable intermediate particles in a gauge-invariant manner.
+
+The central value of the renormalisation and factorisation scales is set to 
+%
+\begin{equation}
+\label{eq:defscale}
+ \mu_{\rm ren} = \mu_{\rm fac} = \sqrt{p_{\rm T, j_1}\, p_{\rm T, j_2}}, 
+\end{equation}
+%
+defined via the transverse momenta of the two hardest jets (identified with the procedure outlined in the following), 
+event by event.\footnote{By default, the renormalisation and factorisation scales employed in the {\sc Powheg-Box} slightly differ from the 
+    one defined in Eq.~\eqref{eq:defscale}, as the momenta of two final-state quarks in the underlying-Born event are
+    employed instead of those of the two hardest jets.\label{foot:powheg}} 
+This choice of scale has been shown to provide stable NLO-QCD predictions \cite{Denner:2012dz}.
+
+Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}, the event selection used in the present study is:
+
+\begin{itemize}
+    \item The two same-sign charged leptons are required to fulfill cuts on transverse momentum, rapidity, and separation in the rapidity-azimuthal angle separation, 
+        \begin{align}
+        \label{cut:1}
+         \ptsub{\Pl} >  20\GeV,\qquad |y_{\Pl}| < 2.5, \qquad \Delta R_{\Pl\Pl}> 0.3\,.
+        \end{align}
+        %
+    \item The total missing transverse momentum, computed from the vectorial sum of the transverse momenta of the two neutrinos, is required to be
+        \begin{align}
+        \label{cut:2}
+          %\etsub{\text{miss}}=p_{\rm T, miss} >  40\GeV\,.
+          p_{\rm T, miss} >  40\GeV\,.
+        \end{align}
+        %
+    \item QCD partons (light quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, possibly using the {\sc FastJet} implementation~\cite{Cacciari:2011ma}, with distance parameter $R=0.4$. %Jets are required to have
+    We impose cuts on the jets' transverse momenta, rapidities, and their separation from leptons,  
+        \begin{align}
+        \label{cut:3}
+         \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad \Delta R_{\Pj\Pl} > 0.3 \,.
+        \end{align}
+        VBS cuts are applied on the two jets with largest transverse-momentum, unless otherwise stated. In particular, we impose a cut on the 
+         in\-vari\-ant mass of the di-jet system,  as well as on the rapidity-separation of the two jets,          \begin{align}
+        \label{cut:4}
+         m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5, 
+        \end{align}
+        if not explicitly stated otherwise. 
+        %
+    \item When EW corrections are computed, real photons and charged fermions are clustered together using the anti-$k_T$ algorithm with
+        radius parameter $R=0.1$. In this case, leptons and quarks are understood as {\it dressed fermions}.
+\end{itemize}
