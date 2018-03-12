@@ -31,10 +31,82 @@ rivet-mkhtml -o rivet-NLOPS \
   MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda\
 :"Title="\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
+:"LineStyle=solid"\
 :"ErrorBands=1"\
 :"ErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.5"\
+  Powheg/Powheg.yoda\
+:"Title=Powheg+Pythia 8"\
+:"LineColor={[rgb]{0.85,0.37,0.01}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.85,0.37,0.01}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.85,0.37,0.01}}"\
+:"ErrorBandOpacity=0.3"\
+  Powheg/lhef.yoda\
+:"Title=Powheg-no shower"\
+:"LineColor={[rgb]{0.85,0.37,0.01}}"\
+:"LineStyle=dashed"\
+:"ErrorBands=0"\
+  VBFNLO/Herwig-MCatNLO-DefaultShower.yoda\
+:"Title=VBFNLO 3+H7-Default"\
+:"LineColor={[rgb]{0.40,0.65,0.12}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.40,0.65,0.12}}"\
+:"ErrorBandOpacity=0.3"\
+  VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda\
+:"Title=VBFNLO 3+H7-Dipole"\
+:"LineColor={[rgb]{0.11,0.62,0.47}}"\
+:"LineStyle=solid"\
+:"ErrorBands=1"\
+:"ErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
+:"ErrorBandOpacity=0.3"\
+
+rivet-mkhtml -o rivet-NLOPS2 \
+  VBFNLO/VBFNLO-NLO.yoda\
+:"Title=NLO (fixed order)"\
+:"LineColor={[rgb]{0.40,0.40,0.40}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
+:"ErrorBandOpacity=0.3"\
+  MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda\
+:"Title=MG5_aMC+H++ 2.7.1"\
+:"LineColor={[rgb]{0.46,0.44,0.70}}"\
+:"LineStyle=solid"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
+:"ErrorBandOpacity=0.3"\
+  MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda\
+:"Title=MG5_aMC+Pythia 8"\
+:"LineColor={[rgb]{0.91,0.16,0.54}}"\
+:"LineStyle=solid"\
+:"ErrorBands=1"\
+:"ErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"ErrorBandOpacity=0.3"\
+  MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda\
+:"Title="\
+:"LineColor={[rgb]{0.91,0.16,0.54}}"\
+:"LineStyle=solid"\
+:"ErrorBands=1"\
+:"ErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"ErrorBandOpacity=0.5"\
+  MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT05/run_PY8_10M_mush05.yoda\
+:"Title=\\quad with \$\\xi_{\\text{shower}}=0.5\$"\
+:"LineColor={[rgb]{0.91,0.16,0.54}}"\
+:"LineStyle=dashed"\
+:"ErrorBands=0"\
+:"ErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
+:"ErrorBandOpacity=0.3"\
   Powheg/Powheg.yoda\
 :"Title=Powheg+Pythia 8"\
 :"LineColor={[rgb]{0.85,0.37,0.01}}"\

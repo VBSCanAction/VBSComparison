@@ -8,3 +8,8 @@ for ORD in LOPS NLOPS; do
          cp rivet-$ORD/MC_VBSCAN_MCComparison/$F.pdf ../Draft/figures/$ORD/
     done
 done
+
+cp rivet-NLOPS2/MC_VBSCAN_MCComparison/jetsexclusive.pdf ../Draft/figures/NLOPS/
+cp rivet-NLOPS2/MC_VBSCAN_MCComparison/y_j3.pdf ../Draft/figures/NLOPS/
+cp rivet-NLOPS2/MC_VBSCAN_MCComparison/z_j3.pdf ../Draft/figures/NLOPS/
+
