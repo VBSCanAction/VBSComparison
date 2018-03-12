@@ -30,8 +30,6 @@ For more inclusive cross sections at LO the exact matrix elements ($s$-channels,
             the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing EW corrections, it is not yet possible to compute such corrections
         with the current public version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-EW process)
         and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
-%         For what concerns the virtual matrix element, because of some internal limitations which will be lifted in the future version capable of computing both QCD and EW corrections,
-%         only loops with QCD-interacting particles are generated.
 	Only QCD-interacting particles circulating in the loops are generated for the virtual matrix element.
 	The version capable of computing both QCD and EW corrections will be released in the future.
         Such an approximation is equivalent to the assumption that the finite part of
