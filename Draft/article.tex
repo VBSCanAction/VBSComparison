@@ -1312,7 +1312,7 @@ scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nin
 For the latter, we show the
 three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within some or few per cents, respectively at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within some per cents, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
 independent or correlated variations of the renormalisation and factorisation scales.
 Concerning differential distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
@@ -1339,7 +1339,11 @@ among tools are reduced to about $10\%$. For the three-jet bin, which is describ
 {\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
 is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
 prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
-interplay between the real-emission matrix element and the shower emission.
+interplay between the real-emission matrix element and the shower emission. For this observable we also show the prediction obtained
+with {\sc MG5\_aMC+Pythia8} by reducing the shower-starting scale by a factor 2 with respect to the default value, dubbed 
+{\sc MG5\_aMC+Py8, $Q_{sh}/2$}.\footnote{The reduction of the shower scale for {\sc MG5\_aMC+Herwig++} gives no visible effect on any of the observables 
+discussed in this work.} The main effect of reducing the shower scale is that events migrate from the three-jet bin into the two-jet bin, i.e. less radiation is generated. The
+amount of this effect on the jet rate is +4\% (-8\%) on the two (three) jet bin, while the total rate within cuts is left unchanged.  
 
 \begin{figure*}[hbt]
 \centering
@@ -1371,7 +1375,8 @@ The next observable that we study is the invariant mass of the two tagging jets,
 the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the $6\%$ width effect for {\sc MG5\_aMC}).
 The LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
-about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
+about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element. For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is 
+negligible, hence the corresponding histogram will not be shown.
 
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities to the invariant-mass distribution.
 At LO+PS all predictions show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
@@ -1408,7 +1413,8 @@ can be mitigated by setting {\tt SpaceShower:dipole\-Recoil = on} in the {\sc Py
 Note that such a setting is not compatible with the NLO matching
 in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other
 effects, though smaller, on the rapidity spectra of the two hardest jets.} It is interesting to notice that
-the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-LHE} with {\sc Powheg+ Pythia8}. A similar
+the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-LHE} with {\sc Powheg+ Pythia8}, and that
+it is only marginally attenuated when the shower scale is reduced. A similar
 behaviour of {\sc Pythia8}
 has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement,
 Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}.
