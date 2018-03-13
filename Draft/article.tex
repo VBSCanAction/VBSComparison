@@ -636,8 +636,9 @@ Hence, combined measurements which are better theoretically defined should be pr
 
     \begin{itemize}
 
-    \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator written by Christopher Schwan and matrix elements taken from different sources:
-    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, real matrix elements are written by Marina Billoni, and virtual matrix elements by Stefan Dittmaier.
+    \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
+    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalized to calculate also real matrix elements.
+    Virtual matrix elements have been calculated using an in-house matrix element generator.
     One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
     For the fiducial cross sections it uses the VBS approximation at LO and NLO.
     The virtual corrections are additionally approximated using a double-pole approximation.
