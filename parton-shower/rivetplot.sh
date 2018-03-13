@@ -13,7 +13,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda\
-:"Title=MG5_aMC+H++ 2.7.1"\
+:"Title=MG5_aMC+H++2.7.1"\
 :"LineColor={[rgb]{0.46,0.44,0.70}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -21,7 +21,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda\
-:"Title=MG5_aMC+Pythia 8"\
+:"Title=MG5_aMC+Py8"\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"LineStyle=solid"\
 :"ErrorBands=1"\
@@ -37,7 +37,7 @@ rivet-mkhtml -o rivet-NLOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.5"\
   Powheg/Powheg.yoda\
-:"Title=Powheg+Pythia 8"\
+:"Title=Powheg+Py8"\
 :"LineColor={[rgb]{0.85,0.37,0.01}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -76,7 +76,7 @@ rivet-mkhtml -o rivet-NLOPS2 \
 :"RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda\
-:"Title=MG5_aMC+H++ 2.7.1"\
+:"Title=MG5_aMC+H++2.7.1"\
 :"LineColor={[rgb]{0.46,0.44,0.70}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -84,7 +84,7 @@ rivet-mkhtml -o rivet-NLOPS2 \
 :"RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda\
-:"Title=MG5_aMC+Pythia 8"\
+:"Title=MG5_aMC+Py8"\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"LineStyle=solid"\
 :"ErrorBands=1"\
@@ -100,7 +100,7 @@ rivet-mkhtml -o rivet-NLOPS2 \
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.5"\
   MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT05/run_PY8_10M_mush05.yoda\
-:"Title=\\quad with \$\\xi_{\\text{shower}}=0.5\$"\
+:"Title=MG5_aMC+Py8, \$Q_{sh}/2\$"\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"LineStyle=dashed"\
 :"ErrorBands=0"\
@@ -108,7 +108,7 @@ rivet-mkhtml -o rivet-NLOPS2 \
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.3"\
   Powheg/Powheg.yoda\
-:"Title=Powheg+Pythia 8"\
+:"Title=Powheg+Py8"\
 :"LineColor={[rgb]{0.85,0.37,0.01}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -149,7 +149,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.40,0.40,0.40}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/run_HWPP_1M_LOPS.yoda\
-:"Title=MG5_aMC+H++ 2.7.1"\
+:"Title=MG5_aMC+H++2.7.1"\
 :"LineColor={[rgb]{0.46,0.44,0.70}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -157,7 +157,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}"\
 :"ErrorBandOpacity=0.3"\
   MG5_aMC/run_PY8_1M_LOPS.yoda\
-:"Title=MG5_aMC+Pythia 8"\
+:"Title=MG5_aMC+Py8"\
 :"LineColor={[rgb]{0.91,0.16,0.54}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -165,7 +165,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}"\
 :"ErrorBandOpacity=0.3"\
   PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda\
-:"Title=PHANTOM+H++ 2.7.1"\
+:"Title=PHANTOM+H++2.7.1"\
 :"LineColor={[rgb]{0.65,0.46,0.11}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -173,7 +173,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.65,0.46,0.11}}"\
 :"ErrorBandOpacity=0.3"\
   PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda\
-:"Title=PHANTOM+Pythia 8"\
+:"Title=PHANTOM+Py8"\
 :"LineColor={[rgb]{0.90,0.67,0.01}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\
@@ -189,7 +189,7 @@ rivet-mkhtml -o rivet-LOPS \
 :"RatioPlotErrorBandColor={[rgb]{0.11,0.62,0.47}}"\
 :"ErrorBandOpacity=0.3"\
   WHIZARD/WHIZARD_EW_Pyth8223_4M.yoda\
-:"Title=WHIZARD+Pythia 8"\
+:"Title=WHIZARD+Py8"\
 :"LineColor={[rgb]{0.96,0.50,0.75}}"\
 :"LineStyle=solid"\
 :"ErrorBands=0"\

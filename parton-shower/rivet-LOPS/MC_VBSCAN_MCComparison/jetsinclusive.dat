@@ -44,7 +44,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_HWPP_1M_LOPS.yoda/MC_VBSCAN_MCComparison/jetsinclusive
 RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}
 ScaledBy=6.19645389419520692e-06
-Title=MG5_aMC+H++ 2.7.1
+Title=MG5_aMC+H++2.7.1
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -67,7 +67,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/run_PY8_1M_LOPS.yoda/MC_VBSCAN_MCComparison/jetsinclusive
 RatioPlotErrorBandColor={[rgb]{0.91,0.16,0.54}}
 ScaledBy=1.99999999999999867e+00
-Title=MG5_aMC+Pythia 8
+Title=MG5_aMC+Py8
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -90,7 +90,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm_hwpp-scaled.yoda/MC_VBSCAN_MCComparison/jetsinclusive
 RatioPlotErrorBandColor={[rgb]{0.65,0.46,0.11}}
 ScaledBy=1.33288898722063276e-06
-Title=PHANTOM+H++ 2.7.1
+Title=PHANTOM+H++2.7.1
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -113,7 +113,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/PHANTOM/plots_loose_cuts2/phantom_norm-scaled.yoda/MC_VBSCAN_MCComparison/jetsinclusive
 RatioPlotErrorBandColor={[rgb]{0.90,0.67,0.01}}
 ScaledBy=2.66577807397533929e-02
-Title=PHANTOM+Pythia 8
+Title=PHANTOM+Py8
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
@@ -159,7 +159,7 @@ LineStyle=solid
 Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/WHIZARD/WHIZARD_EW_Pyth8223_4M.yoda/MC_VBSCAN_MCComparison/jetsinclusive
 RatioPlotErrorBandColor={[rgb]{0.96,0.50,0.75}}
 ScaledBy=1.69959363302706512e-06
-Title=WHIZARD+Pythia 8
+Title=WHIZARD+Py8
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
