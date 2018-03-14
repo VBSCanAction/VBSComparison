@@ -25,6 +25,8 @@ XMin=1.5
 XMax=6.5
 YMin=0
 YMax=1.15
+LegendXPos=0.50
+LegendYPos=0.93
 # END PLOT
 
 # BEGIN PLOT /MC_VBSCAN_MCComparison/m_jj
@@ -36,7 +38,7 @@ XMin=500
 XMax=4000
 YMin=2e-5
 YMax=2e-3
-LegendXPos=0.075
+LegendXPos=0.03
 LegendYPos=0.575
 # END PLOT
 
@@ -49,7 +51,7 @@ LogY=0
 XMin=2.5
 XMax=9
 YMin=0
-YMax=0.5
+YMax=0.6
 LegendXPos=0.54
 LegendYPos=0.95
 # END PLOT
@@ -156,5 +158,7 @@ XMin=0
 XMax=1.5
 YMin=0
 YMax=1.2
+LegendXPos=0.53
+LegendYPos=0.95
 # END PLOT
 

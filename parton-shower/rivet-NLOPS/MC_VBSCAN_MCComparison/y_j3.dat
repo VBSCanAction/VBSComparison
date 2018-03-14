@@ -1,6 +1,6 @@
 # BEGIN PLOT
-LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
-DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
+LegendOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/H7/run_H7_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
+DrawOnly=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/H7/run_H7_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_all.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_PY8_UNC_MUFACT1/run_PY8_10M_mush1_error_scale.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/Powheg.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/Powheg/lhef.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DefaultShower.yoda/MC_VBSCAN_MCComparison/y_j3 //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/Herwig-MCatNLO-DipoleShower_scale.yoda/MC_VBSCAN_MCComparison/y_j3
 YMax=0.115
 Title=Rapidity of the third jet (NLO+PS)
 RatioPlotReference=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/VBFNLO/VBFNLO-NLO.yoda/MC_VBSCAN_MCComparison/y_j3
@@ -54,38 +54,38 @@ YLabel=~
 # END HISTO1D
 
 
-# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3
+# BEGIN HISTO1D //itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/H7/run_H7_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3
 ErrorBandColor={[rgb]{0.46,0.44,0.70}}
 ErrorBandOpacity=0.3
 ErrorBands=0
 LineColor={[rgb]{0.46,0.44,0.70}}
 LineStyle=solid
-Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/run_FIX_NLOPS_HWPP_UNC_MUFACT1/run_HWPP_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3
+Path=//itp/scratch/rauch/Projekte/VBFNLO/VBSCAN/VBSComparison/parton-shower/MG5_aMC/new_results/H7/run_H7_10M_mush1.yoda/MC_VBSCAN_MCComparison/y_j3
 RatioPlotErrorBandColor={[rgb]{0.46,0.44,0.70}}
-ScaledBy=2.14720579011889420e-06
-Title=MG5_aMC+H++2.7.1
+ScaledBy=2.06314518852397269e-06
+Title=MG5_aMC+H7-Default
 XLabel=~
 YLabel=~
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e+00	-4.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
--4.500000e+00	-4.000000e+00	1.497461e-02	3.492231e-04	3.492231e-04
--4.000000e+00	-3.500000e+00	2.917194e-02	5.053375e-04	5.053375e-04
--3.500000e+00	-3.000000e+00	4.867286e-02	6.480722e-04	6.480722e-04
--3.000000e+00	-2.500000e+00	6.365606e-02	7.518165e-04	7.518165e-04
--2.500000e+00	-2.000000e+00	6.778300e-02	7.856544e-04	7.856544e-04
--2.000000e+00	-1.500000e+00	6.028066e-02	7.435536e-04	7.435536e-04
--1.500000e+00	-1.000000e+00	4.542628e-02	6.477876e-04	6.477876e-04
--1.000000e+00	-5.000000e-01	3.070074e-02	5.305815e-04	5.305815e-04
--5.000000e-01	0.000000e+00	2.336590e-02	4.527907e-04	4.527907e-04
-0.000000e+00	5.000000e-01	2.296222e-02	4.477529e-04	4.477529e-04
-5.000000e-01	1.000000e+00	3.200196e-02	5.323685e-04	5.323685e-04
-1.000000e+00	1.500000e+00	4.559806e-02	6.466477e-04	6.466477e-04
-1.500000e+00	2.000000e+00	6.082604e-02	7.440866e-04	7.440866e-04
-2.000000e+00	2.500000e+00	6.905844e-02	7.868390e-04	7.868390e-04
-2.500000e+00	3.000000e+00	6.438182e-02	7.552549e-04	7.552549e-04
-3.000000e+00	3.500000e+00	4.933420e-02	6.534000e-04	6.534000e-04
-3.500000e+00	4.000000e+00	2.900016e-02	5.038756e-04	5.038756e-04
-4.000000e+00	4.500000e+00	1.495314e-02	3.469183e-04	3.469183e-04
+-4.500000e+00	-4.000000e+00	1.506509e-02	3.489339e-04	3.489339e-04
+-4.000000e+00	-3.500000e+00	2.973404e-02	4.930529e-04	4.930529e-04
+-3.500000e+00	-3.000000e+00	4.844678e-02	6.350868e-04	6.350868e-04
+-3.000000e+00	-2.500000e+00	6.180770e-02	7.248307e-04	7.248307e-04
+-2.500000e+00	-2.000000e+00	6.343346e-02	7.476106e-04	7.476106e-04
+-2.000000e+00	-1.500000e+00	5.723164e-02	7.094821e-04	7.094821e-04
+-1.500000e+00	-1.000000e+00	4.447316e-02	6.214144e-04	6.214144e-04
+-1.000000e+00	-5.000000e-01	3.091830e-02	5.116766e-04	5.116766e-04
+-5.000000e-01	0.000000e+00	2.314436e-02	4.339673e-04	4.339673e-04
+0.000000e+00	5.000000e-01	2.309072e-02	4.322179e-04	4.322179e-04
+5.000000e-01	1.000000e+00	3.167754e-02	5.146958e-04	5.146958e-04
+1.000000e+00	1.500000e+00	4.305372e-02	6.195484e-04	6.195484e-04
+1.500000e+00	2.000000e+00	5.779282e-02	7.108485e-04	7.108485e-04
+2.000000e+00	2.500000e+00	6.586384e-02	7.534972e-04	7.534972e-04
+2.500000e+00	3.000000e+00	6.220382e-02	7.255585e-04	7.255585e-04
+3.000000e+00	3.500000e+00	4.782370e-02	6.321175e-04	6.321175e-04
+3.500000e+00	4.000000e+00	2.997750e-02	4.977100e-04	4.977100e-04
+4.000000e+00	4.500000e+00	1.473086e-02	3.449342e-04	3.449342e-04
 4.500000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
