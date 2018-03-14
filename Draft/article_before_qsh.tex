@@ -458,9 +458,9 @@ The Netherlands\label{nikh}
 
   DESY 18-025, FR-PHENO-2018-003, KA-TP-05-2018, 
   
-  MCnet-18-06, Nikhef/2018-012, UWTHPH-2018-12, 
+  Nikhef/2018-012, UWTHPH-2018-12, VBSCan-PUB-01-18, 
   
-  VBSCan-PUB-01-18, ZU-TH-08/18}
+  ZU-TH-08/18}
 \end{abstract}
 \thispagestyle{empty}
 \vfill
@@ -636,9 +636,8 @@ Hence, combined measurements which are better theoretically defined should be pr
 
     \begin{itemize}
 
-    \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
-    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalized to calculate also real matrix elements.
-    Virtual matrix elements have been calculated using an in-house matrix element generator.
+    \item The program {\sc Bonsay} consists of a general-purpose Monte Carlo integrator written by Christopher Schwan and matrix elements taken from different sources:
+    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, real matrix elements are written by Marina Billoni, and virtual matrix elements by Stefan Dittmaier.
     One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
     For the fiducial cross sections it uses the VBS approximation at LO and NLO.
     The virtual corrections are additionally approximated using a double-pole approximation.
@@ -696,14 +695,10 @@ Hence, combined measurements which are better theoretically defined should be pr
       \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
         parton-level Monte Carlo for processes with EW bosons. It
         allows the calculation of VBS processes at NLO QCD in the VBS
-        approximation, with process IDs between 200 and 290. Same-sign
-        $\PW^+\PW^+jj$ production is provided via the process ID 250. The corresponding
+        approximation, with process IDs between 200 and 290. The corresponding
         $s$-channel contributions are available separately as tri-boson processes with
-        semi-leptonic decays, with process IDs between 401 and 492. For the
-        final state studied in this article, only $\PW^+\PW^+\PW^-$
-        production with a hadronically decaying $\PW^-$ boson, process ID 432,
-        can contribute. These can simply be added on top of the VBS
-        contribution. Interferences between the two are therefore neglected.
+        semi-leptonic decays, with process IDs in the 400 range\ZM{which range is it?}. These can simply
+        be added on top of the VBS contribution. Interferences between the two are therefore neglected.
         The usage of leptonic tensors in the calculation, pioneered in
         Ref.~\cite{Jager:2006zc}, thereby leads to a significant speed improvement over
         automatically generated code.  Besides the SM, also a variety of
@@ -1240,8 +1235,7 @@ restrict ourselves to show results only in the VBS approximation,
 also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the angular-ordered shower will be employed. 
-The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
+and {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb} (version 2.7.1). The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
@@ -1270,11 +1264,11 @@ an effect ($6\%$) on the normalisation is induced.
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.352 $ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}&  $1.342 $ & $ 0.003$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}&  $1.343 $ & $ 0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.275$ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.266$ & $ 0.003$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}, $\Gamma_{\rm resc}$&  $1.267$ & $ 0.003$  \\
         {\sc PHANTOM}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
-        {\sc PHANTOM}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
+        {\sc PHANTOM}+{\sc Herwig++} &  $1.260 $ & $0.001$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
         {\sc WHIZARD}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
     \end{tabular}
@@ -1290,12 +1284,12 @@ an effect ($6\%$) on the normalisation is induced.
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.491 ^{+1\%}_{-2\%} {}^{+2\%}_{-2\%} $ & $0.004$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}&  $1.427 $ & $0.003$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}&  $1.465 $ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.407$ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.346$ & $0.002$  \\
+        {\sc MG5\_aMC}+{\sc Herwig++}, $\Gamma_{\rm resc}$&  $1.382$ & $0.002$  \\
         {\sc Powheg-Box}+{\sc Pythia8}  & $1.3642$ & $0.0004$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3389 ^{+0\%}_{-1\%}$ & $0.0006$  \\
-        {\sc VBFNLO}+{\sc Herwig7} &  $1.3067$ & $0.0006$  \\
+        {\sc VBFNLO}+{\sc Herwig7-Default} &  $1.3067$ & $0.0006$  \\
     \end{tabular}
     \caption{\label{tab:PSratesNLO} Cross sections at NLO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
@@ -1318,7 +1312,7 @@ scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nin
 For the latter, we show the
 three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within some per cents ($\le7\%$), both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within some or few per cents, respectively at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
 independent or correlated variations of the renormalisation and factorisation scales.
 Concerning differential distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
@@ -1330,7 +1324,7 @@ again, for the first the band corresponds to three-point variations, while for t
 scale variations (plus PDF uncertainties, linearly added).
 
 The first observable we investigate is the exclusive jet multiplicity, shown in Fig.~\ref{fig:PSnjet}. Looking at the LO+PS predictions, one can appreciate that the
-main effects are driven by the parton shower that is employed ({\sc Herwig7} or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
+main effects are driven by the parton shower that is employed ({\sc Herwig++/7} or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
 leading to higher jet multiplicities. Differences among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the parton shower (the {\tt scalup} entry of the Les Houches Event (LHE) file \cite{Alwall:2006yp,Butterworth:2010ym}). This event-by-event number corresponds
 to the maximum hardness (translated into the shower evolution variable) of the radiation that
@@ -1345,11 +1339,7 @@ among tools are reduced to about $10\%$. For the three-jet bin, which is describ
 {\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
 is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
 prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
-interplay between the real-emission matrix element and the shower emission. For this observable we also show the prediction obtained
-with {\sc MG5\_aMC+Pythia8} by reducing the shower-starting scale by a factor 2 with respect to the default value, dubbed 
-{\sc MG5\_aMC+Py8, $Q_{sh}/2$}.\footnote{The reduction of the shower scale for {\sc MG5\_aMC+Herwig7} gives no visible effect on any of the observables 
-discussed in this work.} The main effect of reducing the shower scale is that events migrate from the three-jet bin into the two-jet bin, i.e. less radiation is generated. The
-amount of this effect on the jet rate is +4\% (-8\%) on the two (three) jet bin, while the total rate within cuts is left unchanged.  
+interplay between the real-emission matrix element and the shower emission.
 
 \begin{figure*}[hbt]
 \centering
@@ -1381,8 +1371,7 @@ The next observable that we study is the invariant mass of the two tagging jets,
 the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the $6\%$ width effect for {\sc MG5\_aMC}).
 The LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
-about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element. For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is 
-negligible, hence the corresponding histogram will not be shown.
+about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
 
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities to the invariant-mass distribution.
 At LO+PS all predictions show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
@@ -1392,7 +1381,7 @@ NLO+PS, when the extra radiation is described by the real matrix element, such a
 exception is the {\sc Powheg-Box} prediction, which still shows a suppression at large separations.
 Since such a suppression is already there for the {\sc Powheg-LHE} sample,
 it is very likely that it is driven by the way the first emission is generated. A minor effect in the same direction is visible in the last two bins of the
-{\sc MG5\_aMC+Herwig7} prediction (although with rather large statistical uncertainties).
+{\sc MG5\_aMC+Herwig++} prediction (although with rather large statistical uncertainties).
 
 
 
@@ -1419,11 +1408,10 @@ can be mitigated by setting {\tt SpaceShower:dipole\-Recoil = on} in the {\sc Py
 Note that such a setting is not compatible with the NLO matching
 in {\sc MG5\_aMC} (but it is compatible with the {\sc Powheg} matching). Also, this setting has other
 effects, though smaller, on the rapidity spectra of the two hardest jets.} It is interesting to notice that
-the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-LHE} with {\sc Powheg+ Pythia8}, and that
-it is only marginally attenuated when the shower scale is reduced. A similar
+the effect survives beyond the first emission, as it can be observed by comparing {\sc Powheg-LHE} with {\sc Powheg+ Pythia8}. A similar
 behaviour of {\sc Pythia8}
 has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement,
-Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb}.
+Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}.
 The central enhancement
 is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediction), however even at NLO+PS the central region
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. These findings are consistent with behaviour displayed in Refs.~\cite{Jager:2011ms,Jager:2012xk,Jager:2013mu,Jager:2013iza,Schissler:2013nga} where the behaviour of NLO matching in VBS processes has been reported.\\
@@ -1433,8 +1421,7 @@ effectively at NLO accuracy differences between tools are at (or below) the $10\
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in detail the way QCD radiation is
 generated, \emph{e.g.}\ when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}). It is a remarkable fact that, even for those observables that display small discrepancies,
-the theoretical uncertainty obtained via scale variations (renormalization, factorization and shower scale) 
-systematically underestimates the spread of predictions. We note 
+the theoretical uncertainty obtained via scale variations systematically underestimates the spread of predictions. We note 
 that in the only VBF process where NNLO corrections are known, i.e. VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
 the NLO scale-uncertainty band does not include the NNLO prediction. This suggest that the NLO scale variation 
 underestimates the size of the perturbative uncertainty. Again, this stresses the need

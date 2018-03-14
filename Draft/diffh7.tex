@@ -1,4 +1,7 @@
 %% Main-Version Draft
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL article.tex      Tue Mar 13 16:14:39 2018
+%DIF ADD article_h7.tex   Tue Mar 13 16:16:09 2018
 \documentclass[twocolumn,epjc3]{svjour3} % use the EPJC template, two columns
 %%\documentclass[epjc3]{svjour3} % use the EPJC template, one column
 \smartqed  % flush right qed marks, e.g. at end of proof
@@ -278,6 +281,31 @@
 %
 \journalname{} % Preprint numbers here
 %
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
 \begin{document}
 
 \title{Precise predictions for same-sign W-boson scattering at the LHC}
@@ -457,9 +485,9 @@ The Netherlands\label{nikh}
   {\small \underline {Preprint numbers:} 
 
   DESY 18-025, FR-PHENO-2018-003, KA-TP-05-2018, 
-  
+
   MCnet-18-06, Nikhef/2018-012, UWTHPH-2018-12, 
-  
+
   VBSCan-PUB-01-18, ZU-TH-08/18}
 \end{abstract}
 \thispagestyle{empty}
@@ -634,7 +662,7 @@ Hence, combined measurements which are better theoretically defined should be pr
         \label{subsec:codedescr}
     In the following, the codes employed throughout this paper and the approximations implemented in each of them will be discussed:
 
-    \begin{itemize}
+     \begin{itemize} 
 
     \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
     Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalized to calculate also real matrix elements.
@@ -682,7 +710,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}. 
     In {\sc MoCaNLO+Recola} no approximation is performed neither at LO nor at NLO.
     It implies that, also contributions stemming from EW corrections to the interference are computed.
-            
+
       \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
       at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\mathcal O(\alpha^6)$ and $\mathcal O(\alphas^2\alpha^4)$ including interferences between the two sets of diagrams.
     It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
@@ -720,11 +748,11 @@ Hence, combined measurements which are better theoretically defined should be pr
     the VBS channel in terms of both higher-dimensional operators as well as explicit
     resonances.
 
-    \end{itemize}
+     \end{itemize} 
 
     We conclude this section by summarising the characteristics of the various codes in Tab.~\ref{tab:wg1_codes}.
     In particular, it is specified whether
-    \begin{itemize}
+     \begin{itemize} 
         \item all $s$- and $t/u$-channel diagrams are included;
         \item interferences between diagrams of different types ($s/t/u$-channel) are included at LO;
         \item diagrams which do not feature two resonant vector-bosons are included;
@@ -732,7 +760,7 @@ Hence, combined measurements which are better theoretically defined should be pr
             are included;
         \item EW corrections to the interference of order $\mathcal O (\alpha^5\alphas)$ are included.
         These corrections are of the same order as the NLO QCD corrections to the contribution of order $\mathcal O (\alpha^6$) term.
-    \end{itemize}
+     \end{itemize} 
 
     \begin{table*}[ht!]
         \footnotesize
@@ -760,12 +788,12 @@ Hence, combined measurements which are better theoretically defined should be pr
 
     For the massive particles, the following masses and decay widths are used:
     %
-    \begin{alignat}{2}
+    \begin{align}at{2}
                       \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
                     \MZOS &=  91.1876\GeV,      & \quad \quad \quad \GZOS &= 2.4952\GeV,  \nonumber \\
                     \MWOS &=  80.385\GeV,       & \GWOS &= 2.085\GeV,  \nonumber \\
                     M_{\rm H} &=  125.0\GeV,       &  \GH   &=  4.07 \times 10^{-3}\GeV.
-    \end{alignat}
+    \end{align}
     %
     The measured on-shell (OS) values for the masses and widths of the W and Z bosons are converted into pole values for the gauge bosons ($V=\PW,\PZ$) according to Ref.~\cite{Bardin:1988xt},
     %
@@ -805,7 +833,7 @@ Hence, combined measurements which are better theoretically defined should be pr
 
     Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}, the event selection used in the present study is:
 
-    \begin{itemize}
+     \begin{itemize} 
         \item The two same-sign charged leptons are required to fulfill cuts on transverse momentum, rapidity, and separation in the rapidity-azimuthal angle separation, 
             \begin{align}
             \label{cut:1}
@@ -834,7 +862,7 @@ Hence, combined measurements which are better theoretically defined should be pr
             %
         \item When EW corrections are computed, real photons and charged fermions are clustered together using the anti-$k_T$ algorithm with
             radius parameter $R=0.1$. In this case, leptons and quarks are understood as {\it dressed fermions}.
-    \end{itemize}
+     \end{itemize} 
 
 \section{Leading-order study}
     \label{sec:LO}
@@ -1240,8 +1268,12 @@ restrict ourselves to show results only in the VBS approximation,
 also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
 {\sc MG5\_aMC}, which
 employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the angular-ordered shower will be employed. 
-The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
+and {\sc \DIFdelbegin \DIFdel{Herwig++}\DIFdelend \DIFaddbegin \DIFadd{Herwig7}\DIFaddend }~\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{Bahr:2008pv, Bellm:2013hwb} }%DIFAUXCMD
+(version 2.7.1). }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{Bellm:2015jjp,Bellm:2017bvx} }%DIFAUXCMD
+(version 7.1.2). For the latter, the angular-ordered shower will be employed. 
+}\DIFaddend The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
@@ -1270,11 +1302,11 @@ an effect ($6\%$) on the normalisation is induced.
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.352 $ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}&  $1.342 $ & $ 0.003$  \\
+        {\sc MG5\_aMC}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig++}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL }&  $1.343 $ & $ 0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.275$ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.266$ & $ 0.003$  \\
+        {\sc MG5\_aMC}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig++}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL }, $\Gamma_{\rm resc}$&  $1.267$ & $ 0.003$  \\
         {\sc PHANTOM}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
-        {\sc PHANTOM}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
+        {\sc PHANTOM}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig++}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL } &  $1.260 $ & $0.001$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
         {\sc WHIZARD}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
     \end{tabular}
@@ -1290,12 +1322,12 @@ an effect ($6\%$) on the normalisation is induced.
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
         \hline\hline
         {\sc MG5\_aMC}+{\sc Pythia8}&  $1.491 ^{+1\%}_{-2\%} {}^{+2\%}_{-2\%} $ & $0.004$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}&  $1.427 $ & $0.003$  \\
+        {\sc MG5\_aMC}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig++}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL }&  $1.465 $ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.407$ & $0.003$  \\
-        {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.346$ & $0.002$  \\
+        {\sc MG5\_aMC}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig++}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL }, $\Gamma_{\rm resc}$&  $1.382$ & $0.002$  \\
         {\sc Powheg-Box}+{\sc Pythia8}  & $1.3642$ & $0.0004$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3389 ^{+0\%}_{-1\%}$ & $0.0006$  \\
-        {\sc VBFNLO}+{\sc Herwig7} &  $1.3067$ & $0.0006$  \\
+        {\sc VBFNLO}+{\sc \DIFdelbeginFL \DIFdelFL{Herwig7-Default}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Herwig7}\DIFaddendFL } &  $1.3067$ & $0.0006$  \\
     \end{tabular}
     \caption{\label{tab:PSratesNLO} Cross sections at NLO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
@@ -1318,7 +1350,7 @@ scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nin
 For the latter, we show the
 three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within some per cents ($\le7\%$), both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within some per cents, both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
 independent or correlated variations of the renormalisation and factorisation scales.
 Concerning differential distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
@@ -1330,7 +1362,7 @@ again, for the first the band corresponds to three-point variations, while for t
 scale variations (plus PDF uncertainties, linearly added).
 
 The first observable we investigate is the exclusive jet multiplicity, shown in Fig.~\ref{fig:PSnjet}. Looking at the LO+PS predictions, one can appreciate that the
-main effects are driven by the parton shower that is employed ({\sc Herwig7} or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
+main effects are driven by the parton shower that is employed ({\sc \DIFdelbegin \DIFdel{Herwig++/7}\DIFdelend \DIFaddbegin \DIFadd{Herwig7}\DIFaddend } or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
 leading to higher jet multiplicities. Differences among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the parton shower (the {\tt scalup} entry of the Les Houches Event (LHE) file \cite{Alwall:2006yp,Butterworth:2010ym}). This event-by-event number corresponds
 to the maximum hardness (translated into the shower evolution variable) of the radiation that
@@ -1347,7 +1379,7 @@ is different among the two tools. In particular, for the {\sc Powheg-Box}, the f
 prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
 interplay between the real-emission matrix element and the shower emission. For this observable we also show the prediction obtained
 with {\sc MG5\_aMC+Pythia8} by reducing the shower-starting scale by a factor 2 with respect to the default value, dubbed 
-{\sc MG5\_aMC+Py8, $Q_{sh}/2$}.\footnote{The reduction of the shower scale for {\sc MG5\_aMC+Herwig7} gives no visible effect on any of the observables 
+{\sc MG5\_aMC+Py8, $Q_{sh}/2$}.\footnote{The reduction of the shower scale for {\sc MG5\_aMC+\DIFdelbegin \DIFdel{Herwig++}\DIFdelend \DIFaddbegin \DIFadd{Herwig7}\DIFaddend } gives no visible effect on any of the observables 
 discussed in this work.} The main effect of reducing the shower scale is that events migrate from the three-jet bin into the two-jet bin, i.e. less radiation is generated. The
 amount of this effect on the jet rate is +4\% (-8\%) on the two (three) jet bin, while the total rate within cuts is left unchanged.  
 
@@ -1392,7 +1424,7 @@ NLO+PS, when the extra radiation is described by the real matrix element, such a
 exception is the {\sc Powheg-Box} prediction, which still shows a suppression at large separations.
 Since such a suppression is already there for the {\sc Powheg-LHE} sample,
 it is very likely that it is driven by the way the first emission is generated. A minor effect in the same direction is visible in the last two bins of the
-{\sc MG5\_aMC+Herwig7} prediction (although with rather large statistical uncertainties).
+{\sc MG5\_aMC+\DIFdelbegin \DIFdel{Herwig++}\DIFdelend \DIFaddbegin \DIFadd{Herwig7}\DIFaddend } prediction (although with rather large statistical uncertainties).
 
 
 
@@ -1423,7 +1455,9 @@ the effect survives beyond the first emission, as it can be observed by comparin
 it is only marginally attenuated when the shower scale is reduced. A similar
 behaviour of {\sc Pythia8}
 has also been observed in the study of EW production of a $\PZ$ boson in association with two jets (see the recent CMS measurement,
-Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}~\cite{Bahr:2008pv, Bellm:2013hwb}.
+Ref.~\cite{Sirunyan:2017jej} Figure 12), where the experimental data seem to prefer the description by {\sc Herwig++}\DIFaddbegin \DIFadd{~\mbox{%DIFAUXCMD
+\cite{Bahr:2008pv, Bellm:2013hwb}}%DIFAUXCMD
+}\DIFaddend .
 The central enhancement
 is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc MG5\_aMC+Pythia8} with the fixed-NLO prediction), however even at NLO+PS the central region
 ($z_{j_3}<0.5$) is cursed by huge differences between tools. Large differences, reaching a factor 2, persist also away from the central region. These findings are consistent with behaviour displayed in Refs.~\cite{Jager:2011ms,Jager:2012xk,Jager:2013mu,Jager:2013iza,Schissler:2013nga} where the behaviour of NLO matching in VBS processes has been reported.\\
@@ -1537,7 +1571,7 @@ measuring related observables for similar processes.
 
 The last part of our work is devoted to 
  remarks and recommendations concerning the usage of theoretical predictions by experimental collaborators.
-\begin{itemize}
+ \begin{itemize} 
     \item As found in Ref.~\cite{Biedermann:2017bss}, the NLO EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ are 
         the dominant NLO contribution to the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
         It is thus highly desirable to combine them with NLO-QCD predictions matched with parton shower, or at least that they are accounted for
@@ -1576,7 +1610,7 @@ The last part of our work is devoted to
     the observed features 
     (\emph{e.g.}\ validity of the VBS approximation or comparison of theoretical predictions matched to parton shower) should 
     be qualitatively similar for other VBS signatures with massive gauge bosons. For these other signatures, similar quantitative studies should be performed.
-\end{itemize}
+ \end{itemize} 
 
 
 \section*{Acknowledgements}
