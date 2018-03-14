@@ -1,0 +1,82 @@
+# BEGIN PLOT
+LegendOnly=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/jetsexclusive /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/jetsexclusive /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+DrawOnly=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/jetsexclusive /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/jetsexclusive /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlotReference=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=red
+LineStyle=dashed
+Path=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=6.19645389419520692e-06
+Title=AMC,LO,H++
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.046810e+00	2.551909e-03	2.551909e-03
+2.500000e+00	3.500000e+00	2.489116e-01	1.244639e-03	1.244639e-03
+3.500000e+00	4.500000e+00	4.054340e-02	5.030589e-04	5.030589e-04
+4.500000e+00	5.500000e+00	6.047739e-03	1.945726e-04	1.945726e-04
+5.500000e+00	6.500000e+00	7.869497e-04	6.983049e-05	6.983049e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=red
+LineStyle=solid
+Path=/run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=6.19684223473544166e-06
+Title=AMC,LO,H7
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	1.049256e+00	2.554550e-03	2.554550e-03
+2.500000e+00	3.500000e+00	2.500488e-01	1.247906e-03	1.247906e-03
+3.500000e+00	4.500000e+00	3.741653e-02	4.832742e-04	4.832742e-04
+4.500000e+00	5.500000e+00	4.802552e-03	1.725128e-04	1.725128e-04
+5.500000e+00	6.500000e+00	5.391252e-04	5.846089e-05	5.846089e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=green
+LineStyle=dashed
+Path=/PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=1.33288898722063276e-06
+Title=phantom,H++
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.775887e-01	1.141498e-03	1.141498e-03
+2.500000e+00	3.500000e+00	2.357281e-01	5.605349e-04	5.605349e-04
+3.500000e+00	4.500000e+00	4.004398e-02	2.310285e-04	2.310285e-04
+4.500000e+00	5.500000e+00	5.835388e-03	8.819253e-05	8.819253e-05
+5.500000e+00	6.500000e+00	8.010665e-04	3.267617e-05	3.267617e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+LineColor=green
+LineStyle=solid
+Path=/PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/jetsexclusive
+ScaledBy=1.34477150036247079e-06
+Title=phantom,H7
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	9.767359e-01	1.146074e-03	1.146074e-03
+2.500000e+00	3.500000e+00	2.392496e-01	5.672179e-04	5.672179e-04
+3.500000e+00	4.500000e+00	3.706325e-02	2.232523e-04	2.232523e-04
+4.500000e+00	5.500000e+00	4.716113e-03	7.963727e-05	7.963727e-05
+5.500000e+00	6.500000e+00	5.042893e-04	2.604139e-05	2.604139e-05
+# END HISTO1D
+

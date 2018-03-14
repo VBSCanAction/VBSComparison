@@ -1,0 +1,58 @@
+# BEGIN PLOT
+LegendOnly=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/crosssection /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/crosssection /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/crosssection /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+DrawOnly=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/crosssection /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/crosssection /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/crosssection /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlotReference=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/crosssection
+RatioPlot=1
+LogY=1
+RatioPlotYLabel=Ratio
+Legend=1
+# END PLOT
+
+# BEGIN HISTO1D /run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/crosssection
+LineColor=red
+LineStyle=dashed
+Path=/run_1M_LOPS-HWPP/run_1M_LOPS-HWPP.yoda/MC_VBSCAN_MCComparison/crosssection
+ScaledBy=6.19645389419520692e-06
+Title=AMC,LO,H++
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.343224e+00	2.891009e-03	2.891009e-03
+# END HISTO1D
+
+# BEGIN HISTO1D /run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/crosssection
+LineColor=red
+LineStyle=solid
+Path=/run_1M_LOPS-HWPP/run_1M_LOPS-HW7.yoda/MC_VBSCAN_MCComparison/crosssection
+ScaledBy=6.19684223473544166e-06
+Title=AMC,LO,H7
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.342118e+00	2.889649e-03	2.889649e-03
+# END HISTO1D
+
+# BEGIN HISTO1D /PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+LineColor=green
+LineStyle=dashed
+Path=/PHANTOM_loose_cuts2_hwpp/phantom_hwpp_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+ScaledBy=1.33288898722063276e-06
+Title=phantom,H++
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+06	1.260120e-06	1.295994e-09	1.295994e-09
+# END HISTO1D
+
+# BEGIN HISTO1D /PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+LineColor=green
+LineStyle=solid
+Path=/PHANTOM_loose_cuts2_hwpp/phantom_H7_norm.yoda/MC_VBSCAN_MCComparison/crosssection
+ScaledBy=1.34477150036247079e-06
+Title=phantom,H7
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.258340e+00	1.300838e-03	1.300838e-03
+# END HISTO1D
+
