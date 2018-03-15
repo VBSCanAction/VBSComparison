@@ -25,6 +25,7 @@
  \usepackage{hyphenat}
 \hyphenation{quan-ti-ta-tive-ly fer-mi-on fer-mi-ons non-fac-toris-able fac-toris-able in-ter-act-ing fac-torise VBF-NLO show-er Mad-Graph}
 
+
 %\setlength{\evensidemargin}{0cm}
 %\setlength{\oddsidemargin}{0cm}
 %\setlength{\topmargin}{0.00cm}
@@ -445,10 +446,10 @@ The Netherlands\label{nikh}
   where the differences among the various approximations lead to more
   sizeable effects.  Afterwards, we turn to predictions
   matched to parton showers, at LO and NLO: we show that on the one
-  hand, the inclusion of NLO QCD corrections lead to more stable
+  hand, the inclusion of NLO QCD corrections leads to more stable
   predictions, but on the other the details of the matching and of the
-  parton-shower programs lead to differences which are considerably
-  larger than those observed at fixed-order, even in the experimental
+  parton-shower programs cause differences which are considerably
+  larger than those observed at fixed order, even in the experimental
   fiducial region.  We conclude with some recommendations for
   experimental studies of vector-boson scattering processes.\\[5mm]
 
@@ -456,6 +457,8 @@ The Netherlands\label{nikh}
   \noindent
   {\small \underline {Preprint numbers:} 
 
+  \vspace{0.1cm}
+  
   DESY 18-025, FR-PHENO-2018-003, KA-TP-05-2018, 
   
   MCnet-18-06, Nikhef/2018-012, UWTHPH-2018-12, 
@@ -472,7 +475,7 @@ The Netherlands\label{nikh}
 
 \section{Introduction}
 Vector-boson scattering (VBS) at a hadron collider 
-usually refers to the interaction of massive vector-bosons ($\PW^\pm,\PZ$),
+usually refers to the interaction of massive vector bosons ($\PW^\pm,\PZ$),
 radiated by partons (quarks) of the incoming protons, 
 which in turn are deflected from the beam direction 
 and enter the volume of the particle detectors.
@@ -481,13 +484,12 @@ is characterised by two energetic jets
 and four fermions,
 originating from the decay of the two vector bosons.
 Among the possible diagrams,
-the scattering process can be mediated by a Higgs boson
-and involves in particular its longitudinal component.
+the scattering process can be mediated by a Higgs boson.
 The interaction of longitudinally polarised bosons is of particular interest, 
 because the corresponding matrix elements feature unitarity cancellations 
 that strongly depend on the actual structure of the Higgs sector of the Standard Model (SM).
 A detailed study of this class of processes will therefore further constrain the Higgs couplings 
-at a very different energy scale with respect to the Higgs boson mass,
+at a very different energy scale with respect to the Higgs-boson mass,
 and hint at, or exclude, non-Standard Model behaviours.
 
 The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio of all the VBS processes at the Large Hadron Collider (LHC):
@@ -500,17 +502,17 @@ it is thus of prime importance to provide predictions with systematic uncertaint
 at least comparable to the current and envisaged experimental precision~\cite{CMS:2016rcn}.
 
 
-$\PW^+\PW^+$ scattering is also the simplest VBS process to calculate, 
+$\PW^+\PW^+$ scattering is the simplest VBS process to calculate, 
 because the double-charge structure of the leptonic final state 
 limits the number of partonic processes and total number of Feynman diagrams for each process.
 Nonetheless, it possesses all features of VBS at the LHC and is thus representative of other VBS signatures.
 Therefore, it is the ideal candidate for a comparative study of the different simulation tools.
 
-In the last few years, several next-to-leading order (NLO) computations have become available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
-All these VBS computations rely on various approximations, typically neglecting contributions which are expected to be small under realistic experimental setups~\cite{Denner:2012dz,Oleari:2003tc}.
+In the last few years, several next-to-leading-order (NLO) computations have become available for both the VBS process~\cite{Jager:2006zc,Jager:2006cp,Bozzi:2007ur,Jager:2009xx,Jager:2011ms,Denner:2012dz,Rauch:2016pai} and its QCD-induced irreducible background process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba}.
+All these VBS computations rely on various approximations, typically neglecting contributions which are expected to be small in realistic experimental setups~\cite{Denner:2012dz,Oleari:2003tc}.
 Recently, the complete NLO corrections to $\PW^+\PW^+$ have been evaluated in Ref.~\cite{Biedermann:2017bss}, 
 making it possible for the first time to study in detail the quality of the VBS approximations at NLO QCD.\footnote{Preliminary results of the present study have already been made public in Ref.~\cite{Anders:2018gfr}. 
-A similar study has also been made public very recently for the EW production of a Higgs boson in association with 3 jets \cite{Campanario:2018ppz}.}
+A similar study has also appeared very recently for the electroweak (EW) production of a Higgs boson in association with 3 jets \cite{Campanario:2018ppz}.}
 
 This article starts with the definition of the VBS process in Sec.~\ref{sec:definition}.
 After having described the approximations of the various computer 
@@ -524,7 +526,7 @@ Sec.~\ref{sec:conclusion} contains a summary of the article and concluding remar
 
 \section{Definition of the process}
 \label{sec:definition}
-\begin{figure*}[t]
+\begin{figure*}
 \begin{center}
           \includegraphics[width=0.30\linewidth]{feynman/LO_EW_5}
           \raisebox{.5ex}{\includegraphics[width=0.35\linewidth]{feynman/LO_EW_2}}
@@ -542,7 +544,6 @@ can proceed at the LHC through the partonic process:
 \Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}.
 \end{equation}
 
-This process possesses three LO contributions of different orders.
 At LO, this process can proceed via three different coupling-order combinations:
 $\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alphas^{2}\alpha^{4}\right)}$, and $\mathcal{O}{\left(\alphas\alpha^{5}\right)}$.
 The first, commonly referred to as EW contribution or VBS,\footnote{The name VBS is used even though not all Feynman diagrams involve the scattering
@@ -553,9 +554,10 @@ triple-boson production (right diagram).
 Note that $s$-, $t$-, and $u$-channel contributions are defined according to the quark lines.
 $s$-channel denotes all Feynman diagrams where the two initial-state partons are connected by a continuous fermion line.
 $u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical quarks or anti-quarks in the final state
-The $s$-channel contributions will play a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
+The $s$-channel contributions plays a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
 
-When using approximations, care must be taken that only gauge-invariant subsets are considered to obtain physically meaningful results. We will discuss the commonly-used possible choices in detail in the next section.
+When using approximations, care must be taken that only gauge-invariant subsets are considered to obtain physically meaningful results.
+We discuss the commonly-used possible choices in detail in the next section.
 
 The second coupling combination corresponds to diagrams with a gluon connecting the two quark lines, and with the $\PW$ bosons 
 radiated off the quark lines. Because of the different colour structure, this contribution features a 
@@ -567,7 +569,7 @@ Such a contribution is typically small (3\%) within typical experimental cuts~\c
 
 In experimental measurements, special cuts, called VBS cuts, are designed to enhance the EW contribution over the QCD one and to suppress the interference.
 These cuts are based on the different kinematical behaviour of the contributions.
-The EW contribution is characterised by two jets with large rapidities as well as a large invariant mass.
+The EW contribution is characterised by two jets with large rapidities as well as a large di-jet invariant mass.
 The two $\PW$ bosons are mostly produced centrally.
 This is in contrast to the QCD contribution which favours jets in the central region.
 Therefore, the event selection usually involves rapidity-difference and invariant-mass cuts for the jets.
@@ -578,10 +580,10 @@ Hence, combined measurements which are better theoretically defined should be pr
 \section{Details of the calculations}
     \label{sec:details}
     %
-    \subsection{Several descriptions for one process}
+    \subsection{Theoretical predictions for VBS}
     We now discuss the various approximations which are implemented in computer programs for the EW contribution at order $\mathcal{O}{\left(\alpha^{6}\right)}$.
     Since we are mostly interested in 
-    the scattering of two $\PW$ gauge bosons, which includes the quartic gauge-boson vertex, it may appear justified to approximate the 
+    the scattering of two $\PW$ bosons, which includes the quartic gauge-boson vertex, it may appear justified to approximate the 
     full process by considering just those diagrams which contain the $2\rightarrow 2$ scattering process as a sub-part.
     However, this set of contributions is not gauge invariant.
     In order to ensure gauge invariance, an on-shell projection of
@@ -601,7 +603,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     These interferences are expected to be small in the VBS fiducial region, as they are both phase-space and colour suppressed~\cite{Oleari:2003tc,Denner:2012dz}.
     The $s$-channel squared diagrams and any interferences between them and the  $t/u$-channels are also discarded.
     This approximation is often called $t$-/$u$- approximation, VBF, or even VBS approximation.
-    We will adopt the latter denomination in the following of the article.
+    We adopt the latter denomination in the following.
     This approximation is gauge-invariant, a fact that can be appreciated by considering the two incoming quarks as belonging to two different copies of the $\rm{SU}(3)$ gauge group.
 
     A further refinement is to add the squared matrix element of the $s$-channel contributions to the VBS approximation.
@@ -610,7 +612,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     The VBS approximation can be extended at NLO in a straightforward manner for what concerns the virtual contributions.
     For the real-emission contributions special care must be taken for the gluon-initiated processes.
     The initial-state gluon and quark 
-        must not couple together, otherwise infrared divergences proportional to $s$-channels will appear, 
+        must not couple together, otherwise infrared divergences proportional to $s$-channels appear, 
          which do not match with the ones found in the virtual contributions.
          The subset of diagrams where all couplings of the initial state gluon to initial state quark are neglected forms a gauge-invariant subset, with the same argument presented above.
 
@@ -618,9 +620,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     In particular one can consider only one-loop amplitudes where there is no gluon exchange between the two quark lines and 
     assuming a cancellation of the infrared (IR) poles.
 
-    When considering the NLO corrections of order 
-    $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$
-    to the full process, besides real and virtual QCD corrections
+    When considering the NLO corrections of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$ to the full process, besides real and virtual QCD corrections
     to the EW tree-level contribution of order
     $\mathcal{O}{\left(\alpha^{6}\right)}$
     also real and virtual EW corrections to the LO interference
@@ -630,16 +630,16 @@ Hence, combined measurements which are better theoretically defined should be pr
     separated any more on the basis of Feynman diagrams, and the
     cancellation of IR singularities requires the inclusion of all of them \cite{Biedermann:2017bss}.
     %
-    \subsection{Description of the predictions}
+    \subsection{Description of the programs used}
         \label{subsec:codedescr}
-    In the following, the codes employed throughout this paper and the approximations implemented in each of them will be discussed:
+    In the following, the codes employed throughout this paper and the approximations implemented in each of them are discussed:
 
     \begin{itemize}
 
     \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
-    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalized to calculate also real matrix elements.
-    Virtual matrix elements have been calculated using an in-house matrix element generator.
-    One loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
+    Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalised to calculate also real matrix elements.
+    Virtual matrix elements have been calculated using an in-house matrix-element generator.
+    One-loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
     For the fiducial cross sections it uses the VBS approximation at LO and NLO.
     The virtual corrections are additionally approximated using a double-pole approximation.
     For more inclusive cross sections at LO the exact matrix elements ($s$-channels, interferences) can also be used.
@@ -665,32 +665,32 @@ output
                 the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing EW corrections, it is not yet possible to compute such corrections
             with the current public version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-EW process)
             and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
-            Only QCD-in\-ter\-act\-ing particles circulating in the loops are generated for the virtual matrix element.
+            Only strongly-in\-ter\-act\-ing particles circulating in the loops are generated for the virtual matrix element.
             The version capable of computing both QCD and EW corrections will be released in the future.
             Such an approximation is equivalent to the assumption that the finite part of
             those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
             pole-cancellation check at run time has to be turned off, by setting the value of the {\tt IR\-Pole\-Check\-Threshold} and 
             {\tt Precision\-Virtual\-At\-Run\-Time} parameters in the {\tt Cards\-/FKS\_\-params.dat} file to -1.
 
-    \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
+    \item The program {\sc MoCaNLO+Recola} is made of a flexible Monte Carlo program dubbed {\sc MoCaNLO} and of the matrix-element generator {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}.
     It can compute arbitrary processes at the LHC with both NLO QCD and EW accuracy in the SM.
     This is made possible by the fact that {\sc Recola} can compute arbitrary processes at tree and one-loop level in the SM.
     To that end, it relies on the {\sc Collier} library \cite{Denner:2014gla,Denner:2016kdg} to numerically evaluate the one-loop scalar and tensor integrals.
     In addition, the subtraction of the IR divergences appearing in the real corrections has been automatised thanks to the Catani--Seymour dipole formalism for both QCD and QED \cite{Catani:1996vz,Dittmaier:1999mb}.
-    The code has demonstrated its ability to compute at NLO high multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
+    The code has demonstrated its ability to compute at NLO high-multiplicity processes up to $2 \to 7$ \cite{Denner:2015yca,Denner:2016wet}.
     In particular the full NLO corrections to VBS and its irreducible background \cite{Biedermann:2016yds,Biedermann:2017bss} have been obtained thanks to this tool.
-    One key aspect for these high multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}. 
+    One key aspect for these high-multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}. 
     In {\sc MoCaNLO+Recola} no approximation is performed neither at LO nor at NLO.
     It implies that, also contributions stemming from EW corrections to the interference are computed.
             
-      \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six parton final states 
+      \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six-parton final states 
       at $\Pp \Pp,\, \Pp\bar{\Pp}$ and $\Pe^+\Pe^-$ colliders at orders $\mathcal O(\alpha^6)$ and $\mathcal O(\alphas^2\alpha^4)$ including interferences between the two sets of diagrams.
     It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
-    The integration uses a multichannel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
+    The integration uses a multi-channel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
     {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 
       \item The {\sc Powheg-Box}~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} is a framework for matching NLO-QCD calculations with parton showers.
-    It relies on the user providing the matrix elements and Born phase-space, but will automatically construct FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
+    It relies on the user providing the matrix elements and Born phase space, but automatically constructs FKS \cite{Frixione:1995ms} subtraction terms and the phase space for the real emission.
     For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are similar to those used in {\sc VBFNLO}.
 
       \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
@@ -712,7 +712,7 @@ output
 
       \item {\sc Whizard}~\cite{Moretti:2001zz,Kilian:2007gr} is a multi-purpose
           event generator with the LO matrix element generator {\sc O'Mega}. \ZM{ if NLO results for this processes cannot be provided, we should skip what follows, or at least clarify the limitations}
-    provides FKS subtraction terms for any NLO process, while virtual matrix
+    It provides FKS subtraction terms for any NLO process, while virtual matrix
     elements are provided externally by {\sc
     OpenLoops}~\cite{Cascioli:2011va} (alternatively, {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}
     (\emph{cf.}\ above) can be used as well). {\sc Whizard} allows to simulate a
@@ -726,36 +726,36 @@ output
     In particular, it is specified whether
     \begin{itemize}
         \item all $s$- and $t/u$-channel diagrams are included;
-        \item interferences between diagrams of different types ($s$/ $t$/$u$-channel) are included at LO;
-        \item diagrams which do not feature two resonant vector-bosons are included;
+        \item interferences between diagrams of different types ($s$/$t$/$u$-channel) are included at LO;
+        \item diagrams which do not feature two resonant vector bosons are included;
         \item the so-called non-factoris\-able (NF) QCD corrections, \emph{i.e.}\ the corrections where (real or virtual) gluons are exchanged between different quark lines,
             are included;
         \item EW corrections to the interference of order $\mathcal O (\alpha^5\alphas)$ are included.
         These corrections are of the same order as the NLO QCD corrections to the contribution of order $\mathcal O (\alpha^6$) term.
     \end{itemize}
 
-    \begin{table*}[ht!]
+    \begin{table*}
         \footnotesize
         \begin{tabularx}{\textwidth}{c|c|X|X|X|X|X}
             Code  &  $\mathcal O(\alpha^6)$ $s, t, u$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to order $\mathcal O(\alphas \alpha^5)$  \\
             \hline
             \hline
-            {\sc Bonsay}        &  $t/u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
-            {\sc Powheg}        &  $t/u$    &  No       &  Yes              &  Yes   & No       &  No  \\
-            {\sc MG5\_aMC}      &  Yes      &  Yes      &  Yes              &  Yes   & virt. No &  No \\
-            {\sc MoCaNLO+Recola}&  Yes      &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
-            {\sc PHANTOM}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\
-            {\sc VBFNLO}        &  Yes      &  No       &  Yes              &  Yes   & No       &  No  \\
-            {\sc Whizard}       &  Yes      &  Yes      &  Yes              &  No    & -        & - \\
+            {\sc Bonsay}        &  $t,u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
+            {\sc Powheg}        &  $t,u$    &  No       &  Yes              &  Yes   & No       &  No  \\
+            {\sc MG5\_aMC}      &  $s,t,u$  &  Yes      &  Yes              &  Yes   & virt. No &  No \\
+            {\sc MoCaNLO+Recola}&  $s,t,u$  &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
+            {\sc PHANTOM}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
+            {\sc VBFNLO}        &  $s,t,u$  &  No       &  Yes              &  Yes   & No       &  No  \\
+            {\sc Whizard}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
         \end{tabularx}
         \caption{\label{tab:wg1_codes} Summary of the different properties of the computer programs employed in the comparison.}
     \end{table*}
     %
     \subsection{Input parameters}
         \label{subsec:inputpar}
-    The hadronic scattering processes are simulated at the LHC with a center-of-mass energy $\sqrt s = 13 \TeV$.
-    The NNPDF~3.0 parton distribution functions~(PDFs)~\cite{Ball:2014uwa} with five massless flavours,\footnote{For the process considered, no bottom (anti-)quarks appear in the initial or final state at LO and NLO, as they will lead to top quarks, and not light jets, in the final state.} 
-    NLO-QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$ are employed.\footnote{The corresponding identifier {\tt lhaid} in the program LHAPDF6~\cite{Buckley:2014ana} is 260000.}\footnote{Note that the {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.}
+    The hadronic scattering processes are simulated at the LHC with a centre-of-mass energy $\sqrt s = 13 \TeV$.
+    The NNPDF~3.0 parton distribution functions~(PDFs)~\cite{Ball:2014uwa} with five massless flavours,\footnote{For the process considered, no bottom (anti-)quarks appear in the initial or final state at LO and NLO, as they would lead to top quarks, and not light jets, in the final state.} 
+    NLO-QCD evolution, and a strong coupling constant $\alphas\left( \MZ \right) = 0.118$\footnote{Note that the {\sc Powheg-Box} uses its own implementation of the two loop running for $\alpha_{\rm s}$.} are employed.\footnote{The corresponding identifier {\tt lhaid} in the program LHAPDF6~\cite{Buckley:2014ana} is 260000.}
     Initial-state collinear singularities are factorised according to the ${\overline{\rm MS}}$ scheme, consistently with what is done in NNPDF.
 
     For the massive particles, the following masses and decay widths are used:
@@ -787,7 +787,7 @@ output
     \begin{equation}
      1/\alpha = 132.3572\ldots\,.
     \end{equation}
-    The Cabibbo-Kobayashi-Maskawa matrix is assumed to be diagonal, meaning that the mixing between different quark generations is neglected.
+    The Cabibbo--Kobayashi--Maskawa matrix is assumed to be diagonal, meaning that the mixing between different quark generations is neglected.
     The complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} is used throughout to treat unstable intermediate particles in a gauge-invariant manner.
 
     The central value of the renormalisation and factorisation scales is set to 
@@ -799,14 +799,14 @@ output
     %
     defined via the transverse momenta of the two hardest jets (identified with the procedure outlined in the following), 
     event by event.\footnote{By default, the renormalisation and factorisation scales employed in the {\sc Powheg-Box} slightly differ from the 
-        one defined in Eq.~\eqref{eq:defscale}, as the momenta of two final-state quarks in the underlying-Born event are
+        ones defined in Eq.~\eqref{eq:defscale}, as the momenta of two final-state quarks in the underlying Born event are
         employed instead of those of the two hardest jets.\label{foot:powheg}} 
     This choice of scale has been shown to provide stable NLO-QCD predictions \cite{Denner:2012dz}.
 
     Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}, the event selection used in the present study is:
 
     \begin{itemize}
-        \item The two same-sign charged leptons are required to fulfill cuts on transverse momentum, rapidity, and separation in the rapidity-azimuthal angle separation, 
+        \item The two same-sign charged leptons are required to fulfil cuts on transverse momentum, rapidity, and separation in the rapidity--azimuthal-angle separation, 
             \begin{align}
             \label{cut:1}
              \ptsub{\Pl} >  20\GeV,\qquad |y_{\Pl}| < 2.5, \qquad \Delta R_{\Pl\Pl}> 0.3\,.
@@ -815,18 +815,18 @@ output
         \item The total missing transverse momentum, computed from the vectorial sum of the transverse momenta of the two neutrinos, is required to be
             \begin{align}
             \label{cut:2}
-              %\etsub{\text{miss}}=p_{\rm T, miss} >  40\GeV\,.
               p_{\rm T, miss} >  40\GeV\,.
             \end{align}
             %
-        \item QCD partons (light quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, possibly using the {\sc FastJet} implementation~\cite{Cacciari:2011ma}, with distance parameter $R=0.4$. %Jets are required to have
+        \item QCD partons (light quarks and gluons) are clustered together using the anti-$k_T$ algorithm~\cite{Cacciari:2008gp}, possibly using the {\sc FastJet} implementation~\cite{Cacciari:2011ma}, with distance parameter $R=0.4$.
         We impose cuts on the jets' transverse momenta, rapidities, and their separation from leptons,  
             \begin{align}
             \label{cut:3}
              \ptsub{\Pj} >  30\GeV, \qquad |y_\Pj| < 4.5, \qquad \Delta R_{\Pj\Pl} > 0.3 \,.
             \end{align}
-            VBS cuts are applied on the two jets with largest transverse-momentum, unless otherwise stated. In particular, we impose a cut on the 
-             in\-vari\-ant mass of the di-jet system,  as well as on the rapidity-separation of the two jets,          \begin{align}
+            VBS cuts are applied on the two jets with largest transverse momentum, unless otherwise stated. In particular, we impose a cut on the 
+             in\-vari\-ant mass of the di-jet system, as well as on the rapidity separation of the two jets,          
+            \begin{align}
             \label{cut:4}
              m_{\Pj \Pj} >  500\GeV,\qquad |\Delta y_{\Pj \Pj}| > 2.5, 
             \end{align}
@@ -848,9 +848,9 @@ output
     The QCD contribution does not possess external gluons due to charge conservation.
     Thus the diagrams of order $\mathcal{O}(g_{\rm s}^2g^4)$ only involve gluon exchange in the $t/u$-channel between the quark lines.
     This results in a small contribution even if the VBS cuts have not been imposed.
-    The interference between EW and QCD contributions is small, due to color suppression, but not negligible.
+    The interference between EW and QCD contributions is small, due to colour suppression, but not negligible.
 
-    \begin{table}[h!]
+    \begin{table}
         \centering
         \begin{tabular}{c|c|c|c}
             Order & $\mathcal{O}(\alpha^6)$ & $\mathcal{O}(\alphas^2\alpha^4)$ & $\mathcal{O}(\alphas\alpha^5)$ \\
@@ -861,7 +861,7 @@ output
         \end{tabular}
         \caption{\label{tab:LOscanXsec} Cross sections at LO accuracy for the three contributions to the process ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$, obtained with exact matrix elements.
         These results are for the set-up described in Sec.~\protect\ref{subsec:inputpar} but no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.
-        The uncertainties shown refer to the estimated statistical error of the Monte Carlo integrations.}
+        The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
     \end{table}
 
     In Fig.~\ref{fig:mjjdyjj_1d} these three contributions are shown separately and summed in the differential distributions in the di-jet invariant mass $m_{\Pj\Pj}$ and the rapidity difference $|\Delta y_{\Pj\Pj}|$.
@@ -873,7 +873,7 @@ output
     This justifies why cuts on these two observables are used in order to enhance the EW contribution over the QCD one.
     In particular, in order to have a large EW contribution, rather exclusive cuts are required.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     \includegraphics[scale=0.395]{figures/scanfigures/mjj_full.pdf}
     \includegraphics[scale=0.395]{figures/scanfigures/dyjj_full.pdf}
@@ -886,9 +886,9 @@ output
 
     This can also be seen in Fig.~\ref{fig:mjjdyjj_2d_LO} where the three contributions are displayed as double-differential distributions in the di-jet invariant mass and jet rapidity difference.
     Again, it is clear that the region with low di-jet invariant mass should be avoided in VBS studies as it is dominated by tri-boson contributions.
-    This motivates in particular the choice of employing the cut $m_{\Pj\Pj} > 200\GeV$ for our LO inclusive study in Sec.~\ref{subsec:LOinclusive}.
+    This motivates in particular the choice of the cut $m_{\Pj\Pj} > 200\GeV$ for our LO inclusive study in Sec.~\ref{subsec:LOinclusive}.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     \includegraphics[scale=0.395]{figures/scanfigures/scan_ew6.pdf}
     \includegraphics[scale=0.395]{figures/scanfigures/scan_ew5qcd1.pdf}
@@ -901,35 +901,34 @@ output
     %
     \subsection{Inclusive comparison}
         \label{subsec:LOinclusive}
-    In Fig.~\ref{fig:ratio2d_LO}, ratios of double-differential cross sections in the variables  $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are shown.\footnote{In Fig.~\ref{fig:ratio2d_LO}, the level of the accuracy of the predictions in each bin is around a per mille.}
+    In Fig.~\ref{fig:ratio2d_LO}, ratios for double-differential cross sections in the variables  $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are shown.\footnote{In Fig.~\ref{fig:ratio2d_LO}, the level of the accuracy of the predictions in each bin is around a per mille.}
     Two plots are displayed: the ratios of the $|t|^2 + |u|^2$ and $|s|^2 + |t|^2 + |u|^2$ approximations over the full calculation.
     In the first case, the approximation is good within $\pm10\%$ over the whole range apart in the low invariant-mass region at both low and large rapidity difference.
-    The low rapidity-difference region possesses remnants of the tri-bosons contributions that have a di-jet invariant mass around the $\PW$-boson mass.
+    The low rapidity-difference region possesses remnants of the tri-bosons contribution that have a di-jet invariant mass around the $\PW$-boson mass.
     It is therefore expected that the $|t|^2 + |u|^2$ approximation fails in this region.
     The second plot, where the $|s|^2 + |t|^2 + |u|^2$ approximation is considered, displays a better behaviour in the previously mentioned region.
-    The full calculation is approximated at the level of $\pm5\%$ apart in the region where $|\Delta y_{\Pj\Pj}| < 2$.
+    The full calculation is approximated at the level of $\pm5\%$ apart from the region where $|\Delta y_{\Pj\Pj}| < 2$.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     \includegraphics[scale=0.395]{figures/scanfigures/ratio_tu.pdf}
     \includegraphics[scale=0.395]{figures/scanfigures/ratio_stu.pdf}
-    \caption{Ratios of double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ at LO \emph{i.e.}\ order $\mathcal{O}(\alpha^6)$.
-    Ratio of approximated squared amplitudes over the full matrix element.
+    \caption{Ratios for double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ at LO \emph{i.e.}\ order $\mathcal{O}(\alpha^6)$ of approximated squared amplitudes over the full matrix element.
     The approximated squared amplitudes are computed as $|\mathcal{A}|^2 \sim |t|^2 + |u|^2$ (left) and $|\mathcal{A}|^2 \sim |s|^2 + |t|^2 + |u|^2$ (right).
     The cuts applied are the ones of Sec.~\protect\ref{subsec:inputpar} and no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.} 
     \label{fig:ratio2d_LO}
     \end{figure*}
-    %
+    
     \subsection{Comparison in the fiducial region}
     In Tab.~\ref{tab:wg1_LOrates}, we report the total rates at LO accuracy at order $\mathcal O (\alpha^6)$ obtained in the fiducial region 
-    described in Sec.~\ref{subsec:inputpar}. We note that several full predictions are not in statistical agreement. These are possibly due to Monte-Carlo 
+    described in Sec.~\ref{subsec:inputpar}. We note that several full predictions are not in statistical agreement. These are possibly due to Monte Carlo 
     integrators performing too aggressive estimations of statistical uncertainties. Nonetheless, all these predictions agree within less than $0.5\%$.
-    At the level of the cross section, it seems difficult to infer the quality of the the various approximations.
+    At the level of the cross section, it seems difficult to infer the quality of the various approximations.
     This simply means that the details of the various VBS approximations have an impact not larger than $0.5\%$ at 
     the level of the fiducial cross section at LO for a typical phase-space volume used by experimental collaborations.
-    This is in agreement with the findings of Ref.~\cite{Denner:2012dz,Oleari:2003tc}.
+    This is in agreement with the findings of Refs.~\cite{Denner:2012dz,Oleari:2003tc}.
 
-    \begin{table}[h!]
+    \begin{table}
         \centering
         \begin{tabular}{c|r@{ $\pm$ }l}
           Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
@@ -945,10 +944,10 @@ output
         \end{tabular}
         \caption{\label{tab:wg1_LOrates} Cross sections at LO accuracy and order $\mathcal{O}(\alpha^6)$.
         The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
-        The uncertainties shown refer to the estimated statistical error of the Monte Carlo integrations.}
+        The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
     \end{table}
 
-    In Fig.~\ref{fig:wg1_mjj-llLO}, we show the distributions in the invariant mass (left) and the rapidity difference of the two tagging jets (right) which are key observables for VBS measurements.
+    In Fig.~\ref{fig:wg1_mjj-llLO}, we show the distributions in the invariant mass (left) and the rapidity difference (right) of the two tagging jets which are key observables for VBS measurements.
     In both cases we show the absolute distributions in the upper plot, while the lower plot displays the ratio over the predictions of {\sc MoCaNLO+Recola}, 
     for which we also display the scale-uncertainty band (seven-points variation as done in Eq.~(3.11) of Ref.~\cite{Biedermann:2017bss}).
     For both observables we find a relatively good agreement among the various tools, which confirms the fact that contributions from $s$-channel diagrams as well as interferences are suppressed in the fiducial region.
@@ -957,21 +956,21 @@ output
     This means that at LO, in the fiducial volume and for energies relevant to the LHC, the VBS approximation is good to a per cent.
     This is in agreement with the findings of Sec.~\ref{subsec:LOinclusive} as the present comparison completely excludes the phase-space region where tri-boson contributions could have a noticeable impact.
 
-     \begin{figure*}[htb!]
+     \begin{figure*}
        \centering
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/LO/mjj_LO.pdf}
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/LO/dyj1j2_LO.pdf}
     \caption{\label{fig:wg1_mjj-llLO} Differential distributions in the invariant mass (left) and rapidity difference of the two tagging jets (right) at LO accuracy and order $\mathcal{O}(\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
-    The upper plots provides the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
-    The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
+    The upper plots provides the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
+    The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
     The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.}
     \end{figure*}
 
 \section{Next-to-leading order QCD}
     \label{sec:NLO}
     %
-    \subsection{Inclusive comparision}
+    \subsection{Inclusive comparison}
         \label{subsec:NLOinclusive}
     According to the results of Secs.~\ref{subsec:contributions} and \ref{subsec:LOinclusive}, the VBS approximation at LO fails drastically in the region $m_{\Pj\Pj} < 200$ GeV, $|\Delta y_{\Pj\Pj}| < 2$.
     Therefore, we present an inclusive study at NLO QCD for the EW component, namely the order $\mathcal{O}(\alphas\alpha^6)$ for the set-up described in Sec.~\ref{subsec:inputpar} but imposing the requirements $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.
@@ -980,11 +979,11 @@ output
     the VBS approximation implemented in {\sc Bonsay} (dubbed $|t|^2+|u|^2$), the VBS approximation with the $s$-channel contributions from {\sc VBFNLO} (dubbed $|s|^2+|t|^2+|u|^2$), and the full computation.
     The full computation employs exact matrix elements meaning that $t/u/s$ interferences, factorisable and non-factorisable QCD corrections, as well as EW corrections to the order $\mathcal{O}(\alphas \alpha^5)$ are included.
 
-    The total cross sections within the above mentioned kinematic cuts are shown in Tab.~\ref{tab:crosssecINCLUSIVE}.
+    The total cross sections within the above-mentioned kinematic cuts are shown in Tab.~\ref{tab:crosssecINCLUSIVE}.
     The $|t|^2+|u|^2$ approximation for NLO QCD predictions is lower by about $6\%$ than the full calculation.
-    The inclusion of $s$-channel diagrams improves the approximate prediction, leading to an excess at the $3\%$-level.
+    The inclusion of $s$-channel diagrams improves the approximate prediction, leading to an excess at the $3\%$ level.
 
-    \begin{table}[h!]
+    \begin{table}
     \centering
     \begin{tabular}{c|c|c}
     Prediction & $\sigma_{\textrm{tot}}\,[\textrm{fb}]$ & $\delta [\%]$ \\
@@ -998,44 +997,43 @@ output
     \end{tabular}
     \caption{Cross sections at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.
-    The uncertainties shown refer to the estimated statistical error of the Monte Carlo programs.}
+    The uncertainties shown refer to the estimated statistical errors of the Monte Carlo programs.}
     \label{tab:crosssecINCLUSIVE}
     \end{table}
 
     These differences are more evident in differential distributions.
     In Fig.~\ref{fig:mjjdyjj_1d_1}, we show the differential distributions in the di-jet invariant mass $m_{\Pj\Pj}$ and rapidity separation $|\Delta y_{\Pj\Pj}|$.
     For large $m_{\Pj\Pj}$ and large $|\Delta y_{\Pj\Pj}|$, as expected, the VBS approximation is performing well and its $s$-channel extension agrees with the full calculation within $10\%$.
-    This is in contrast with the region  $200 \GeV < m_{\Pj\Pj} < 500 \GeV$ and $2<|\Delta y_{\Pj\Pj}|<2.5$, where
+    This is in contrast with the regions  $200 \GeV < m_{\Pj\Pj} < 500 \GeV$ and $2<|\Delta y_{\Pj\Pj}|<2.5$, where
     the difference between the $|t|^2+|u|^2$ approximation and the full computation can be above $30\%$.
-    The inclusion of $s$-channels cures partly this behaviour by rendering the approximation good by about $10\%$.
+    The inclusion of $s$-channels cures partly this behaviour by improving the approximation to about $10\%$.
     This tends to indicate that interference contributions and/or non-factorisable QCD corrections play a non-negligible role in this phase-space region.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     {\includegraphics[scale=0.35]{figures/scanfigures/mjj_nlo.pdf}}
     {\includegraphics[scale=0.35]{figures/scanfigures/dyjj_nlo.pdf}}
     \caption{
-    Differential distributions in the di-jet invariant mass (left) and the rapidity-separation of the two tagging jets (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+    Differential distributions in the di-jet invariant mass (left) and the rapidity separation of the two tagging jets (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_1}
     \end{figure*}
 
     In order to investigate further the jet-pair kinematics, we study the double-differential distribution in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$.
-    In particular, in Fig.~\ref{fig:ratio2d_NLO}, we compute in each bin the ratios of the approximated cross sections over the full one [$\sigma(|t|^2+|u|^2)/\sigma(\textrm{full})$ and $\sigma(|s|^2+|t|^2+|u|^2)/\sigma(\textrm{full})$].
+    In particular, in Fig.~\ref{fig:ratio2d_NLO}, we compute in each bin the ratios of the approximated cross sections over the full ones [$\sigma(|t|^2+|u|^2)/\sigma(\textrm{full})$ and $\sigma(|s|^2+|t|^2+|u|^2)/\sigma(\textrm{full})$].
     As expected, in the low invariant-mass and low rapidity-separation region of the jet pair ($200 \GeV < m_{\Pj\Pj} < 500 \GeV$, $2<|\Delta y_{\Pj\Pj}|<2.5$) the VBS approximation fails significantly (by more than $40\%$).
     Including the $s$-channel contributions leads to a difference of less than $10\%$ in this very region.
-    However, in the region of large di-jet invariant mass and low rapidity separation of the jets, the $|s|^2+|t|^2+|u|^2$ approximation overestimate the full computation by more than $40\%$.\footnote{The bin
-    in the top-left corner of the right-hand side plot of Fig.~\ref{fig:ratio2d_NLO} suffers from large uncertainty ($30\%$) while the other errors are at the per-cent level.}
+    However, in the region of large di-jet invariant mass and low rapidity separation of the jets, the $|s|^2+|t|^2+|u|^2$ approximation overestimates the full computation by more than $40\%$.\footnote{The bin
+    in the top-left corner of the right-hand-side plot of Fig.~\ref{fig:ratio2d_NLO} suffers from large uncertainty ($30\%$) while the other errors are at the per-cent level.}
     Again, this seems to support the fact that interferences and non-factorisable corrections can be non-negligible in this region.
-    On the other hand, in the typical VBS region, the VBS approximation shows a good agreement with the full computation as documented in details in Sec.~\ref{sec:fidNLO}.
+    On the other hand, in the typical VBS region, the VBS approximation shows a good agreement with the full computation as documented in detail in Sec.~\ref{sec:fidNLO}.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     {\includegraphics[scale=0.395]{figures/scanfigures/a6as_vbfnloVSrecola_tu.pdf}}
     {\includegraphics[scale=0.395]{figures/scanfigures/a6as_vbfnloVSrecola_stu.pdf}}
-    \caption{Ratios of double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the VBS approximation over the full computation.
-    Ratio of the approximated squared amplitudes over the full matrix element.
+    \caption{Ratios for double-differential distributions in the variables $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the VBS approximation over the full computation of the approximated squared amplitudes over the full matrix element.
     The approximated squared amplitudes are computed as $|\mathcal{A}|^2 \sim |t|^2+|u|^2$ (left) and $|\mathcal{A}|^2 \sim |s|^2+|t|^2+|u|^2$ (right).
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.}
     \label{fig:ratio2d_NLO}
@@ -1044,17 +1042,17 @@ output
     In Fig.~\ref{fig:mjjdyjj_1d_2}, the distributions in the transverse momentum of the hardest jet and its rapidity are shown.
     At low transverse momentum, $|t|^2+|u|^2$ and $|s|^2+|t|^2+|u|^2$ approximations are lower and higher than the full computation by about $20\%$, respectively.
     At high transverse momentum, they have a similar behaviour.
-    They both diverge from the full computation towards larger transverse momentum to reach about $10\%$ at $1000\GeV$.
+    They both diverge from the full computation towards larger transverse momentum (about $10\%$ at $1000\GeV$).
     Regarding the rapidity of the hardest jet, the two approximations have opposite behaviours.
-    In the central region, the $|t|^2+|u|^2$ approximation differs by $12\%$ with respect to the full computation while the $|s|^2+|t|^2+|u|^2$ one is good within $5\%$.
-    In the peripheral region, the $|t|^2+|u|^2$ approximation is rather close to the full computation ($5\%$) while the $|s|^2+|t|^2+|u|^2$ one differs by $10\%$.
+    In the central region, the $|t|^2+|u|^2$ approximation differs by $12\%$ with respect to the full computation, while the $|s|^2+|t|^2+|u|^2$ one is good within $5\%$.
+    In the peripheral region, the $|t|^2+|u|^2$ approximation is rather close to the full computation ($5\%$), while the $|s|^2+|t|^2+|u|^2$ one differs by $10\%$.
 
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     {\includegraphics[scale=0.35]{figures/scanfigures/ptj1_nlo.pdf}}
     {\includegraphics[scale=0.35]{figures/scanfigures/yj1_nlo.pdf}}
     \caption{Differential distributions in the transverse momentum (left) and rapidity of the hardest tagging jet (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_2}
     \end{figure*}
@@ -1066,36 +1064,36 @@ output
       \label{eq:Zeppenfeld}
     \end{equation}
     %
-    Analogous definitions will later also be used for the Zeppenfeld variable of the muon and of the third jet.
+    Analogous definitions are later also be used for the Zeppenfeld variable of the muon and of the third jet.
     %
-    \begin{figure*}[hbt]
+    \begin{figure*}
     \centering
     {\includegraphics[scale=0.35]{figures/scanfigures/mll_nlo.pdf}}
     {\includegraphics[scale=0.35]{figures/scanfigures/zel_nlo.pdf}}
     \caption{Differential distributions in the lepton-lepton invariant mass (left) and the electron Zeppenfeld variable (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the full predictions.
+    The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_3}
     \end{figure*}
     %
-    The $|s|^2+|t|^2+|u|^2$ predictions for $m_{\rm e^+\mu^+}$ agrees rather well with the full curve, obtained from {\sc MoCa\-NLO+Recola}.
+    The $|s|^2+|t|^2+|u|^2$ predictions for $m_{\rm e^+\mu^+}$ agree rather well with the full curve, obtained from {\sc MoCa\-NLO+Recola}.
     The prediction from {\sc Bonsay} is about $10\%$ lower around $1000 \GeV$.
     The Zeppenfeld variable of the positron $z_e$ is more strongly affected by the exclusion of $s$-channel contributions.
     For increasing $z_{\rm e}$, the $|t|^2+|u|^2$ approximation diverges from the full computation to reach a difference of about $25\%$ at $1.5$.
     On the other hand, including $s$-channel contributions leads to a better approximation, staying within $10\%$ difference over the whole range.
 
-    In conclusion, both the loose minimum di-jet invariant mass cut and the inclusion of QCD radiative correction make the $s$-channel contributions less suppressed than at LO, making their inclusion mandatory, in order to provide trustworthy predictions at NLO accuracy.
-    In the inclusive region studied here, neglecting $s$-channel, non-factorisable corrections, and electroweak corrections can lead to discrepancies of up to $30\%$ with respect to the full computation.
+    In conclusion, both the loose minimum di-jet invariant-mass cut and the inclusion of QCD radiative corrections render the $s$-channel contributions less suppressed than at LO, making their inclusion mandatory, in order to provide trustworthy predictions at NLO accuracy.
+    In the inclusive region studied here, neglecting $s$-channel, non-factorisable corrections, and EW corrections can lead to discrepancies of up to $30\%$ with respect to the full computation.
     Nevertheless, the VBS approximation at NLO provides a good approximation of full calculations in the kinematic region where VBS contributions are dominant ($m_{\Pj\Pj} \gtrsim 500 \GeV$, $|\Delta y_{\Pj\Pj}| \gtrsim 2.5$), for both total cross section and differential distributions.
-    This more exclusive region is studied in more details in the next section.
+    This more exclusive region is studied in more detail in the next section.
     %
     \subsection{Comparison in the fiducial region}
     \label{sec:fidNLO}
     In Tab.~\ref{tab:wg1_NLOrates}, the cross sections of the various tools at NLO-QCD accuracy are presented.
-    The order considered is again the order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$ and the fiducial volume is the one described in Sec.~\ref{subsec:inputpar}.
+    The order considered is again the order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$, and the fiducial volume is the one described in Sec.~\ref{subsec:inputpar}.
     In contrast with Tab.~\ref{tab:wg1_LOrates}, the NLO predictions differ visibly according to the approximations used.
 
-    \begin{table}[h!]
+    \begin{table}
         \centering
         \begin{tabular}{c|r@{ $\pm$ }l}
           Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
@@ -1109,7 +1107,7 @@ output
         \end{tabular}
         \caption{\label{tab:wg1_NLOrates} Cross sections at NLO accuracy and order $\mathcal{O}(\alphas\alpha^6)$.
         The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
-        The uncertainties shown refes to estimated statistical errors of the Monte Carlo integrations.}
+        The uncertainties shown refer to estimated statistical errors of the Monte Carlo integrations.}
     \end{table}
 
     The first observation is that the predictions featuring two versions
@@ -1129,7 +1127,7 @@ output
     The second observation is that the inclusion of $s$-channel
     contributions seems to have a significant impact.  Indeed, their
     inclusion (as done in {\sc VBFNLO}) approximates the full computation
-    by less than a per cent ($0.7\%$). The main contribution due to 
+    by a per cent. The main contribution due to 
     the $s$-channel diagrams thereby consists of real-emission
     contributions, where one of the two leading jets is formed by one
     quark, or possibly also both quarks, originating from the W-boson decay,
@@ -1138,9 +1136,9 @@ output
     become on-shell and hence yield larger contributions than at LO, where
     the invariant mass cut on the two jets forces the boson into the far
     off-shell region.
-    However, the agreement between {\sc MoCaNLO+Recola} and {\sc VBFNLO} is mostly accidental, as the inclusion of interference effect and some non-factorisable corrections (in the real corrections) in {\sc MG5\_aMC} brings the prediction down and closer to the VBS approximation.
-    Not unexpectedly none of the approximations used here agree perfectly with the full calculation of {\sc MoCaNLO\-+Recola} at NLO.
-    Nevertheless, the disagreement seems to never exceed $2\%$ at the fiducial cross section level.
+    However, the agreement between {\sc MoCaNLO+Recola} and {\sc VBFNLO} is mostly accidental, as the inclusion of interference effects and some non-factorisable corrections (in the real corrections) in {\sc MG5\_aMC} brings the prediction down and closer to the VBS approximation.
+    Not unexpectedly none of the approximations used here agrees perfectly with the full calculation of {\sc MoCaNLO\-+Recola} at NLO.
+    Nevertheless, the disagreement seems to never exceed $2\%$ at the fiducial cross-section level.
 
     In Figs.~\ref{fig:distNLO1}--\ref{fig:distNLO3}, several differential distributions are shown.
     All these predictions are performed at NLO accuracy at the order $\mathcal{O}(\alphas\alpha^6)$.
@@ -1149,22 +1147,22 @@ output
 
     We start with Fig.~\ref{fig:distNLO1} which displays the invariant mass (left) and the rapidity separation (right) of the two tagging jets.
     For high invariant mass, all predictions agree rather well.
-    On the other hand, for low invariant mass, the hierarchy present at the level of the cross section is here reproduced.
+    On the other hand, for low invariant mass, the hierarchy present at the level of the cross section is reproduced.
     The VBS-approximated predictions ({\sc Bonsay} and {\sc Powheg-Box}) are lower than the full calculation ({\sc MoCaNLO}+{\sc Recola}).
     The full calculation is rather well approximated by the hybrid VBS approximation implemented in {\sc MG5\_aMC}.
     Finally, {\sc VBFNLO} which includes also $s$-channel contributions provides larger predictions at low invariant mass.
     For the rapidity difference between the two tagging jets, the hierarchy between the predictions is rather similar.
     Therefore, depending on the approximation used, it can vary by $\pm7\%$ and $\pm4\%$ with respect to the full computation at low invariant mass and low rapidity difference for the tagging jets, respectively
 
-     \begin{figure*}[hbt!]
+     \begin{figure*}
        \centering
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/mjj_NLO.pdf}
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/dyj1j2_NLO.pdf}
     \caption{\label{fig:distNLO1} Differential distributions in the invariant mass (left) and rapidity difference of the two tagging jets (right).
     The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
-    The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full prediction.
+    The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
     The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
     }
     \end{figure*}
@@ -1179,15 +1177,15 @@ output
     Concerning the rapidity of the hardest jet, {\sc VBFNLO} is in good agreement with {\sc MoCaNLO}+{\sc Recola} in the rapidity range $|y_{j_1}| < 3$.
     For larger rapidity, the other codes constitute a better description of the full process at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
 
-     \begin{figure*}[hbt!]
+     \begin{figure*}
        \centering
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/ptj1_NLO.pdf}
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/yj1_NLO.pdf}
     \caption{\label{fig:distNLO2} Differential distributions in the transverse momentum (left) and rapidity of the hardest jet (right).
     The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
-    The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full prediction.
+    The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
     The predictions are obtained in the fiducial region described in Sec.~\ref{subsec:inputpar}.
     }
     \end{figure*}
@@ -1198,15 +1196,15 @@ output
     The predictions of {\sc MoCaNLO}+{\sc Recola} and {\sc VBFNLO} are in rather good agreement for both distributions for the kinematic range displayed here.
     The other three VBS approximations are close to each other within few per cent.
 
-     \begin{figure*}[hbt!]
+     \begin{figure*}
        \centering
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/mll_NLO.pdf}
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/zmu_NLO.pdf}
     \caption{\label{fig:distNLO3} Differential distributions in the invariant mass of the two charged leptons (left) and Zeppenfeld variable for the muon (right).
     The LHC process considered is ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ at NLO accuracy at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full predictions.
-    The band corresponds to a seven-points scale variation of the renormalisation and factorisation scale.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full prediction.
+    The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
     The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
     }
     \end{figure*}
@@ -1216,7 +1214,7 @@ output
 
     The contributions from the $s$-channel amplitude can be sizeable especially at low invariant mass for the two tagging jets (comparing the predictions of {\sc VBFNLO} against the ones of {\sc Bonsay} and {\sc Powheg}).
     This can be explained by the fact that $s$-channel contributions are less suppressed at NLO.
-    In the real, an extra gluon-jet can be radiated from any of the charged particles while the two quarks originating from the W-boson decay can be recombined in a single jet.
+    As real radiation, an extra gluon-jet can be radiated from any of the charged particles while the two quarks originating from the W-boson decay can be recombined in a single jet.
     Therefore, the jet requirements ($ m_{\Pj \Pj} >  500\GeV$ and $|\Delta y_{\Pj \Pj}| > 2.5$) that were suppressing $s$-channel contributions at LO are partially lifted with the inclusion of a third jet at NLO.
     Such an effect has also been observed for top--antitop production in the lepton+jet channel at NLO QCD \cite{Denner:2017kzu}.
 
@@ -1231,40 +1229,40 @@ output
 \section{Matching to parton shower}
     \label{sec:matching}
 We now discuss how different predictions compare when the matching to parton shower is included. For such
-a comparison we expect larger discrepancy than what we found at fixed-order, as a consequence of the different
-matching schemes, parton shower employed, and of other details of the matching (such as the choice of the parton shower initial scale). Among
+a comparison we expect larger discrepancies than what we found at fixed order, as a consequence of the different
+matching schemes, parton showers employed, and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
 restrict ourselves to show results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
 also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
-{\sc MG5\_aMC}, which
-employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, will be used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
-and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the default angular-ordered shower will be employed. 
-The same parton showers will be employed for the LO results of {\sc PHANTOM} and {\sc Pythia8} will also be employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
+{\sc MG5\_aMC}, which employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, is used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
+and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the default angular-ordered shower is employed. 
+The same parton showers are employed for the LO results of {\sc PHANTOM}.
+{\sc Pythia8} is also employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
 interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbox} module makes it
 possible to choose between {\sc MC\-@NLO}-like and {\sc Powheg}-like
 matching. As parton show\-er, both the default angular-ordered shower as
-well as the dipole shower can be employed. We here use the subtractive (MC@NLO-type) matching to these parton show\-er algorithms.
+well as the dipole shower can be employed. We here use the subtractive (MC@NLO-type) matching to these parton-show\-er algorithms.
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected. Multiple-parton interactions are disabled.
 
-Results will be presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
+Results are presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
 are obtained by clustering stable hadrons, and not QCD partons). It follows that at the event-generation level, looser cuts (or even no cuts at all)
 must be employed in order not to bias the results. This also implies that the tagging jets, whose momenta enter in the 
 renormalisation and factorisation scales, Eq.~(\ref{eq:defscale}), are now defined without imposing
 the $\Delta R_{\Pj\Pl}$ cut. The effect of this change is below one per cent at the level of the fiducial cross sections.
 
-Compared to the fixed order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
+Compared to the fixed-order computations, a slightly different set-up has been employed for {\sc MG5\_aMC} in order to simplify the calculation: instead of generating the full
 ${\rm p}{\rm p}\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}{\rm j}{\rm j}$ process, since it is dominated by doubly-resonant contribution, the
 events are produced for the process with two stable ${\rm W}^+$-bosons (${\rm p}{\rm p}\to{\rm W^+}{\rm W^+}{\rm j}{\rm j}$), and the decay of these ${\rm W}^+$-bosons
 is simulated with {\sc MadSpin}~\cite{Artoisenet:2012st} (ensuring spin correlations) before the PS. Since {\sc MadSpin}\ computes
 the partial and total decay widths of the W bosons at LO accuracy only, while in Section~\ref{subsec:inputpar} the NLO width is employed,
 an effect ($6\%$) on the normalisation is induced. 
 
-\begin{table}[h!]
+\begin{table}
     \centering
     \begin{tabular}{c|l@{ $\pm$ }l}
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
@@ -1280,11 +1278,11 @@ an effect ($6\%$) on the normalisation is induced.
     \end{tabular}
     \caption{\label{tab:PSratesLO} Cross sections at LO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
-    are rescaled to account for the effect related to the boson widths computed by {\sc MadSpin} (see the text for details).
-    The uncertainties shown refers to estimated statistical error of the Monte Carlo integrations.}
+    are rescaled to account for the effect related to the W-boson width computed by {\sc MadSpin} (see the text for details).
+    The uncertainties shown refer to estimated statistical errors of the Monte Carlo integrations.}
 \end{table}
 
-\begin{table}[h!]
+\begin{table}
     \centering
     \begin{tabular}{c|l@{ $\pm$ }l}
       Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
@@ -1299,10 +1297,10 @@ an effect ($6\%$) on the normalisation is induced.
     \end{tabular}
     \caption{\label{tab:PSratesNLO} Cross sections at NLO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
-    are rescaled to account for the effect related to the boson widths computed by {\sc MadSpin} (see the text for details). For
+    are rescaled to account for the effect related to the W-boson width computed by {\sc MadSpin} (see the text for details). For
     {\sc VBFNLO}+{\sc Herwig7-Dipole}, the three-point scale uncertainties are shown, while for  {\sc MG5\_aMC}+{\sc Pythia8} the two displayed uncertainties
 are respectively the nine-point scale uncertainty and the PDF one.
-The uncertainties shown refers to estimated statistical error of the Monte Carlo integrations.}
+The uncertainties shown refer to estimated statistical errors of the Monte Carlo integrations.}
 \end{table}
 
 We now present the results of predictions matched to parton showers.
@@ -1318,10 +1316,10 @@ scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nin
 For the latter, we show the
 three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
-account, total rates from different tools agree within some per cents ($\le7\%$), both at LO and NLO. Larger discrepancies, however, will appear for differential observables, which we are going to discuss in
+account, total rates from different tools agree within some per cents ($\le7\%$), both at LO and NLO. Larger discrepancies, however, appear for differential observables, which we discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
 independent or correlated variations of the renormalisation and factorisation scales.
-Concerning differential distributions, for each observable we will display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
+Concerning differential distributions, for each observable we display results in two plots, shown side-by-side. In the plot on the left (right), (N)LO+PS predictions are shown
 with different colours in the main frame. In the inset, these predictions are compared in both cases with a fixed-order prediction at NLO accuracy (obtained with
 {\sc VBFNLO}, \emph{i.e.}\ the VBS approximation with $s$-channel).
 For the differential observables, the {\sc MG5\_aMC} predictions are \emph{not} rescaled to compensate for the width effect mentioned above. As for the table, we show theoretical uncertainties for the NLO+PS samples
@@ -1333,8 +1331,8 @@ The first observable we investigate is the exclusive jet multiplicity, shown in 
 main effects are driven by the parton shower that is employed ({\sc Herwig7} or {\sc Pythia8}), with the clear tendency of producing more radiation for the latter,
 leading to higher jet multiplicities. Differences among tools that employ the same parton shower are typically smaller, and can be traced back to different values of the
 initial scale of the parton shower (the {\tt scalup} entry of the Les Houches Event (LHE) file \cite{Alwall:2006yp,Butterworth:2010ym}). This event-by-event number corresponds
-to the maximum hardness (translated into the shower evolution variable) of the radiation that
-can be generated by the shower. \footnote{At LO, the choice of such a scale is arbitrary and usually driven by common sense,
+to the maximum hardness (translated into the shower-evolution variable) of the radiation that
+can be generated by the shower.\footnote{At LO, the choice of such a scale is arbitrary and usually driven by common sense,
 as it is the case for the factorisation and renormalisation scales.
     At NLO, one has the freedom to change the shower scale without losing formal NLO accuracy within the {\sc MC@NLO} matching,
     provided the Monte Carlo counterterms are also consistently
@@ -1348,10 +1346,10 @@ prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emiss
 interplay between the real-emission matrix element and the shower emission. For this observable we also show the prediction obtained
 with {\sc MG5\_aMC+Pythia8} by reducing the shower-starting scale by a factor 2 with respect to the default value, dubbed 
 {\sc MG5\_aMC+Py8, $Q_{sh}/2$}.\footnote{The reduction of the shower scale for {\sc MG5\_aMC+Herwig7} gives no visible effect on any of the observables 
-discussed in this work.} The main effect of reducing the shower scale is that events migrate from the three-jet bin into the two-jet bin, i.e. less radiation is generated. The
+discussed in this work.} The main effect of reducing the shower scale is that events migrate from the three-jet bin into the two-jet bin, \emph{i.e.}\ less radiation is generated. The
 amount of this effect on the jet rate is +4\% (-8\%) on the two (three) jet bin, while the total rate within cuts is left unchanged.  
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/jetsexclusive.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/jetsexclusive.pdf}
@@ -1364,7 +1362,7 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{fig:PSnjet}
 \end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/m_jj.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/m_jj.pdf}
@@ -1381,8 +1379,8 @@ The next observable that we study is the invariant mass of the two tagging jets,
 the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the $6\%$ width effect for {\sc MG5\_aMC}).
 The LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
-about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element. For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is 
-negligible, hence the corresponding histogram will not be shown.
+about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
+For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is negligible, hence the corresponding histogram is not be shown.
 
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities to the invariant-mass distribution.
 At LO+PS all predictions show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
@@ -1431,12 +1429,12 @@ is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc 
 In conclusion, the comparison of tools including matching to parton shower clearly shows the benefits of the inclusion of NLO corrections: for most observables described
 effectively at NLO accuracy differences between tools are at (or below) the $10\%$ level.
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
-on the one hand clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in detail the way QCD radiation is
+clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in detail the way QCD radiation is
 generated, \emph{e.g.}\ when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}). It is a remarkable fact that, even for those observables that display small discrepancies,
-the theoretical uncertainty obtained via scale variations (renormalization, factorization and show\-er scale) 
+the theoretical uncertainty obtained via scale variations (renormalisation, factorisation and show\-er scale) 
 systematically underestimates the spread of predictions. We note 
-that in the only VBF process where NNLO corrections are known, i.e. VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
-the NLO scale-uncertainty band does not include the NNLO prediction. This suggest that the NLO scale variation 
+that in the only VBF process where NNLO corrections are known, \emph{i.e.}\ VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
+the NLO scale-uncertainty band does not include the NNLO prediction. This suggests that the NLO scale variation 
 underestimates the size of the perturbative uncertainty. Again, this stresses the need
  to employ at least two different tools in order to obtain a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimate of the theory
@@ -1444,10 +1442,10 @@ uncertainties. On the one hand, in order to improve the
 description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern
 automated tools, is certainly desirable.
 On the other hand, measurements of processes with similar
-color flow (EW production of a single vector boson plus jets,
+colour flow (EW production of a single vector boson plus jets,
 VBF, \ldots) can certainly help in order to discriminate which tools perform better in the comparison with data~\cite{Aaboud:2017emo,Sirunyan:2017jej}.
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/Deltay_jj.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/Deltay_jj.pdf}
@@ -1460,7 +1458,7 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{fig:PSdyjj}
 \end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/pT_j1.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j1.pdf}
@@ -1473,7 +1471,7 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{fig:PSpt1}
 \end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/pT_j2.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/pT_j2.pdf}
@@ -1486,7 +1484,7 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{fig:PSpt2}
 \end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/y_j2.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/y_j2.pdf}
@@ -1499,7 +1497,7 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{fig:PSy2}
 \end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure*}
 \centering
 \includegraphics[width=0.47\textwidth]{figures/LOPS/z_j3.pdf}
 \includegraphics[width=0.47\textwidth]{figures/NLOPS/z_j3.pdf}
@@ -1517,12 +1515,12 @@ from predictions matched to parton showers, at LO (left) or NLO (right) accuracy
 \label{sec:conclusion}
 
 In the present article, a detailed study of the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$ at the LHC has been presented, 
-mainly focused on the electroweak production mechanism which involves the scattering of massive vector-bosons.
+mainly focused on the EW production mechanism which involves the scattering of massive vector bosons.
 Until very recently, when the complete calculation became available for the NLO QCD corrections (order $\mathcal O (\alphas\alpha^6)$),
 the so-called VBS approximation was the standard for this kind of simulations. For this reason, various theoretical predictions 
-have been compared to the full computation, both in a typical VBS fiducial region and also in more inclusive phase-space.
+have been compared to the full computation, both in a typical VBS fiducial region and also in more inclusive phase space.
 We have precisely quantified the differences that arise for several physical observables, 
-in particular for the di-jet invariant mass and the rapidity-separation of the leading two jets.
+in particular for the di-jet invariant mass and the rapidity separation of the leading two jets.
 This is the first time that such an in-depth study is performed.
 Besides the study of fixed-order predictions, we have also investigated the impact of parton showering.
 To that end, several LO and NLO event generators 
@@ -1531,7 +1529,7 @@ While in general observables which are described at NLO accuracy show reasonable
 appear for those observables described at a lower accuracy, such as those that involve the third jet.
 In particular such differences are quite prominent in the central-rapidity region, and are the largest for those simulations which employ {\sc Pythia8}.
 The effect
-has been understood, and it can be partially mitigated by changing the recoil scheme of {\sc Pythia8} to distribute momenta within initial-final colour connections. These findings make it worth 
+has been understood, and it can be partially mitigated by changing the recoil scheme of {\sc Pythia8} to distribute momenta within initial--final colour connections. These findings make it worth 
 to further investigate these issues not only in the theoretical community, but also by experimental collaborations, for example by 
 measuring related observables for similar processes.
 
@@ -1540,34 +1538,35 @@ The last part of our work is devoted to
 \begin{itemize}
     \item As found in Ref.~\cite{Biedermann:2017bss}, the NLO EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ are 
         the dominant NLO contribution to the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
-        It is thus highly desirable to combine them with NLO-QCD predictions matched with parton shower, or at least that they are accounted for
-        by experimental analyses. Since, as shown in Ref.~\cite{Biedermann:2016yds}, 
+        It is thus highly desirable to combine them with NLO-QCD predictions matched with parton shower, or at least to include them into experimental analyses. 
+        Since, as shown in Ref.~\cite{Biedermann:2016yds}, 
         these large EW corrections originate from the Sudakov logarithms which factorise, we recommend to combine them with QCD 
         corrections in a multiplicative way. The estimate of missing higher-order EW corrections can be done, 
-        in a first approximation, by considering $\pm \delta^2_{\rm NLO EW}$,\footnote{The quantity $\delta_{\rm NLO EW}$ through the relation $\sigma_{\rm NLO EW} = \sigma_{\rm LO} \left(1+ \delta_{\rm NLO EW}\right).$} while the missing higher-order mixed QCD-EW corrections 
+        in a first approximation, by considering $\pm \delta^2_{\rm NLO EW}$,\footnote{The quantity $\delta_{\rm NLO EW}$ is defined through the relation $\sigma_{\rm NLO EW} = \sigma_{\rm LO} \left(1+ \delta_{\rm NLO EW}\right).$} while the missing higher-order mixed QCD-EW corrections 
         can be estimated by taking the difference between the multiplicative and additive prescriptions.
         For more detailed studies of the combination of QCD and EW higher-order corrections, see
         \emph{e.g.}\, Ref.~\cite{Czakon:2017wor} in the context of top-pair production, or Ref.~\cite{Lindert:2017olm} for SM 
         backgrounds for dark matter searches at the LHC.
+        
     \item For the typical fiducial region used by experimental collaborations for their measurements, 
-        the agreement between the approximations and the full calculation is certainly satisfactory given 
+        the agreement between the approximations and the full calculation is satisfactory given 
         the current experimental precision, as well as the one foreseen for the near future \cite{CMSCollaboration:2015zni,CMS:2016rcn}.
         Nonetheless, care has to be taken when using such approximations, in particular if more inclusive phase-space cuts are used.
 
     \item In addition to the standard interpretation of EW signal versus QCD background, 
         combined measurements should also be presented as they are better defined theoretically. In fact, while at LO 
-        the interference term can be included in the background component, at NLO the separation of EW and QCD components become more blurred, as, \emph{e.g.}\,
+        the interference term can be included in the background component, at NLO the separation of EW and QCD components becomes more blurred, as, \emph{e.g.}\,
         at the order $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ both types of amplitudes contribute.
         Therefore, a combined measurement including the EW, QCD, and interference contributions is desirable.
         Note that with such a measurement a comparison to the SM would
-        be straigtforward and still be sensitive to the EW component.
+        be straightforward and still be sensitive to the EW component.
         In addition the QCD component could be subtracted based on a
-        well-defined Monte-Carlo prediction.
+        well-defined Monte Carlo prediction.
 
-    \item Since the inclusion of NLO QCD corrections gives a better control of extra QCD radiations and reduces the ambiguities related to the 
-        matching details and/ or the parton shower employed, we encourage the use of NLO-accurate event generators in experimental analyses. In doing
+    \item Since the inclusion of NLO QCD corrections gives a better control of extra QCD radiation and reduces the ambiguities related to the 
+        matching details and/or the parton shower employed, we encourage the use of NLO-accurate event generators in experimental analyses. In doing
         so, special care should be employed in order to estimate the theoretical uncertainties, as the standard prescription based on 
-        renormalisation and factorisation-scale variation is clearly inadequate. Rather, different generators and/ or parton showers should be employed.
+        renormalisation and factorisation-scale variation is clearly inadequate. Rather, different generators and/or parton showers should be employed.
 
     \item The present study has focused on the orders $\mathcal{O}{\left(\alpha^{6}\right)}$ at 
     LO and $\mathcal{O}{\left(\alphas\alpha^{6}\right)}$ at NLO. NLO computations and publicly-available tools also exist for the QCD-induced process~\cite{Rauch:2016pai,Melia:2010bm,Melia:2011gk,Campanario:2013gea,Baglio:2014uba,Biedermann:2017bss,Alwall:2014hca}.

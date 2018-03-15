@@ -23,7 +23,8 @@
  \usepackage{morefloats}
  \usepackage[utf8]{inputenc}
  \usepackage{hyphenat}
-\hyphenation{quan-ti-ta-tive-ly fer-mi-on fer-mi-ons non-fac-toris-able fac-toris-able}
+\hyphenation{quan-ti-ta-tive-ly fer-mi-on fer-mi-ons non-fac-toris-able fac-toris-able in-ter-act-ing fac-torise VBF-NLO show-er Mad-Graph}
+
 
 %\setlength{\evensidemargin}{0cm}
 %\setlength{\oddsidemargin}{0cm}
@@ -619,9 +620,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     In particular one can consider only one-loop amplitudes where there is no gluon exchange between the two quark lines and 
     assuming a cancellation of the infrared (IR) poles.
 
-    When considering the NLO corrections of order
-    $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$
-    to the full process, besides real and virtual QCD corrections
+    When considering the NLO corrections of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$ to the full process, besides real and virtual QCD corrections
     to the EW tree-level contribution of order
     $\mathcal{O}{\left(\alpha^{6}\right)}$
     also real and virtual EW corrections to the LO interference
@@ -657,16 +656,16 @@ Hence, combined measurements which are better theoretically defined should be pr
             at negligible additional CPU cost~\cite{Frederix:2011ss}.\\
             The simulation of VBS at NLO-QCD accuracy can be performed by issuing the following commands in the program interface:
     \begin{verbatim}
-    > set complex_mass_scheme
-    > import model loop_qcd_qed_sm_Gmu
-    > generate p p > e+ ve mu+ vm j j QCD=0 [QCD]
-    > output
+set complex_mass_scheme
+import model loop_qcd_qed_sm_Gmu
+generate p p > e+ ve mu+ vm j j QCD=0 [QCD]
+output
     \end{verbatim}
       With these commands the complex-mass scheme is turned on, then the NLO-capable model is loaded\footnote{Despite
                 the {\tt loop\_qcd\_qed\_sm\_Gmu} model also includes NLO counterterms for computing EW corrections, it is not yet possible to compute such corrections
             with the current public version of the code.}, finally the process code is generated (note the {\tt QCD=0} syntax to select the purely-EW process)
             and written to disk. No approximation is performed for the Born and real-emission matrix elements. 
-            Only strongly-interacting particles circulating in the loops are generated for the virtual matrix element.
+            Only strongly-in\-ter\-act\-ing particles circulating in the loops are generated for the virtual matrix element.
             The version capable of computing both QCD and EW corrections will be released in the future.
             Such an approximation is equivalent to the assumption that the finite part of
             those loops which feature EW bosons is zero. In practice, since a part of the contribution to the single pole is also missing, the internal 
@@ -727,7 +726,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     In particular, it is specified whether
     \begin{itemize}
         \item all $s$- and $t/u$-channel diagrams are included;
-        \item interferences between diagrams of different types ($s/t/u$-channel) are included at LO;
+        \item interferences between diagrams of different types ($s$/$t$/$u$-channel) are included at LO;
         \item diagrams which do not feature two resonant vector bosons are included;
         \item the so-called non-factoris\-able (NF) QCD corrections, \emph{i.e.}\ the corrections where (real or virtual) gluons are exchanged between different quark lines,
             are included;
@@ -1246,8 +1245,8 @@ for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
 interface~\cite{Binoth:2010xt,Alioli:2013nda,Andersen:2014efa}. The {\sc Matchbox} module makes it
 possible to choose between {\sc MC\-@NLO}-like and {\sc Powheg}-like
-matching. As parton shower, both the default angular-ordered shower as
-well as the dipole shower can be employed. We here use the subtractive (MC@NLO-type) matching to these parton-shower algorithms.
+matching. As parton show\-er, both the default angular-ordered shower as
+well as the dipole shower can be employed. We here use the subtractive (MC@NLO-type) matching to these parton-show\-er algorithms.
 Whenever {\sc Pythia8}\ is used, the Monash tune~\cite{Skands:2014pea} is selected. Multiple-parton interactions are disabled.
 
 Results are presented within the cuts described in Sec.~\ref{subsec:inputpar}, applied after shower and hadronisation (this implies that jets
@@ -1432,7 +1431,7 @@ effectively at NLO accuracy differences between tools are at (or below) the $10\
 Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which
 clearly suggest not to rely on a single tool/parton shower, and on the other make it worth to investigate more in detail the way QCD radiation is
 generated, \emph{e.g.}\ when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}). It is a remarkable fact that, even for those observables that display small discrepancies,
-the theoretical uncertainty obtained via scale variations (renormalisation, factorisation and shower scale) 
+the theoretical uncertainty obtained via scale variations (renormalisation, factorisation and show\-er scale) 
 systematically underestimates the spread of predictions. We note 
 that in the only VBF process where NNLO corrections are known, \emph{i.e.}\ VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
 the NLO scale-uncertainty band does not include the NNLO prediction. This suggests that the NLO scale variation 
@@ -1584,7 +1583,7 @@ The last part of our work is devoted to
 The authors are grateful to the members of the VBSCan collaboration for several discussions and comments to this work. The author also thank
 the {\sc Pythia8} developers, in particular Stefan Prestel, Torbjorn Sjostrand, and Peter Skands for 
 discussions and clarifications about the third-jet rapidity spectrum. MZ would like to talk Andreas Papaefstathiou, Christian Reuschle and David Grellscheid 
-for their help with {\sc Herwig7}. RF, HSS, and MZ thank the {\sc MadGraph5\_aMC@NLO} authors for discussions, and
+for their help with {\sc Herwig7}. RF, HSS, and MZ thank the {\sc MadGraph5\_\-aMC@NLO} authors for discussions, and
 they are particularly grateful to Valentin Hirschi for comments to this manuscript.
 
 The authors would like to acknowledge the contribution of the COST Action CA16108 which initiated this work.
