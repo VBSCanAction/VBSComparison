@@ -610,7 +610,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     The approximations performed at LO can be extended when NLO QCD corrections to the order $\mathcal{O}{\left(\alpha^{6}\right)}$ are computed.
     The VBS approximation can be extended at NLO in a straightforward manner for what concerns the virtual contributions.
     For the real-emission contributions special care must be taken for the gluon-initiated processes.
-    The initial-state gluon and quark 
+    The initial-state gluon and initial-state quark 
         must not couple together, otherwise infrared (IR) divergences proportional to $s$-channels appear, 
          which do not match with the ones found in the virtual contributions.
          The subset of diagrams where all couplings of the initial state gluon to initial state quark are neglected forms a gauge-invariant subset, with the same argument presented above.
@@ -926,7 +926,7 @@ output
     \subsection{Comparison in the fiducial region}
     In Tab.~\ref{tab:wg1_LOrates}, we report the total rates at LO accuracy at order $\mathcal O (\alpha^6)$ obtained in the fiducial region 
     described in Sec.~\ref{subsec:inputpar}. We note that several full predictions are not in statistical agreement. These are possibly due to Monte Carlo 
-    integrators performing too aggressive estimations of statistical uncertainties or different implementation of the complex-mss scheme.
+    integrators performing too aggressive estimations of statistical uncertainties or different implementation of the complex-mass scheme.
     Nonetheless, all these predictions agree within less than $0.5\%$.
     At the level of the cross section, it seems difficult to infer the quality of the various approximations.
     This simply means that the details of the various VBS approximations have an impact not larger than $0.5\%$ at 
@@ -967,7 +967,7 @@ output
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.3cm 2cm 0.cm 1.cm}]{figures/LO/dyj1j2_LO.pdf}
     \caption{\label{fig:wg1_mjj-llLO} Differential distributions in the invariant mass (left) and rapidity difference of the two tagging jets (right) at LO accuracy \emph{i.e.}\ at order $\mathcal{O}(\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
-    The upper plots provides the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
+    The upper plots provides the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provide the full prediction.
     The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
     The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.}
     \end{figure*}
@@ -1020,7 +1020,7 @@ output
     {\includegraphics[scale=0.35]{figures/scanfigures/dyjj_nlo.pdf}}
     \caption{
     Differential distributions in the di-jet invariant mass (left) and the rapidity separation (right) of the two tagging jets at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provide the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_1}
     \end{figure*}
@@ -1057,7 +1057,7 @@ output
     {\includegraphics[scale=0.35]{figures/scanfigures/ptj1_nlo.pdf}}
     {\includegraphics[scale=0.35]{figures/scanfigures/yj1_nlo.pdf}}
     \caption{Differential distributions in the transverse momentum (left) and rapidity (right) of the hardest tagging jet at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
+    The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provide the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_2}
     \end{figure*}
@@ -1076,7 +1076,7 @@ output
     {\includegraphics[scale=0.35]{figures/scanfigures/mll_nlo.pdf}}
     {\includegraphics[scale=0.35]{figures/scanfigures/zel_nlo.pdf}}
     \caption{Differential distributions in the lepton-lepton invariant mass (left) and the electron Zeppenfeld variable (right) at NLO QCD \emph{i.e.}\ at order $\mathcal{O}(\alphas\alpha^6)$ for the full computation and two approximations.
-    The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provides the full prediction.
+    The upper plots provide the absolute value for each prediction while the lower plots presents all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is one of the programs that provide the full prediction.
     In addition to the cuts of Sec.~\protect\ref{subsec:inputpar}, the VBS cuts take the values $m_{\Pj\Pj}>200 \GeV$ and $|\Delta y_{\Pj\Pj}|>2$.} 
     \label{fig:mjjdyjj_1d_3}
     \end{figure*}
@@ -1341,7 +1341,8 @@ as it is the case for the factorisation and renormalisation scales.
 updated. In the {\sc Powheg} matching, the shower scale of the so-called $\tilde B$ events is fixed to the transverse momentum of the radiation
 generated according the {\sc Powheg} Sudakov factor, while it can be changed in the remnants events.}
 The main effect of NLO corrections for this (rather inclusive) observable is to stabilise the predictions for the two-jet bin, where discrepancies
-among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy\MP{Here only MG has the full ME and we have argued that the s-channel contribution can be large in the real. A comment might be in order.}, differences among tools remain large: the largest rate is predicted by
+among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large, and are
+possibly related to the underlying approximation performed, in particular the inclusion of the $s$-channel contributions: the largest rate is predicted by
 {\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
 is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
 prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
