@@ -552,10 +552,9 @@ in addition to genuine VBS contributions (left diagram), it also features $s$-ch
 (center diagram) or from
 triple-boson production (right diagram).
 Note that $s$-, $t$-, and $u$-channel contributions are defined according to the quark lines.
-$s$-channel denotes all Feynman diagrams where the two initial-state partons are connected by a continuous fermion line.
-$u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical quarks or anti-quarks in the final state
+The $s$-channel denotes all Feynman diagrams where the two initial-state partons are connected by a continuous fermion line, while for the $t$- and $u$-channel the fermion lines connect initial state quarks to final state quarks.
+The $u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical (anti-)quarks in the final state
 The $s$-channel contributions plays a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
-
 When using approximations, care must be taken that only gauge-invariant subsets are considered to obtain physically meaningful results.
 We discuss the commonly-used possible choices in detail in the next section.
 
@@ -564,7 +563,7 @@ radiated off the quark lines. Because of the different colour structure, this co
 different kinematic behaviour than VBS. Nonetheless they share the same final state, and this class of contributions therefore constitutes an irreducible background to the genuine VBS signal.
 
 Finally, the third contribution is the interference of the two types of amplitudes described above.
-It is non-zero only for those partonic subprocesses which involve identical quarks or antiquarks.
+It is non-zero only for those partonic subprocesses which involve identical quarks or anti-quarks.
 Such a contribution is typically small (3\%) within typical experimental cuts~\cite{Biedermann:2017bss}.
 
 In experimental measurements, special cuts, called VBS cuts, are designed to enhance the EW contribution over the QCD one and to suppress the interference.
@@ -620,7 +619,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     In particular one can consider only one-loop amplitudes where there is no gluon exchange between the two quark lines and 
     assuming a cancellation of the infrared (IR) poles.
 
-    When considering the NLO corrections of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$ to the full process, besides real and virtual QCD corrections
+    When considering the full NLO corrections of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$, besides real and virtual QCD corrections
     to the EW tree-level contribution of order
     $\mathcal{O}{\left(\alpha^{6}\right)}$
     also real and virtual EW corrections to the LO interference
@@ -641,7 +640,7 @@ Hence, combined measurements which are better theoretically defined should be pr
     Virtual matrix elements have been calculated using an in-house matrix-element generator.
     One-loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
     For the fiducial cross sections it uses the VBS approximation at LO and NLO.
-    The virtual corrections are additionally approximated using a double-pole approximation.
+    The virtual corrections are additionally approximated using a double-pole approximation where the final state leptons are assumed to originate from the decay of two resonant W-bosons.\MP{Specifiy what type of DPA by citation}
     For more inclusive cross sections at LO the exact matrix elements ($s$-channels, interferences) can also be used.
 
       \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} (henceforth {\sc MG5\_aMC}) is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
@@ -1190,7 +1189,7 @@ output
     }
     \end{figure*}
 
-    The last set of differential distributions is the invariant mass of the two charged lepton (left) and the Zeppenfeld variable for the anti-muon (right).
+    The last set of differential distributions is the invariant mass of the two charged leptons (left) and the Zeppenfeld variable for the anti-muon (right).
     Concerning the comparison of the predictions, both distributions display a rather similar behaviour.
     Indeed, the hierarchy mentioned previously is here respected and enhanced towards high invariant mass or high Zeppenfeld variable.
     The predictions of {\sc MoCaNLO}+{\sc Recola} and {\sc VBFNLO} are in rather good agreement for both distributions for the kinematic range displayed here.
@@ -1584,7 +1583,7 @@ The authors are grateful to the members of the VBSCan collaboration for several 
 the {\sc Pythia8} developers, in particular Stefan Prestel, Torbjorn Sjostrand, and Peter Skands for 
 discussions and clarifications about the third-jet rapidity spectrum. MZ would like to talk Andreas Papaefstathiou, Christian Reuschle and David Grellscheid 
 for their help with {\sc Herwig7}. RF, HSS, and MZ thank the {\sc MadGraph5\_\-aMC@NLO} authors for discussions, and
-they are particularly grateful to Valentin Hirschi for comments to this manuscript.
+they are particularly grateful to Valentin Hirschi for comments on this manuscript.
 
 The authors would like to acknowledge the contribution of the COST Action CA16108 which initiated this work.
 Moreover, this work was supported by several STSM Grants from the COST Action CA16108.
