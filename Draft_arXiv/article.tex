@@ -709,17 +709,13 @@ output
         automatically generated code.  Besides the SM, also a variety of
         new-physics models including anomalous couplings of the Higgs and gauge
         bosons can be simulated.
-
-      \item {\sc Whizard}~\cite{Moretti:2001zz,Kilian:2007gr} is a multi-purpose
-          event generator with the LO matrix element generator {\sc O'Mega}. \ZM{ if NLO results for this processes cannot be provided, we should skip what follows, or at least clarify the limitations}
-    It provides FKS subtraction terms for any NLO process, while virtual matrix
-    elements are provided externally by {\sc
-    OpenLoops}~\cite{Cascioli:2011va} (alternatively, {\sc Recola}~\cite{Actis:2012qn,Actis:2016mpe}
-    (\emph{cf.}\ above) can be used as well). {\sc Whizard} allows to simulate a
-    huge number of BSM models as well, in particular in
-    the VBS channels in terms of both higher-dimensional operators as well as explicit
-    resonances.
-
+        
+      \item WHIZARD~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
+      For QCD amplitudes it uses the colour flow formalism~\cite{Kilian:2012pz}.
+      For NLO QCD calculations~\cite{Nejad:2016bci}, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
+      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
+      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
+      
     \end{itemize}
 
     We conclude this section by summarising the characteristics of the various codes in Tab.~\ref{tab:wg1_codes}.
