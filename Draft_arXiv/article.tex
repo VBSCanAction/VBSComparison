@@ -446,10 +446,10 @@ The Netherlands\label{nikh}
   sizeable effects.  Afterwards, we turn to predictions
   matched to parton showers, at LO and NLO: we show that on the one
   hand, the inclusion of NLO QCD corrections leads to more stable
-  predictions, but on the other the details of the matching and of the
+  predictions, but on the other hand the details of the matching and of the
   parton-shower programs cause differences which are considerably
   larger than those observed at fixed order, even in the experimental
-  fiducial region.  We conclude with some recommendations for
+  fiducial region.  We conclude with recommendations for
   experimental studies of vector-boson scattering processes.\\[5mm]
 
   % preprint numbers here
@@ -552,17 +552,17 @@ in addition to genuine VBS contributions (left diagram), it also features $s$-ch
 triple-boson production (right diagram).
 Note that $s$-, $t$-, and $u$-channel contributions are defined according to the quark lines.
 The $s$-channel denotes all Feynman diagrams where the two initial-state partons are connected by a continuous fermion line, while for the $t$- and $u$-channel the fermion lines connect initial state quarks to final state quarks.
-The $u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical (anti-)quarks in the final state
+The $u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical (anti-)quarks in the final state.
 The $s$-channel contributions plays a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
 When using approximations, care must be taken that only gauge-invariant subsets are considered to obtain physically meaningful results.
 We discuss the commonly-used possible choices in detail in the next section.
 
-The second coupling combination corresponds to diagrams with a gluon connecting the two quark lines, and with the $\PW$ bosons 
+The second coupling combination of order $\mathcal{O}{\left(\alpha_{\rm s}^2\alpha^{4}\right)}$ corresponds to diagrams with a gluon connecting the two quark lines, and with the $\PW$ bosons 
 radiated off the quark lines. Because of the different colour structure, this contribution features a 
 different kinematic behaviour than VBS.
 Nonetheless it shares the same final state, and therefore constitutes an irreducible background to the EW process.
 
-Finally, the third contribution is the interference of the two types of amplitudes described above.
+Finally, the third contribution of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{5}\right)}$ is the interference of the two types of amplitudes described above.
 It is non-zero only for those partonic sub-processes which involve identical quarks or anti-quarks.
 Such a contribution is usually small ($3\%$) within typical experimental cuts~\cite{Biedermann:2017bss}.
 
@@ -908,7 +908,7 @@ output
     The low rapidity-difference region possesses remnants of the tri-bosons contribution that have a di-jet invariant mass around the $\PW$-boson mass.
     It is therefore expected that the $|t|^2 + |u|^2$ approximation fails in this region.
     The second plot, where the $|s|^2 + |t|^2 + |u|^2$ approximation is considered, displays a better behaviour in the previously mentioned region.
-    The full calculation is approximated at the level of $\pm5\%$ apart from the region where $|\Delta y_{\Pj\Pj}| < 2$.
+    The full calculation is approximated at the level of $\pm5\%$ everywhere apart in the region where $|\Delta y_{\Pj\Pj}| < 2$.
 
     \begin{figure*}
     \centering
@@ -1307,13 +1307,13 @@ The total rates within VBS cuts are displayed in Tables~\ref{tab:PSratesLO} and
 \ref{tab:PSratesNLO}, at LO and NLO
 accuracy respectively. For {\sc MG5\_aMC},
 the numbers with $\Gamma_{\rm resc}$ are rescaled to
-take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}-{\sc Dipole}, we also quote
+take into account the width effects described in the above paragraph. At NLO accuracy, for {\sc MG5\_aMC} + {\sc Pythia8} and {\sc VBFNLO}+{\sc Herwig7-Dipole}, we also quote
 theoretical uncertainties.
 For the former, we show both PDF and scale uncertainties,\footnote{A preliminary study on PDF uncertainties in VBS has appeared
 in Ref.~\cite{Dittmaier:2018zzz}.} obtained via exact reweighting~\cite{Frederix:2011ss} by varying independently the renormalisation and factorisation
 scales by a factor of two around the central value, Eq.~(\ref{eq:defscale}) (nine-point variations).
 For the latter, we show the
-three-point scale uncertainties, obtained by considering correlated variations of the renormalisation and factorisation scales. Theory uncertainties should have very little dependence on the tool employed.
+three-point scale uncertainties, obtained by considering correlated variations of the renormalisation, factorisation, and shower starting scale. Theory uncertainties should have very little dependence on the tool employed.
 We observe that, once the width effect is taken into
 account, total rates from different tools agree within some per cents ($\le7\%$), both at LO and NLO. Larger discrepancies, however, appear for differential observables, which we discuss in
 the following. Theory uncertainties on the total rates are very small, regardless of whether scale variations are estimated with 
@@ -1379,8 +1379,8 @@ The next observable that we study is the invariant mass of the two tagging jets,
 the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the $6\%$ width effect for {\sc MG5\_aMC}).
 The LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
-about -30\% at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
-For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is negligible, hence the corresponding histogram is not shown.
+about $-30\%$ at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
+For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is negligible, hence it is not shown.
 
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities with the invariant-mass distribution.
 At LO+PS all predictions show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
@@ -1436,7 +1436,7 @@ systematically underestimates the spread of predictions. We note
 that in the only VBF process where NNLO corrections are known, \emph{i.e.}\ VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
 the NLO scale-uncertainty band does not include the NNLO prediction. This suggests that the NLO scale variation 
 underestimates the size of the perturbative uncertainty. Again, this stresses the need
- to employ at least two different tools in order to obtain a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggest that
+ to employ at least two different tools in order to obtain a conservative estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggests that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimates of the theory
 uncertainties. On the one hand, in order to improve the
 description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern
