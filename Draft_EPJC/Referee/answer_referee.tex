@@ -26,7 +26,7 @@
   \LARGE \textbf{Author answer to the referee report of EPJC-18-04-021}
 \end{center}
 \vspace{0.5cm}
-We thank the referee for the positive report and for her/his insightful comments and detailed comments. Below, we address all the questions and suggestions contained in the report in order. To ease the reading, the points raised by the referee (quoted in italic) are followed by an  explanation of the actions undertaken to address them. 
+We thank the referee for the positive report and for her/his insightful comments. Below, we address all the questions and suggestions contained in the report in order. To ease the reading, the points raised by the referee (quoted in italic) are followed by an  explanation of the actions undertaken to address them. 
 
 \vspace{0.5cm}
 \begin{enumerate}
@@ -62,7 +62,30 @@ Also, the complex-mass scheme is a well-defined procedure, so how can different 
 cannot hide the fact that they are much much bigger than the MC statistics.
 Taken at face value, that means that there are clear systematic differences where from what I understand there shouldn't be any, so the reader is left to wonder what is going on? To play the devil's advocate, if there are systematic differences at LO that cannot be understood, how can I trust the NLO comparison?}
 
-Answer: PSP and maybe then just argue about the physical message.
+In the caption of table 3, we have added the sentence
+\begin{quote}
+     The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc PHANTOM},
+        {\sc Whizard}, {\sc MG5\_aMC} and {\sc MoCaNLO+Recola}. 
+\end{quote}
+In order to have a better understanding of the origin of the differences among the four codes, we have compared
+the matrix-elements in a phase-space point, finding very good agreement. Other possible sources of the differences 
+may originate from the factorization scale setting or the cuts, or, more likely, from the non-perfect or non-ideal
+coverage of the VBS phase space, which is rather complex (in particular when also non-resonant contributions have to
+be included). Another issue of concern, as we alredy have written in the submitted version, is whether one should
+trust or not the uncertainties quoted by the Monte-Carlo integrator.
+We have modified the text in which we discuss the results at LO accuracy:
+\begin{quote}
+    Two things should be highlighted here: first, despite the different underlying approximations,
+    the two most-distant predictions ({\sc Powheg-box}\ and {\sc MG5\_aMC}) are only 0.7\% apart. This simply means that the details
+    of the various VBS approximations have an impact well below 1\% at the level of the fiducial cross section at LO for a
+    typical phase-space volume used by experimental collaborations. This is in agreement with the findings of
+Refs.~[Denner:2012dz,Oleari:2003tc]. Second, the four complete predictions ({\sc Whizard}, {\sc PHANTOM}, {\sc MG5\_aMC}
+    and {\sc MoCaNLO+Recola}) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element,
+    we cannot exclude other reasons for the disagreement, for example a non representative (i.e. too-aggressive)
+    estimate of the MonteCarlo uncertainty or
+    a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the 0.5\% level, which
+    we deem satisfactory if compared to the larger differences we will observe at NLO or including matching to parton shower.
+\end{quote}
 
 \item \emph{ page 16, 2nd column, line 13, typo: "elment" $\to$ "element"}
 
@@ -86,6 +109,10 @@ scale variations are clearly underestimating the actual theoretical uncertaintie
 
 We have replaced ``conservative'' with ``more realistic'', as suggested.
 
+\end{enumerate}
+\vspace{1cm}
+Two further modifications have been performed, not related to the referee's comments:
+\begin{enumerate}
 \item We have modified the sentence:
 ``combined measurements which are better theoretically defined'' to ``combined measurements which are theoretically better defined''.
 

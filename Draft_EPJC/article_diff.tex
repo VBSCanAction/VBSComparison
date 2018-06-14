@@ -1,4 +1,7 @@
 %% Main-Version Draft
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL ../Draft_arXiv/article.tex   Mon Jun 11 10:17:24 2018
+%DIF ADD article.tex                  Thu Jun 14 10:13:55 2018
 \documentclass[twocolumn,epjc3]{svjour3} % use the EPJC template, two columns
 %%\documentclass[epjc3]{svjour3} % use the EPJC template, one column
 \smartqed  % flush right qed marks, e.g. at end of proof
@@ -279,6 +282,31 @@
 %
 \journalname{} % Preprint numbers here
 %
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
 \begin{document}
 
 \title{Precise predictions for same-sign W-boson scattering at the LHC}
@@ -457,11 +485,11 @@ The Netherlands\label{nikh}
   {\small \underline {Preprint numbers:} 
 
   \vspace{0.1cm}
-  
+
   DESY 18-025, FR-PHENO-2018-003, KA-TP-05-2018, 
-  
+
   MCnet-18-06, Nikhef/2018-012, UWTHPH-2018-12, 
-  
+
   VBSCan-PUB-01-18, ZU-TH-08/18}
 \end{abstract}
 \thispagestyle{empty}
@@ -566,9 +594,10 @@ Finally, the third contribution of order $\mathcal{O}{\left(\alpha_{\rm s}\alpha
 It is non-zero only for those partonic sub-processes which involve identical quarks or anti-quarks.
 Such a contribution is usually small ($3\%$) within typical experimental cuts~\cite{Biedermann:2017bss}.
 
-In the rest of this article, the notations \emph{LO} or \emph{NLO(-QCD)} without any specification of coupling powers refer to the contributions at order $\mathcal{O}{\left(\alpha^{6}\right)}$ and $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$, respectively.
+In \DIFaddbegin \DIFadd{the rest of this article, the notations }\emph{\DIFadd{LO}} \DIFadd{or }\emph{\DIFadd{NLO(-QCD)}} \DIFadd{without any specification of coupling powers refer to the contributions at order $\mathcal{O}{\left(\alpha^{6}\right)}$ and $\mathcal{O}{\left(\alpha_{\rm s}\alpha^{6}\right)}$, respectively.
+}
 
-In experimental measurements, special cuts, called VBS cuts, are designed to enhance the EW contribution over the QCD one and to suppress the interference.
+\DIFadd{In }\DIFaddend experimental measurements, special cuts, called VBS cuts, are designed to enhance the EW contribution over the QCD one and to suppress the interference.
 These cuts are based on the different kinematical behaviour of the contributions.
 The EW contribution is characterised by two jets with large rapidities as well as a large di-jet invariant mass.
 The two $\PW$ bosons are mostly produced centrally.
@@ -576,7 +605,7 @@ This is in contrast to the QCD contribution which favours jets in the central re
 Therefore, the event selection usually involves rapidity-difference and invariant-mass cuts for the jets.
 Note that, as pointed out in Ref.~\cite{Biedermann:2017bss}, when considering full amplitudes, the separation between EW and QCD production becomes ill
 defined.
-Hence, combined measurements which are theoretically better defined should be preferably performed by the experimental collaborations at the LHC.
+Hence, combined measurements which are \DIFdelbegin \DIFdel{better theoretically }\DIFdelend \DIFaddbegin \DIFadd{theoretically better }\DIFaddend defined should be preferably performed by the experimental collaborations at the LHC.
 
 
 \section{Details of the calculations}
@@ -636,20 +665,48 @@ Hence, combined measurements which are theoretically better defined should be pr
         \label{subsec:codedescr}
     In the following, the codes employed throughout this article and the approximations implemented in each of them are discussed:
 
-    \begin{itemize}
-      \item {\sc Phantom}~\cite{Ballestrero:2007xq} is a dedicated tree-level Monte Carlo for six-parton final states 
+     \begin{itemize} 
+      \DIFaddbegin \item {\sc \DIFadd{Phantom}}\DIFadd{~\mbox{%DIFAUXCMD
+\cite{Ballestrero:2007xq} }%DIFAUXCMD
+is a dedicated tree-level Monte Carlo for six-parton final states 
       at $\Pp \Pp,\, \Pp\bar{\Pp}$, and $\Pe^+\Pe^-$ colliders at orders $\mathcal O(\alpha^6)$ and $\mathcal O(\alphas^2\alpha^4)$ including interferences between the two sets of diagrams.
-    It employs complete tree-level matrix elements in the complex-mass scheme~\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} computed via the modular helicity formalism~\cite{Ballestrero:1999md,Ballestrero:1994jn}.
-    The integration uses a multi-channel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
-    {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
+    It employs complete tree-level matrix elements in the complex-mass scheme~\mbox{%DIFAUXCMD
+\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} }%DIFAUXCMD
+computed via the modular helicity formalism~\mbox{%DIFAUXCMD
+\cite{Ballestrero:1999md,Ballestrero:1994jn}}%DIFAUXCMD
+.
+    The integration uses a multi-channel approach~\mbox{%DIFAUXCMD
+\cite{Berends:1984gf} }%DIFAUXCMD
+and an adaptive strategy~\mbox{%DIFAUXCMD
+\cite{Lepage:1977sw}}%DIFAUXCMD
+.
+    }{\sc \DIFadd{Phantom}} \DIFadd{generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
+}\DIFaddend 
 
-      \item WHIZARD~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
-      For QCD amplitudes it uses the colour flow formalism~\cite{Kilian:2012pz}.
-      For NLO QCD calculations~\cite{Nejad:2016bci}, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
-      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
-      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
-      
-    \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
+      \item \DIFaddbegin \DIFadd{WHIZARD~\mbox{%DIFAUXCMD
+\cite{Kilian:2007gr,Moretti:2001zz} }%DIFAUXCMD
+is a multi-purpose event generator with LO matrix-element generator O'Mega. 
+      For QCD amplitudes it uses the colour flow formalism~\mbox{%DIFAUXCMD
+\cite{Kilian:2012pz}}%DIFAUXCMD
+.
+      For NLO QCD calculations~\mbox{%DIFAUXCMD
+\cite{Nejad:2016bci}}%DIFAUXCMD
+, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\mbox{%DIFAUXCMD
+\cite{Frixione:1995ms,Frixione:1997np}}%DIFAUXCMD
+, while virtual matrix elements are provided externally by OpenLoops~\mbox{%DIFAUXCMD
+\cite{Cascioli:2011va} }%DIFAUXCMD
+or Recola~\mbox{%DIFAUXCMD
+\cite{Actis:2012qn,Actis:2016mpe}}%DIFAUXCMD
+.
+      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\mbox{%DIFAUXCMD
+\cite{Reuter:2016qbi}}%DIFAUXCMD
+.
+      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\mbox{%DIFAUXCMD
+\cite{Alboteanu:2008my,Kilian:2014zja}}%DIFAUXCMD
+.
+      }
+
+    \item \DIFaddend The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
     Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalised to calculate also real matrix elements.
     Virtual matrix elements have been calculated using an in-house matrix-element generator.
     One-loop integrals are evaluated using the {\sc Collier} library~\cite{Denner:2014gla,Denner:2016kdg}.
@@ -658,11 +715,20 @@ Hence, combined measurements which are theoretically better defined should be pr
 detailed description and Ref.~\cite{Dittmaier:2015bfe} for the on-shell projection used.
     At LO the exact matrix elements can also be used.
 
-      \item The {\sc Powheg-Box}~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} is a framework for matching NLO-QCD calculations with parton showers.
-    It relies on the user providing the matrix elements and Born phase space, but automatically constructs FKS \cite{Frixione:1995ms} subtraction terms and the phase space corresponding to the real emission.
-    For the VBS processes all matrix elements are being provided by a previous version of {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} and hence the approximations used in the {\sc Powheg-Box} are similar to those used in {\sc VBFNLO}.
+      \item \DIFaddbegin \DIFadd{The }\DIFaddend {\sc \DIFaddbegin \DIFadd{Powheg-Box}}\DIFadd{~\mbox{%DIFAUXCMD
+\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} }%DIFAUXCMD
+is a framework for matching NLO-QCD calculations with parton showers.
+    It relies on the user providing the matrix elements and Born phase space, but automatically constructs FKS \mbox{%DIFAUXCMD
+\cite{Frixione:1995ms} }%DIFAUXCMD
+subtraction terms and the phase space corresponding to the real emission.
+    For the VBS processes all matrix elements are being provided by a previous version of }{\sc \DIFadd{VBFNLO}}\DIFadd{~\mbox{%DIFAUXCMD
+\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} }%DIFAUXCMD
+and hence the approximations used in the }{\sc \DIFadd{Powheg-Box}} \DIFadd{are similar to those used in }{\sc \DIFadd{VBFNLO}}\DIFadd{.
+}
 
-      \item {\sc VBFNLO}~\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} is a flexible
+      \item {\sc \DIFadd{VBFNLO}}\DIFadd{~\mbox{%DIFAUXCMD
+\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} }%DIFAUXCMD
+is a flexible
         parton-level Monte Carlo for processes with EW bosons. It
         allows the calculation of VBS processes at NLO QCD in the VBS
         approximation, with process IDs between 200 and 290. Same-sign
@@ -674,12 +740,15 @@ detailed description and Ref.~\cite{Dittmaier:2015bfe} for the on-shell projecti
         can contribute. These can simply be added on top of the VBS
         contribution. Interferences between the two are therefore neglected.
         The usage of leptonic tensors in the calculation, pioneered in
-        Ref.~\cite{Jager:2006zc}, thereby leads to a significant speed improvement over
+        Ref.~\mbox{%DIFAUXCMD
+\cite{Jager:2006zc}}%DIFAUXCMD
+, thereby leads to a significant speed improvement over
         automatically generated code.  Besides the SM, also a variety of
         new-physics models including anomalous couplings of the Higgs and gauge
         bosons can be simulated.
-        
-      \item {\sc MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} (henceforth {\sc MG5\-\_aMC}) is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
+        }
+
+      \item {\sc \DIFaddend MadGraph5\_aMC@NLO}~\cite{Alwall:2014hca} (henceforth {\sc MG5\-\_aMC}) is an automatic meta-code (a code that generates codes) which makes it possible to simulate any scattering process
           including NLO QCD corrections both at fixed order and including matching to parton showers, using the {\sc MC@NLO}\ method~\cite{Frixione:2002ik}. It makes use of the subtraction method by Frixione, Kunszt and Signer (FKS)~\cite{Frixione:1995ms,
             Frixione:1997np} (automated in the module {\sc MadFKS}~\cite{Frederix:2009yq,
             Frederix:2016rdc}) for regulating IR singularities. The computations of one-loop amplitudes are carried out by switching dynamically between
@@ -717,12 +786,104 @@ output
     One key aspect for these high-multiplicity processes is the fast integration which is ensured by using similar phase-space mappings to those of Refs.~\cite{Berends:1994pv,Denner:1999gp,Dittmaier:2002ap}. 
     In {\sc MoCaNLO+Recola} no approximation is performed neither at LO nor at NLO.
     It implies that, also contributions stemming from EW corrections to the interference are computed.
-            
-    \end{itemize}
+
+    \DIFdelbegin %DIFDELCMD < \item {\sc %%%
+\DIFdel{Phantom}%DIFDELCMD < }%%%
+\DIFdel{~\mbox{%DIFAUXCMD
+\cite{Ballestrero:2007xq} }%DIFAUXCMD
+is a dedicated tree-level Monte Carlo for six-parton final states 
+      at $\Pp \Pp,\, \Pp\bar{\Pp}$, and $\Pe^+\Pe^-$ colliders at orders $\mathcal O(\alpha^6)$ and $\mathcal O(\alphas^2\alpha^4)$ including interferences between the two sets of diagrams.
+    It employs complete tree-level matrix elements in the complex-mass scheme~\mbox{%DIFAUXCMD
+\cite{Denner:1999gp,Denner:2005fg,Denner:2006ic} }%DIFAUXCMD
+computed via the modular helicity formalism~\mbox{%DIFAUXCMD
+\cite{Ballestrero:1999md,Ballestrero:1994jn}}%DIFAUXCMD
+.
+    The integration uses a multi-channel approach~\mbox{%DIFAUXCMD
+\cite{Berends:1984gf} }%DIFAUXCMD
+and an adaptive strategy~\mbox{%DIFAUXCMD
+\cite{Lepage:1977sw}}%DIFAUXCMD
+.
+    }%DIFDELCMD < {\sc %%%
+\DIFdel{Phantom}%DIFDELCMD < } %%%
+\DIFdel{generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
+}%DIFDELCMD < 
+
+%DIFDELCMD <       \item %%%
+\item%DIFAUXCMD
+\DIFdel{The }%DIFDELCMD < {\sc %%%
+\DIFdel{Powheg-Box}%DIFDELCMD < }%%%
+\DIFdel{~\mbox{%DIFAUXCMD
+\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd} }%DIFAUXCMD
+is a framework for matching NLO-QCD calculations with parton showers.
+    It relies on the user providing the matrix elements and Born phase space, but automatically constructs FKS \mbox{%DIFAUXCMD
+\cite{Frixione:1995ms} }%DIFAUXCMD
+subtraction terms and the phase space corresponding to the real emission.
+    For the VBS processes all matrix elements are being provided by a previous version of }%DIFDELCMD < {\sc %%%
+\DIFdel{VBFNLO}%DIFDELCMD < }%%%
+\DIFdel{~\mbox{%DIFAUXCMD
+\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} }%DIFAUXCMD
+and hence the approximations used in the }%DIFDELCMD < {\sc %%%
+\DIFdel{Powheg-Box}%DIFDELCMD < } %%%
+\DIFdel{are similar to those used in }%DIFDELCMD < {\sc %%%
+\DIFdel{VBFNLO}%DIFDELCMD < }%%%
+\DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD <       \item {\sc %%%
+\DIFdel{VBFNLO}%DIFDELCMD < }%%%
+\DIFdel{~\mbox{%DIFAUXCMD
+\cite{Arnold:2008rz, Arnold:2011wj, Baglio:2014uba} }%DIFAUXCMD
+is a flexible
+        parton-level Monte Carlo for processes with EW bosons. It
+        allows the calculation of VBS processes at NLO QCD in the VBS
+        approximation, with process IDs between 200 and 290. Same-sign
+        $\PW^+\PW^+jj$ production is provided via the process ID 250. The corresponding
+        $s$-channel contributions are available separately as tri-boson processes with
+        semi-leptonic decays, with process IDs between 401 and 492. For the
+        final state studied in this article, only $\PW^+\PW^+\PW^-$
+        production with a hadronically decaying $\PW^-$ boson, process ID 432,
+        can contribute. These can simply be added on top of the VBS
+        contribution. Interferences between the two are therefore neglected.
+        The usage of leptonic tensors in the calculation, pioneered in
+        Ref.~\mbox{%DIFAUXCMD
+\cite{Jager:2006zc}}%DIFAUXCMD
+, thereby leads to a significant speed improvement over
+        automatically generated code.  Besides the SM, also a variety of
+        new-physics models including anomalous couplings of the Higgs and gauge
+        bosons can be simulated.
+        }%DIFDELCMD < 
+
+%DIFDELCMD <       \item %%%
+\item%DIFAUXCMD
+\DIFdel{WHIZARD~\mbox{%DIFAUXCMD
+\cite{Kilian:2007gr,Moretti:2001zz} }%DIFAUXCMD
+is a multi-purpose event generator with LO matrix-element generator O'Mega. 
+      For QCD amplitudes it uses the colour flow formalism~\mbox{%DIFAUXCMD
+\cite{Kilian:2012pz}}%DIFAUXCMD
+.
+      For NLO QCD calculations~\mbox{%DIFAUXCMD
+\cite{Nejad:2016bci}}%DIFAUXCMD
+, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\mbox{%DIFAUXCMD
+\cite{Frixione:1995ms,Frixione:1997np}}%DIFAUXCMD
+, while virtual matrix elements are provided externally by OpenLoops~\mbox{%DIFAUXCMD
+\cite{Cascioli:2011va} }%DIFAUXCMD
+or Recola~\mbox{%DIFAUXCMD
+\cite{Actis:2012qn,Actis:2016mpe}}%DIFAUXCMD
+.
+      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\mbox{%DIFAUXCMD
+\cite{Reuter:2016qbi}}%DIFAUXCMD
+.
+      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\mbox{%DIFAUXCMD
+\cite{Alboteanu:2008my,Kilian:2014zja}}%DIFAUXCMD
+.
+      }%DIFDELCMD < 
+
+%DIFDELCMD <     %%%
+\DIFdelend  \end{itemize} 
 
     We conclude this section by summarising the characteristics of the various codes in Tab.~\ref{tab:wg1_codes}.
     In particular, it is specified whether
-    \begin{itemize}
+     \begin{itemize} 
         \item all $s$-,$t$-,$u$-channel diagrams are included;
         \item interferences between diagrams of different types are included at LO;
         \item diagrams which do not feature two resonant W bosons are included;
@@ -730,7 +891,7 @@ output
             are included;
         \item EW corrections to the interference of order $\mathcal O (\alpha^5\alphas)$ are included.
         These corrections are of the same order as the NLO QCD corrections to the contribution of order $\mathcal O (\alpha^6$) term.
-    \end{itemize}
+     \end{itemize} 
 
     \begin{table*}
         \footnotesize
@@ -738,13 +899,16 @@ output
             Code  &  $\mathcal O(\alpha^6)$ $s, t, u$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to order $\mathcal O(\alphas \alpha^5)$  \\
             \hline
             \hline
-            {\sc PHANTOM}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
-            {\sc Whizard}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
-            {\sc Bonsay}        &  $t,u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
-            {\sc Powheg}        &  $t,u$    &  No       &  Yes              &  Yes   & No       &  No  \\
-            {\sc VBFNLO}        &  $s,t,u$  &  No       &  Yes              &  Yes   & No       &  No  \\
-            {\sc MG5\_aMC}      &  $s,t,u$  &  Yes      &  Yes              &  Yes   & virt. No &  No \\
-            {\sc MoCaNLO+Recola}&  $s,t,u$  &  Yes      &  Yes              &  Yes   & Yes      &  Yes  \\
+            {\sc \DIFdelbeginFL \DIFdelFL{Bonsay}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{PHANTOM}\DIFaddendFL }       &  \DIFdelbeginFL \DIFdelFL{$t,u$    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$s,t,u$  }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{No       }%DIFDELCMD < &  %%%
+\DIFdelFL{Yes      , virt. No    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes      }\DIFaddendFL &  Yes              &  No    & \DIFdelbeginFL \DIFdelFL{No  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{-        }& \DIFaddFL{- }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{Powheg}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Whizard}\DIFaddendFL }       &  \DIFdelbeginFL \DIFdelFL{$t,u$    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$s,t,u$  }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{No       }%DIFDELCMD < &  %%%
+\DIFdelendFL Yes      &  Yes              &  No    & \DIFdelbeginFL \DIFdelFL{No  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{-        }& \DIFaddFL{- }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{MG5\_aMC}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Bonsay}\DIFaddendFL }        &  \DIFdelbeginFL \DIFdelFL{$s,t,u$  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$t,u$    }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{Yes      }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No       }\DIFaddendFL &  Yes\DIFaddbeginFL \DIFaddFL{, virt. No    }\DIFaddendFL &  Yes   & \DIFdelbeginFL \DIFdelFL{virt. }\DIFdelendFL No       &  No  \\
+            {\sc \DIFdelbeginFL \DIFdelFL{MoCaNLO+Recola}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Powheg}\DIFaddendFL }        &  \DIFdelbeginFL \DIFdelFL{$s,t,u$  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$t,u$    }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{Yes      }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No       }\DIFaddendFL &  Yes              &  Yes   & \DIFdelbeginFL \DIFdelFL{Yes      }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No       }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{Yes  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No  }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{PHANTOM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{VBFNLO}\DIFaddendFL }        &  $s,t,u$  &  \DIFaddbeginFL \DIFaddFL{No       }&  \DIFaddendFL Yes              &  Yes   & No       &  \DIFdelbeginFL \DIFdelFL{-        }%DIFDELCMD < & %%%
+\DIFdelFL{- }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{No  }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{VBFNLO}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MG5\_aMC}\DIFaddendFL }      &  $s,t,u$  &  \DIFdelbeginFL \DIFdelFL{No       }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes      }\DIFaddendFL &  Yes              &  Yes   & \DIFaddbeginFL \DIFaddFL{virt. }\DIFaddendFL No &  No \\
+            {\sc \DIFdelbeginFL \DIFdelFL{Whizard}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MoCaNLO+Recola}\DIFaddendFL }&  $s,t,u$  &  Yes      &  Yes              &  \DIFdelbeginFL \DIFdelFL{No    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes   }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{-        }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes      }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{- }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes  }\DIFaddendFL \\
         \end{tabularx}
         \caption{\label{tab:wg1_codes} Summary of the different properties of the computer programs employed in the comparison.}
     \end{table*}
@@ -758,12 +922,12 @@ output
 
     For the massive particles, the following masses and decay widths are used:
     %
-    \begin{alignat}{2}
+    \begin{align}at{2}
                       \Mt   &=  173.21\GeV,       & \quad \quad \quad \Gt &= 0 \GeV,  \nonumber \\
                     \MZOS &=  91.1876\GeV,      & \quad \quad \quad \GZOS &= 2.4952\GeV,  \nonumber \\
                     \MWOS &=  80.385\GeV,       & \GWOS &= 2.085\GeV,  \nonumber \\
                     M_{\rm H} &=  125.0\GeV,       &  \GH   &=  4.07 \times 10^{-3}\GeV.
-    \end{alignat}
+    \end{align}
     %
     The measured on-shell (OS) values for the masses and widths of the W and Z bosons are converted into pole values for the gauge bosons ($V=\PW,\PZ$) according to Ref.~\cite{Bardin:1988xt},
     %
@@ -808,7 +972,7 @@ output
 
     Following experimental measurements \cite{Aad:2014zda,Aaboud:2016ffv,Khachatryan:2014sta,CMS:2017adb}, the event selection used in the present study is:
 
-    \begin{itemize}
+     \begin{itemize} 
         \item The two same-sign charged leptons are required to fulfil cuts on transverse momentum, rapidity, and separation in the rapidity--azimuthal-angle separation, 
             \begin{align}
             \label{cut:1}
@@ -837,7 +1001,7 @@ output
             %
         \item When EW corrections are computed, real photons and charged fermions are clustered together using the anti-$k_T$ algorithm with
             radius parameter $R=0.1$. In this case, leptons and quarks are understood as {\it dressed fermions}.
-    \end{itemize}
+     \end{itemize} 
 
 \section{Leading-order study}
     \label{sec:LO}
@@ -921,36 +1085,44 @@ output
     The cuts applied are the ones of Sec.~\protect\ref{subsec:inputpar} and no cuts on $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are applied.} 
     \label{fig:ratio2d_LO}
     \end{figure*}
-    
+
     \subsection{Comparison in the fiducial region}
     In Tab.~\ref{tab:wg1_LOrates}, we report the total rates at LO accuracy at order $\mathcal O (\alpha^6)$ obtained in the fiducial region 
-    described in Sec.~\ref{subsec:inputpar}. Two things should be highlighted here: first, despite the different underlying approximations, 
-    the two most-distant predictions ({\sc Powheg-box}\ and {\sc MG5\_aMC}) are only 0.7\% apart. This simply means that the details 
-    of the various VBS approximations have an impact well below 1\% at the level of the fiducial cross section at LO for a 
+    described in Sec.~\ref{subsec:inputpar}. \DIFdelbegin \DIFdel{We note that several full predictions are not in statistical agreement. These are possibly due to Monte Carlo 
+    integrators performing too aggressive estimations of statistical uncertainties or different implementation of the complex-mass scheme.
+    Nonetheless, all these predictions agree within less than $0.5\%$.
+    At the level of the cross section, 
+    it seems difficult to infer the quality of the various approximations}\DIFdelend \DIFaddbegin \DIFadd{Two things should be highlighted here: first, despite the different underlying approximations, 
+    the two most-distant predictions (}{\sc \DIFadd{Powheg-box}}\DIFadd{\ and }{\sc \DIFadd{MG5\_aMC}}\DIFadd{) are only 0.7\% apart}\DIFaddend . This simply means that the details 
+    of the various VBS approximations have an impact \DIFdelbegin \DIFdel{not larger than $0.5\%$ }\DIFdelend \DIFaddbegin \DIFadd{well below 1\% }\DIFaddend at the level of the fiducial cross section at LO for a 
     typical phase-space volume used by experimental collaborations. This is in agreement with the findings of 
-    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc Whizard}, {\sc PHANTOM}, {\sc MG5\_aMC} 
-    and {\sc MoCaNLO+Recola}) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
+    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. \DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD <     %%%
+\DIFdelend \DIFaddbegin \DIFadd{Second, the four complete predictions (}{\sc \DIFadd{Whizard}}\DIFadd{, }{\sc \DIFadd{PHANTOM}}\DIFadd{, }{\sc \DIFadd{MG5\_aMC}} 
+    \DIFadd{and }{\sc \DIFadd{MoCaNLO+Recola}}\DIFadd{) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
     we cannot exclude other reasons for the disagreement, for example a non representative (i.e. too-aggressive) 
     estimate of the MonteCarlo uncertainty or 
     a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the 0.5\% level, which 
     we deem satisfactory if compared to the larger differences we will observe at NLO or including matching to parton shower. 
-    \begin{table}
+    }\DIFaddend \begin{table}
         \centering
         \begin{tabular}{c|r@{ $\pm$ }l}
           Code  &  \multicolumn{2}{c}{$\sigma[\rm{fb}]$}  \\
             \hline
             \hline
             {\sc Bonsay}  &  $1.43636$ & $0.00002$ \\
-            {\sc Powheg-Box}  &  $1.44092$ & $0.00009$ \\
-            {\sc VBFNLO}  &  $1.43796$ & $0.00005$ \\
+            {\sc \DIFdelbeginFL \DIFdelFL{MG5\_aMC}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Powheg-Box}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.4304\phantom{0}$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.44092$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.0007$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00009$ }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{MoCaNLO+Recola}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{VBFNLO}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.43476$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.43796$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00009$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00005$ }\DIFaddendFL \\
             {\sc PHANTOM} &  $1.4374\phantom{0}$ & $0.0006 $  \\
-            {\sc Whizard} &  $1.4381\phantom{0}$ & $0.0002 $ \\
-            {\sc MG5\_aMC}&  $1.4304\phantom{0}$ & $0.0007$ \\
-            {\sc MoCaNLO+Recola}  &  $1.43476$ & $0.00009$ 
-        \end{tabular}
+            {\sc \DIFdelbeginFL \DIFdelFL{Powheg-Box}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Whizard}\DIFaddendFL } &  \DIFdelbeginFL \DIFdelFL{$1.44092$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.4381\phantom{0}$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00009$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.0002 $ }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{VBFNLO}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MG5\_aMC}\DIFaddendFL }&  \DIFdelbeginFL \DIFdelFL{$1.43796$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.4304\phantom{0}$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00005$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.0007$ }\DIFaddendFL \\
+            {\sc \DIFdelbeginFL \DIFdelFL{Whizard}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MoCaNLO+Recola}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.4381\phantom{0}$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.43476$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.0002 $
+        }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00009$ 
+        }\DIFaddendFL \end{tabular}
         \caption{\label{tab:wg1_LOrates} Cross sections at LO accuracy and order $\mathcal{O}(\alpha^6)$.
-        The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc PHANTOM},
-        {\sc Whizard}, {\sc MG5\_aMC} and {\sc MoCaNLO+Recola}. The predictions are obtained 
+        The \DIFaddbeginFL \DIFaddFL{complete $2\to 6$ matrix-element, without any approximation, is employed by }{\sc \DIFaddFL{PHANTOM}}\DIFaddFL{,
+        }{\sc \DIFaddFL{Whizard}}\DIFaddFL{, }{\sc \DIFaddFL{MG5\_aMC}} \DIFaddFL{and }{\sc \DIFaddFL{MoCaNLO+Recola}}\DIFaddFL{. The }\DIFaddendFL predictions are obtained 
         in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
         The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
     \end{table}
@@ -1109,10 +1281,16 @@ output
             \hline
             {\sc Bonsay}  &  $1.35039$ & $0.00006$  \\
             {\sc Powheg-Box}  &  $1.3605\phantom{0}$  & $0.0007$   \\
-            {\sc VBFNLO}  &  $1.3916\phantom{0}$ & $0.0001$  \\
-            {\sc MG5\_aMC}&  $1.363\phantom{0}\phantom{0}$ & $0.004$  \\
+            {\sc \DIFaddbeginFL \DIFaddFL{VBFNLO}}  &  \DIFaddFL{$1.3916\phantom{0}$ }& \DIFaddFL{$0.0001$  }\\
+            {\sc \DIFaddendFL MG5\_aMC}&  $1.363\phantom{0}\phantom{0}$ & $0.004$  \\
             {\sc MoCaNLO+Recola}  &  $ 1.378\phantom{0}\phantom{0}$ & $0.001$ 
-        \end{tabular}
+        \DIFdelbeginFL %DIFDELCMD < \\
+%DIFDELCMD <             {\sc %%%
+\DIFdelFL{VBFNLO}%DIFDELCMD < }  &  %%%
+\DIFdelFL{$1.3916\phantom{0}$ }%DIFDELCMD < & %%%
+\DIFdelFL{$0.0001$  }%DIFDELCMD < \\
+%DIFDELCMD <         %%%
+\DIFdelendFL \end{tabular}
         \caption{\label{tab:wg1_NLOrates} Cross sections at NLO accuracy and order $\mathcal{O}(\alphas\alpha^6)$.
         The predictions are obtained in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
         The uncertainties shown refer to estimated statistical errors of the Monte Carlo integrations.}
@@ -1233,8 +1411,8 @@ output
 
 \section{Matching to parton shower}
     \label{sec:matching}
-We now discuss how different predictions compare when the matching to parton shower is included, both at LO 
-(\emph{i.e.}\ at order $\mathcal O (\alpha^6)$) and at NLO-QCD (\emph{i.e.}\ at order $\mathcal O (\alpha^6\alphas)$) accuracy. For such
+We now discuss how different predictions compare when the matching to parton shower is included\DIFaddbegin \DIFadd{, both at LO 
+(}\emph{\DIFadd{i.e.}}\DIFadd{\ at order $\mathcal O (\alpha^6)$) and at NLO-QCD (}\emph{\DIFadd{i.e.}}\DIFadd{\ at order $\mathcal O (\alpha^6\alphas)$) accuracy}\DIFaddend . For such
 a comparison we expect larger discrepancies than what we found at fixed order, as a consequence of the different
 matching schemes, parton showers employed, and of other details of the matching (such as the choice of the parton shower initial scale). Among
 the codes capable of providing fixed-order results, presented before, {\sc MG5\_aMC}, the {\sc Powheg-Box}, and {\sc VBFNLO}
@@ -1346,7 +1524,7 @@ updated. In the {\sc Powheg} matching, the shower scale of the so-called $\tilde
 generated according the {\sc Powheg} Sudakov factor, while it can be changed in the remnants events.}
 The main effect of NLO corrections for this (rather inclusive) observable is to stabilise the predictions for the two-jet bin, where discrepancies
 among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large, and are
-possibly related to the underlying approximation performed ({\sc MG5\_aMC} is the only tool to use the full matrix element for the real radiation), in particular the inclusion of the $s$-channel contributions: the largest rate is predicted by
+possibly related to the underlying approximation performed ({\sc MG5\_aMC} is the only tool to use the full matrix \DIFdelbegin \DIFdel{elment }\DIFdelend \DIFaddbegin \DIFadd{element }\DIFaddend for the real radiation), in particular the inclusion of the $s$-channel contributions: the largest rate is predicted by
 {\sc MG5\_aMC}, while the smallest rate is predicted by the {\sc Powheg-Box}, both matched to {\sc Pythia8}. Despite the fact that the same parton shower is employed, the way emissions are treated
 is different among the two tools. In particular, for the {\sc Powheg-Box}, the first emission is generated with an internal Sudakov form factor (the
 prediction dubbed {\sc Powheg-LHE} corresponds to stopping after the first emission), while for {\sc MG5\_aMC} there is an
@@ -1435,15 +1613,15 @@ is a bit mitigated if NLO+PS tools are used (compare LO+PS and NLO+PS from {\sc 
 
 In conclusion, the comparison of tools including matching to parton shower clearly shows the benefits of the inclusion of NLO corrections: for most observables described
 effectively at NLO accuracy differences between tools are at (or below) the $10\%$ level.
-Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which on the one hand
-clearly suggest not to rely on a single tool/parton shower, and on the other make it worth investigating more in detail the way QCD radiation is
+Some exceptions exist, \emph{e.g.}\ the rapidity separation of the two tagging jets, which \DIFaddbegin \DIFadd{on the one hand
+}\DIFaddend clearly suggest not to rely on a single tool/parton shower, and on the other make it worth investigating more in detail the way QCD radiation is
 generated, \emph{e.g.}\ when fully-differential computations at NNLO will become available (for VBF Higgs production, see Refs.~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}). It is a remarkable fact that, even for those observables that display small discrepancies,
 the theoretical uncertainty obtained via scale variations (renormalisation, factorisation, and show\-er scale) 
 systematically underestimates the spread of predictions. We note 
 that in the only VBF process where NNLO corrections are known, \emph{i.e.}\ VBF Higgs production~\cite{Cacciari:2015jma, Cruz-Martinez:2018rod}, 
 the NLO scale-uncertainty band does not include the NNLO prediction. This suggests that the NLO scale variation 
 underestimates the size of the perturbative uncertainty. Again, this stresses the need
- to employ at least two different tools in order to obtain a more realistic estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggests that
+ to employ at least two different tools in order to obtain a \DIFdelbegin \DIFdel{conservative }\DIFdelend \DIFaddbegin \DIFadd{more realistic }\DIFaddend estimate of theoretical uncertainties. Finally, the size of discrepancies for observables that are described at a lower perturbative accuracy, notably those related to the third jet, suggests that
 experimental analyses should rely as little as possible on those observables and, in any case, use conservative estimates of the theory
 uncertainties. On the one hand, in order to improve the
 description of these observables, a simulation of VBS+j at NLO accuracy, currently unavailable but within the reach of modern
@@ -1542,7 +1720,7 @@ measuring related observables for similar processes.
 
 The last part of our work is devoted to 
  remarks and recommendations concerning the usage of theoretical predictions by experimental collaborations.
-\begin{itemize}
+ \begin{itemize} 
     \item As found in Ref.~\cite{Biedermann:2017bss}, the NLO EW corrections of order $\mathcal{O}{\left(\alpha^{7}\right)}$ are 
         the dominant NLO contribution to the process $\Pp\Pp\to\mu^+\nu_\mu{\rm e}^+\nu_{\rm e}\,\Pj\Pj+\mathrm{X}$.
         It is thus highly desirable to combine them with NLO-QCD predictions matched with parton shower, or at least to include them into experimental analyses. 
@@ -1554,7 +1732,7 @@ The last part of our work is devoted to
         For more detailed studies of the combination of QCD and EW higher-order corrections, see
         \emph{e.g.}\, Ref.~\cite{Czakon:2017wor} in the context of top-pair production, or Ref.~\cite{Lindert:2017olm} for SM 
         backgrounds for dark matter searches at the LHC.
-        
+
     \item For the typical fiducial region used by experimental collaborations for their measurements, 
         the agreement between the approximations and the full calculation is satisfactory given 
         the current experimental precision, as well as the one foreseen for the near future \cite{CMSCollaboration:2015zni,CMS:2016rcn,ATL-PHYS-PUB-2017-023}.
@@ -1582,7 +1760,7 @@ The last part of our work is devoted to
     the observed features 
     (\emph{e.g.}\ validity of the VBS approximation or comparison of theoretical predictions matched to parton shower) should 
     be qualitatively similar for other VBS signatures with massive gauge bosons. For these other signatures, similar quantitative studies should be performed.
-\end{itemize}
+ \end{itemize} 
 
 
 \section*{Acknowledgements}
