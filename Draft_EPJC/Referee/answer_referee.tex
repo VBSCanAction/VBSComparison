@@ -64,7 +64,7 @@ Taken at face value, that means that there are clear systematic differences wher
 
 In the caption of table 3, we have added the sentence
 \begin{quote}
-     The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc PHANTOM},
+     The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc Phantom},
         {\sc Whizard}, {\sc MG5\_aMC} and {\sc MoCaNLO+Recola}. 
 \end{quote}
 In order to have a better understanding of the origin of the differences among the four codes, we have compared
@@ -79,7 +79,7 @@ We have modified the text in which we discuss the results at LO accuracy:
     the two most-distant predictions ({\sc Powheg-box}\ and {\sc MG5\_aMC}) are only $0.7\%$ apart. This simply means that the details 
     of the various VBS approximations have an impact below $1\%$ at the level of the fiducial cross section at LO for a 
     typical phase-space volume used by experimental collaborations. This is in agreement with the findings of 
-    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc Whizard}, {\sc PHANTOM}, {\sc MG5\_aMC}, 
+    Refs.[Denner:2012dz,Oleari:2003tc]. Second, the four complete predictions ({\sc Whizard}, {\sc PHANTOM}, {\sc MG5\_aMC}, 
     and {\sc MoCaNLO+Recola}) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
     we cannot exclude other reasons for the disagreement, for example a non representative (\emph{i.e.}\ too-aggressive) 
     estimate of the Monte Carlo uncertainty or a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the $0.5\%$ level, which 
@@ -113,18 +113,24 @@ We have replaced ``conservative'' with ``more realistic'', as suggested.
 
 \end{enumerate}
 \vspace{1cm}
-Two further modifications have been performed, not related to the referee's comments:
+Further minor changes have been performed, not related to the referee's comments:
 \begin{enumerate}
+\item The references to experimental measurements in the second paragraph of the Introduction were not consistent
+    with the text. The sentence has been corrected.
+\item The program {\sc Phantom} was sometimes referred to as {\sc PHANTOM}, with all capital letters. All occurrences
+    have been changed to {\sc Phantom}. The same applies for {\sc Whizard}.
+\item The left plot of Figure 5 (dijet invariant mass at LO) 
+    has been updated, as the {\sc Whizard} histogram was not present
+    in the inset because of an error in the plotting script.
 \item We have modified the sentence:
 ``combined measurements which are better theoretically defined'' to ``combined measurements which are theoretically better defined''.
-
 \item We have updated the LO+PS plots.
 It has been found that the predictions for WHIZARD+P8 suffered from a bug which has now been fixed.
 The agreement with other Pythia parton-shower predictions is now even better.
 In addition, the plot at LO+PS for the Zeppenfeld variable of the third jet suffered from a miss-match of the PHANTOM+H7-default due to bug in the plotting routine.
 Again, the predictions of Phantom+H7-default are now in better agreement with Herwig parton-shower predictions.
 No modifications to the text have been made.
-
+\item In Ref. [81] (Yu, Bardin, Leike, Riemann, 1988), the hyperlink was pointing to a wrong DOI. It has been fixed.
 \end{enumerate}
 
 \end{document}
