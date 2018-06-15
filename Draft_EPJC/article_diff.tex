@@ -1,7 +1,7 @@
 %% Main-Version Draft
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL ../Draft_arXiv/article.tex   Mon Jun 11 10:17:24 2018
-%DIF ADD article.tex                  Thu Jun 14 10:13:55 2018
+%DIF ADD article.tex                  Fri Jun 15 09:48:44 2018
 \documentclass[twocolumn,epjc3]{svjour3} % use the EPJC template, two columns
 %%\documentclass[epjc3]{svjour3} % use the EPJC template, one column
 \smartqed  % flush right qed marks, e.g. at end of proof
@@ -521,8 +521,12 @@ and hint at, or exclude, non-Standard Model behaviours.
 
 The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio of all the VBS processes at the Large Hadron Collider (LHC):
 evidence for it was found at the centre-of-mass energy of $8~\TeV$ already~\cite{Aad:2014zda,Khachatryan:2014sta},
-and it has been recently observed~\cite{Sirunyan:2017ret} and measured~\cite{Aaboud:2016ffv} 
-at $13\TeV$ as well.
+and it has been recently \DIFdelbegin \DIFdel{observed~\mbox{%DIFAUXCMD
+\cite{Sirunyan:2017ret} }%DIFAUXCMD
+and }\DIFdelend measured~\cite{Aaboud:2016ffv} \DIFaddbegin \DIFadd{and (re-)observed~\mbox{%DIFAUXCMD
+\cite{Sirunyan:2017ret}
+}%DIFAUXCMD
+}\DIFaddend at $13\TeV$ as well.
 Presently, the measurements of VBS processes are limited by statistics, but the situation will change in the near future.
 On the theoretical side, 
 it is thus of prime importance to provide predictions with systematic uncertainties
@@ -683,7 +687,7 @@ and an adaptive strategy~\mbox{%DIFAUXCMD
     }{\sc \DIFadd{Phantom}} \DIFadd{generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 }\DIFaddend 
 
-      \item \DIFaddbegin \DIFadd{WHIZARD~\mbox{%DIFAUXCMD
+      \item \DIFaddbegin \DIFadd{Whizard~\mbox{%DIFAUXCMD
 \cite{Kilian:2007gr,Moretti:2001zz} }%DIFAUXCMD
 is a multi-purpose event generator with LO matrix-element generator O'Mega. 
       For QCD amplitudes it uses the colour flow formalism~\mbox{%DIFAUXCMD
@@ -691,17 +695,17 @@ is a multi-purpose event generator with LO matrix-element generator O'Mega.
 .
       For NLO QCD calculations~\mbox{%DIFAUXCMD
 \cite{Nejad:2016bci}}%DIFAUXCMD
-, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\mbox{%DIFAUXCMD
+, where Whizard is in the final validation phase, it provides FKS subtraction terms~\mbox{%DIFAUXCMD
 \cite{Frixione:1995ms,Frixione:1997np}}%DIFAUXCMD
 , while virtual matrix elements are provided externally by OpenLoops~\mbox{%DIFAUXCMD
 \cite{Cascioli:2011va} }%DIFAUXCMD
 or Recola~\mbox{%DIFAUXCMD
 \cite{Actis:2012qn,Actis:2016mpe}}%DIFAUXCMD
 .
-      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\mbox{%DIFAUXCMD
+      Furthermore, Whizard can automatically provide POWHEG matching to parton shower~\mbox{%DIFAUXCMD
 \cite{Reuter:2016qbi}}%DIFAUXCMD
 .
-      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\mbox{%DIFAUXCMD
+      Whizard allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\mbox{%DIFAUXCMD
 \cite{Alboteanu:2008my,Kilian:2014zja}}%DIFAUXCMD
 .
       }
@@ -899,7 +903,7 @@ or Recola~\mbox{%DIFAUXCMD
             Code  &  $\mathcal O(\alpha^6)$ $s, t, u$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to order $\mathcal O(\alphas \alpha^5)$  \\
             \hline
             \hline
-            {\sc \DIFdelbeginFL \DIFdelFL{Bonsay}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{PHANTOM}\DIFaddendFL }       &  \DIFdelbeginFL \DIFdelFL{$t,u$    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$s,t,u$  }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{No       }%DIFDELCMD < &  %%%
+            {\sc \DIFdelbeginFL \DIFdelFL{Bonsay}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Phantom}\DIFaddendFL }       &  \DIFdelbeginFL \DIFdelFL{$t,u$    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$s,t,u$  }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{No       }%DIFDELCMD < &  %%%
 \DIFdelFL{Yes      , virt. No    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Yes      }\DIFaddendFL &  Yes              &  No    & \DIFdelbeginFL \DIFdelFL{No  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{-        }& \DIFaddFL{- }\DIFaddendFL \\
             {\sc \DIFdelbeginFL \DIFdelFL{Powheg}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Whizard}\DIFaddendFL }       &  \DIFdelbeginFL \DIFdelFL{$t,u$    }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$s,t,u$  }\DIFaddendFL &  \DIFdelbeginFL \DIFdelFL{No       }%DIFDELCMD < &  %%%
 \DIFdelendFL Yes      &  Yes              &  No    & \DIFdelbeginFL \DIFdelFL{No  }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{-        }& \DIFaddFL{- }\DIFaddendFL \\
@@ -1093,18 +1097,17 @@ or Recola~\mbox{%DIFAUXCMD
     Nonetheless, all these predictions agree within less than $0.5\%$.
     At the level of the cross section, 
     it seems difficult to infer the quality of the various approximations}\DIFdelend \DIFaddbegin \DIFadd{Two things should be highlighted here: first, despite the different underlying approximations, 
-    the two most-distant predictions (}{\sc \DIFadd{Powheg-box}}\DIFadd{\ and }{\sc \DIFadd{MG5\_aMC}}\DIFadd{) are only 0.7\% apart}\DIFaddend . This simply means that the details 
-    of the various VBS approximations have an impact \DIFdelbegin \DIFdel{not larger than $0.5\%$ }\DIFdelend \DIFaddbegin \DIFadd{well below 1\% }\DIFaddend at the level of the fiducial cross section at LO for a 
+    the two most-distant predictions (}{\sc \DIFadd{Powheg-box}}\DIFadd{\ and }{\sc \DIFadd{MG5\_aMC}}\DIFadd{) are only $0.7\%$ apart}\DIFaddend . This simply means that the details 
+    of the various VBS approximations have an impact \DIFdelbegin \DIFdel{not larger than $0.5\%$ }\DIFdelend \DIFaddbegin \DIFadd{below $1\%$ }\DIFaddend at the level of the fiducial cross section at LO for a 
     typical phase-space volume used by experimental collaborations. This is in agreement with the findings of 
     Refs.~\cite{Denner:2012dz,Oleari:2003tc}. \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD <     %%%
-\DIFdelend \DIFaddbegin \DIFadd{Second, the four complete predictions (}{\sc \DIFadd{Whizard}}\DIFadd{, }{\sc \DIFadd{PHANTOM}}\DIFadd{, }{\sc \DIFadd{MG5\_aMC}} 
-    \DIFadd{and }{\sc \DIFadd{MoCaNLO+Recola}}\DIFadd{) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
-    we cannot exclude other reasons for the disagreement, for example a non representative (i.e. too-aggressive) 
-    estimate of the MonteCarlo uncertainty or 
-    a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the 0.5\% level, which 
-    we deem satisfactory if compared to the larger differences we will observe at NLO or including matching to parton shower. 
+\DIFdelend \DIFaddbegin \DIFadd{Second, the four complete predictions (}{\sc \DIFadd{Whizard}}\DIFadd{, }{\sc \DIFadd{Phantom}}\DIFadd{, }{\sc \DIFadd{MG5\_aMC}}\DIFadd{, 
+    and }{\sc \DIFadd{MoCaNLO+Recola}}\DIFadd{) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
+    we cannot exclude other reasons for the disagreement, for example a non representative (}\emph{\DIFadd{i.e.}}\DIFadd{\ too-aggressive) 
+    estimate of the Monte Carlo uncertainty or a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the $0.5\%$ level, which 
+    we deem satisfactory compared to the larger differences observed at NLO or when including matching to parton shower. 
     }\DIFaddend \begin{table}
         \centering
         \begin{tabular}{c|r@{ $\pm$ }l}
@@ -1114,14 +1117,14 @@ or Recola~\mbox{%DIFAUXCMD
             {\sc Bonsay}  &  $1.43636$ & $0.00002$ \\
             {\sc \DIFdelbeginFL \DIFdelFL{MG5\_aMC}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Powheg-Box}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.4304\phantom{0}$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.44092$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.0007$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00009$ }\DIFaddendFL \\
             {\sc \DIFdelbeginFL \DIFdelFL{MoCaNLO+Recola}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{VBFNLO}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.43476$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.43796$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00009$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00005$ }\DIFaddendFL \\
-            {\sc PHANTOM} &  $1.4374\phantom{0}$ & $0.0006 $  \\
+            {\sc \DIFdelbeginFL \DIFdelFL{PHANTOM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Phantom}\DIFaddendFL } &  $1.4374\phantom{0}$ & $0.0006 $  \\
             {\sc \DIFdelbeginFL \DIFdelFL{Powheg-Box}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Whizard}\DIFaddendFL } &  \DIFdelbeginFL \DIFdelFL{$1.44092$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.4381\phantom{0}$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00009$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.0002 $ }\DIFaddendFL \\
             {\sc \DIFdelbeginFL \DIFdelFL{VBFNLO}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MG5\_aMC}\DIFaddendFL }&  \DIFdelbeginFL \DIFdelFL{$1.43796$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.4304\phantom{0}$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.00005$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.0007$ }\DIFaddendFL \\
             {\sc \DIFdelbeginFL \DIFdelFL{Whizard}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MoCaNLO+Recola}\DIFaddendFL }  &  \DIFdelbeginFL \DIFdelFL{$1.4381\phantom{0}$ }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$1.43476$ }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{$0.0002 $
         }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{$0.00009$ 
         }\DIFaddendFL \end{tabular}
         \caption{\label{tab:wg1_LOrates} Cross sections at LO accuracy and order $\mathcal{O}(\alpha^6)$.
-        The \DIFaddbeginFL \DIFaddFL{complete $2\to 6$ matrix-element, without any approximation, is employed by }{\sc \DIFaddFL{PHANTOM}}\DIFaddFL{,
+        The \DIFaddbeginFL \DIFaddFL{complete $2\to 6$ matrix-element, without any approximation, is employed by }{\sc \DIFaddFL{Phantom}}\DIFaddFL{,
         }{\sc \DIFaddFL{Whizard}}\DIFaddFL{, }{\sc \DIFaddFL{MG5\_aMC}} \DIFaddFL{and }{\sc \DIFaddFL{MoCaNLO+Recola}}\DIFaddFL{. The }\DIFaddendFL predictions are obtained 
         in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
         The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
@@ -1419,11 +1422,11 @@ the codes capable of providing fixed-order results, presented before, {\sc MG5\_
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
 restrict ourselves to show results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
-also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
+also {\sc \DIFdelbegin \DIFdel{PHANTOM}\DIFdelend \DIFaddbegin \DIFadd{Phantom}\DIFaddend } and {\sc \DIFdelbegin \DIFdel{WHIZARD}\DIFdelend \DIFaddbegin \DIFadd{Whizard}\DIFaddend } are used for LO+PS results.\\
 {\sc MG5\_aMC}, which employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, is used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
 and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the default angular-ordered shower is employed. 
-The same parton showers are employed for the LO results of {\sc PHANTOM}.
-{\sc Pythia8} is also employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
+The same parton showers are employed for the LO results of {\sc \DIFdelbegin \DIFdel{PHANTOM}\DIFdelend \DIFaddbegin \DIFadd{Phantom}\DIFaddend }.
+{\sc Pythia8} is also employed for the LO results of {\sc \DIFdelbegin \DIFdel{WHIZARD}\DIFdelend \DIFaddbegin \DIFadd{Whizard}\DIFaddend }. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
@@ -1455,10 +1458,10 @@ an effect ($6\%$) on the normalisation is induced.
         {\sc MG5\_aMC}+{\sc Herwig7}&  $1.342 $ & $ 0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.275$ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.266$ & $ 0.003$  \\
-        {\sc PHANTOM}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
-        {\sc PHANTOM}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
+        {\sc \DIFdelbeginFL \DIFdelFL{PHANTOM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Phantom}\DIFaddendFL }+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
+        {\sc \DIFdelbeginFL \DIFdelFL{PHANTOM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Phantom}\DIFaddendFL }+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
-        {\sc WHIZARD}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
+        {\sc \DIFdelbeginFL \DIFdelFL{WHIZARD}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Whizard}\DIFaddendFL }+{\sc Pythia8} &  $1.229$ & $0.001$  \\
     \end{tabular}
     \caption{\label{tab:PSratesLO} Cross sections at LO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$

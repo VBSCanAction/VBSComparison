@@ -493,7 +493,7 @@ and hint at, or exclude, non-Standard Model behaviours.
 
 The VBS process involving two same-sign $\PW$ bosons has the largest signal-to-background ratio of all the VBS processes at the Large Hadron Collider (LHC):
 evidence for it was found at the centre-of-mass energy of $8~\TeV$ already~\cite{Aad:2014zda,Khachatryan:2014sta},
-and it has been recently observed~\cite{Sirunyan:2017ret} and measured~\cite{Aaboud:2016ffv} 
+and it has been recently measured~\cite{Aaboud:2016ffv} and (re-)observed~\cite{Sirunyan:2017ret}
 at $13\TeV$ as well.
 Presently, the measurements of VBS processes are limited by statistics, but the situation will change in the near future.
 On the theoretical side, 
@@ -643,11 +643,11 @@ Hence, combined measurements which are theoretically better defined should be pr
     The integration uses a multi-channel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
     {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 
-      \item WHIZARD~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
+      \item Whizard~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
       For QCD amplitudes it uses the colour flow formalism~\cite{Kilian:2012pz}.
-      For NLO QCD calculations~\cite{Nejad:2016bci}, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
-      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
-      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
+      For NLO QCD calculations~\cite{Nejad:2016bci}, where Whizard is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
+      Furthermore, Whizard can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
+      Whizard allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
       
     \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
     Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalised to calculate also real matrix elements.
@@ -738,7 +738,7 @@ output
             Code  &  $\mathcal O(\alpha^6)$ $s, t, u$  &  $\mathcal O(\alpha^6)$ interf.  &  Non-res.  & NLO &  NF QCD  &  EW corr. to order $\mathcal O(\alphas \alpha^5)$  \\
             \hline
             \hline
-            {\sc PHANTOM}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
+            {\sc Phantom}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
             {\sc Whizard}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
             {\sc Bonsay}        &  $t,u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
             {\sc Powheg}        &  $t,u$    &  No       &  Yes              &  Yes   & No       &  No  \\
@@ -928,7 +928,7 @@ output
     the two most-distant predictions ({\sc Powheg-box}\ and {\sc MG5\_aMC}) are only $0.7\%$ apart. This simply means that the details 
     of the various VBS approximations have an impact below $1\%$ at the level of the fiducial cross section at LO for a 
     typical phase-space volume used by experimental collaborations. This is in agreement with the findings of 
-    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc Whizard}, {\sc PHANTOM}, {\sc MG5\_aMC}, 
+    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc Whizard}, {\sc Phantom}, {\sc MG5\_aMC}, 
     and {\sc MoCaNLO+Recola}) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
     we cannot exclude other reasons for the disagreement, for example a non representative (\emph{i.e.}\ too-aggressive) 
     estimate of the Monte Carlo uncertainty or a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the $0.5\%$ level, which 
@@ -942,13 +942,13 @@ output
             {\sc Bonsay}  &  $1.43636$ & $0.00002$ \\
             {\sc Powheg-Box}  &  $1.44092$ & $0.00009$ \\
             {\sc VBFNLO}  &  $1.43796$ & $0.00005$ \\
-            {\sc PHANTOM} &  $1.4374\phantom{0}$ & $0.0006 $  \\
+            {\sc Phantom} &  $1.4374\phantom{0}$ & $0.0006 $  \\
             {\sc Whizard} &  $1.4381\phantom{0}$ & $0.0002 $ \\
             {\sc MG5\_aMC}&  $1.4304\phantom{0}$ & $0.0007$ \\
             {\sc MoCaNLO+Recola}  &  $1.43476$ & $0.00009$ 
         \end{tabular}
         \caption{\label{tab:wg1_LOrates} Cross sections at LO accuracy and order $\mathcal{O}(\alpha^6)$.
-        The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc PHANTOM},
+        The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc Phantom},
         {\sc Whizard}, {\sc MG5\_aMC} and {\sc MoCaNLO+Recola}. The predictions are obtained 
         in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
         The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
@@ -1240,11 +1240,11 @@ the codes capable of providing fixed-order results, presented before, {\sc MG5\_
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
 restrict ourselves to show results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
-also {\sc PHANTOM} and {\sc WHIZARD} are used for LO+PS results.\\
+also {\sc Phantom} and {\sc Whizard} are used for LO+PS results.\\
 {\sc MG5\_aMC}, which employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, is used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
 and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the default angular-ordered shower is employed. 
-The same parton showers are employed for the LO results of {\sc PHANTOM}.
-{\sc Pythia8} is also employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
+The same parton showers are employed for the LO results of {\sc Phantom}.
+{\sc Pythia8} is also employed for the LO results of {\sc Whizard}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
@@ -1276,10 +1276,10 @@ an effect ($6\%$) on the normalisation is induced.
         {\sc MG5\_aMC}+{\sc Herwig7}&  $1.342 $ & $ 0.003$  \\
         {\sc MG5\_aMC}+{\sc Pythia8}, $\Gamma_{\rm resc}$&  $1.275$ & $0.003$  \\
         {\sc MG5\_aMC}+{\sc Herwig7}, $\Gamma_{\rm resc}$&  $1.266$ & $ 0.003$  \\
-        {\sc PHANTOM}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
-        {\sc PHANTOM}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
+        {\sc Phantom}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
+        {\sc Phantom}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
-        {\sc WHIZARD}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
+        {\sc Whizard}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
     \end{tabular}
     \caption{\label{tab:PSratesLO} Cross sections at LO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
