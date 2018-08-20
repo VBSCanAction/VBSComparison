@@ -548,12 +548,12 @@ $\mathcal{O}{\left(\alpha^{6}\right)}$, $\mathcal{O}{\left(\alphas^{2}\alpha^{4}
 The first, commonly referred to as EW contribution or VBS,\footnote{The name VBS is used even though not all Feynman diagrams involve the scattering
 of vector bosons.} receives contributions from Feynman diagrams such as those depicted in Fig.~\ref{diag:LO}:
 in addition to genuine VBS contributions (left diagram), it also features $s$-channel contributions with non-resonant vector bosons 
-(center diagram) or from
+(centre diagram) or from
 triple-boson production (right diagram).
 Note that $s$-, $t$-, and $u$-channel contributions are defined according to the quark lines.
 The $s$-channel denotes all Feynman diagrams where the two initial-state partons are connected by a continuous fermion line, while for the $t$- and $u$-channel the fermion lines connect initial state quarks to final state quarks.
 The $u$-channel refers to contributions with crossed fermion lines with respect to $t$-channel, which appears for identical (anti-)quarks in the final state.
-The $s$-channel contributions plays a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
+The $s$-channel contributions play a particular role in the study of the various contributions in Sec.~\ref{subsec:contributions}.
 When using approximations, care must be taken that only gauge-invariant subsets are considered to obtain physically meaningful results.
 We discuss the commonly-used possible choices in detail in the next section.
 
@@ -643,11 +643,11 @@ Hence, combined measurements which are theoretically better defined should be pr
     The integration uses a multi-channel approach~\cite{Berends:1984gf} and an adaptive strategy~\cite{Lepage:1977sw}.
     {\sc Phantom} generates unweighted events at parton level for both the SM and a few instances of beyond the Standard Model (BSM) theories.
 
-      \item Whizard~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
+      \item WHIZARD~\cite{Kilian:2007gr,Moretti:2001zz} is a multi-purpose event generator with LO matrix-element generator O'Mega. 
       For QCD amplitudes it uses the colour flow formalism~\cite{Kilian:2012pz}.
-      For NLO QCD calculations~\cite{Nejad:2016bci}, where Whizard is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
-      Furthermore, Whizard can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
-      Whizard allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
+      For NLO QCD calculations~\cite{Nejad:2016bci}, where WHIZARD is in the final validation phase, it provides FKS subtraction terms~\cite{Frixione:1995ms,Frixione:1997np}, while virtual matrix elements are provided externally by OpenLoops~\cite{Cascioli:2011va} or Recola~\cite{Actis:2012qn,Actis:2016mpe}.
+      Furthermore, WHIZARD can automatically provide POWHEG matching to parton shower~\cite{Reuter:2016qbi}.
+      WHIZARD allows to simulate a huge number of BSM models as well, in particular in terms of higher-dimensional operators for VBS processes including means to provide unitarity limits~\cite{Alboteanu:2008my,Kilian:2014zja}.
       
     \item The program {\sc Bonsay}~\cite{Dittmaier:2018zzz} consists of a general-purpose Monte Carlo integrator and matrix elements taken from different sources:
     Born matrix elements are adapted from the program {\sc Lusifer}~\cite{Dittmaier:2002ap}, which have been generalised to calculate also real matrix elements.
@@ -739,7 +739,7 @@ output
             \hline
             \hline
             {\sc Phantom}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
-            {\sc Whizard}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
+            {\sc WHIZARD}       &  $s,t,u$  &  Yes      &  Yes              &  No    & -        & - \\
             {\sc Bonsay}        &  $t,u$    &  No       &  Yes, virt. No    &  Yes   & No       &  No  \\
             {\sc Powheg}        &  $t,u$    &  No       &  Yes              &  Yes   & No       &  No  \\
             {\sc VBFNLO}        &  $s,t,u$  &  No       &  Yes              &  Yes   & No       &  No  \\
@@ -906,11 +906,11 @@ output
         \label{subsec:LOinclusive}
     In Fig.~\ref{fig:ratio2d_LO}, ratios for double-differential cross sections in the variables  $m_{\Pj\Pj}$ and $|\Delta y_{\Pj\Pj}|$ are shown.\footnote{In Fig.~\ref{fig:ratio2d_LO}, the level of the accuracy of the predictions in each bin is around a per mille.}
     Two plots are displayed: the ratios of the $|t|^2 + |u|^2$ and $|s|^2 + |t|^2 + |u|^2$ approximations over the full calculation.
-    In the first case, the approximation is good within $\pm10\%$ over the whole range apart in the low invariant-mass region at both low and large rapidity difference.
+    In the first case, the approximation is good within $\pm10\%$ over the whole range apart from the low invariant-mass region at both low and large rapidity difference.
     The low rapidity-difference region possesses remnants of the tri-bosons contribution that have a di-jet invariant mass around the $\PW$-boson mass.
     It is therefore expected that the $|t|^2 + |u|^2$ approximation fails in this region.
     The second plot, where the $|s|^2 + |t|^2 + |u|^2$ approximation is considered, displays a better behaviour in the previously mentioned region.
-    The full calculation is approximated at the level of $\pm5\%$ everywhere apart in the region where $|\Delta y_{\Pj\Pj}| < 2$.
+    The full calculation is approximated at the level of $\pm5\%$ everywhere apart from the region where $|\Delta y_{\Pj\Pj}| < 2$.
 
     \begin{figure*}
     \centering
@@ -928,7 +928,7 @@ output
     the two most-distant predictions ({\sc Powheg-box}\ and {\sc MG5\_aMC}) are only $0.7\%$ apart. This simply means that the details 
     of the various VBS approximations have an impact below $1\%$ at the level of the fiducial cross section at LO for a 
     typical phase-space volume used by experimental collaborations. This is in agreement with the findings of 
-    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc Whizard}, {\sc Phantom}, {\sc MG5\_aMC}, 
+    Refs.~\cite{Denner:2012dz,Oleari:2003tc}. Second, the four complete predictions ({\sc WHIZARD}, {\sc Phantom}, {\sc MG5\_aMC}, 
     and {\sc MoCaNLO+Recola}) are not in statistical agreement. While we have checked the point-wise agreement of the matrix-element, 
     we cannot exclude other reasons for the disagreement, for example a non-representative (\emph{i.e.}\ too-aggressive) 
     estimate of the Monte Carlo uncertainty or a non-perfect mapping of the six-body phase-space. However, the level of ambiguity is at the $0.5\%$ level, which 
@@ -943,13 +943,13 @@ output
             {\sc Powheg-Box}  &  $1.44092$ & $0.00009$ \\
             {\sc VBFNLO}  &  $1.43796$ & $0.00005$ \\
             {\sc Phantom} &  $1.4374\phantom{0}$ & $0.0006 $  \\
-            {\sc Whizard} &  $1.4381\phantom{0}$ & $0.0002 $ \\
+            {\sc WHIZARD} &  $1.4381\phantom{0}$ & $0.0002 $ \\
             {\sc MG5\_aMC}&  $1.4304\phantom{0}$ & $0.0007$ \\
             {\sc MoCaNLO+Recola}  &  $1.43476$ & $0.00009$ 
         \end{tabular}
         \caption{\label{tab:wg1_LOrates} Cross sections at LO accuracy and order $\mathcal{O}(\alpha^6)$.
         The complete $2\to 6$ matrix-element, without any approximation, is employed by {\sc Phantom},
-        {\sc Whizard}, {\sc MG5\_aMC}, and {\sc MoCaNLO+Recola}. The predictions are obtained 
+        {\sc WHIZARD}, {\sc MG5\_aMC}, and {\sc MoCaNLO+Recola}. The predictions are obtained 
         in the fiducial region described in Sec.~\protect\ref{subsec:inputpar}.
         The uncertainties shown refer to the estimated statistical errors of the Monte Carlo integrations.}
     \end{table}
@@ -1205,7 +1205,7 @@ output
        \centering
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/mll_NLO.pdf}
        \includegraphics[width=0.4\textwidth,angle=0,clip=true,trim={0.4cm 2cm 0.cm 1.cm}]{figures/NLO/zmu_NLO.pdf}
-    \caption{\label{fig:distNLO3} Differential distributions in the invariant mass of the two charged leptons (left) and Zeppenfeld variable for the muon (right) \emph{i.e.}\ at NLO accuracy at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
+    \caption{\label{fig:distNLO3} Differential distributions in the invariant mass of the two charged leptons (left) and Zeppenfeld variable for the muon (right) at NLO accuracy \emph{i.e.}\ at order $\mathcal{O}(\alpha_{\rm s}\alpha^6)$.
     The description of the different programs used can be found in Sec.~\protect\ref{subsec:codedescr}.
     The upper plots provide the absolute value for each prediction while the lower plots present all predictions normalised to {\sc MoCaNLO}+{\sc Recola} which is the full prediction.
     The band corresponds to a seven-point variation of the renormalisation and factorisation scales.
@@ -1240,11 +1240,11 @@ the codes capable of providing fixed-order results, presented before, {\sc MG5\_
 can also provide results at (N)LO+PS accuracy. For {\sc VBFNLO} matched to {\sc Herwig} and the {\sc Powheg-Box}, we
 restrict ourselves to show results only in the VBS approximation,
 {\emph i.e.}\ the $s$-channel contributions are neglected here. Besides,
-also {\sc Phantom} and {\sc Whizard} are used for LO+PS results.\\
+also {\sc Phantom} and {\sc WHIZARD} are used for LO+PS results.\\
 {\sc MG5\_aMC}, which employs the {\sc MC@NLO}~\cite{Frixione:2002ik} matching procedure, is used together with {\sc Pythia8}~\cite{Sjostrand:2014zea} (version 8.223)
 and {\sc Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx} (version 7.1.2). For the latter, the default angular-ordered shower is employed. 
 The same parton showers are employed for the LO results of {\sc Phantom}.
-{\sc Pythia8} is also employed for the LO results of {\sc Whizard}. For the {\sc Powheg-Box}, the namesake
+{\sc Pythia8} is also employed for the LO results of {\sc WHIZARD}. For the {\sc Powheg-Box}, the namesake
 matching procedure is employed~\cite{Nason:2004rx,Frixione:2007vw}, together with {\sc Pythia8} (version 8.230). {\sc VBFNLO} serves as a matrix-element and phase-space provider
 for the {\sc Matchbox} module~\cite{Platzer:2011bc} of {\sc
 Herwig7}~\cite{Bellm:2015jjp,Bellm:2017bvx}, using an extended version of the Binoth Les Houches Accord
@@ -1279,7 +1279,7 @@ an effect ($6\%$) on the normalisation is induced.
         {\sc Phantom}+{\sc Pythia8} &  $1.235 $ & $0.001$  \\
         {\sc Phantom}+{\sc Herwig7} &  $1.258 $ & $0.001$  \\
         {\sc VBFNLO}+{\sc Herwig7-Dipole} &  $1.3001$ & $0.0002$  \\
-        {\sc Whizard}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
+        {\sc WHIZARD}+{\sc Pythia8} &  $1.229$ & $0.001$  \\
     \end{tabular}
     \caption{\label{tab:PSratesLO} Cross sections at LO+PS accuracy.
     The {\sc MG5\_aMC} results with $\Gamma_{\rm resc}$
@@ -1342,7 +1342,7 @@ as it is the case for the factorisation and renormalisation scales.
     At NLO, one has the freedom to change the shower scale without losing formal NLO accuracy within the {\sc MC@NLO} matching,
     provided the Monte Carlo counterterms are also consistently
 updated. In the {\sc Powheg} matching, the shower scale of the so-called $\tilde B$ events is fixed to the transverse momentum of the radiation
-generated according the {\sc Powheg} Sudakov factor, while it can be changed in the remnants events.}
+generated according the {\sc Powheg} Sudakov factor, while it can be changed in the remnant events.}
 The main effect of NLO corrections for this (rather inclusive) observable is to stabilise the predictions for the two-jet bin, where discrepancies
 among tools are reduced to about $10\%$. For the three-jet bin, which is described only at LO accuracy, differences among tools remain large, and are
 possibly related to the underlying approximation performed ({\sc MG5\_aMC} is the only tool to use the full matrix element for the real radiation), in particular the inclusion of the $s$-channel contributions: the largest rate is predicted by
@@ -1386,7 +1386,7 @@ the spread of predictions matched with parton shower is rather small
 ($\lesssim 10\%$, if one compensates for the $6\%$ width effect for {\sc MG5\_aMC}).
 The LO+PS predictions tend to be significantly softer than the fixed NLO one, with an effect of
 about $-30\%$ at the end of the displayed range. At NLO+PS, this effect is mitigated, owing to the better description of the first QCD emission which is now driven by the real-emission matrix element.
-For this observable (and all the others which are NLO accurate) the effect of reducing the shower-scale is negligible, hence it is not shown.
+For this observable (and all the others which are NLO accurate) the effect of reducing the shower scale is negligible, hence it is not shown.
 
 The rapidity difference between the two tagging jets, shown in Fig.~\ref{fig:PSdyjj}, has some similarities with the invariant-mass distribution.
 At LO+PS all predictions show the tendency to deplete the large-separation region with respect to the fixed-order prediction, in a
